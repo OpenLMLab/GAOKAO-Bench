@@ -462,10 +462,26 @@
         {
             "year": "2016",
             "category": "（新课标ⅱ）",
+            "question": "\n7. (5 分) 若将函数 $\\mathrm{y}=2 \\sin 2 x$ 的图象向左平移 $\\frac{\\pi}{12}$ 个单位长度, 则平移后的图象 的对称轴为 ( )\nA. $x=\\frac{k \\pi}{2}-\\frac{\\pi}{6}(k \\in Z)$\nB. $x=\\frac{k \\pi}{2}+\\frac{\\pi}{6} \\quad(k \\in Z)$\nC. $x=\\frac{k \\pi}{2}-\\frac{\\pi}{12}(k \\in Z)$\nD. $x=\\frac{k \\pi}{2}+\\frac{\\pi}{12} \\quad(k \\in Z)$",
+            "answer": "B",
+            "analysis": "解: 将函数 $y=2 \\sin 2 x$ 的图象向左平移 $\\frac{\\pi}{12}$ 个单位长度, 得到 $y=2 \\sin 2(x+$ $\\left.\\frac{\\pi}{12}\\right)=2 \\sin \\left(2 x+\\frac{\\pi}{6}\\right)$,\n\n由 $2 x+\\frac{\\pi}{6}=k \\pi+\\frac{\\pi}{2}(k \\in Z)$ 得: $x=\\frac{k \\pi}{2}+\\frac{\\pi}{6}(k \\in Z)$,\n\n即平移后的图象的对称轴方程为 $\\mathrm{x}=\\frac{k \\pi}{2}+\\frac{\\pi}{6}(k \\in Z)$,\n\n故选: B.",
+            "index": 57
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
             "question": "\n9. (5 分) 若 $\\cos \\left(\\frac{\\pi}{4}-\\alpha\\right)=\\frac{3}{5}$, 则 $\\sin 2 \\alpha=(\\quad)$ \nA. $\\frac{7}{25}$\nB. $\\frac{1}{5}$\nC. $-\\frac{1}{5}$\nD. $-\\frac{7}{25}$",
             "answer": "D",
             "analysis": "解: 法 $1^{\\circ}: \\because \\cos \\left(\\frac{\\pi}{4}-\\alpha\\right)=\\frac{3}{5}$,\n\n$\\therefore \\sin 2 \\alpha=\\cos \\left(\\frac{\\pi}{2}-2 \\alpha\\right)=\\cos 2\\left(\\frac{\\pi}{4}-\\alpha\\right)=2 \\cos ^{2}\\left(\\frac{\\pi}{4}-\\alpha\\right)-1=2 \\times \\frac{9}{25}-1=-\\frac{7}{25}$\n\n法 $2^{\\circ}: \\because \\cos \\left(\\frac{\\pi}{4}-\\alpha\\right)=\\frac{\\sqrt{2}}{2}(\\sin \\alpha+\\cos \\alpha)=\\frac{3}{5}$,\n\n$\\therefore \\frac{1}{2}(1+\\sin 2 \\alpha)=\\frac{9}{25}$,\n\n$\\therefore \\sin 2 \\alpha=2 \\times \\frac{9}{25}-1=-\\frac{7}{25}$,\n\n故选: D.",
-            "index": 57
+            "index": 58
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "question": "\n12. （5 分）已知函数 $f(x)(x \\in R)$ 满足 $f(-x)=2-f(x)$, 若函数 $y=\\frac{x+1}{x}$ 与 $y=f(x)$ 图象的交点为 $\\left(x_{1}, y_{1}\\right),\\left(x_{2}, y_{2}\\right), \\ldots,\\left(x_{m}, y_{m}\\right)$, 则 $\\sum_{i=1}^{m}\\left(x_{i}+y_{i}\\right.$ )$=(\\quad)$\nA. 0\nB. $m$\nC. $2 \\mathrm{~m}$\nD. $4 \\mathrm{~m}$\n",
+            "answer": "B",
+            "analysis": "解: 函数 $f(x) \\quad(x \\in R)$ 满足 $f(-x)=2-f(x)$,\n\n即为 $f(x)+f(-x)=2$,\n\n可得 $f(x)$ 关于点 $(0,1)$ 对称，\n\n函数 $y=\\frac{x+1}{x}$, 即 $y=1+\\frac{1}{x}$ 的图象关于点 $(0,1)$ 对称,\n\n即有 $\\left(x_{1}, y_{1}\\right)$ 为交点, 即有 $\\left(-x_{1}, 2-y_{1}\\right)$ 也为交点,\n\n$\\left(x_{2}, y_{2}\\right)$ 为交点, 即有 $\\left(-x_{2}, 2-y_{2}\\right)$ 也为交点,\n\n则有 $\\sum_{i=1}^{m}\\left(x_{i}+y_{i}\\right)=\\left(x_{1}+y_{1}\\right)+\\left(x_{2}+y_{2}\\right)+\\ldots+\\left(x_{m}+y_{m}\\right)$\n\n$=\\frac{1}{2}\\left[\\left(x_{1}+y_{1}\\right)+\\left(-x_{1}+2-y_{1}\\right)+\\left(x_{2}+y_{2}\\right)+\\left(-x_{2}+2-y_{2}\\right)+\\ldots+\\left(x_{m}+y_{m}\\right)+(\\right.$\n\n$\\left.\\left.-x_{m}+2-y_{m}\\right)\\right]$\n\n$=\\mathrm{m}$.\n\n故选: B.",
+            "index": 59
         },
         {
             "year": "2017",
@@ -473,7 +489,7 @@
             "question": "\n1.（5 分）已知集合 $A=\\{x \\mid x<1\\}, B=\\left\\{x \\mid 3^{x}<1\\right\\}$, 则（）\nA. $A \\cap B=\\{x \\mid x<0\\}$ B. $A \\cup B=R$\nC. $\\mathrm{A} \\cup \\mathrm{B}=\\{\\mathrm{x} \\mid \\mathrm{x}>1\\}$\nD. $A \\cap B=\\varnothing$",
             "answer": "A",
             "analysis": "解: $\\because$ 集合 $A=\\{x \\mid x<1\\}$,\n\n$B=\\left\\{x \\mid 3^{x}<1\\right\\}=\\{x \\mid x<0\\}$\n\n$\\therefore A \\cap B=\\{x \\mid x<0\\}$, 故 $A$ 正确, $D$ 错误;\n\n$A \\cup B=\\{x \\mid x<1\\}$, 故 $B$ 和 $C$ 都错误.\n\n故选: A.",
-            "index": 58
+            "index": 60
         },
         {
             "year": "2017",
@@ -481,7 +497,7 @@
             "question": "\n3. （5 分） 设有下面四个命题\n\n$p_{1}$ : 若复数 $z$ 满足 $\\frac{1}{z} \\in R$, 则 $z \\in R$;\n\n$p_{2}$ : 若复数 $z$ 满足 $z^{2} \\in R$, 则 $z \\in R$;\n\n$p_{3}$ ：若复数 $z_{1}, z_{2}$ 满足 $z_{1} z_{2} \\in R$, 则 $z_{1}=\\overline{z_{2}}$;\n\n$p_{4}$ : 若复数 $z \\in R$, 则 $z \\in R$.\n\n其中的真命题为（ $)$\nA. $\\mathrm{p}_{1}, \\mathrm{p}_{3}$\nB. $\\mathrm{p}_{1}, \\mathrm{p}_{4}$\nC. $p_{2}, p_{3}$\nD. $p_{2}, p_{4}$",
             "answer": "B",
             "analysis": "解：若复数 $z$ 满足 $\\frac{1}{z} \\in R$, 则 $z \\in R$, 故命题 $p_{1}$ 为真命题; $p_{2}$ : 复数 $z=i$ 满足 $z^{2}=-1 \\in R$, 则 $z \\notin R$, 故命题 $p_{2}$ 为假命题;\n\n$p_{3}$ ：若复数 $z_{1}=i, z_{2}=2 i$ 满足 $z_{1} z_{2} \\in R$, 但 $z_{1} \\neq \\overline{z_{2}}$, 故命题 $p_{3}$ 为假命题;\n\n$p_{4}$ : 若复数 $z \\in R$, 则 $z=z \\in R$, 故命题 $p_{4}$ 为真命题.\n\n故选: B.",
-            "index": 59
+            "index": 61
         },
         {
             "year": "2017",
@@ -489,7 +505,7 @@
             "question": "\n4. (5 分) 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{4}+a_{5}=24, S_{6}=48$, 则 $\\left\\{a_{n}\\right\\}$ 的公 差为 $(\\quad)$\nA. 1\nB. 2\nC. 4\nD. 8",
             "answer": "C",
             "analysis": "解: $\\because S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, $a_{4}+a_{5}=24, S_{6}=48$, $\\therefore\\left\\{\\begin{array}{l}a_{1}+3 d+a_{1}+4 d=24 \\\\ 6 a_{1}+\\frac{6 \\times 5}{2} d=48\\end{array}\\right.$,\n\n解得 $\\mathrm{a}_{1}=-2, \\mathrm{~d}=4$,\n\n$\\therefore\\left\\{a_{n}\\right\\}$ 的公差为 4 .\n\n故选: C.",
-            "index": 60
+            "index": 62
         },
         {
             "year": "2017",
@@ -497,7 +513,7 @@
             "question": "\n5. (5 分) 函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 单调递减, 且为奇函数. 若 $f(1)=-1$ , 则满足 $-1 \\leqslant f(x-2) \\leqslant 1$ 的 $x$ 的取值范围是 $(\\quad)$\nA. $[-2,2]$\nB. $[-1,1]$\nC. $[0,4]$\nD. $[1,3]$ ",
             "answer": "D",
             "analysis": "解: $\\because$ 函数 $f(x)$ 为奇函数.\n\n若 $f(1)=-1$, 则 $f(-1)=1$,\n\n又 $\\because$ 函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 单调递减, $-1 \\leqslant f(x-2) \\leqslant 1$,\n\n$\\therefore f(1) \\leqslant f(x-2) \\leqslant f(-1)$\n\n$\\therefore-1 \\leqslant x-2 \\leqslant 1$\n\n解得: $x \\in[1,3]$,\n\n故选: D.",
-            "index": 61
+            "index": 63
         },
         {
             "year": "2017",
@@ -505,7 +521,7 @@
             "question": "\n6. (5 分) $\\left(1+\\frac{1}{x^{2}}\\right)(1+x){ }^{6}$ 展开式中 $x^{2}$ 的系数为（ $)$\nA. 15\nB. 20\nC. 30\nD. 35",
             "answer": "C",
             "analysis": "解: $\\left(1+\\frac{1}{x^{2}}\\right)(1+x)^{6}$ 展开式中:\n\n若 $\\left(1+\\frac{1}{x^{2}}\\right)=\\left(1+x^{-2}\\right)$ 提供常数项 1, 则 $(1+x)^{6}$ 提供含有 $x^{2}$ 的项, 可得展开 式中 $x^{2}$ 的系数:\n\n若 $\\left(1+\\frac{1}{x^{2}}\\right)$ 提供 $x^{-2}$ 项, 则 $(1+x)^{6}$ 提供含有 $x^{4}$ 的项, 可得展开式中 $x^{2}$ 的系数:\n\n由 $(1+x) 6$ 通项公式可得 $\\mathrm{C}_{6}^{r} \\mathrm{x}^{\\mathrm{r}}$. 可知 $r=2$ 时, 可得展开式中 $x^{2}$ 的系数为 $C_{6}^{2}=15$.\n\n可知 $r=4$ 时, 可得展开式中 $x^{2}$ 的系数为 $C_{6}^{4}=15$.\n\n$\\left(1+\\frac{1}{x^{2}}\\right)(1+x)^{6}$ 展开式中 $x^{2}$ 的系数为: $15+15=30$.\n\n故选: C.",
-            "index": 62
+            "index": 64
         },
         {
             "year": "2017",
@@ -513,7 +529,7 @@
             "question": "\n9. （5 分) 已知曲线 $C_{1}: y=\\cos x, C_{2}: y=\\sin \\left(2 x+\\frac{2 \\pi}{3}\\right)$, 则下面结论正确的是（ )\n\nA. 把 $C_{1}$ 上各点的横坐标伸长到原来的 2 倍, 纵坐标不变, 再把得到的曲线 向右平移 $\\frac{\\pi}{6}$ 个单位长度, 得到曲线 $\\mathrm{c}_{2}$\n\nB. 把 $C_{1}$ 上各点的横坐标伸长到原来的 2 倍, 纵坐标不变, 再把得到的曲线 向左平移 $\\frac{\\pi}{12}$ 个单位长度, 得到曲线 $\\mathrm{C}_{2}$\n\nC. 把 $\\mathrm{C}_{1}$ 上各点的横坐标缩短到原来的 $\\frac{1}{2}$ 倍, 纵坐标不变, 再把得到的曲线向 右平移 $\\frac{\\pi}{6}$ 个单位长度, 得到曲线 $C_{2}$\n\nD. 把 $C_{1}$ 上各点的横坐标缩短到原来的 $\\frac{1}{2}$ 倍, 纵坐标不变, 再把得到的曲线向 左平移 $\\frac{\\pi}{12}$ 个单位长度, 得到曲线 $C_{2}$",
             "answer": "D",
             "analysis": "解: 把 $\\mathrm{C}_{1}$ 上各点的横坐标缩短到原来的 $\\frac{1}{2}$ 倍, 纵坐标不变, 得到函数 $y=\\cos 2 x$ 图象, 再把得到的曲线向左平移 $\\frac{\\pi}{12}$ 个单位长度, 得到函数 $y=\\cos 2\\left(x^{+}\\right.$ $\\left.\\frac{\\pi}{12}\\right)=\\cos \\left(2 x+\\frac{\\pi}{6}\\right)=\\sin \\left(2 x+\\frac{2 \\pi}{3}\\right)$ 的图象, 即曲线 $C_{2}$,\n\n故选: D.",
-            "index": 63
+            "index": 65
         },
         {
             "year": "2017",
@@ -521,7 +537,7 @@
             "question": "\n11. (5 分) 设 $x 、 y 、 z$ 为正数, 且 $2^{x}=3^{y}=5^{2}$, 则 ( )\nA. $2 x<3 y<5 z$\nB. $5 z<2 x<3 y$\nC. $3 y<5 z<2 x$\nD. $3 y<2 x<5 z$",
             "answer": "D",
             "analysis": "解: $x 、 y 、 z$ 为正数,\n\n令 $2^{x}=3^{y}=5^{z}=k>1 . \\quad \\lg k>0$.\n\n则 $x=\\frac{\\operatorname{lgk}}{\\lg 2}, y=\\frac{\\operatorname{lgk}}{\\lg 3}, z=\\frac{\\operatorname{lgk}}{\\lg 5}$.\n\n$\\therefore 3 y=\\frac{\\operatorname{lgk}}{\\lg \\sqrt[3]{3}}, 2 x=\\frac{\\operatorname{lgk}}{\\lg \\sqrt{2}}, 5 \\mathrm{z}=\\frac{\\operatorname{lgk}}{\\lg \\sqrt[5]{5}}$.\n\n$\\because \\sqrt[3]{3}=\\sqrt[6]{9}>\\sqrt[6]{8}=\\sqrt{2}, \\sqrt{2}=\\sqrt[10]{32}>\\sqrt[10]{25}=\\sqrt[5]{5}$\n\n$\\therefore \\lg \\sqrt[3]{3}>\\lg \\sqrt{2}>\\lg \\sqrt[5]{5}>0$\n\n$\\therefore 3 y<2 x<5 z$.\n\n另解： $x 、 y 、 z$ 为正数,\n\n令 $2^{x}=3^{y}=5^{2}=k>1 . \\quad \\lg k>0$.\n\n则 $x=\\frac{\\operatorname{lgk}}{\\lg 2}, y=\\frac{\\operatorname{lgk}}{\\lg 3}, z=\\frac{\\operatorname{lgk}}{\\lg 5}$.\n\n$\\therefore \\frac{2 x}{3 y}=\\frac{2}{3} \\times \\frac{\\lg 3}{\\lg 2}=\\frac{\\lg 9}{\\lg 8}>1$, 可得 $2 x>3 y$,\n\n$\\frac{5 z}{2 x}=\\frac{5}{2} \\times \\frac{\\lg 2}{\\lg 5}=\\frac{\\lg 2^{5}}{\\lg 5^{2}}>1$. 可得 $5 z>2 x$.\n\n综上可得: $5 z>2 x>3 y$.\n\n解法三: 对 $\\mathrm{k}$ 取特殊值, 也可以比较出大小关系.\n\n故选：D.",
-            "index": 64
+            "index": 66
         },
         {
             "year": "2017",
@@ -529,7 +545,7 @@
             "question": "\n12. (5 分) 几位大学生响应国家的创业号召, 开发了一款应用软件. 为激发大 家学习数学的兴趣, 他们推出了“解数学题获取软件激活码”的活动. 这款软 件的激活码为下面数学问题的答案: 已知数列 $1,1,2,1,2,4,1,2,4$, $8,1,2,4,8,16, \\ldots$, 其中第一项是 $2^{0}$, 接下来的两项是 $2^{0}, 2^{1}$, 再接下 来的三项是 $2^{0}, 2^{1}, 2^{2}$, 依此类推. 求满足如下条件的最小整数 $N: N>100$ 且该数列的前 $\\mathrm{N}$ 项和为 2 的整数幂. 那么该款软件的激活码是（）\nA. 440\nB. 330\nC. 220\nD. 110\n",
             "answer": "A",
             "analysis": "解: 设该数列为 $\\left\\{a_{n}\\right\\}$, 设 $b_{n}=\\frac{a_{(n-1) n}}{2}+1+\\ldots+\\frac{a_{n(n+1)}}{2}=2^{n+1}-1, \\quad\\left(n \\in N_{+}\\right)$, 则 $\\sum_{i=1}^{n} b_{i}=\\sum_{i=1}^{\\frac{n(n+1)}{2}} a_{i}$,\n\n由题意可设数列 $\\left\\{a_{n}\\right\\}$ 的前 $N$ 项和为 $S_{N}$, 数列 $\\left\\{b_{n}\\right\\}$ 的前 $n$ 项和为 $T_{n}$, 则\n\n$$\nT_{n}=2^{1}-1+2^{2}-1+\\ldots+2^{n+1}-1=2^{n+1}-n-2\n$$\n\n可知当 $N$ 为 $\\frac{n(n+1)}{2}$ 时 $\\left(n \\in N_{+}\\right)$, 数列 $\\left\\{a_{n}\\right\\}$ 的前 $N$ 项和为数列 $\\left\\{b_{n}\\right\\}$ 的前 $n$ 项和, 即为 $2^{n+1}-n-2$,\n\n容易得到 $N>100$ 时, $n \\geqslant 14$,\n\nA 项, 由 $\\frac{29 \\times 30}{2}=435,440=435+5$, 可知 $S_{440}=T_{29}+b_{5}=2^{30}-29-2+2^{5}-1=2^{30}$, 故 A 项符合题意.\n\n$B$ 项, 仿上可知 $\\frac{25 \\times 26}{2}=325$, 可知 $S_{330}=T_{25}+b_{5}=2^{26}-25-2+2^{5}-1=2^{26+4}$, 显然不 为 2 的整数幂, 故 $B$ 项不符合题意.\n\n$C$ 项, 仿上可知 $\\frac{20 \\times 21}{2}=210$, 可知 $S_{220}=T_{20}+b_{10}=2^{21}-20-2+2^{10}-1=2^{21}+2^{10}-23$, 显然不为 2 的整数幂, 故 C 项不符合题意. $\\mathrm{D}$ 项, 仿上可知 $\\frac{14 \\times 15}{2}=105$, 可知 $\\mathrm{S}_{110}=T_{14}+b_{5}=2^{15}-14-2^{+} 2^{5}-1=2^{15}+15$, 显然 不为 2 的整数幂, 故 $D$ 项不符合题意.\n\n故选 A.\n\n方法 二 : 由 题 意可 知 : 第一项, $\\frac{2^{0}, 2^{1}}{\\text { 第二项 }}, \\frac{2^{0}, 2^{1}, 2^{2}}{\\text { 第三项 }}, \\ldots$\n\n$$\n\\frac{2^{0}, 2^{1}, 2^{2}, \\cdots, 2^{\\mathrm{n}-1}}{\\text { 第n项 }},\n$$\n\n根据等比数列前 $n$ 项和公式, 求得每项和分别为: $2^{1-} 1,2^{2-} 1,2^{3-} 1, \\ldots, 2^{n_{-}} 1$\n\n每项含有的项数为: $1,2,3, \\ldots, n$,\n\n总共的项数为 $\\mathrm{N}=1+2+3+\\ldots+n=\\frac{(1+n) n}{2}$,\n\n所有项数的和为 $S_{n}: 2^{1-} 1+2^{2}-1+2^{3}-1+\\ldots+2^{n}-1=\\left(2^{1}+2^{2}+2^{3}+\\ldots+2^{n}\\right)-n=$\n\n$$\n\\frac{2\\left(1-2^{n}\\right)}{1-2}-n=2^{n+1}-2-n\n$$\n\n由题意可知: $2^{n+1}$ 为 2 的整数幂. 只需将 $-2-n$ 消去即可,\n\n则(1) $1+2+(-2-n)=0$, 解得: $n=1$, 总共有 $\\frac{(1+1) \\times 1}{2}+2=3$, 不满足 $N>100$,\n\n(2) $1+2+4+(-2-n)=0$, 解得: $n=5$, 总共有 $\\frac{(1+5) \\times 5}{2}+3=18$, 不满足 $N>100$,\n\n(3) $1+2+4+8+(-2-n)=0$, 解得: $n=13$, 总共有 $\\frac{(1+13) \\times 13}{2}+4=95$, 不满足 $N>$ 100 ,\n\n(4) $1+2+4+8+16+(-2-n)=0$, 解得: $n=29$, 总共有 $\\frac{(1+29) \\times 29}{2}+5=440$, 满足 $N$ $>100$\n\n$\\therefore$ 该款软件的激活码 440 .",
-            "index": 65
+            "index": 67
         },
         {
             "year": "2015",
@@ -537,7 +553,7 @@
             "question": "\n1. （5 分）已知集合 $\\mathrm{A}=\\{-2,-1,0,1,2\\}, B=\\{x \\mid(x-1)(x+2)<0\\}$, 则 $A \\cap B=(\\quad)$\nA. $\\{-1,0\\}$\nB. $\\{0,1\\}$\nC. $\\{-1,0,1\\}$\nD. $\\{0,1,2\\}$",
             "answer": "A",
             "analysis": "解: $\\mathrm{B}=\\{x \\mid-2<x<1\\}, \\mathrm{A}=\\{-2,-1,0,1,2\\}$;\n\n$\\therefore A \\cap B=\\{-1,0\\}$.\n\n故选: A.",
-            "index": 66
+            "index": 68
         },
         {
             "year": "2015",
@@ -545,7 +561,7 @@
             "question": "\n2. (5 分) 若 $a$ 为实数, 且 $(2+a i)(a-2 i)=-4 i$, 则 $a=(\\quad)$\nA. -1\nB. 0\nC. 1\nD. 2",
             "answer": "B",
             "analysis": "解：因为 $(2+a i)(a-2 i)=-4 i$, 所以 $4 a+\\left(a^{2}-4\\right) i=-4 i$,\n\n$4 a=0$, 并且 $a^{2}-4=-4$,\n\n所以 $a=0$; 故选：B.",
-            "index": 67
+            "index": 69
         },
         {
             "year": "2015",
@@ -553,7 +569,7 @@
             "question": "\n4. (5 分) 已知等比数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{1}=3, a_{1}+a_{3}+a_{5}=21$, 则 $a_{3}+a_{5}+a_{7}=(\\quad)$\nA. 21\nB. 42\nC. 63\nD. 84",
             "answer": "B",
             "analysis": "解: $\\because a_{1}=3, a_{1}+a_{3}+a_{5}=21$,\n\n$\\therefore a_{1}\\left(1+q^{2}+q^{4}\\right)=21$\n\n$\\therefore q^{4}+q^{2}+1=7$\n\n$\\therefore q^{4}+q^{2}-6=0$\n\n$\\therefore q^{2}=2$\n\n$\\therefore a_{3}+a_{5}+a_{7}=a_{1}\\left(q^{2}+q^{4}+q^{6}\\right)=3 \\times(2+4+8)=42$.\n\n故选: B.",
-            "index": 68
+            "index": 70
         },
         {
             "year": "2015",
@@ -561,7 +577,7 @@
             "question": "\n5. (5 分) 设函数 $f(x)=\\left\\{\\begin{array}{ll}1+\\log _{2}(2-x), & x<1 \\\\ 2^{x-1}, & x \\geqslant 1\\end{array}\\right.$, 则 $f(-2)+f\\left(\\log _{2} 12\\right)=($ )\nA. 3\nB. 6\nC. 9\nD. 12",
             "answer": "C",
             "analysis": "解：函数 $f(x)=\\left\\{\\begin{array}{l}1+\\log _{2}(2-x), x<1 \\\\ 2^{x-1}, x \\geqslant 1\\end{array}\\right.$,\n\n即有 $f(-2)=1+\\log _{2}(2+2)=1+2=3$,\n\n$f\\left(\\log _{2} 12\\right)=2^{\\log _{2} 12-1}=2 \\log _{2} 12 \\times \\frac{1}{2}=12 \\times \\frac{1}{2}=6$\n\n则有 $f(-2)+f\\left(\\log _{2} 12\\right)=3+6=9$.\n\n故选: C.",
-            "index": 69
+            "index": 71
         },
         {
             "year": "2015",
@@ -569,15 +585,7 @@
             "question": "\n7. (5 分) 过三点 $A(1,3), B(4,2), C(1,-7)$ 的圆交 $y$ 轴于 $M, N$ 两点, 则 $|\\mathrm{MN}|=(\\quad)$\nA. $2 \\sqrt{6}$\nB. 8\nC. $4 \\sqrt{6}$\nD. 10",
             "answer": "C",
             "analysis": "解: 设圆的方程为 $x^{2}+y^{2}+D x+E y+F=0$, 则 $\\left\\{\\begin{array}{l}1+9+D+3 E+F=0 \\\\ 16+4+4 D+2 E+F=0 \\\\ 1+49+D-7 E+F=0\\end{array}\\right.$,\n\n$\\therefore D=-2, E=4, F=-20$,\n\n$\\therefore x^{2}+y^{2}-2 x+4 y-20=0$,\n\n令 $x=0$, 可得 $y^{2}+4 y-20=0$,\n\n$\\therefore y=-2 \\pm 2 \\sqrt{6}$,\n\n$\\therefore|\\mathrm{MN}|=4 \\sqrt{6}$.\n\n故选: C.",
-            "index": 70
-        },
-        {
-            "year": "2015",
-            "category": "（新课标ⅱ）",
-            "question": "\n11. (5 分) 已知 $A, B$ 为双曲线 $E$ 的左, 右顶点, 点 $M$ 在 $E$ 上, $\\triangle A B M$ 为等\n\n![](https://cdn.mathpix.com/cropped/2023_03_10_1a03c2ddb3e246a8fd16g-03.jpg?height=60&width=914&top_left_y=1262&top_left_x=357)\nA. $\\sqrt{5}$\nB. 2\nC. $\\sqrt{3}$\nD. $\\sqrt{2}$",
-            "answer": "D",
-            "analysis": "解: 设 $M$ 在双曲线 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1$ 的左支上,\n\n且 $M A=A B=2 a, \\angle M A B=120^{\\circ}$,\n\n则 $M$ 的坐标为 $(-2 a, \\sqrt{3} a)$,\n\n代入双曲线方程可得, $\\frac{4 a^{2}}{a^{2}}-\\frac{3 a^{2}}{b^{2}}=1$\n\n可得 $a=b$,\n\n$c=\\sqrt{a^{2}+b^{2}}=\\sqrt{2} a$\n\n即有 $\\mathrm{e}=\\frac{\\mathrm{c}}{\\mathrm{a}}=\\sqrt{2}$.\n\n故选: D.",
-            "index": 71
+            "index": 72
         },
         {
             "year": "2013",
@@ -585,7 +593,7 @@
             "question": "\n1. （5 分）已知集合 $M=\\left\\{x \\mid(x-1)^{2}<4, x \\in R\\right\\}, N=\\{-1,0,1,2,3\\}$, 则 $M$ $\\cap N=(\\quad)$\nA. $\\{0,1,2\\}$\nB. $\\{-1,0,1,2\\}$\nC. $\\{-1,0,2,3\\}$\nD. $\\{0,1,2,3\\}$",
             "answer": "A",
             "analysis": "解: 由 $(x-1)^{2}<4$, 解得: $-1<x<3$, 即 $M=\\{x \\mid-1<x<3\\}$,\n\n$\\because N=\\{-1,0,1,2,3\\}$,\n\n$\\therefore M \\cap N=\\{0,1,2\\}$.\n\n故选: A.",
-            "index": 72
+            "index": 73
         },
         {
             "year": "2013",
@@ -593,7 +601,7 @@
             "question": "\n2. （5 分）设复数 $z$ 满足 $(1-i) z=2 i$, 则 $z=(\\quad)$\nA. $-1+i$\nB. $-1-i$\nC. $1+i$\nD. 1- $\\mathrm{i}$",
             "answer": "A",
             "analysis": "解: $\\because$ 复数 $z$ 满足 $z(1-\\mathrm{i})=2 \\mathrm{i}$,\n\n$\\therefore z=\\frac{2 i}{1-i}=\\frac{2 i(1+i)}{(1-i)(1+i)}=-1+i$\n\n故选: A.",
-            "index": 73
+            "index": 74
         },
         {
             "year": "2013",
@@ -601,7 +609,7 @@
             "question": "\n3. (5 分) 等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$, 已知 $S_{3}=a_{2}+10 a_{1}, a_{5}=9$, 则 $a_{1}=(\\quad)$\nA. $\\frac{1}{3}$\nB. $-\\frac{1}{3}$\nC. $\\frac{1}{9}$\nD. $-\\frac{1}{9}$",
             "answer": "C",
             "analysis": "解：设等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $q$,\n\n$\\because s_{3}=a_{2}+10 a_{1}, a_{5}=9$\n\n$\\therefore\\left\\{\\begin{array}{l}a_{1}+a_{1} q+a_{1} q^{2}=a_{1} q+10 a_{1} \\\\ a_{1} q^{4}=9\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}q^{2}=9 \\\\ a_{1}=\\frac{1}{9}\\end{array}\\right.$.\n\n$\\therefore a_{1}=\\frac{1}{9}$.\n\n故选: C.",
-            "index": 74
+            "index": 75
         },
         {
             "year": "2013",
@@ -609,7 +617,7 @@
             "question": "\n4. (5 分) 已知 $m, n$ 为异面直线, $m \\perp$ 平面 $\\alpha, n \\perp$ 平面 $\\beta$. 直线 $\\mid$ 满足 $\\mid \\perp m$, $\\mathrm{I} \\perp \\mathrm{n},|\\not \\subset \\alpha,| \\not \\subset \\beta$, 则 $(\\quad)$\nA. $\\alpha / / \\beta$ 且 $\\mid / / \\alpha$\nB. $\\alpha \\perp \\beta$ 且 $l \\perp \\beta$\nC. $\\alpha$ 与 $\\beta$ 相交, 且交线垂直于।\nD. $\\alpha$ 与 $\\beta$ 相交, 且 交线平行于।",
             "answer": "D",
             "analysis": "解: 由 $m \\perp$ 平面 $\\alpha$, 直线 $\\mid$ 满足 $\\mid \\perp m$, 且 $\\mid \\subset \\alpha$, 所以 $\\mid / / \\alpha$,\n\n又 $n \\perp$ 平面 $\\beta, 1 \\perp n, \\mid \\not \\subset \\beta$, 所以 $I / / \\beta$.\n\n由直线 $m, n$ 为异面直线, 且 $m \\perp$ 平面 $\\alpha, n \\perp$ 平面 $\\beta$, 则 $\\alpha$ 与 $\\beta$ 相交, 否则,\n\n若 $\\alpha / / \\beta$ 则推出 $m / / n$,\n\n与 $m, n$ 异面矛盾.\n\n故 $\\alpha$ 与 $\\beta$ 相交, 且交线平行于 1 .\n\n故选: D.",
-            "index": 75
+            "index": 76
         },
         {
             "year": "2013",
@@ -617,7 +625,7 @@
             "question": "\n5. (5 分) 已知 $(1+\\mathrm{ax})(1+\\mathrm{x}){ }^{5}$ 的展开式中 $\\mathrm{x}^{2}$ 的系数为 5 , 则 $a=(\\quad)$\nA. -4\nB. -3\nC. -2\nD. -1",
             "answer": "D",
             "analysis": "解: 已知 $(1+a x)(1+x)^{5}=(1+a x)\\left(1+C_{5}^{1} x+C_{5}^{2} x^{2}+C_{5}^{3} x^{3}+C_{5}^{4} x^{4}+C_{5}^{5} x^{5}\\right)$ 展开式中 $x^{2}$ 的系数为 $C_{5}^{2+} a \\cdot C_{5}^{1}=5$, 解得 $a=-1$,\n\n故选: D.",
-            "index": 76
+            "index": 77
         },
         {
             "year": "2013",
@@ -625,7 +633,15 @@
             "question": "\n8. （5 分） 设 $a=\\log _{3} 6, b=\\log _{5} 10, c=\\log _{7} 14$, 则（ ）\nA. $c>b>a$\nB. $b>c>a$\nC. $a>c>b$\nD. $a>b>c$",
             "answer": "D",
             "analysis": "解: 因为 $a=\\log _{3} 6=1+\\log _{3} 2, b=\\log _{5} 10=1+\\log _{5} 2, c=\\log _{7} 14=1+\\log _{7} 2$, 因为 $y=\\log _{2} x$ 是增函数, 所以 $\\log _{2} 7>\\log _{2} 5>\\log _{2} 3$,\n\n$\\because \\log _{2} 7=\\frac{1}{\\log _{7} 2}, \\log _{2} 5=\\frac{1}{\\log _{5} 2}, \\log _{2} 3=\\frac{1}{\\log _{3} 2}$\n\n所以 $\\log _{3} 2>\\log _{5} 2>\\log _{7} 2$,\n\n所以 $a>b>c$,\n\n故选: D.",
-            "index": 77
+            "index": 78
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "question": "\n10. （5 分) 已知函数 $f(x)=x^{3}+a x^{2}+b x+c$, 下列结论中错误的是（ ）\nA. $\\exists x_{0} \\in R, f\\left(x_{0}\\right)=0$\nB. 函数 $y=f(x)$ 的图象是中心对称图形\nC. 若 $x_{0}$ 是 $f(x)$ 的极小值点, 则 $f(x)$ 在区间 $\\left(-\\infty, x_{0}\\right)$ 单调递减\nD. 若 $x_{0}$ 是 $f(x)$ 的极值点, 则 $f^{\\prime}\\left(x_{0}\\right)=0$",
+            "answer": "C",
+            "analysis": "解: $f^{\\prime}(x)=3 x^{2}+2 a x+b$.\n\n（1）当 $\\triangle=4 a^{2}-12 b>0$ 时, $f^{\\prime}(x)=0$ 有两解, 不妨设为 $x_{1}<x_{2}$, 列表如下\n\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline$x$ & $\\left(-\\infty, x_{1}\\right)$ & $x_{1}$ & $\\left(x_{1}, x_{2}\\right)$ & $x_{2}$ & $\\left(x_{2},+\\infty\\right)$ \\\\\n\\hline$f^{\\prime}(x)$ & + & 0 & - & 0 & + \\\\\n\\hline$f(x)$ & 单调递增 & 极大值 & 单调递减 & 极小值 & 单调递增 \\\\\n\\hline\n\\end{tabular}\n\n由表格可知:\n\n(1) $x_{2}$ 是函数 $f(x)$ 的极小值点, 但是 $f(x)$ 在区间 $\\left(-\\infty, x_{2}\\right)$ 不具有单调性, 故 C 不正确.\n\n(2) $\\because f\\left(-\\frac{2 a}{3}-x\\right)+f(x)=\\left(-\\frac{2 a}{3}-x\\right)^{3}+a\\left(-\\frac{2 a}{3}-x\\right)^{2}+b\\left(-\\frac{2 a}{3}-x\\right)+c+x^{3}+a x^{2}+b x+c=$ $\\frac{4}{27} a^{3}-\\frac{2 a b}{3}+2 c$\n\n$f\\left(-\\frac{a}{3}\\right)=\\left(-\\frac{a}{3}\\right)^{3}+a\\left(-\\frac{a}{3}\\right)^{2}+b\\left(-\\frac{a}{3}\\right)+c=\\frac{2}{27} a^{3}-\\frac{a b}{3}+c$,\n\n$\\because f\\left(-\\frac{2 a}{3}-x\\right)+f(x)=2 f\\left(-\\frac{a}{3}\\right)$\n\n$\\therefore$ 点 $P\\left(-\\frac{a}{3}, f\\left(-\\frac{a}{3}\\right)\\right)$ 为对称中心, 故 $B$ 正确.\n\n(3)由表格可知 $x_{1}, x_{2}$ 分别为极值点, 则 $f^{\\prime}\\left(x_{1}\\right)=f^{\\prime}\\left(x_{2}\\right)=0$, 故 D 正确.\n\n(4) $\\because x \\rightarrow-\\infty$ 时, $f(x) \\rightarrow-\\infty ; x \\rightarrow+\\infty, f(x) \\rightarrow+\\infty$, 函数 $f(x)$ 必然穿过 $x$ 轴, 即 $\\exists x_{\\alpha} \\in R, f\\left(x_{\\alpha}\\right)=0$, 故 $A$ 正确.\n\n（2）当 $\\triangle \\leqslant 0$ 时, $f^{\\prime}(x)=3\\left(x+\\frac{a}{3}\\right)^{2} \\geqslant 0$, 故 $f(x)$ 在 $R$ 上单调递增, (1)此时不 存在极值点, 故 $D$ 正确, $C$ 不正确;\n\n(2) $\\mathrm{B}$ 同（1）中(2)正确;\n\n(3) $\\because x \\rightarrow-\\infty$ 时, $f(x) \\rightarrow-\\infty ; x \\rightarrow+\\infty, f(x) \\rightarrow+\\infty$, 函数 $f(x)$ 必然穿过 $x$ 轴, 即 $\\exists x_{0} \\in R, f\\left(x_{0}\\right)=0$, 故 $A$ 正确.\n\n综上可知: 错误的结论是 $C$.\n\n由于该题选择错误的, 故选: C.",
+            "index": 79
         },
         {
             "year": "2016",
@@ -633,7 +649,7 @@
             "question": "\n1. （5 分）设集合 $A=\\left\\{x \\mid x^{2}-4 x+3<0\\right\\}, B=\\{x \\mid 2 x-3>0\\}$, 则 $A \\cap B=(\\quad)$\nA. $\\left(-3,-\\frac{3}{2}\\right)$\nB. $\\left(-3, \\frac{3}{2}\\right)$\nC. $\\left(1, \\frac{3}{2}\\right)$\nD. $\\left(\\frac{3}{2}, 3\\right)$",
             "answer": "D",
             "analysis": "解: $\\because$ 集合 $A=\\left\\{x \\mid x^{2}-4 x+3<0\\right\\}=(1,3)$,\n\n$\\mathrm{B}=\\{\\mathrm{x} \\mid 2 \\mathrm{x}-3>0\\}=\\left(\\frac{3}{2},+\\infty\\right)$,\n\n$\\therefore A \\cap B=\\left(\\frac{3}{2}, 3\\right)$,\n\n故选：D.",
-            "index": 78
+            "index": 80
         },
         {
             "year": "2016",
@@ -641,7 +657,7 @@
             "question": "\n2. （5 分) 设 $(1+i) x=1+y i$, 其中 $x, y$ 是实数, 则 $|x+y i|=(\\quad)$\nA. 1\nB. $\\sqrt{2}$\nC. $\\sqrt{3}$\nD. 2",
             "answer": "B",
             "analysis": "解: $\\because(1+\\mathrm{i}) \\mathrm{x}=1+\\mathrm{yi}$,\n\n$\\therefore x+x i=1+y i$,\n\n即 $\\left\\{\\begin{array}{l}x=1 \\\\ y=x\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}x=1 \\\\ y=1\\end{array}\\right.$, 即 $|x+y i|=|1+i|=\\sqrt{2}$, 故选: B.",
-            "index": 79
+            "index": 81
         },
         {
             "year": "2016",
@@ -649,7 +665,7 @@
             "question": "\n3. (5 分) 已知等差数列 $\\left\\{a_{n}\\right\\}$ 前 9 项的和为 $27, a_{10}=8$, 则 $a_{100}=(\\quad)$\nA. 100\nB. 99\nC. 98\nD. 97",
             "answer": "C",
             "analysis": "解: $\\because$ 等差数列 $\\left\\{a_{n}\\right\\}$ 前 9 项的和为 $27, \\mathrm{~S}_{9}=\\frac{9\\left(\\mathrm{a}_{1}+\\mathrm{a}_{9}\\right)}{2}=\\frac{9 \\times 2 \\mathrm{a}_{5}}{2}=9 a_{5}$.\n\n$\\therefore 9 a_{5}=27, a_{5}=3$,\n\n又 $\\because a_{10}=8$,\n\n$\\therefore \\mathrm{d}=1$,\n\n$\\therefore \\mathrm{a}_{100}=\\mathrm{a}_{5}+95 \\mathrm{~d}=98$,\n\n故选: C.",
-            "index": 80
+            "index": 82
         },
         {
             "year": "2016",
@@ -657,7 +673,7 @@
             "question": "\n4. (5 分) 某公司的班车在 7: $00,8: 00,8: 30$ 发车, 小明在 7:50 至 8: 30 之间到达发车站乘坐班车, 且到达发车站的时刻是随机的, 则他等车时间不 超过 10 分钟的概率是（ $)$\nA. $\\frac{1}{3}$\nB. $\\frac{1}{2}$\nC. $\\frac{2}{3}$\nD. $\\frac{3}{4}$",
             "answer": "B",
             "analysis": "解：设小明到达时间为 $y$, 当 $y$ 在 7: 50 至 8: 00 , 或 8: 20 至 8: 30 时,\n\n小明等车时间不超过 10 分钟,\n\n故 $P=\\frac{20}{40}=\\frac{1}{2}$,\n\n故选: B.",
-            "index": 81
+            "index": 83
         },
         {
             "year": "2016",
@@ -665,7 +681,7 @@
             "question": "\n5. （5 分）已知方程 $\\frac{x^{2}}{m^{2}+n}-\\frac{y^{2}}{3 m^{2}-n}=1$ 表示双曲线, 且该双曲线两焦点间的距 离为 4 , 则 $n$ 的取值范围是（ $)$\nA. $(-1,3)$\nB. $(-1, \\sqrt{3})$\nC. $(0,3)$\nD. $(0, \\sqrt{3})$",
             "answer": "A",
             "analysis": "解: $\\because$ 双曲线两焦点间的距离为 $4, \\quad \\therefore c=2$,\n\n当焦点在 $\\mathrm{x}$ 轴上时,\n\n可得: $4=\\left(m^{2}+n\\right)+\\left(3 m^{2}-n\\right)$, 解得: $m^{2}=1$,\n\n$\\because$ 方程 $\\frac{x^{2}}{m^{2}+n}-\\frac{y^{2}}{3 m^{2}-n}=1$ 表示双曲线,\n\n$\\therefore\\left(m^{2}+n\\right)\\left(3 m^{2}-n\\right)>0$, 可得: $(n+1)(3-n)>0$,\n\n解得: $-1<n<3$, 即 $n$ 的取值范围是: $(-1,3)$.\n\n当焦点在 $\\mathrm{y}$ 轴上时,\n\n可得: $-4=\\left(m^{2}+n\\right)+\\left(3 m^{2}-n\\right)$, 解得: $m^{2}=-1$,\n\n无解.\n\n故选: A.",
-            "index": 82
+            "index": 84
         },
         {
             "year": "2016",
@@ -673,7 +689,15 @@
             "question": "\n8. （5 分）若 $a>b>1,0<c<1$, 则（ $)$\nA. $a^{c}<b^{c}$\nB. $a b^{c}<b a^{c}$\nC. $a \\log _{b} c<b \\log _{a} c$\nD. $\\log _{a} c<\\log _{b} c$",
             "answer": "C",
             "analysis": "解: $\\because a>b>1,0<c<1$,\n\n$\\therefore$ 函数 $f(x)=x^{c}$ 在 $(0,+\\infty)$ 上为增函数, 故 $a^{c}>b^{c}$, 故 $\\mathrm{A}$ 错误;\n\n函数 $f(x)=x^{c-1}$ 在 $(0,+\\infty)$ 上为减函数, 故 $a^{c-1}<b^{c-1}$, 故 $b a^{c}<a b^{c}$, 即 $a b^{c}>$ $b^{c}$; 故 B 错误;\n\n$\\log _{a} c<0$, 且 $\\log _{b} c<0, \\log _{a} b<1$, 即 $\\frac{\\log _{c} b}{\\log _{c} a}=\\frac{\\log _{a} c}{\\log _{b} c}<1$, 即 $\\log _{a} c>\\log _{b} c$. 故 $D$ 错误；\n\n$0<-\\log _{a} c<-\\log _{b} c$, 故 $-b \\log _{a} c<-a \\log _{b} c$, 即 $b \\log _{a} c>a \\log _{b} c$, 即 $a \\log _{b} c<b \\log _{a} c$ ，故 C 正确;\n\n故选: C.",
-            "index": 83
+            "index": 85
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "question": "\n12. (5 分) 已知函数 $f(x)=\\sin (\\omega x+\\phi)\\left(\\omega>0,|\\phi| \\leqslant \\frac{\\pi}{2}\\right), x=-\\frac{\\pi}{4}$ 为 $f($ $x)$ 的零点, $x=\\frac{\\pi}{4}$ 为 $y=f(x)$ 图象的对称轴, 且 $f(x)$ 在 $\\left(\\frac{\\pi}{18}, \\frac{5 \\pi}{36}\\right)$ 上单调 ，则 $\\omega$ 的最大值为 ( )\nA. 11\nB. 9\nC. 7\nD. 5",
+            "answer": "B",
+            "analysis": "解: $\\because x=-\\frac{\\pi}{4}$ 为 $f(x)$ 的零点, $x=\\frac{\\pi}{4}$ 为 $y=f(x)$ 图象的对称轴, $\\therefore \\frac{2 n+1}{4} \\cdot \\mathrm{T}=\\frac{\\pi}{2} ， \\quad$ 即 $\\frac{2 n+1}{4} \\cdot \\frac{2 \\pi}{\\omega}=\\frac{\\pi}{2} ， \\quad(n \\in N)$\n\n即 $\\omega=2 n+1 ， \\quad(n \\in N)$\n\n即 $\\omega$ 为正奇数,\n\n$\\because f(x)$ 在 $\\left(\\frac{\\pi}{18}, \\frac{5 \\pi}{36}\\right)$ 上单调, 则 $\\frac{5 \\pi}{36}-\\frac{\\pi}{18}=\\frac{\\pi}{12} \\leqslant \\frac{T}{2}$,\n\n即 $T=\\frac{2 \\pi}{\\omega} \\geqslant \\frac{\\pi}{6}$ ，解得: $\\omega \\leqslant 12$,\n\n当 $\\omega=11$ 时, $-\\frac{11 \\pi}{4}+\\phi=k \\pi, k \\in Z$,\n\n$\\because|\\phi| \\leqslant \\frac{\\pi}{2}$\n\n$\\therefore \\phi=-\\frac{\\pi}{4}$\n\n此时 $f(x)$ 在 $\\left(\\frac{\\pi}{18}, \\frac{5 \\pi}{36}\\right)$ 不单调, 不满足题意;\n\n当 $\\omega=9$ 时, $-\\frac{9 \\pi}{4}+\\phi=k \\pi, k \\in Z$,\n\n$\\because|\\phi| \\leqslant \\frac{\\pi}{2}$\n\n$\\therefore \\phi=\\frac{\\pi}{4}$\n\n此时 $f(x)$ 在 $\\left(\\frac{\\pi}{18}, \\frac{5 \\pi}{36}\\right)$ 单调, 满足题意;\n\n故 $\\omega$ 的最大值为 9 ,\n\n故选: B.",
+            "index": 86
         },
         {
             "year": "2012",
@@ -681,7 +705,7 @@
             "question": "\n1. （5 分）已知集合 $A=\\{1,2,3,4,5\\}, B=\\{(x, y) \\mid x \\in A, y \\in A, x-y \\in A\\}$, 则 $B$ 中所含元素的个数为（ $)$\nA. 3\nB. 6\nC. 8\nD. 10",
             "answer": "D",
             "analysis": "解: 由题意, $x=5$ 时, $y=1,2,3,4$,\n\n$x=4$ 时 $, y=1,2,3$ ，\n\n$x=3$ 时, $y=1,2$,\n\n$x=2$ 时,$y=1$\n\n综上知, $\\mathrm{B}$ 中的元素个数为 10 个\n\n故选: D.",
-            "index": 84
+            "index": 87
         },
         {
             "year": "2012",
@@ -689,7 +713,7 @@
             "question": "\n2. (5 分) 将 2 名教师, 4 名学生分成 2 个小组, 分别安排到甲、乙两地参加社 会实践活动, 每个小组由 1 名教师和 2 名学生组成, 不同的安排方案共有（ )\nA. 12 种\nB. 10 种\nC. 9 种\nD. 8 种",
             "answer": "A",
             "analysis": "解：第一步, 为甲地选一名老师, 有 $C_{2}^{1}=2$ 种选法;\n\n第二步, 为甲地选两个学生, 有 $C_{4}^{2}=6$ 种选法;\n\n第三步, 为乙地选 1 名教师和 2 名学生, 有 1 种选法\n\n故不同的安排方案共有 $2 \\times 6 \\times 1=12$ 种\n\n故选: A.",
-            "index": 85
+            "index": 88
         },
         {
             "year": "2012",
@@ -697,7 +721,7 @@
             "question": "\n3. (5 分）下面是关于复数 $z=\\frac{2}{-1+i}$ 的四个命题：其中的真命题为 $(\\quad)$, $p_{1}:|z|=2$,\n\n$\\mathrm{p}_{2}: \\mathrm{z}^{2}=2 \\mathrm{i}$,\n\n$p_{3}: z$ 的共轭复数为 $1+i$,\n\n$p_{4}: z$ 的虚部为 -1 .\nA. $\\mathrm{p}_{2}, \\mathrm{p}_{3}$\nB. $p_{1}, p_{2}$\nC. $\\mathrm{p}_{2}, \\mathrm{p}_{4}$\nD. $p_{3}, p_{4}$",
             "answer": "C",
             "analysis": "解: $\\because z=\\frac{2}{-1+i}=\\frac{2(-1-i)}{(-1+i)(-1-i)}=-1-i$,\n\n$\\therefore p_{1}:|z|=\\sqrt{2}$\n\n$p_{2}: z^{2}=2 i$\n\n$p_{3}: z$ 的共轭复数为 $-1+i$, $p_{4}: z$ 的虚部为 -1,\n\n故选: C.",
-            "index": 86
+            "index": 89
         },
         {
             "year": "2012",
@@ -705,7 +729,7 @@
             "question": "\n5. (5 分）已知 $\\left\\{a_{n}\\right\\}$ 为等比数列, $a_{4}+a_{7}=2, a_{5} a_{6}=-8$, 则 $a_{1}+a_{10}=(\\quad)$\nA. 7\nB. 5\nC. -5\nD. -7",
             "answer": "D",
             "analysis": "解: $\\because a_{4}+a_{7}=2$, 由等比数列的性质可得, $a_{5} a_{6}=a_{4} a_{7}=-8$\n\n$\\therefore a_{4}=4, a_{7}=-2$ 或 $a_{4}=-2, a_{7}=4$\n\n当 $a_{4}=4, a_{7}=-2$ 时, $q^{3}=-\\frac{1}{2}$,\n\n$\\therefore a_{1}=-8, a_{10}=1$\n\n$\\therefore a_{1}+a_{10}=-7$\n\n当 $a_{4}=-2, a_{7}=4$ 时, $q^{3}=-2$, 则 $a_{10}=-8, a_{1}=1$\n\n$\\therefore \\mathrm{a}_{1}+\\mathrm{a}_{10}=-7$\n\n综上可得, $\\mathrm{a}_{1}+\\mathrm{a}_{10}=-7$\n\n故选: D.",
-            "index": 87
+            "index": 90
         },
         {
             "year": "2012",
@@ -713,7 +737,7 @@
             "question": "\n8. （5 分) 等轴双曲线 $C$ 的中心在原点, 焦点在 $x$ 轴上, $C$ 与抛物线 $y^{2}=16 x$ 的 准线交于点 $A$ 和点 $B,|A B|=4 \\sqrt{3}$, 则 $C$ 的实轴长为（ )\nA. $\\sqrt{2}$\nB. $2 \\sqrt{2}$\nC. 4\nD. 8",
             "answer": "C",
             "analysis": "解: 设等轴双曲线 $c: x^{2}-y^{2}=a^{2}(a>0)$,\n\n$y^{2}=16 x$ 的准线 $l: x=-4$,\n\n$\\because C$ 与抛物线 $y^{2}=16 x$ 的准线 $\\mid: x=-4$ 交于 $A, B$ 两点, $|A B|=4 \\sqrt{3}$\n\n$\\therefore A(-4,2 \\sqrt{3})$, B $(-4,-2 \\sqrt{3})$,\n\n将 $A$ 点坐标代入双曲线方程得 $\\mathrm{a}^{2}=(-4)^{2}-(2 \\sqrt{3})^{2}=4$,\n\n$\\therefore a=2,2 a=4$.\n\n故选: C.",
-            "index": 88
+            "index": 91
         },
         {
             "year": "2012",
@@ -721,7 +745,7 @@
             "question": "\n12. (5 分) 设点 $P$ 在曲线 $y=\\frac{1}{2} e^{x}$ 上, 点 $Q$ 在曲线 $y=\\ln (2 x)$ 上, 则 $|P Q|$ 最小 值为 $(\\quad)$\nA. $1-\\ln 2$\nB. $\\sqrt{2}(1-\\ln 2)$\nC. $1+\\ln 2$\nD. $\\sqrt{2}(1+\\ln 2)$\n",
             "answer": "B",
             "analysis": "解: $\\because$ 函数 $y=\\frac{1}{2} e^{x}$ 与函数 $y=\\ln (2 x)$ 互为反函数, 图象关于 $y=x$ 对称, 函数 $y=\\frac{1}{2} e^{x}$ 上的点 $P\\left(x, \\frac{1}{2} e^{x}\\right)$ 到直线 $y=x$ 的距离为 $\\mathrm{d}=\\frac{\\left|\\frac{1}{2} \\mathrm{e}^{\\mathrm{x}}-\\mathrm{x}\\right|}{\\sqrt{2}}$, 设 $g(x)=\\frac{1}{2} e^{x}-x(x>0)$ ，则 $g^{\\prime}(x)=\\frac{1}{2} e^{x}-1$, 由 $g^{\\prime}(x)=\\frac{1}{2} e^{x}-1 \\geqslant 0$ 可得 $x \\geqslant \\ln 2$, 由 $g^{\\prime}(x)=\\frac{1}{2} e^{x}-1<0$ 可得 $0<x<\\ln 2$,\n\n$\\therefore$ 函数 $\\mathrm{g}(\\mathrm{x})$ 在 $(0, \\ln 2)$ 单调递减, 在 $[\\ln 2,+\\infty)$ 单调递增,\n\n$\\therefore$ 当 $\\mathrm{x}=\\ln 2$ 时, 函数 $\\mathrm{g}(\\mathrm{x})_{\\min }=1-\\ln 2$,\n\n$\\mathrm{d}_{\\min }=\\frac{1-\\ln 2}{\\sqrt{2}}$,\n\n由图象关于 $y=x$ 对称得: $|P Q|$ 最小值为 $2 d_{\\min }=\\sqrt{2}(1-\\ln 2)$.\n\n故选: B.",
-            "index": 89
+            "index": 92
         },
         {
             "year": "2014",
@@ -729,7 +753,7 @@
             "question": "\n1. （5 分）设集合 $M=\\{0,1,2\\}, N=\\left\\{x \\mid x^{2}-3 x+2 \\leqslant 0\\right\\}$, 则 $M \\cap N=(\\quad)$\nA. $\\{1\\}$\nB. $\\{2\\}$\nC. $\\{0,1\\}$\nD. $\\{1,2\\}$",
             "answer": "D",
             "analysis": "解: $\\left.\\because N=\\left\\{x \\mid x^{2}-3 x+2 \\leqslant 0\\right\\}=\\{x \\mid （ x-1) \\quad(x-2) \\leqslant 0\\right\\}=\\{x \\mid 1 \\leqslant x \\leqslant 2\\}$,\n\n$\\therefore M \\cap N=\\{1,2\\}$,\n\n故选: D.",
-            "index": 90
+            "index": 93
         },
         {
             "year": "2014",
@@ -737,7 +761,7 @@
             "question": "\n2. (5 分) 设复数 $z_{1}, z_{2}$ 在复平面内的对应点关于虚轴对称, $z_{1}=2+i$, 则 $z_{1} z_{2}=$\nA. -5\nB. 5\nC. $-4+i$\nD. $-4-i$",
             "answer": "A",
             "analysis": "解： $z_{1}=2+i$ 对应的点的坐标为 $(2,1)$,\n\n$\\because$ 复数 $z_{1}, z_{2}$ 在复平面内的对应点关于虚轴对称,\n\n$\\therefore(2,1)$ 关于虚轴对称的点的坐标为 $(-2,1)$,\n\n则对应的复数, $z_{2}=-2+i$, 则 $z_{1} z_{2}=(2+i)(-2+i)=i^{2}-4=-1-4=-5$,\n\n故选: A.",
-            "index": 91
+            "index": 94
         },
         {
             "year": "2014",
@@ -745,7 +769,7 @@
             "question": "\n3. (5 分) 设向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}+\\vec{b}|=\\sqrt{10},|\\vec{a}-\\vec{b}|=\\sqrt{6}$, 则 $\\vec{a} \\bullet \\vec{b}=(\\quad)$\nA. 1\nB. 2\nC. 3\nD. 5",
             "answer": "A",
             "analysis": "解: $\\because|\\vec{a}+\\vec{b}|=\\sqrt{10},|\\vec{a}-\\vec{b}|=\\sqrt{6}$,\n\n$\\therefore$ 分别平方得 $\\vec{a}^{2}+2 \\vec{a} \\bullet \\vec{b}+\\vec{b}^{2}=10, \\vec{a}^{2}-2 \\vec{a} \\bullet \\vec{b}+\\vec{b}^{2}=6$,\n\n两式相减得 $4 \\vec{a} \\bullet \\vec{b}=10-6=4$,\n\n即 $\\vec{a} \\cdot \\vec{b}=1$,\n\n故选: A.",
-            "index": 92
+            "index": 95
         },
         {
             "year": "2014",
@@ -753,7 +777,7 @@
             "question": "\n4. (5 分) 钝角三角形 $A B C$ 的面积是 $\\frac{1}{2}, A B=1, B C=\\sqrt{2}$, 则 $A C=(\\quad)$\nA. 5\nB. $\\sqrt{5}$\nC. 2\nD. 1",
             "answer": "B",
             "analysis": "解: $\\because$ 针角三角形 $A B C$ 的面积是 $\\frac{1}{2}, A B=c=1, B C=a=\\sqrt{2}$, $\\therefore S=\\frac{1}{2} \\operatorname{acsin} B=\\frac{1}{2}$, 即 $\\sin B=\\frac{\\sqrt{2}}{2}$,\n\n当 $B$ 为针角时, $\\cos B=-\\sqrt{1-\\sin ^{2} B}=-\\frac{\\sqrt{2}}{2}$,\n\n利用余弦定理得: $A C^{2}=A B^{2}+B C^{2}-2 A B \\cdot B C \\cdot \\cos B=1+2+2=5$, 即 $A C=\\sqrt{5}$,\n\n当 $B$ 为锐角时, $\\cos B=\\sqrt{1-\\sin ^{2} B}=\\frac{\\sqrt{2}}{2}$,\n\n利用余弦定理得: $A C^{2}=A B^{2}+B C^{2}-2 A B \\cdot B C \\cdot \\cos B=1+2-2=1$, 即 $A C=1$,\n\n此时 $A B^{2}+A C^{2}=B C^{2}$, 即 $\\triangle A B C$ 为直角三角形, 不合题意, 舍去,\n\n则 $A C=\\sqrt{5}$.\n\n故选: B.",
-            "index": 93
+            "index": 96
         },
         {
             "year": "2014",
@@ -761,7 +785,7 @@
             "question": "\n5.（5 分）某地区空气质量监测资料表明,一天的空气质量为优良的概率是 0.75 , 连续两天为优良的概率是 0.6 , 已知某天的空气质量为优良, 则随后一天的 空气质量为优良的概率是（ $)$\nA. 0.8\nB. 0.75\nC. 0.6\nD. 0.45",
             "answer": "A",
             "analysis": "解：设随后一天的空气质量为优良的概率为 $p$, 则由题意可得 $0.75 \\times$ $p=0.6$,\n\n解得 $p=0.8$,\n\n故选: A.",
-            "index": 94
+            "index": 97
         },
         {
             "year": "2014",
@@ -769,7 +793,7 @@
             "question": "\n8. (5 分) 设曲线 $y=a x-\\ln (x+1)$ 在点 $(0,0)$ 处的切线方程为 $y=2 x$, 则 $a=($\nA. 0\nB. 1\nC. 2\nD. 3",
             "answer": "D",
             "analysis": "解: $y^{\\prime}=a \\frac{1}{x+1}$,\n\n$\\therefore y^{\\prime}(0)=a-1=2$\n\n$\\therefore a=3$.\n\n故选: D.",
-            "index": 95
+            "index": 98
         },
         {
             "year": "2014",
@@ -777,7 +801,7 @@
             "question": "\n10. (5 分) 设 $F$ 为抛物线 $C: y^{2}=3 x$ 的焦点，过 $F$ 且倾斜角为 $30^{\\circ}$ 的直线交 $C$ 于 $A, B$ 两点, $O$ 为坐标原点, 则 $\\triangle O A B$ 的面积为（ )\nA. $\\frac{3 \\sqrt{3}}{4}$\nB. $\\frac{9 \\sqrt{3}}{8}$\nC. $\\frac{63}{32}$\nD. $\\frac{9}{4}$",
             "answer": "D",
             "analysis": "解: 由 $\\mathrm{y}^{2}=2 \\mathrm{px}$, 得 $2 p=3, \\mathrm{p}=\\frac{3}{2}$,\n\n则 $F\\left(\\frac{3}{4}, 0\\right)$.\n\n$\\therefore$ 过 $A, B$ 的直线方程为 $y=\\frac{\\sqrt{3}}{3}\\left(x-\\frac{3}{4}\\right)$, 即 $x=\\sqrt{3} y+\\frac{3}{4}$.\n\n联立 $\\left\\{\\begin{array}{l}y^{2}=3 x \\\\ x=\\sqrt{3} y+\\frac{3}{4}\\end{array}\\right.$, 得 $4 y^{2}-12 \\sqrt{3} y-9=0$.\n\n设 $A\\left(x_{1}, y_{1}\\right) ， B\\left(x_{2}, y_{2}\\right)$ ，\n\n则 $y_{1}+y_{2}=3 \\sqrt{3}, y_{1} y_{2}=-\\frac{9}{4}$.\n\n$\\therefore S_{\\triangle O A B}=S_{\\triangle O A F}+S_{\\triangle O F B}=\\frac{1}{2} \\times \\frac{3}{4}\\left|y_{1}-y_{2}\\right|=\\frac{3}{8} \\sqrt{\\left(y_{1}+y_{2}\\right)^{2}-4 y_{1} y_{2}}=\\frac{3}{8} \\times \\sqrt{(3 \\sqrt{3})^{2}+9}=$ $\\frac{9}{4}$\n\n故选: D.",
-            "index": 96
+            "index": 99
         },
         {
             "year": "2014",
@@ -785,7 +809,7 @@
             "question": "\n12. （5 分) 设函数 $\\mathrm{f}(\\mathrm{x})=\\sqrt{3} \\sin \\frac{\\pi \\mathrm{x}}{\\mathrm{m}}$, 若存在 $\\mathrm{f}(\\mathrm{x})$ 的极值点 $\\mathrm{x}_{0}$ 满足 $\\mathrm{x}_{0}{ }^{2}+\\left[\\mathrm{f}\\left(\\mathrm{x}_{0}\\right.\\right.$ ]$^{2}<m^{2}$ ，则 $m$ 的取值范围是 $(\\quad)$\nA. $(-\\infty,-6) \\cup(6,+\\infty)$\nB. $(-\\infty,-4) \\cup(4,+\\infty)$\nC. $(-\\infty,-2) \\cup(2,+\\infty)$\nD. $(-\\infty,-1) \\cup(1,+\\infty)$\n",
             "answer": "C",
             "analysis": "解：由题意可得, $f\\left(x_{0}\\right)= \\pm \\sqrt{3}$, 即 $\\frac{\\pi x_{0}}{m}=k \\pi+\\frac{\\pi}{2}, k \\in z$, 即 $\\mathrm{x}_{0}=\\frac{2 k+1}{2} \\mathrm{~m}$\n\n再由 $x_{0}{ }^{2}+\\left[f\\left(x_{0}\\right)\\right]^{2}<m^{2}$, 即 $x_{0}^{2}+3<m^{2}$, 可得当 $m^{2}$ 最小时, $\\left|x_{0}\\right|$ 最小, 而 $\\left|x_{0}\\right|$ 最小为 $\\frac{1}{2}|m|$, $\\therefore m^{2}>\\frac{1}{4} m^{2}+3, \\quad \\therefore m^{2}>4$.\n\n求得 $m>2$, 或 $m<-2$,\n\n故选: C.",
-            "index": 97
+            "index": 100
         },
         {
             "year": "2018",
@@ -793,7 +817,7 @@
             "question": "\n1. (5 分 $) \\frac{1+2 i}{1-2 i}=(\\quad)$\nA. $-\\frac{4}{5}-\\frac{3}{5} i$\nB. $-\\frac{4}{5}+\\frac{3}{5} i$\nC. $-\\frac{3}{5}-\\frac{4}{5} i$\nD. $-\\frac{3}{5}+\\frac{4}{5} i$",
             "answer": "D",
             "analysis": "解: $\\frac{1+2 i}{1-2 i}=\\frac{(1+2 i)(1+2 i)}{(1-2 i)(1+2 i)}=-\\frac{3}{5}+\\frac{4}{5} i$.\n\n故选: D.",
-            "index": 98
+            "index": 101
         },
         {
             "year": "2018",
@@ -801,7 +825,7 @@
             "question": "\n2. (5 分) 已知集合 $A=\\left\\{(x, y) \\mid x^{2}+y^{2} \\leqslant 3, x \\in Z, y \\in Z\\right\\}$, 则 $A$ 中元素的个数为\nA. 9\nB. 8\nC. 5\nD. 4",
             "answer": "A",
             "analysis": "解: 当 $x=-1$ 时, $y^{2} \\leqslant 2$, 得 $y=-1,0,1$,\n\n当 $x=0$ 时, $y^{2} \\leqslant 3$, 得 $y=-1,0,1$,\n\n当 $x=1$ 时, $y^{2} \\leqslant 2$, 得 $y=-1,0,1$,\n\n即集合 $A$ 中元素有 9 个, 故选：A.",
-            "index": 99
+            "index": 102
         },
         {
             "year": "2018",
@@ -809,7 +833,7 @@
             "question": "\n4. (5 分) 已知向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}|=1, \\vec{a} \\cdot \\vec{b}=-1$, 则 $\\vec{a} \\bullet(2 \\vec{a}-\\vec{b})=(\\quad ）$\nA. 4\nB. 3\nC. 2\nD. 0",
             "answer": "B",
             "analysis": "解 向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}|=1, \\vec{a} \\cdot \\vec{b}=-1$, 则 $\\vec{a} \\cdot(2 \\vec{a}-\\vec{b})=2 \\vec{a}-\\vec{a} \\cdot \\vec{b}=2+1=3$\n\n故选: B.",
-            "index": 100
+            "index": 103
         },
         {
             "year": "2018",
@@ -817,7 +841,7 @@
             "question": "\n5. (5 分) 双曲线 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的离心率为 $\\sqrt{3}$, 则其渐近线方程为 $(\\quad)$\nA. $y= \\pm \\sqrt{2} x$\nB. $y= \\pm \\sqrt{3} x$\nC. $y= \\pm \\frac{\\sqrt{2}}{2} x$\nD. $y= \\pm \\frac{\\sqrt{3}}{2} \\mathrm{x}$",
             "answer": "A",
             "analysis": "解: $\\because$ 双曲线的离心率为 $e=\\frac{c}{a}=\\sqrt{3}$,\n\n则 $\\frac{b}{a}=\\sqrt{\\frac{b^{2}}{a^{2}}}=\\sqrt{\\frac{c^{2}-a^{2}}{a^{2}}}=\\sqrt{\\left(\\frac{c}{a}\\right)^{2}-1}=\\sqrt{3-1}=\\sqrt{2}$,\n\n即双曲线的渐近线方程为 $y= \\pm \\frac{b}{a} x= \\pm \\sqrt{2} x$,\n\n故选：A.",
-            "index": 101
+            "index": 104
         },
         {
             "year": "2018",
@@ -825,7 +849,7 @@
             "question": "\n6. (5 分) 在 $\\triangle A B C$ 中, $\\cos \\frac{C}{2}=\\frac{\\sqrt{5}}{5}, B C=1, A C=5$, 则 $A B=（ ）$ \nA. $4 \\sqrt{2}$\nB. $\\sqrt{30}$\nC. $\\sqrt{29}$\nD. $2 \\sqrt{5}$",
             "answer": "A",
             "analysis": "解：在 $\\triangle \\mathrm{ABC}$ 中, $\\cos \\frac{\\mathrm{C}}{2}=\\frac{\\sqrt{5}}{5}, \\cos \\mathrm{C}=2 \\times\\left(\\frac{\\sqrt{5}}{5}\\right)^{2}-1=-\\frac{3}{5}$,\n\n$B C=1, A C=5$, 则 $A B=\\sqrt{B C^{2}+A C^{2}-2 B C \\cdot A C \\cos C}=\\sqrt{1+25+2 \\times 1 \\times 5 \\times \\frac{3}{5}}=\\sqrt{32}=4 \\sqrt{2}$.\n\n故选: A.",
-            "index": 102
+            "index": 105
         },
         {
             "year": "2018",
@@ -833,7 +857,7 @@
             "question": "\n8. (5 分) 我国数学家陈景润在哥德巴赫猜想的研究中取得了世界领先的成果. 哥德巴赫猜想是“每个大于 2 的偶数可以表示为两个素数的和”, 如 $30=7+23$. 在不超过 30 的素数中, 随机选取两个不同的数, 其和等于 30 的概率是 $(\\quad)$\nA. $\\frac{1}{12}$\nB. $\\frac{1}{14}$\nC. $\\frac{1}{15}$\nD. $\\frac{1}{18}$",
             "answer": "C",
             "analysis": "解: 在不超过 30 的素数中有, $2,3,5,7,11,13,17,19,23,29$ 共 10 个，\n\n从中选 2 个不同的数有 $C_{10}^{2}=45$ 种,\n\n和等于 30 的有 $(7,23)$, $(11,19),(13,17)$, 共 3 种,\n\n则对应的概率 $P=\\frac{3}{45}=\\frac{1}{15}$,\n\n故选: C.",
-            "index": 103
+            "index": 106
         },
         {
             "year": "2018",
@@ -841,7 +865,7 @@
             "question": "\n10. （5 分) 若 $f(x)=\\cos x-\\sin x$ 在 $[-a, a]$ 是减函数, 则 $a$ 的最大值是 $(\\quad)$\nA. $\\frac{\\pi}{4}$\nB. $\\frac{\\pi}{2}$\nC. $\\frac{3 \\pi}{4}$\nD. $\\pi$",
             "answer": "A",
             "analysis": "解: $f(x)=\\cos x-\\sin x=-(\\sin x-\\cos x)=-\\sqrt{2} \\sin \\left(x-\\frac{\\pi}{4}\\right)$,\n\n由 $-\\frac{\\pi}{2}+2 k \\pi \\leqslant x-\\frac{\\pi}{4} \\leqslant \\frac{\\pi}{2}+2 k \\pi, k \\in Z$,\n\n得 $-\\frac{\\pi}{4}+2 k \\pi \\leqslant x \\leqslant \\frac{3}{4} \\pi+2 k \\pi, k \\in Z$,\n\n取 $\\mathrm{k}=0$, 得 $\\mathrm{f}(\\mathrm{x})$ 的一个减区间为 $\\left[-\\frac{\\pi}{4}, \\frac{3}{4} \\pi\\right]$,\n\n由 $f(x)$ 在 $[-a, a]$ 是减函数, 得 $\\left\\{\\begin{array}{l}-a \\geqslant-\\frac{\\pi}{4} \\\\ a \\leqslant \\frac{3 \\pi}{4}\\end{array}, \\quad \\therefore a \\leqslant \\frac{\\pi}{4}\\right.$.\n\n则 $a$ 的最大值是 $\\frac{\\pi}{4}$.\n\n故选: A.",
-            "index": 104
+            "index": 107
         },
         {
             "year": "2018",
@@ -849,7 +873,7 @@
             "question": "\n11. (5 分) 已知 $f(x)$ 是定义域为 $(-\\infty,+\\infty)$ 的奇函数, 满足 $f(1-x)=f$ $(1+x)$, 若 $f(1)=2$, 则 $f(1)+f(2)+f(3)+\\ldots+f(50)=(\\quad)$\nA. -50\nB. 0\nC. 2\nD. 50 ",
             "answer": "C",
             "analysis": "解: $\\because f(x)$ 是奇函数, 且 $f(1-x)=f(1+x)$,\n\n$\\therefore f(1-x)=f(1+x)=-f(x-1), f(0)=0$,\n\n则 $f(x+2)=-f(x)$, 则 $f(x+4)=-f(x+2)=f(x)$,\n\n即函数 $f(x)$ 是周期为 4 的周期函数,\n\n$\\because f(1)=2$,\n\n$\\therefore f(2)=f(0)=0, f(3)=f(1-2)=f(-1)=-f(1)=-2$,\n\n$f(4)=f(0)=0$\n\n则 $f(1)+f(2)+f(3)+f(4)=2+0-2+0=0$,\n\n则 $f(1)+f(2)+f(3)+\\ldots+f(50)=12[f(1)+f(2)+f(3)+f(4)]+f(49)$\n\n$+f(50)$\n\n$=f(1)+f(2)=2+0=2$, 故选：C.",
-            "index": 105
+            "index": 108
         }
     ]
 }
