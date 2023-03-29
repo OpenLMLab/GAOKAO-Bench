@@ -87,7 +87,7 @@
             "year": "2011",
             "category": "（新课标）",
             "question": "\n13. (5 分) 已知 $a$ 与 $b$ 为两个垂直的单位向量, $k$ 为实数, 若向量 $\\vec{a}+\\vec{b}$ 与向量 $k$ $\\vec{a}-\\vec{b}$ 垂直，则 $k=$",
-            "answer": " ",
+            "answer": " 1",
             "analysis": "解： $\\because \\vec{a} \\perp \\vec{b}$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=0$\n\n$\\because \\vec{a}+\\vec{b}$ 与 $k \\vec{a}-\\vec{b}$ 垂直\n\n$\\therefore(\\vec{a}+\\vec{b}) \\cdot(k \\vec{a}-\\vec{b})=0$\n\n即 $k \\vec{a}^{2}+k \\vec{a} \\cdot b-\\vec{a} \\cdot \\vec{b}-\\vec{b}^{2}=0$\n\n$\\therefore \\mathrm{k}=1$\n\n故答案为: 1",
             "index": 10
         },
@@ -111,7 +111,7 @@
             "year": "2013",
             "category": "（新课标ⅱ）",
             "question": "\n13. (4 分) 从 $1,2,3,4,5$ 中任意取出两个不同的数, 其和为 5 的概率是",
-            "answer": " 0.",
+            "answer": " 0.2",
             "analysis": "解：从 $1,2,3,4,5$ 中任意取出两个不同的数共有 $C_{5}^{2}=10$ 种情况, 和为 5 的有 $(1,4)(2,3)$ 两种情况，\n\n故所求的概率为: $\\frac{2}{10}=0.2$\n\n故答案为: 0.2",
             "index": 13
         },
@@ -175,7 +175,7 @@
             "year": "2017",
             "category": "（新课标ⅰ）",
             "question": "\n15. (5 分）已知 $\\alpha \\in\\left(0, \\frac{\\pi}{2}\\right), \\tan \\alpha=2$, 则 $\\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=$",
-            "answer": " $\\frac{3 \\sqrt{10}}{10}",
+            "answer": " $\\frac{3 \\sqrt{10}}{10}$",
             "analysis": "解: $\\because \\alpha \\in\\left(0, \\frac{\\pi}{2}\\right), \\tan \\alpha=2$,\n\n$\\therefore \\sin \\alpha=2 \\cos \\alpha$, $\\because \\sin ^{2} \\alpha+\\cos ^{2} \\alpha=1$\n\n解得 $\\sin \\alpha=\\frac{2 \\sqrt{5}}{5}, \\cos \\alpha=\\frac{\\sqrt{5}}{5}$,\n\n$\\therefore \\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=\\cos \\alpha \\cos \\frac{\\pi}{4}+\\sin \\alpha \\sin \\frac{\\pi}{4}=\\frac{\\sqrt{5}}{5} \\times \\frac{\\sqrt{2}}{2}+\\frac{2 \\sqrt{5}}{5} \\times \\frac{\\sqrt{2}}{2}=\\frac{3 \\sqrt{10}}{10}$,\n\n故答案为: $\\frac{3 \\sqrt{10}}{10}$",
             "index": 21
         },
@@ -183,7 +183,7 @@
             "year": "2010",
             "category": "（新课标）",
             "question": "\n13. (5 分) 圆心在原点上与直线 $x+y-2=0$ 相切的圆的方程为",
-            "answer": " $x^{2}+y^{2}=2",
+            "answer": " $x^{2}+y^{2}=2$",
             "analysis": "解: 圆心到直线的距离: $r=\\frac{2}{\\sqrt{2}}=\\sqrt{2}$, 所求圆的方程为 $x^{2}+y^{2}=2$.\n\n故答案为: $x^{2}+y^{2}=2$",
             "index": 22
         },
@@ -199,7 +199,7 @@
             "year": "2010",
             "category": "（新课标）",
             "question": "\n15. （5 分) 一个几何体的正视图为一个三角形, 则这个几何体可能是下列几何 体中的 (填入所有可能的几何体前的编号) (1)三棱锥(2)四棱雉(3)三棱 柱(4)四棱柱(5)圆雉66圆柱.",
-            "answer": " (1)(2)(3)(5) 【点评】本题考查简单几何体的三视图, 考查空间想象能力, 是基础题",
+            "answer": " (1)(2)(3)(5)",
             "analysis": "解: 一个几何体的正视图为一个三角形, 显然(1)(2)(5)正确; (3)是三棱柱 放倒时也正确;\n\n(4)(6)不论怎样放置正视图都不会是三角形;\n\n故答案为: (1)(2)(3)(5)",
             "index": 24
         },
@@ -207,7 +207,7 @@
             "year": "2010",
             "category": "（新课标）",
             "question": "\n16. (5 分) 在 $\\triangle A B C$ 中, $D$ 为 $B C$ 边上一点, $B C=3 B D, A D=\\sqrt{2}, \\angle A D B=135^{\\circ}$. 若 $A C=\\sqrt{2} A B$, 则 $B D=$\n",
-            "answer": " $2+\\sqrt{5}",
+            "answer": " $2+\\sqrt{5}$",
             "analysis": "用余弦定理求得\n\n$A B^{2}=B^{2}+A D^{2}-2 A D \\cdot B D \\cos 135^{\\circ}$\n\n$A C^{2}=C D^{2}+A D^{2}-2 A D \\cdot C D \\cos 45^{\\circ}$\n\n即 $A B^{2}=B D^{2}+2+2 B D$ (1) $A C^{2}=C D^{2}+2-2 C D$\n\n又 $B C=3 B D$\n\n所以 $C D=2 B D$\n\n所以 由（2）得 $A C^{2}=4 B D^{2}+2-4 B D$ （3）\n\n因为 $A C=\\sqrt{2} A B$\n\n所以 由 (3) 得 $2 A B^{2}=4 B D^{2}+2-4 B D \\quad(4)$\n\n$(4)-2(1)$\n\n$B D^{2}-4 B D-1=0$\n\n求得 $\\mathrm{BD}=2+\\sqrt{5}$\n\n故答案为: $2+\\sqrt{5}$",
             "index": 25
         },
@@ -295,7 +295,7 @@
             "year": "2012",
             "category": "（新课标）",
             "question": "\n14. (5 分) 等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$, 若 $S_{3}+3 S_{2}=0$, 则公比 $q=$",
-            "answer": " -",
+            "answer": " -2",
             "analysis": "解：由题意可得, $q \\neq 1$\n\n$\\because \\mathrm{S}_{3}+3 \\mathrm{~S}_{2}=0$\n\n$\\therefore \\frac{a_{1}\\left(1-q^{3}\\right)}{1-q}+\\frac{3 a_{1}\\left(1-q^{2}\\right)}{1-q}=0$\n\n$\\therefore q^{3}+3 q^{2}-4=0$\n\n$\\therefore(q-1)(q+2)^{2}=0$\n\n$\\because q \\neq 1$\n\n$\\therefore q=-2$\n\n故答案为: -2",
             "index": 36
         },
@@ -303,7 +303,7 @@
             "year": "2012",
             "category": "（新课标）",
             "question": "\n15. (5 分) 已知向量 $\\vec{a}, \\vec{b}$ 夹角为 $45^{\\circ}$, 且 $|\\vec{a}|=1,|2 \\vec{a}-\\vec{b}|=\\sqrt{10}$, 则 $|\\vec{b}|=$.",
-            "answer": " $3 \\sqrt{2}",
+            "answer": " $3 \\sqrt{2}$",
             "analysis": "解: $\\because<\\overrightarrow{\\mathrm{a}}, \\overrightarrow{\\mathrm{b}}>=45^{\\circ},|\\overrightarrow{\\mathrm{a}}|=1$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=|\\vec{a}||\\vec{b}| \\cos 45^{\\circ}=\\frac{\\sqrt{2}}{2}|\\vec{b}|$\n\n$\\therefore|2 \\vec{a}-\\vec{b}|=\\sqrt{(2 \\vec{a}-\\vec{b})^{2}}=\\sqrt{4 \\vec{a}^{2}-4 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}}=\\sqrt{4-2 \\sqrt{2}|\\vec{b}|+|\\vec{b}|^{2}}=\\sqrt{10}$\n\n解得 $|\\vec{b}|=3 \\sqrt{2}$\n\n故答案为: $3 \\sqrt{2}$",
             "index": 37
         },
@@ -327,7 +327,7 @@
             "year": "2017",
             "category": "（新课标ⅱ）",
             "question": "\n14. （5 分）已知函数 $f(x)$ 是定义在 $R$ 上的奇函数, 当 $x \\in(-\\infty, 0)$ 时, $f($ x) $=2 x^{3}+x^{2}$, 则 $f(2)=$",
-            "answer": " 1",
+            "answer": " 12",
             "analysis": "解: $\\because$ 当 $x \\in(-\\infty, 0)$ 时, $f(x)=2 x^{3}+x^{2}$,\n\n$\\therefore f(-2)=-12$,\n\n又 $\\because$ 函数 $f(x)$ 是定义在 $R$ 上的奇函数,\n\n$\\therefore f(2)=12$,\n\n故答案为: 12",
             "index": 40
         },
@@ -343,7 +343,7 @@
             "year": "2017",
             "category": "（新课标ⅱ）",
             "question": "\n16. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 若 $2 b \\cos B=a \\cos C+\\cos A$ , 则 $B=$\n",
-            "answer": " $\\frac{\\pi}{3}",
+            "answer": " $\\frac{\\pi}{3}$",
             "analysis": "解: $\\because 2 \\mathrm{~b} \\cos \\mathrm{B}=\\mathrm{a} \\cos \\mathrm{C}+\\cos \\mathrm{A}$, 由正弦定理可得,\n\n$2 \\cos B \\sin B=\\sin A \\cos C+\\sin C \\cos A=\\sin (A+C)=\\sin B$,\n\n$\\because \\sin \\mathrm{B} \\neq 0$,\n\n$\\therefore \\cos B=\\frac{1}{2}$,\n\n$\\because 0<\\mathrm{B}<\\pi$\n\n$\\therefore B=\\frac{\\pi}{3}$\n\n故答案为: $\\frac{\\pi}{3}$",
             "index": 42
         },
@@ -359,7 +359,7 @@
             "year": "2013",
             "category": "（新课标ⅰ）",
             "question": "\n15. (5 分) 已知 $H$ 是球 $O$ 的直径 $A B$ 上一点, $A H: H B=1: 2, A B \\perp$ 平面 $\\alpha, H$ 为垂足, $\\alpha$ 截球 $O$ 所得截面的面积为 $\\pi$, 则球 $O$ 的表面积为",
-            "answer": " $\\frac{9 \\pi}{2}$. 【点评】若球的截面圆半径为 $r$, 球心距为 $d$, 球半径为 $R$, 则球心距、截面圆 半径、球半径构成直角三角形, 满足勾股定理, 即 $\\mathrm{R}^{2}=\\mathrm{r}^{2}+\\mathrm{d}^{2}",
+            "answer": " $\\frac{9 \\pi}{2}$",
             "analysis": "解：设球的半径为 $R, \\because A H: H B=1: 2, \\therefore$ 平面 $\\alpha$ 与球心的距离为 $\\frac{1}{3} R$,\n\n$\\because \\alpha$ 截球 $O$ 所得截面的面积为 $\\pi$,\n\n$\\therefore d=\\frac{1}{3} R$ 时, $r=1$,\n\n故由 $R^{2}=r^{2}+d^{2}$ 得 $R^{2}=1^{2}+\\left(\\frac{1}{3} R\\right)^{2}, \\therefore R^{2}=\\frac{9}{8}$\n\n$\\therefore$ 球的表面积 $S=4 \\pi R^{2}=\\frac{9 \\pi}{2}$.\n\n故答案为: $\\frac{9 \\pi}{2}$.",
             "index": 44
         },
@@ -367,7 +367,7 @@
             "year": "2013",
             "category": "（新课标ⅰ）",
             "question": "\n16. (5 分) 设当 $x=\\theta$ 时, 函数 $f(x)=\\sin x-2 \\cos x$ 取得最大值, 则 $\\cos \\theta=$",
-            "answer": " $-\\frac{2 \\sqrt{5}}{5}",
+            "answer": " $-\\frac{2 \\sqrt{5}}{5}$",
             "analysis": "解: $f(x)=\\sin x-2 \\cos x=\\sqrt{5}\\left(\\frac{\\sqrt{5}}{5} \\sin x-\\frac{2 \\sqrt{5}}{5} \\cos x\\right)=\\sqrt{5} \\sin (x-\\alpha)$ (其 中 $\\left.\\cos \\alpha=\\frac{\\sqrt{5}}{5}, \\sin \\alpha=\\frac{2 \\sqrt{5}}{5}\\right)$,\n\n$\\because x=\\theta$ 时, 函数 $f(x)$ 取得最大值,\n\n$\\therefore \\sin (\\theta-\\alpha)=1$, 即 $\\sin \\theta-2 \\cos \\theta=\\sqrt{5}$,\n\n又 $\\sin ^{2} \\theta+\\cos ^{2} \\theta=1$,\n\n联立得 $(2 \\cos \\theta+\\sqrt{5})^{2}+\\cos ^{2} \\theta=1$, 解得 $\\cos \\theta=-\\frac{2 \\sqrt{5}}{5}$.\n\n故答案为: $-\\frac{2 \\sqrt{5}}{5}$",
             "index": 45
         },
@@ -375,7 +375,7 @@
             "year": "2015",
             "category": "（新课标ⅰ）",
             "question": "\n13. (5 分) 在数列 $\\left\\{a_{n}\\right\\}$ 中, $a_{1}=2, a_{n+1}=2 a_{n}, S_{n}$ 为 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, 若 $S_{n}=126$, 则 $n=$",
-            "answer": " ",
+            "answer": " 6",
             "analysis": "解: $\\because a_{n+1}=2 a_{n}$,\n\n$\\therefore \\frac{a_{n+1}}{a_{n}}=2$\n\n$\\because a_{1}=2$\n\n$\\therefore$ 数列 $\\left\\{a_{n}\\right\\}$ 是 $a_{1}=2$ 为首项, 以 2 为公比的等比数列,\n\n$\\therefore S_{n}=\\frac{a_{1}\\left(1-q^{n}\\right)}{1-q}=\\frac{2\\left(1-2^{n}\\right)}{1-2}=2^{n+1}-2=126$,\n\n$\\therefore 2^{n+1}=128$\n\n$\\therefore \\mathrm{n}+1=7$\n\n$\\therefore n=6$.\n\n故答案为: 6",
             "index": 46
         },

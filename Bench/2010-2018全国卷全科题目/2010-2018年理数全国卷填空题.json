@@ -15,7 +15,7 @@
             "year": "2011",
             "category": "（新课标）",
             "question": "\n15. (5 分) 已知矩形 $A B C D$ 的顶点都在半径为 4 的球 $O$ 的球面上, 且 $A B=6, B C=2$ $\\sqrt{3}$, 则棱雉 $\\mathrm{O}-\\mathrm{ABCD}$ 的体积为",
-            "answer": " $8 \\sqrt{3}$ 【点评】本题是基础题, 考查球内几何体的体积的计算, 考查计算能力, 空间想 象能力, 常考题型",
+            "answer": " $8 \\sqrt{3}$",
             "analysis": "解: 矩形的对角线的长为: $\\sqrt{6^{2}+(2 \\sqrt{3})^{2}}=4 \\sqrt{3}$, 所以球心到矩形的距 离为: $\\sqrt{4^{2}-(2 \\sqrt{3})^{2}}=2$,\n\n所以棱雉 $O-A B C D$ 的体积为: $\\frac{1}{3} \\times 6 \\times 2 \\sqrt{3} \\times 2=8 \\sqrt{3}$.\n\n故答案为: $8 \\sqrt{3}$",
             "index": 1
         },
@@ -79,7 +79,7 @@
             "year": "2017",
             "category": "（新课标ⅱ）",
             "question": "\n14. （5 分）函数 $f(x)=\\sin ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}\\left(x \\in\\left[0, \\frac{\\pi}{2}\\right]\\right)$ 的最大值是",
-            "answer": " ",
+            "answer": "1",
             "analysis": "解: $f(x)=\\sin ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}=1-\\cos ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}$,\n\n令 $\\cos x=t$ 且 $t \\in[0,1]$,\n\n则 $y=-t^{2}+\\sqrt{3} t+\\frac{1}{4}=-\\quad\\left(t-\\frac{\\sqrt{3}}{2}\\right)^{2+1}$,\n\n当 $t=\\frac{\\sqrt{3}}{2}$ 时, $f(t)_{\\text {max }}=1$,\n\n即 $f(x)$ 的最大值为 1 , 故答案为: 1",
             "index": 9
         },
@@ -103,7 +103,7 @@
             "year": "2014",
             "category": "（新课标ⅰ）",
             "question": "\n13. （5 分) $(x-y)(x+y)^{8}$ 的展开式中 $x^{2} y^{7}$ 的系数为___. (用数字填写 答案)",
-            "answer": " - 2",
+            "answer": " - 20",
             "analysis": "解: $(x+y)^{8}$ 的展开式中, 含 $x y^{7}$ 的系数是: 8 .\n\n含 $x^{2} y^{6}$ 的系数是 28 ,\n\n$\\therefore(x-y)(x+y)^{8}$ 的展开式中 $x^{2} y^{7}$ 的系数为: $8-28=-20$.\n\n故答案为: - 20",
             "index": 12
         },
@@ -135,7 +135,7 @@
             "year": "2018",
             "category": "（新课标ⅰ）",
             "question": "\n14. (5 分) 记 $S_{n}$ 为数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $S_{n}=2 a_{n}+1$, 则 $S_{6}=$",
-            "answer": " -6",
+            "answer": " -63",
             "analysis": "解: $S_{n}$ 为数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, $S_{n}=2 a_{n}+1$, (1)\n\n当 $n=1$ 时, $a_{1}=2 a_{1}+1$, 解得 $a_{1}=-1$,\n\n当 $n \\geqslant 2$ 时, $S_{n-1}=2 a_{n-1}+1$, (2),\n\n由(1)- (2)可得 $a_{n}=2 a_{n}-2 a_{n-1}$,\n\n$\\therefore a_{n}=2 a_{n-1}$,\n\n$\\therefore\\left\\{a_{n}\\right\\}$ 是以 -1 为首项, 以 2 为公比的等比数列,\n\n$\\therefore S_{6}=\\frac{-1 \\times\\left(1-2^{6}\\right)}{1-2}=-63$,\n\n故答案为: -63",
             "index": 16
         },
@@ -143,7 +143,7 @@
             "year": "2018",
             "category": "（新课标ⅰ）",
             "question": "\n15. （5 分）从 2 位女生, 4 位男生中选 3 人参加科技比赛, 且至少有 1 位女生 入选，则不同的选法共有 种. (用数字填写答案)",
-            "answer": " 1",
+            "answer": " 16",
             "analysis": "解：方法一：直接法, 1 女 2 男, 有 $\\mathrm{C}_{2}{ }^{1} \\mathrm{C}_{4}{ }^{2}=12,2$ 女 1 男, 有 $\\mathrm{C}_{2}{ }^{2} \\mathrm{C}_{4}{ }^{1}=4$ 根据分类计数原理可得, 共有 $12+4=16$ 种,\n\n方法二, 间接法: $\\mathrm{C}_{6}{ }^{3}-\\mathrm{C}_{4}{ }^{3}=20-4=16$ 种,\n\n故答案为: 16",
             "index": 17
         },
@@ -191,7 +191,7 @@
             "year": "2016",
             "category": "（新课标ⅱ）",
             "question": "\n14. （5 分） $\\alpha, \\beta$ 是两个平面, $m, n$ 是两条直线, 有下列四个命题:\n\n(1)如果 $m \\perp n, m \\perp \\alpha, n / / \\beta$, 那么 $\\alpha \\perp \\beta$.\n\n(2)如果 $m \\perp \\alpha, n / / \\alpha$, 那么 $m \\perp n$.\n\n(3)如果 $\\alpha / / \\beta, m \\subset \\alpha$, 那么 $m / / \\beta$.\n\n(4)如果 $m / / n, \\alpha / / \\beta$, 那么 $m$ 与 $\\alpha$ 所成的角和 $n$ 与 $\\beta$ 所成的角相等.\n\n其中正确的命题是 (填序号)",
-            "answer": " (2)(3",
+            "answer": " (2)(3)",
             "analysis": "解: (1)如果 $m \\perp n, m \\perp \\alpha, n / / \\beta$, 不能得出 $\\alpha \\perp \\beta$, 故错误; (2)如果 $n / / \\alpha$, 则存在直线 $I \\subset \\alpha$, 使 $n / / l$, 由 $m \\perp \\alpha$, 可得 $m \\perp l$, 那么 $m \\perp n$. 故 正确;\n\n(3)如果 $\\alpha / / \\beta, m \\subset \\alpha$, 那么 $m$ 与 $\\beta$ 无公共点, 则 $m / / \\beta$. 故正确\n\n(4)如果 $m / / n, \\alpha / / \\beta$, 那么 $m, n$ 与 $\\alpha$ 所成的角和 $m, n$ 与 $\\beta$ 所成的角均相等.\n\n故正确;\n\n故答案为: (2)(3)",
             "index": 23
         },
@@ -311,7 +311,7 @@
             "year": "2012",
             "category": "（新课标）",
             "question": "\n16. (5 分) 数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{n+1}+(-1)^{n} a_{n}=2 n-1$, 则 $\\left\\{a_{n}\\right\\}$ 的前 60 项和为\n",
-            "answer": " 183",
+            "answer": " 1830",
             "analysis": "解: $\\because a_{n+1}+(-1)^{n} a_{n}=2 n-1$,\n\n故有 $a_{2}-a_{1}=1, a_{3}+a_{2}=3, a_{4}-a_{3}=5, a_{5}+a_{4}=7, a_{6}-a_{5}=9, a_{7}+a_{6}=11, \\ldots a_{50}-a_{49}=97$\n\n从而可得 $a_{3}+a_{1}=2, a_{4}+a_{2}=8, a_{7}+a_{5}=2, a_{8}+a_{6}=24, a_{9}+a_{11}=2, a_{12}+a_{10}=40, a_{13}+a_{11}=2$ $, \\mathrm{a}_{16}+\\mathrm{a}_{14}=56, \\ldots$\n\n从第一项开始, 依次取 2 个相邻奇数项的和都等于 2 , 从第二项开始, 依次取 2 个相邻偶数项的和构成以 8 为首项, 以 16 为公差的等差数列. $\\left\\{a_{n}\\right\\}$ 的前 60 项和为 $15 \\times 2+\\left(15 \\times 8+\\frac{15 \\times 14}{2} \\times 16\\right)=1830$\n故答案为: 1830",
             "index": 38
         },
@@ -335,7 +335,7 @@
             "year": "2014",
             "category": "（新课标ⅱ）",
             "question": "\n15. (5 分) 已知偶函数 $f(x)$ 在 $[0,+\\infty)$ 单调递减, $f(2)=0$, 若 $f(x-1)>$ 0 , 则 $x$ 的取值范围是",
-            "answer": " $(-1,3)",
+            "answer": " $(-1,3)$",
             "analysis": "解: $\\because$ 偶函数 $f(x)$ 在 $[0,+\\infty)$ 单调递减, $f(2)=0$,\n\n$\\therefore$ 不等式 $f(x-1)>0$ 等价为 $f(x-1)>f(2)$,\n\n即 $f(|x-1|)>f(2) ，$\n\n$\\therefore|x-1|<2$\n\n解得 $-1<x<3$,\n\n故答案为: $(-1,3)$",
             "index": 41
         },
