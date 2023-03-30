@@ -1,0 +1,637 @@
+{
+    "keywords": "2016-2022理科数学全国卷选择题",
+    "example": [
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n1.已知集合 $M=\\{x \\mid-4<x<2\\}, N=\\left\\{x \\mid x^{2}-x-6<0\\right\\}$, 则 $M \\cap N=$\nA. $\\{x \\mid-4<x<3\\}$\nB. $\\{x \\mid-4<x<-2\\}$\nC. $\\{x \\mid-2<x<2\\}$\nD.\n$\\{x \\mid 2<x<3\\}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】由题意得, $M=\\{x \\mid-4<x<2\\}, N=\\{x \\mid-2<x<3\\}$, 则\n\n$M \\cap N=\\{x \\mid-2<x<2\\}$. 故选 C.\n\n",
+            "index": 0
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n2. 设复数 $z$ 满足 $|z-\\mathrm{i}|=1, z$ 在复平面内对应的点为 $(x, y)$, 则\nA. $(x+1)^{2}+y^{2}=1$\nB. $(x-1)^{2}+y^{2}=1$\nC. $x^{2}+(y-1)^{2}=1$\nD.\n\n$x^{2}+(y+1)^{2}=1$\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $z=x+y i, z-i==x+(y-1) i,|z-i|=\\sqrt{x^{2}+(y-1)^{2}}=1$, 则 $x^{2}+(y-1)^{2}=1$. 故选 C.\n\n",
+            "index": 1
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n3.已知 $a=\\log _{2} 0.2, b=2^{0.2}, c=0.2^{0.3}$ ，则\nA. $a<b<c$\nB. $a<c<b$\nC. $c<a<b$\nD.\n\n$b<c<a$\n\n",
+            "answer": "B",
+            "analysis": "【详 解 】 $a=\\log _{2} 0.2<\\log _{2} 1=0, \\quad b=2^{0.2}>2^{0}=1, \\quad 0<0.2^{0.3}<0.2^{0}=1$, 则 $0<c<1, a<c<b$. 故选 B.\n\n",
+            "index": 2
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n7.已知非零向量 $\\boldsymbol{a}, \\boldsymbol{b}$ 满足 $|a|=2|b|$, 且 $(\\boldsymbol{a}-\\boldsymbol{b}) \\perp \\boldsymbol{b}$, 则 $\\boldsymbol{a}$ 与 $\\boldsymbol{b}$ 的夹角为\nA. $\\frac{\\pi}{6}$\nB. $\\frac{\\pi}{3}$\nC. $\\frac{2 \\pi}{3}$\nD. $\\frac{5 \\pi}{6}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】因为 $(a-b) \\perp b$, 所以 $(a-b) \\cdot b=a \\cdot b-b^{2}=0$, 所以 $a \\cdot b=b^{2}$, 所以 $\\cos \\theta=\\frac{a \\cdot b}{|a| \\cdot|b|}=\\frac{|b|^{2}}{2|b|^{2}}=\\frac{1}{2}$, 所以 $a$ 与 $b$ 的夹角为 $\\frac{\\pi}{3}$, 故选 B.\n\n",
+            "index": 3
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n9. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 已知 $S_{4}=0, a_{5}=5$, 则\nA. $a_{n}=2 n-5$\nB. $a_{n}=3 n-10$\nC. $S_{n}=2 n^{2}-8 n$\nD. $S_{n}=\\frac{1}{2} n^{2}-2 n$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题知, $\\left\\{\\begin{array}{l}S_{4}=4 a_{1}+\\frac{d}{2} \\times 4 \\times 3=0 \\\\ a_{5}=a_{1}+4 d=5\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}a_{1}=-3 \\\\ d=2\\end{array}, \\therefore a_{n}=2 n-5\\right.$, 故选 A.\n\n",
+            "index": 4
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "\n11. 关于函数 $f(x)=\\sin |x|+|\\sin x|$ 有下述四个结论:\n\n(1) $f(x)$ 是偶函数 $\\quad$ (2) $f(x)$ 在区间 $\\left(\\frac{\\pi}{2}, \\pi\\right)$ 单调递增\n\n(3) $f(x)$ 在 $[-\\pi, \\pi]$ 有 4 个零点 (4) $f(x)$ 的最大值为 2\n\n其中所有正确结论的编号是\nA. (1)(2)(4)\nB. (2)(4)\nC. (1)(4)\nD. (1)(3)\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $\\because f(-x)=\\sin |-x|+|\\sin (-x)|=\\sin |x|+|\\sin x|=f(x), \\therefore f(x)$ 为偶函数, 故(1) 正确. 当 $\\frac{\\pi}{2}<x<\\pi$ 时, $f(x)=2 \\sin x$, 它在区间 $\\left(\\frac{\\pi}{2}, \\pi\\right)$ 单调递减, 故(2)错误. 当 $0 \\leq x \\leq \\pi$ 时, $f(x)=2 \\sin x$, 它有两个零点: $0 ， \\pi$; 当 $-\\pi \\leq x<0$ 时,\n\n$f(x)=\\sin (-x)-\\sin x=-2 \\sin x$, 它有一个零点: $-\\pi$, 故 $f(x)$ 在 $[-\\pi, \\pi]$ 有 3 个零点:\n\n$-\\pi, 0, \\pi$, 故(3)错误. 当 $x \\in[2 k \\pi, 2 k \\pi+\\pi]\\left(k \\in \\mathbf{N}^{\\star}\\right)$ 时, $f(x)=2 \\sin x$; 当 $x \\in[2 k \\pi+\\pi, 2 k \\pi+2 \\pi]\\left(k \\in \\mathbf{N}^{*}\\right)$ 时, $f(x)=\\sin x-\\sin x=0$, 又 $f(x)$ 为偶函数,\n\n$\\therefore f(x)$ 的最大值为 2 , 故(4)正确. 综上所述, (1)4) 正确, 故选 C.\n\n",
+            "index": 5
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "\n1. 若 $z=-1+\\sqrt{3} \\mathbf{i}$, 则 $\\frac{z}{z \\bar{z}-1}=()$\nA. $-1+\\sqrt{3} \\mathrm{i}$\nB. $-1-\\sqrt{3} i$\nC. $-\\frac{1}{3}+\\frac{\\sqrt{3}}{3} \\mathrm{i}$\nD. $-\\frac{1}{3}-\\frac{\\sqrt{3}}{3} i$\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $\\bar{z}=-1-\\sqrt{3} i, z \\bar{z}=(-1+\\sqrt{3} i)(-1-\\sqrt{3} i)=1+3=4$.\n\n$\\frac{z}{z \\bar{z}-1}=\\frac{-1+\\sqrt{3} \\mathrm{i}}{3}=-\\frac{1}{3}+\\frac{\\sqrt{3}}{3} \\mathrm{i}$\n\n故选: C",
+            "index": 6
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "\n3. 设全集 $U=\\{-2,-1,0,1,2,3\\}$, 集合 $A=\\{-1,2\\}, B=\\left\\{x \\mid x^{2}-4 x+3=0\\right\\}$, 则 $\\partial(A \\cup B)=()$ \nA. $\\{1,3\\}$\nB. $\\{0,3\\}$\nC. $\\{-2,1\\}$\nD.\n\n$\\{-2,0\\}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】由题意, $B=\\left\\{x \\mid x^{2}-4 x+3=0\\right\\}=\\{1,3\\}$, 所以 $A \\cup B=\\{-1,1,2,3\\}$,\n\n所以 $\\partial_{U}(A \\cup B)=\\{-2,0\\}$.\n\n故选: D.",
+            "index": 7
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "\n6. 当 $x=1$ 时, 函数 $f(x)=a \\ln x+\\frac{b}{x}$ 取得最大值 -2 , 则 $f^{\\prime}(2)=()$\nA. -1\nB. $-\\frac{1}{2}$\nC. $\\frac{1}{2}$\nD. 1 \n\n",
+            "answer": "B",
+            "analysis": "【详解】因为函数 $f(x)$ 定义域为 $(0,+\\infty)$, 所以依题可知, $f(1)=-2, f^{\\prime}(1)=0$, 而 $f^{\\prime}(x)=\\frac{a}{x}-\\frac{b}{x^{2}}$, 所以 $b=-2, a-b=0$, 即 $a=-2, b=-2$, 所以 $f^{\\prime}(x)=-\\frac{2}{x}+\\frac{2}{x^{2}}$, 因 此函数 $f(x)$ 在 $(0,1)$ 上递增, 在 $(1,+\\infty)$ 上递减, $x=1$ 时取最大值, 满足题意, 即有 $f^{\\prime}(2)=-1+\\frac{1}{2}=-\\frac{1}{2}$\n\n故选: B.",
+            "index": 8
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "\n10. 椭圆 $C: \\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的左顶点为 $A$, 点 $P, Q$ 均在 $C$ 上, 且关于 $y$ 轴对称. 若 直线 $A P, A Q$ 的斜率之积为 $\\frac{1}{4}$, 则 $C$ 的离心率为 ()\nA. $\\frac{\\sqrt{3}}{2}$\nB. $\\frac{\\sqrt{2}}{2}$\nC. $\\frac{1}{2}$\nD. $\\frac{1}{3}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】解: $A(-a, 0)$,\n\n设 $P\\left(x_{1}, y_{1}\\right)$, 则 $Q\\left(-x_{1}, y_{1}\\right)$,\n\n则 $k_{A P}=\\frac{y_{1}}{x_{1}+a}, k_{A Q}=\\frac{y_{1}}{-x_{1}+a}$,\n\n故 $k_{A P} \\cdot k_{A Q}=\\frac{y_{1}}{x_{1}+a} \\cdot \\frac{y_{1}}{-x_{1}+a}=\\frac{y_{1}^{2}}{-x_{1}^{2}+a^{2}}=\\frac{1}{4}$,\n\n又 $\\frac{x_{1}^{2}}{a^{2}}+\\frac{y_{1}^{2}}{b^{2}}=1$, 则 $y_{1}^{2}=\\frac{b^{2}\\left(a^{2}-x_{1}^{2}\\right)}{a^{2}}$,\n\n所以 $\\frac{\\frac{b^{2}\\left(a^{2}-x_{1}^{2}\\right)}{a^{2}}}{-x_{1}^{2}+a^{2}}=\\frac{1}{4}$, 即 $\\frac{b^{2}}{a^{2}}=\\frac{1}{4}$,\n\n所以椭圆 $C$ 的离心率 $e=\\frac{c}{a}=\\sqrt{1-\\frac{b^{2}}{a^{2}}}=\\frac{\\sqrt{3}}{2}$.\n\n故选: A.",
+            "index": 9
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "\n12. 已知 $a=\\frac{31}{32}, b=\\cos \\frac{1}{4}, c=4 \\sin \\frac{1}{4}$, 则 ()\nA. $c>b>a$\nB. $b>a>c$\nC. $a>b>c$\nD.\n\n$a>c>b$\n\n",
+            "answer": "A",
+            "analysis": "【详解】因为 $\\frac{c}{b}=4 \\tan \\frac{1}{4}$, 因为当 $x \\in\\left(0, \\frac{\\pi}{2}\\right), \\sin x<x<\\tan x$\n\n所以 $\\tan \\frac{1}{4}>\\frac{1}{4}$, 即 $\\frac{c}{b}>1$, 所以 $c>b$;\n\n设 $f(x)=\\cos x+\\frac{1}{2} x^{2}-1, x \\in(0,+\\infty)$, $f^{\\prime}(x)=-\\sin x+x>0$, 所以 $f(x)$ 在 $(0,+\\infty)$ 单调递增,\n\n则 $f\\left(\\frac{1}{4}\\right)>f(0)=0$, 所以 $\\cos \\frac{1}{4}-\\frac{31}{32}>0$ ，\n\n所以 $b>a$, 所以 $c>b>a$,\n\n故选: A",
+            "index": 10
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n1.已知集合 $A=\\{-1,0,1,2\\}, B=\\left\\{x \\mid x^{2} \\leq 1\\right\\}$, 则 $A \\cap B=(\\quad)$\nA. $\\{-1,0,1\\}$\nB. $\\{0,1\\}$\nC. $\\{-1,1\\}$\nD.\n\n$\\{0,1,2\\}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题意得, $B=\\{x \\mid-1 \\leq x \\leq 1\\}$, 则 $A \\cap B=\\{-1,0,1\\}$. 故选 A.\n\n",
+            "index": 11
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n2. 若 $z(1+\\mathrm{i})=2 \\mathrm{i}$ ，则 $z=(\\quad)$\nA. $-1-\\mathrm{i}$\nB. $-1+\\mathrm{i}$\nC. $1-\\mathrm{i}$\nD. $1+i$\n\n",
+            "answer": "D",
+            "analysis": "【详解】 $z=\\frac{2 \\mathrm{i}}{1+\\mathrm{i}}=\\frac{2 \\mathrm{i}(1-\\mathrm{i})}{(1+\\mathrm{i})(1-\\mathrm{i})}=1+\\mathrm{i}$. 故选 D.\n\n",
+            "index": 12
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n3. 《西游记》《三国演义》《水淓传》和《红楼梦》是中国古典文学瑰宝, 并称为中国古典小 说四大名著. 某中学为了解本校学生阅读四大名著的情况, 随机调查了 100 学生, 其中阅读 过《西游记》或《红楼梦》的学生共有 90 位, 阅读过 《红楼梦》的学生共有 80 位, 阅读过 《西游记》且阅读过 《红楼梦》的学生共有 60 位, 则该校阅读过 《西游记》的学生人数与 该校学生总数比值的估计值为 $(\\quad)$\nA. 0.5\nB. 0.6\nC. 0.7\nD. 0.8\n\n",
+            "answer": "C",
+            "analysis": "【详解】由题意得, 阅读过 《西游记》的学生人数为 $90-80+60=70$, 则其与该校学生人数之 比为 $70 \\div 100=0$. 7. 故选 C.\n\n",
+            "index": 13
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n4. $\\left(1+2 x^{2}\\right)(1+x){ }^{4}$ 的展开式中 $x^{3}$ 的系数为\nA. 12\nB. 16\nC. 20\nD. 24\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题意得 $x^{3}$ 的系数为 $C_{4}^{3}+2 C_{4}^{1}=4+8=12$, 故选 A.\n\n",
+            "index": 14
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n5.已知各项均为正数的等比数列 $\\left\\{a_{n}\\right\\}$ 的前 4 项和为 15 , 且 $a_{5}=3 a_{3}+4 a_{1}$, 则 $a_{3}=(\\quad)$ \nA. 16\nB. 8\nC. 4\nD. 2\n\n",
+            "answer": "C",
+            "analysis": "【详解】设正数的等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $q$, 则 $\\left\\{\\begin{array}{l}a_{1}+a_{1} q+a_{1} q^{2}+a_{1} q^{3}=15 \\text {, } \\\\ a_{1} q^{4}=3 a_{1} q^{2}+4 a_{1}\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}a_{1}=1, \\\\ q=2\\end{array}, \\therefore a_{3}=a_{1} q^{2}=4\\right.$, 故选 C.\n\n",
+            "index": 15
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n6. 已知曲线 $y=a \\mathrm{e}^{x}+x \\ln x$ 在点 $(1, a e)$ 处的切线方程为 $y=2 x+b$, 则 ( )\nA. $a=e, b=-1$\nB. $a=e, b=1$\nC. $a=e^{-1}, b=1$\nD.\n\n$a=e^{-1}, b=-1$\n\n",
+            "answer": "D",
+            "analysis": "【详解】详解: $y^{\\prime}=a e^{x}+\\ln x+1$,\n\n$k=\\left.y^{\\prime}\\right|_{x=1}=a e+1=2$\n\n$\\therefore a=e^{-1}$\n\n将 $(1,1)$ 代人 $y=2 x+b$ 得 $2+b=1, b=-1$, 故选 D.\n\n",
+            "index": 16
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n10. 双曲线 $C: \\frac{x^{2}}{4}-\\frac{y^{2}}{2}=1$ 的右焦点为 $F$, 点 $P$ 在 $C$ 的一条渐近线上, $O$ 为坐标原点, 若 $|P O|=|P F|$, 则 $\\triangle P F O$ 的面积为\nA. $\\frac{3 \\sqrt{2}}{4}$\nB. $\\frac{3 \\sqrt{2}}{2}$\nC. $\\frac{\\mathrm{x}_{1}}{\\mathrm{x}_{2}}$\nD. $3 \\sqrt{2}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由 $a=2, b=\\sqrt{2}, c=\\sqrt{a^{2}+b^{2}}=\\sqrt{6}$ ．\n\n$$\n\\because|P O|=|P F|, \\therefore x_{P}=\\frac{\\sqrt{6}}{2}\n$$\n\n又 $P$ 在 $C$ 的一条渐近线上, 不妨设为在 $y=\\frac{b}{a} x$ 上,\n\n$\\therefore S_{\\triangle P F O}=\\frac{1}{2}|O F| \\cdot\\left|y_{P}\\right|=\\frac{1}{2} \\times \\sqrt{6} \\times \\frac{\\sqrt{3}}{2}=\\frac{3 \\sqrt{2}}{4}$, 故选 A.\n\n",
+            "index": 17
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n11. 设 $f(x)$ 是定义域为 $R$ 的偶函数, 且在 $(0,+\\infty)$ 单调递减, 则 $(\\quad)$\nA. $f\\left(\\log _{5} \\frac{1}{4}\\right)>f\\left(2^{-\\frac{3}{2}}\\right)>f\\left(2^{-\\frac{2}{3}}\\right)$\nB. $f\\left(\\log _{8} \\frac{1}{4}\\right)>f\\left(2^{-\\frac{2}{3}}\\right)>f\\left(2^{-\\frac{3}{2}}\\right)$\nC. $f\\left(2^{-\\frac{3}{2}}\\right)>f\\left(2^{-\\frac{2}{3}}\\right)>f\\left(\\log _{5} \\frac{1}{4}\\right)$\nD. $f\\left(2^{-\\frac{2}{3}}\\right)>f\\left(2^{-\\frac{3}{2}}\\right)>f\\left(\\log _{5} \\frac{1}{4}\\right)$\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $\\because f(x)$ 是 $\\mathrm{R}$ 的偶函数, $\\therefore f\\left(\\log _{3} \\frac{1}{4}\\right)=f\\left(\\log _{3} 4\\right)$.\n\n$\\therefore \\log _{3} 4>1=2^{0}>2^{-\\frac{3}{2}}$, 又 $f(x)$ 在 $(0,+\\infty)$ 单调递减, $f\\left(\\log _{3} 4\\right)<f\\left(2^{-\\frac{2}{3}}\\right)<f\\left(2^{-\\frac{3}{2}}\\right)$,\n\n$\\therefore f\\left(2^{-\\frac{3}{2}}\\right)>f\\left(2^{-\\frac{2}{3}}\\right)>f\\left(\\log _{3} \\frac{1}{4}\\right)$, 故选 C.\n\n",
+            "index": 18
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "\n12. 设函数 $f(x)=\\sin \\left(\\omega x+\\frac{\\pi}{5}\\right)(\\omega>0)$, 已知 $f(x)$ 在 $[0,2 \\pi]$ 有且仅有 5 个零点, 下 述四个结论:\n\n(1) $f(x)$ 在 $(0,2 \\pi)$ 有且仅有 3 个极大值点\n\n(2) $f(x)$ 在 $(0,2 \\pi)$ 有且仅有 2 个极小值点 (3) $f(x)$ 在 $\\left(0, \\frac{\\pi}{10}\\right)$ 单调递增\n\n(4) 的取值范围是 $\\left[\\frac{12}{5}, \\frac{29}{10}\\right)$\n\n其中所有正确结论的编号是\nA. (1)(4)\nB. (2)(3)\nC. (1)(2)(3)\nD. (1)(3)(4)\n\n",
+            "answer": "D",
+            "analysis": "【详解】 $\\because f(x)=\\sin \\left(w x+\\frac{\\pi}{5}\\right)(w>0)$, 在 $[0,2 \\pi]$ 有且仅有 5 个零点. $\\therefore 0 \\leq x \\leq 2 \\pi$ ， $\\frac{1}{5} \\leq w x+\\frac{\\pi}{5} \\leq 2 \\pi w+\\frac{\\pi}{5}, \\frac{12}{5} \\leq w<\\frac{29}{10}$, (4)正确. 如图 $x_{1}, x_{2}, x_{3}$ 为极大值点为 3 个, (1)正 确; 极小值点为 2 个或 3 个. $\\therefore$ (2)不正确.\n\n当 $0<x<\\frac{\\pi}{10}$ 时, $\\frac{\\pi}{5}<w x+\\frac{\\pi}{f}<\\frac{w \\pi}{10}+\\frac{\\pi}{5}$, 当 $w=\\frac{29}{10}$ 时,\n\n$\\frac{w \\pi}{10}+\\frac{\\pi}{5}=\\frac{29 \\pi}{100}+\\frac{20 \\pi}{100}=\\frac{49 \\pi}{100}<\\frac{\\pi}{2}$.\n\n$\\therefore$ (3)正确, 故选 D.\n\n",
+            "index": 19
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n1. 设集合 $M=\\{x \\mid 0<x<4\\}, N=\\left\\{x \\mid \\frac{1}{3} \\leq x \\leq 5\\right\\}$, 则 $M \\cap N=($,\nA. $\\left\\{x \\mid 0<x \\leq \\frac{1}{3}\\right\\}$\nB. $\\left\\{x \\mid \\frac{1}{3} \\leq x<4\\right\\}$\nC. $\\{x \\mid 4 \\leq x<5\\}$\nD. $\\{x \\mid 0<x \\leq 5\\}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】因为 $M=\\{x \\mid 0<x<4\\}, N=\\left\\{x \\mid \\frac{1}{3} \\leq x \\leq 5\\right\\}$, 所以 $M \\cap N=\\left\\{x \\mid \\frac{1}{3} \\leq x<4\\right\\}$,\n\n故选: B.\n\n",
+            "index": 20
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n3. 已知 $(1-i)^{2} z=3+2 i$, 则 $z=(\\quad)$\nA. $-1-\\frac{3}{2} i$\nB. $-1+\\frac{3}{2} i$\nC. $-\\frac{3}{2}+i$\nD. $-\\frac{3}{2}-i$\n\n",
+            "answer": "B",
+            "analysis": "【详解】 $(1-i)^{2} z=-2 i z=3+2 i$,\n\n$z=\\frac{3+2 i}{-2 i}=\\frac{(3+2 i) \\cdot i}{-2 i \\cdot i}=\\frac{-2+3 i}{2}=-1+\\frac{3}{2} i$.\n\n故选: B.",
+            "index": 21
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n4. 青少年视力是社会普遍关注的问题, 视力情况可借助视力表测量. 通常用五分记录法和小数记录法记录 视力数据, 五分记录法的数据 $L$ 和小数记录表的数据 $V$ 的满足 $L=5+\\lg V$. 已知某同学视力的五分记录法 的数据为 4.9 , 则其视力的小数记录法的数据为 $(\\quad) \\quad(\\sqrt[10]{10} \\approx 1.259)$\nA. 1.5\nB. 1.2\nC. 0.8\nD. 0.6\n\n",
+            "answer": "C",
+            "analysis": "【详解】由 $L=5+\\lg V$, 当 $L=4.9$ 时, $\\lg V=-0.1$, 则 $V=10^{-0.1}=10^{-\\frac{1}{10}}=\\frac{1}{\\sqrt[10]{10}} \\approx \\frac{1}{1.259} \\approx 0.8$.\n\n故选: C.",
+            "index": 22
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n5. 已知 $F_{1}, F_{2}$ 是双曲线 $C$ 的两个焦点, $P$ 为 $C$ 上一点, 且 $\\angle F_{1} P F_{2}=60^{\\circ},\\left|P F_{1}\\right|=3\\left|P F_{2}\\right|$, 则 $C$ 的离心率为\nA. $\\frac{\\sqrt{7}}{2}$\nB. $\\frac{\\sqrt{13}}{2}$\nC. $\\sqrt{7}$\nD. $\\sqrt{13}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】因为 $\\left|P F_{1}\\right|=3\\left|P F_{2}\\right|$, 由双曲线的定义可得 $\\left|P F_{1}\\right|-\\left|P F_{2}\\right|=2\\left|P F_{2}\\right|=2 a$,\n\n所以 $\\left|P F_{2}\\right|=a,\\left|P F_{1}\\right|=3 a$;\n\n因为 $\\angle F_{1} P F_{2}=60^{\\circ}$,由余弦定理可得 $4 c^{2}=9 a^{2}+a^{2}-2 \\times 3 a \\cdot a \\cdot \\cos 60^{\\circ}$,\n\n整理可得 $4 c^{2}=7 a^{2}$, 所以 $e^{2}=\\frac{c^{2}}{a^{2}}=\\frac{7}{4}$, 即 $e=\\frac{\\sqrt{7}}{2}$.\n\n故选: A\n\n",
+            "index": 23
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n7. 等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $q$, 前 $n$ 项和为 $S_{n}$, 设甲: $q>0$, 乙: $\\left\\{S_{n}\\right\\}$ 是递增数列, 则 ( )\nA. 甲是乙的充分条件但不是必要条件\nB. 甲是乙的必要条件但不是充分条件\nC. 甲是乙的充要条件\nD. 甲既不是乙的充分条件也不是乙的必要条件\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题, 当数列为 $-2,-4,-8, \\cdots$ 时, 满足 $q>0$,\n\n但是 $\\left\\{S_{n}\\right\\}$ 不是递增数列, 所以甲不是乙的充分条件.\n\n若 $\\left\\{S_{n}\\right\\}$ 是递增数列, 则必有 $a_{n}>0$ 成立, 若 $q>0$ 不成立, 则会出现一正一负的情况，是矛盾的, 则 $q>0$ 成立, 所以甲是乙的必要条件.\n\n故选: B. ",
+            "index": 24
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n9. 若 $a \\in\\left(0, \\frac{\\pi}{2}\\right), \\tan 2 a=\\frac{\\cos a}{2-\\sin a}$, 则 $\\tan a=(\\quad)$\nA. $\\frac{\\sqrt{15}}{15}$\nB. $\\frac{\\sqrt{5}}{5}$\nC. $\\frac{\\sqrt{5}}{3}$\nD. $\\frac{\\sqrt{15}}{3}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $\\because \\tan 2 a=\\frac{\\cos a}{2-\\sin a}$\n\n$\\therefore \\tan 2 a=\\frac{\\sin 2 a}{\\cos 2 a}=\\frac{2 \\sin a \\cos a}{1-2 \\sin ^{2} a}=\\frac{\\cos a}{2-\\sin a}$,\n\n$\\because a \\in\\left(0, \\frac{\\pi}{2}\\right), \\therefore \\cos a \\neq 0, \\therefore \\frac{2 \\sin a}{1-2 \\sin ^{2} a}=\\frac{1}{2-\\sin a}$, 解得 $\\sin a=\\frac{1}{4}$,\n\n$\\therefore \\cos a=\\sqrt{1-\\sin ^{2} a}=\\frac{\\sqrt{15}}{4}, \\quad \\therefore \\tan a=\\frac{\\sin a}{\\cos a}=\\frac{\\sqrt{15}}{15}$.\n\n故选: A.\n\n",
+            "index": 25
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n10. 将 4 个 1 和 2 个 0 随机排成一行, 则 2 个 0 不相邻的概率为 $(\\quad)$ \nA. $\\frac{1}{3}$\nB. $\\frac{2}{5}$\nC. $\\frac{2}{3}$\nD. $\\frac{4}{5}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】将 4 个 1 和 2 个 0 随机排成一行, 可利用揷空法, 4 个 1 产生 5 个空,\n\n若 2 个 0 相邻, 则有 $C_{5}^{1}=5$ 种排法, 若 2 个 0 不相邻, 则有 $C_{5}^{2}=10$ 种排法,\n\n所以 2 个 0 不相邻的概率为 $\\frac{10}{5+10}=\\frac{2}{3}$.\n\n故选: C.",
+            "index": 26
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n11. 已如 $A, B, C$ 是半径为 1 的球 $O$ 的球面上的三个点, 且 $A C \\perp B C, A C=B C=1$, 则三棱雉 $O-A B C$ 的体积为 $(\\quad)$\nA. $\\frac{\\sqrt{2}}{12}$\nB. $\\frac{\\sqrt{3}}{12}$\nC. $\\frac{\\sqrt{2}}{4}$\nD. $\\frac{\\sqrt{3}}{4}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $\\because A C \\perp B C, A C=B C=1, \\therefore \\triangle A B C$ 为等腰直角三角形, $\\therefore A B=\\sqrt{2}$,\n\n则 $\\triangle A B C$ 外接圆的半径为 $\\frac{\\sqrt{2}}{2}$, 又球的半径为 1 ,\n\n设 $O$ 到平面 $A B C$ 的距离为 $d$,\n\n则 $d=\\sqrt{1^{2}-\\left(\\frac{\\sqrt{2}}{2}\\right)^{2}}=\\frac{\\sqrt{2}}{2}$,\n\n所以 $V_{O-A B C}=\\frac{1}{3} S_{\\triangle A B C} \\cdot d=\\frac{1}{3} \\times \\frac{1}{2} \\times 1 \\times 1 \\times \\frac{\\sqrt{2}}{2}=\\frac{\\sqrt{2}}{12}$.\n\n故选: A.\n\n",
+            "index": 27
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "\n12. 设函数 $f(x)$ 的定义域为 $\\mathbf{R}, f(x+1)$ 为奇函数, $f(x+2)$ 为偶函数, 当 $x \\in[1,2]$ 时, $f(x)=a x^{2}+b$. 若 $f(0)+f(3)=6$, 则 $f\\left(\\frac{9}{2}\\right)=(\\quad)$\nA. $-\\frac{9}{4}$\nB. $-\\frac{3}{2}$\nC. $\\frac{7}{4}$\nD. $\\frac{5}{2}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】因为 $f(x+1)$ 是奇函数, 所以 $f(-x+1)=-f(x+1)$ (1);\n\n因为 $f(x+2)$ 是偶函数, 所以 $f(x+2)=f(-x+2)(2)$.\n\n令 $x=1$, 由(1)得: $f(0)=-f(2)=-(4 a+b)$, 由(2)得： $f(3)=f(1)=a+b$,\n\n因为 $f(0)+f(3)=6$, 所以 $-(4 a+b)+a+b=6 \\Rightarrow a=-2$,\n\n令 $x=0$, 由(1)得: $f(1)=-f(1) \\Rightarrow f(1)=0 \\Rightarrow b=2$, 所以 $f(x)=-2 x^{2}+2$.\n\n思路一: 从定义人手.\n\n$f\\left(\\frac{9}{2}\\right)=f\\left(\\frac{5}{2}+2\\right)=f\\left(-\\frac{5}{2}+2\\right)=f\\left(-\\frac{1}{2}\\right)$\n\n$f\\left(-\\frac{1}{2}\\right)=f\\left(-\\frac{3}{2}+1\\right)=-f\\left(\\frac{3}{2}+1\\right)=-f\\left(\\frac{5}{2}\\right)$\n\n$-f\\left(\\frac{5}{2}\\right)=-f\\left(\\frac{1}{2}+2\\right)=-f\\left(-\\frac{1}{2}+2\\right)=-f\\left(\\frac{3}{2}\\right)$\n\n所以 $f\\left(\\frac{9}{2}\\right)=-f\\left(\\frac{3}{2}\\right)=\\frac{5}{2}$.\n\n思路二: 从周期性人手\n\n由两个对称性可知, 函数 $f(x)$ 的周期 $T=4$.\n\n所以 $f\\left(\\frac{9}{2}\\right)=f\\left(\\frac{1}{2}\\right)=-f\\left(\\frac{3}{2}\\right)=\\frac{5}{2}$.\n\n故选: D.\n\n",
+            "index": 28
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n1. 设集合 $A=\\left\\{x \\mid x^{2}-5 x+6>0\\right\\}, B=\\{x \\mid x-1<0\\}$, 则 $A \\cap B=$\nA. $(-\\infty, 1)$\nB. $(-2,1)$\nC. $(-3,-1)$\nD. $(3,+\\infty)$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题意得, $A=\\{x \\mid x 2$, 或 $x 3\\}, B=\\{x \\mid x<1\\}$, 则 $A \\cap B=\\{x \\mid x<1\\}$. 故选 A.\n\n",
+            "index": 29
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n2. 设 $z=-3+2 \\mathrm{i}$, 则在复平面内 $\\bar{z}$ 对应的点位于\nA. 第一象限\nB. 第二象限\nC. 第三象限\nD. 第四象限\n\n",
+            "answer": "C",
+            "analysis": "【详解】由 $z=-3+2 i$, 得 $\\bar{z}=-3-2 i$, 则 $\\bar{z}=-3-2 i$, 对应点 $(-3,-2)$ 位于第三象限. 故选 $\\mathrm{C}$.\n\n",
+            "index": 30
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n3. 已知 $\\overrightarrow{A B}=(2,3), \\overrightarrow{A C}=(3, t), \\overrightarrow{B C}=1$, 则 $\\overrightarrow{A B} \\cdot \\overrightarrow{B C}=$\nA. -3\nB. -2\nC. 2\nD. 3\n\n",
+            "answer": "C",
+            "analysis": "【详解】由 $\\overrightarrow{B C}=\\overrightarrow{A C}-\\overrightarrow{A B}=(1, t-3),|\\overrightarrow{B C}|=\\sqrt{1^{2}+(t-3)^{2}}=1$, 得 $t=3$, 则 $\\overrightarrow{B C}=(1,0)$, $\\overrightarrow{A B} \\cdot \\overrightarrow{B C}=(2,3) \\cdot(1,0)=2 \\times 1+3 \\times 0=2$. 故选 C.\n\n",
+            "index": 31
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n4.2019 年 1 月 3 日嫦娥四号探测器成功实现人类历史上首次月球背面软着陆, 我国航天 事业取得又一重大成就, 实现月球背面软着陆需要解决的一个关键技术问题是地面与探 测器的通讯联系。 为解决这个问题, 发射了嫦娥四号中继星 “鹊桥”, 鹊桥沿着围绕地 月拉格朗日 $L_{2}$ 点的轨道运行. $L_{2}$ 点是平衡点, 位于地月连线的延长线上. 设地球质量为 $M_{1}$, 月球质量为 $M_{2}$, 地月距离为 $R, L_{2}$ 点到月球的距离为 $r$, 根据牛顿运动定律和万 有引力定律, $r$ 满足方程:\n\n$$\n\\frac{M_{1}}{(R+r)^{2}}+\\frac{M_{2}}{r^{2}}=(R+r) \\frac{M_{1}}{R^{3}}\n$$\n\n设 $a=\\frac{r}{R}$, 由于 $a$ 的值很小, 因此在近似计算中 $\\frac{3 a^{3}+3 a^{4}+a^{5}}{(1+a)^{2}} \\approx 3 a^{3}$, 则 $r$ 的近似值 为\nA. $\\sqrt{\\frac{M_{2}}{M_{1}}} R$\nB. $\\sqrt{\\frac{M_{2}}{2 M_{1}}} R$\nC. $\\sqrt[3]{\\frac{3 M_{2}}{M_{1}}} R$\nD. $\\sqrt[3]{\\frac{M_{2}}{3 M_{1}}} R$\n\n",
+            "answer": "D",
+            "analysis": "【详解】由 $a=\\frac{r}{R}$, 得 $r=a R$\n\n因为 $\\frac{M_{1}}{(R+r)^{2}}+\\frac{M_{2}}{r^{2}}=(R+r) \\frac{M_{1}}{R^{3}}$,\n\n所以 $\\frac{M_{1}}{R^{2}(1+a)^{2}}+\\frac{M_{2}}{a^{2} R^{2}}=(1+a) \\frac{M_{1}}{R^{2}}$,\n\n即 $\\frac{M_{2}}{M_{1}}=a^{2}\\left[(1+a)-\\frac{1}{(1+a)^{2}}\\right]=\\frac{a^{5}+3 a^{4}+3 a^{3}}{(1+a)^{2}} \\approx 3 a^{3}$,\n\n解得 $a==^{3} \\sqrt{\\frac{M_{2}}{3 M_{1}}}$,\n\n所以 $r=a R=\\sqrt{\\frac{M_{2}}{3 M_{1}}} R$.\n\n",
+            "index": 32
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n5. 演讲比赛共有 9 位评委分别给出某选手的原始评分, 评定该选手的成绩时, 从 9 个原 始评分中去掉 1 个最高分、 1 个最低分, 得到 7 个有效评分. 7 个有效评分与 9 个原始评 分相比, 不变的数字特征是\nA. 中位数\nB. 平均数\nC. 方差\nD. 极差\n\n",
+            "answer": "A",
+            "analysis": "【详解】设 9 位评委评分按从小到大排列为 $x_{1}<x_{2}<x_{3}<x_{4} \\cdots<x_{8}<x_{9}$.\n\n则(1)原始中位数为 $x_{5}$, 去掉最低分 $x_{1}$, 最高分 $x_{9}$, 后剩余 $x_{2}<x_{3}<x_{4} \\cdots<x_{8}$,\n\n中位数仍为 $x_{5}, \\therefore \\mathrm{A}$ 正确.\n\n(2)原始平均数 $\\bar{x}=\\frac{1}{9}\\left(x_{1}<x_{2}<x_{3}<x_{4} \\cdots<x_{8}<x_{9}\\right)$, 后来平均数 $\\overline{x^{\\prime}}=\\frac{1}{7}\\left(x_{2}<x_{3}<x_{4} \\cdots<x_{8}\\right)$\n\n平均数受极端值影响较大, $\\therefore \\bar{x}$ 与 $\\overline{x^{1}}$ 不一定相同, B 不正确\n\n(3) $S^{2}=\\frac{1}{9}\\left[\\left(x_{1}-\\bar{x}\\right)^{2}+\\left(x_{1}-\\bar{x}\\right)^{2}+\\cdots+\\left(x_{q}-\\bar{x}\\right)^{2}\\right]$\n\n$s^{\\prime 2}=\\frac{1}{7}\\left[\\left(x_{2}-\\overline{x^{\\prime}}\\right)^{2}+\\left(x_{3}-\\overline{x^{\\prime}}\\right)^{2}+\\cdots+\\left(x_{8}-\\overline{x^{\\prime}}\\right)^{2}\\right]$ 由(2)易知, C 不正确.\n\n(4)原极差 $=x_{9}-x_{1}$, 后来极差 $=x_{8}-x_{2}$ 显然极差变小, $\\mathrm{D}$ 不正确.\n\n",
+            "index": 33
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n6. 若 $a>b$, 则\nA. $\\ln (a-b)>0$\nB. $3^{a}<3^{b}$\nC. $a^{3}-b^{3}>0$\nD. $|a|>|b|$\n\n",
+            "answer": "C",
+            "analysis": "【详解】取 $a=2, b=1$, 满足 $a>b, \\ln (a-b)=0$, 知 $\\mathrm{A}$ 错, 排除 $\\mathrm{A}$; 因为 $9=3^{a}>3^{b}=3$, 知 B 错, 排除 B; 取 $a=1, b=-2$, 满足 $a>b, 1=|a|<|b|=2$, 知 $\\mathrm{D}$ 错, 排除 $\\mathrm{D}$, 因为 幂函数 $y=x^{3}$ 是增函数, $a>b$, 所以 $a^{3}>b^{3}$, 故选 C.\n\n",
+            "index": 34
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n7. 设 $\\alpha, \\beta$ 为两个平面, 则 $\\alpha / / \\beta$ 的充要条件是\nA. $\\alpha$ 内有无数条直线与 $\\beta$ 平行\nB. $\\alpha$ 内有两条相交直线与 $\\beta$ 平行\nC. $\\alpha, \\beta$ 平行于同一条直线\nD. $\\alpha, \\beta$ 垂直于同一平面\n\n",
+            "answer": "B",
+            "analysis": "【详解】由面面平行的判定定理知: $a$ 内两条相交直线都与 $\\beta$ 平行是 $a / / \\beta$ 的充分条件,\n\n由面面平行性质定理知, 若 $a / / \\beta$, 则 $a$ 内任意一条直线都与 $\\beta$ 平行, 所以 $a$ 内两条相交 直线都与 $\\beta$ 平行是 $a / / \\beta$ 的必要条件, 故选 $\\mathrm{B}$.\n\n",
+            "index": 35
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n8. 若抛物线 $y^{2}=2 p x \\quad(p>0)$ 的焦点是椭圆 $\\frac{x^{2}}{3 p}+\\frac{y^{2}}{p}=1$ 的一个焦点, 则 $p=$\nA. 2\nB. 3\nC. 4\nD. 8\n\n",
+            "answer": "D",
+            "analysis": "【详解】因为抛物线 $y^{2}=2 p x(p>0)$ 的焦点 $\\left(\\frac{p}{2}, 0\\right)$ 是椭圆 $\\frac{x^{2}}{3 p}+\\frac{y^{2}}{p}=1$ 的一个焦点, 所以 $3 p-p=\\left(\\frac{p}{2}\\right)^{2}$, 解得 $p=8$, 故选 $\\mathrm{D}$.\n\n",
+            "index": 36
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "\n10.已知 $a \\in\\left(0, \\frac{\\pi}{2}\\right), 2 \\sin 2 \\alpha=\\cos 2 \\alpha+1$, 则 $\\sin \\alpha=$\nA. $\\frac{1}{5}$\nB. $\\frac{\\sqrt{5}}{5}$\nC. $\\frac{\\sqrt{3}}{3}$\nD. $\\frac{2 \\sqrt{5}}{5}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】 $\\because 2 \\sin 2 a=\\cos 2 a+1, \\therefore 4 \\sin a \\cdot \\cos a=2 \\cos ^{2} a \\because a \\in\\left(0, \\frac{\\pi}{2}\\right), \\therefore \\cos a>0$. $\\sin a>0, \\therefore 2 \\sin a=\\cos a$, 又 $\\sin ^{2} a+\\cos ^{2} a=1, \\therefore 5 \\sin ^{2} a=1, \\quad \\sin ^{2} a=\\frac{1}{5}$, 又 $\\sin a>0, \\therefore \\sin a=\\frac{\\sqrt{5}}{5}$, 故选 B.\n\n",
+            "index": 37
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n1. 设全集 $U=\\{1,2,3,4,5\\}$, 集合 $M$ 满足 $\\partial_{j} M=\\{1,3\\}$, 则 ()\nA. $2 \\in M$\nB. $3 \\in M$\nC. $4 \\notin M$\nD. $5 \\notin M$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题知 $M=\\{2,4,5\\}$, 对比选项知, A 正确, $\\mathrm{BCD}$ 错误\n\n故选: A",
+            "index": 38
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n2. 已知 $z=1-2 i$ ，且 $z+a \\bar{z}+b=0$ ，其中 $a, b$ 为实数，则（)\nA. $a=1, b=-2$\nB. $a=-1, b=2$\nC. $a=1, b=2$\nD.\n\n$a=-1, b=-2$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $\\bar{z}=1+2 \\mathrm{i}$\n\n$z+a \\bar{z}+b=1-2 \\mathrm{i}+a(1+2 \\mathrm{i})+b=(1+a+b)+(2 a-2) \\mathrm{i}$\n\n由 $z+a \\bar{z}+b=0$, 得 $\\left\\{\\begin{array}{l}1+a+b=0 \\\\ 2 a-2=0\\end{array}\\right.$,即 $\\left\\{\\begin{array}{l}a=1 \\\\ b=-2\\end{array}\\right.$\n\n故选: A",
+            "index": 39
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n3. 已知向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}|=1,|\\vec{b}|=\\sqrt{3},|\\vec{a}-2 \\vec{b}|=3$, 则 $\\vec{a} \\cdot \\vec{b}=()$\nA. -2\nB. -1\nC. 1\nD. 2\n\n",
+            "answer": "C",
+            "analysis": "【详解】解: $\\because|\\vec{a}-2 \\vec{b}|^{2}=|\\vec{a}|^{2}-4 \\vec{a} \\cdot \\vec{b}+4|\\vec{b}|^{2}$,\n\n又 $\\because|\\vec{a}|=1,|\\vec{b}|=\\sqrt{3},|\\vec{a}-2 \\vec{b}|=3$,\n\n$\\therefore 9=1-4 \\vec{a} \\cdot \\vec{b}+4 \\times 3=13-4 \\vec{a} \\cdot \\vec{b}$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=1$\n\n故选: C.",
+            "index": 40
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n4. 嫦娥二号卫星在完成探月任务后, 继续进行深空探测, 成为我国第一颗环绕太阳飞行的 人造行星, 为研究嫦娥二号绕日周期与地球绕日周期的比值, 用到数列 $\\left\\{b_{n}\\right\\}: b_{1}=1+\\frac{1}{a_{1}}$, $b_{2}=1+\\frac{1}{a_{1}+\\frac{1}{a_{2}}}, \\quad b_{3}=1+\\frac{1}{a_{1}+\\frac{1}{a_{2}+\\frac{1}{a_{3}}}}, \\cdots$, 依此类推, 其中 $a_{k} \\in \\mathbf{N}^{\\star}(k=1,2, \\cdots)$. 则 ()\nA. $b_{1}<b_{5}$\nB. $b_{3}<b_{8}$\nC. $b_{6}<b_{2}$\nD. $b_{4}<b_{7}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】解: 因为 $a_{k} \\in \\mathbf{N}^{*}(k=1,2, \\cdots)$,\n\n所以 $a_{1}<a_{1}+\\frac{1}{a_{2}}, \\frac{1}{a_{1}}>\\frac{1}{a_{1}+\\frac{1}{a_{2}}}$, 得到 $b_{1}>b_{2}$,\n\n同理 $a_{1}+\\frac{1}{a_{2}}>a_{1}+\\frac{1}{a_{2}+\\frac{1}{a_{3}}}$, 可得 $b_{2}<b_{3}, b_{1}>b_{3}$\n\n又因为 $\\frac{1}{a_{2}}>\\frac{1}{a_{2}+\\frac{1}{a_{3}+\\frac{1}{a_{4}}}}, a_{1}+\\frac{1}{a_{2}+\\frac{1}{a_{3}}}<a_{1}+\\frac{1}{a_{2}+\\frac{1}{a_{3}+\\frac{1}{a_{4}}}}$ ，\n\n故 $b_{2}<b_{4}, b_{3}>b_{4}$;\n\n以此类推, 可得 $b_{1}>b_{3}>b_{5}>b_{7}>\\cdots, b_{7}>b_{8}$, 故 $\\mathrm{A}$ 错误;\n\n$b_{1}>b_{7}>b_{8}$, 故 B 错误; \n\n$$\n\\begin{aligned}\n& \\frac{1}{a_{2}}>\\frac{1}{a_{2}+\\frac{1}{a_{3}+\\cdots \\frac{1}{a_{6}}}} \\text {, 得 } b_{2}<b_{6} \\text {, 故 C 错误; } \\\\\n& a_{1}+\\frac{1}{a_{2}+\\frac{1}{a_{3}+\\frac{1}{a_{4}}}}>a_{1}+\\frac{1}{a_{2}+\\cdots \\frac{1}{a_{6}+\\frac{1}{a_{7}}}} \\text {, 得 } b_{4}<b_{7} \\text {, 故 D 正确. }\n\\end{aligned}\n$$\n\n故选: D.",
+            "index": 41
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n5. 设 $F$ 为抛物线 $C: y^{2}=4 x$ 的焦点, 点 $A$ 在 $C$ 上, 点 $B(3,0)$, 若 $|A F|=|B F|$, 则 $|A B|=$ ()\nA. 2\nB. $2 \\sqrt{2}$\nC. 3\nD. $3 \\sqrt{2}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题意得, $F(1,0)$, 则 $|A F|=|B F|=2$,\n\n即点 $\\mathrm{A}$ 到准线 $x=-1$ 的距离为 2 , 所以点 $\\mathrm{A}$ 的横坐标为 $-1+2=1$,\n\n不妨设点 $\\mathrm{A}$ 在 $x$ 轴上方, 代人得, $A(1,2)$,\n\n所以 $|A B|=\\sqrt{(3-1)^{2}+(0-2)^{2}}=2 \\sqrt{2}$.\n\n故选: B",
+            "index": 42
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n8. 已知等比数列 $\\left\\{a_{n}\\right\\}$ 的前 3 项和为 $168, a_{2}-a_{5}=42$, 则 $a_{6}=()$\nA. 14\nB. 12\nC. 6\nD. 3\n\n",
+            "answer": "D",
+            "analysis": "【详解】解：设等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $q, q \\neq 0$,\n\n若 $q=1$, 则 $a_{2}-a_{5}=0$, 与题意矛盾,\n\n所以 $q \\neq 1$,\n\n则 $\\left\\{\\begin{array}{l}a_{1}+a_{2}+a_{3}=\\frac{a_{1}\\left(1-q^{3}\\right)}{1-q} \\\\ a_{2}-a_{5}=a_{1} q-a_{1} q^{4}=42\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}a_{1}=96 \\\\ q=\\frac{1}{2}\\end{array}\\right.$,\n\n所以 $a_{6}=a_{1} q^{5}=3$.\n\n故选：D.",
+            "index": 43
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n9. 已知球 $O$ 的半径为 1 , 四棱雉的顶点为 $O$, 底面的四个顶点均在球 $O$ 的球面上, 则当该 四棱雉的体积最大时，其高为（）\nA. $\\frac{1}{3}$\nB. $\\frac{1}{2}$\nC. $\\frac{\\sqrt{3}}{3}$\nD. $\\frac{\\sqrt{2}}{2}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】设该四棱雉底面为四边形 $A B C D$, 四边形 $A B C D$ 所在小圆半径为 $r$,\n\n设四边形 $A B C D$ 对角线夹角为 $a$,\n\n则 $S_{A B C D}=\\frac{1}{2} \\cdot A C \\cdot B D \\cdot \\sin a \\leq \\frac{1}{2} \\cdot A C \\cdot B D \\leq \\frac{1}{2} \\cdot 2 r \\cdot 2 r=2 r^{2}$\n\n(当且仅当四边形 $A B C D$ 为正方形时等号成立)\n\n即当四棱雉的顶点 $O$ 到底面 $A B C D$ 所在小圆距离一定时, 底面 $A B C D$ 面积最大值为 $2 r^{2}$\n\n又 $r^{2}+h^{2}=1$\n\n则 $V_{O-A B C D}=\\frac{1}{3} \\cdot 2 r^{2} \\cdot h=\\frac{\\sqrt{2}}{3} \\sqrt{r^{2} \\cdot r^{2} \\cdot 2 h^{2}} \\leq \\frac{\\sqrt{2}}{3} \\sqrt{\\left(\\frac{r^{2}+r^{2}+2 h^{2}}{3}\\right)^{3}}=\\frac{4 \\sqrt{3}}{27}$\n\n当且仅当 $r^{2}=2 h^{2}$ 即 $h=\\frac{\\sqrt{3}}{3}$ 时等号成立,\n\n故选: C",
+            "index": 44
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n10. 某棋手与甲、乙、丙三位棋手各比赛一盘, 各盘比赛结果相互独立. 已知该棋手与甲、 乙、丙比赛获胜的概率分别为 $p_{1}, p_{2}, p_{3}$, 且 $p_{3}>p_{2}>p_{1}>0$. 记该棋手连胜两盘的概率为 $p$, 则 ()\nA. $p$ 与该棋手和甲、乙、丙的比赛次序无关\nB. 该棋手在第二盘与甲比赛， $p$ 最大\nC. 该棋手在第二盘与乙比赛, $p$ 最大\nD. 该棋手在第二盘与丙比赛, $p$ 最大\n\n",
+            "answer": "D",
+            "analysis": "【详解】该棋手连胜两盘, 则第二盘为必胜盘,\n\n记该棋手在第二盘与甲比赛，且连胜两盘的概率为 $p_{\\text {甲 }}$\n\n则 $p_{\\text {甲 }}=2\\left(1-p_{2}\\right) p_{1} p_{3}+2 p_{2} p_{1}\\left(1-p_{3}\\right)=2 p_{1}\\left(p_{2}+p_{3}\\right)-4 p_{1} p_{2} p_{3}$ 记该棋手在第二盘与乙比赛, 且连胜两盘的概率为 $p_{\\text {乙 }}$\n\n则 $p_{\\text {乙 }}=2\\left(1-p_{1}\\right) p_{2} p_{3}+2 p_{1} p_{2}\\left(1-p_{3}\\right)=2 p_{2}\\left(p_{1}+p_{3}\\right)-4 p_{1} p_{2} p_{3}$\n\n记该棋手在第二盘与丙比赛, 且连胜两盘的概率为 $p_{\\text {丙 }}$\n\n则 $p_{\\text {丙 }}=2\\left(1-p_{1}\\right) p_{3} p_{2}+2 p_{1} p_{3}\\left(1-p_{2}\\right)=2 p_{3}\\left(p_{1}+p_{2}\\right)-4 p_{1} p_{2} p_{3}$\n\n则 $p_{\\text {甲 }}-p_{\\text {乙 }}=2 p_{1}\\left(p_{2}+p_{3}\\right)-4 p_{1} p_{2} p_{3}-\\left[2 p_{2}\\left(p_{1}+p_{3}\\right)-4 p_{1} p_{2} p_{3}\\right]=2\\left(p_{1}-p_{2}\\right) p_{3}<0$\n\n$p_{\\text {乙 }}-p_{\\text {丙 }}=2 p_{2}\\left(p_{1}+p_{3}\\right)-4 p_{1} p_{2} p_{3}-\\left[2 p_{3}\\left(p_{1}+p_{2}\\right)-4 p_{1} p_{2} p_{3}\\right]=2\\left(p_{2}-p_{3}\\right) p_{1}<0$\n\n即 $p_{\\text {甲 }}<p_{\\text {乙 }}, p_{\\text {乙 }}<p_{\\text {丙 }}$,\n\n则该棋手在第二盘与丙比赛, $p$ 最大.选项 D 判断正确; 选项 BC 判断错误;\n\n$p$ 与该棋手与甲、乙、丙的比赛次序有关.选项 $\\mathrm{A}$ 判断错误.\n\n故选: D",
+            "index": 45
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "\n12. 已知函数 $f(x), g(x)$ 的定义域均为 $\\mathbf{R}$, 且 $f(x)+g(2-x)=5, g(x)-f(x-4)=7$. 若 $y=g(x)$ 的图像关于直线 $x=2$ 对称, $g(2)=4$ ， 则 $\\sum_{k=1}^{22} f(k)=()$\nA. -21\nB. -22\nC. -23\nD. -24\n\n",
+            "answer": "D",
+            "analysis": "【详解】因为 $y=g(x)$ 的图像关于直线 $x=2$ 对称,\n\n所以 $g(2-x)=g(x+2)$,\n\n因为 $g(x)-f(x-4)=7$, 所以 $g(x+2)-f(x-2)=7$, 即 $g(x+2)=7+f(x-2)$,\n\n因为 $f(x)+g(2-x)=5$, 所以 $f(x)+g(x+2)=5$,\n\n代人得 $f(x)+[7+f(x-2)]=5$, 即 $f(x)+f(x-2)=-2$,\n\n所以 $f(3)+f(5)+\\ldots+f(21)=(-2) \\times 5=-10$,\n\n$f(4)+f(6)+\\ldots+f(22)=(-2) \\times 5=-10$\n\n因为 $f(x)+g(2-x)=5$, 所以 $f(0)+g(2)=5$, 即 $f(0)=1$, 所以 $f(2)=-2-f(0)=-3$\n\n因为 $g(x)-f(x-4)=7$, 所以 $g(x+4)-f(x)=7$, 又因为 $f(x)+g(2-x)=5$,\n\n联立得, $g(2-x)+g(x+4)=12$,\n\n所以 $y=g(x)$ 的图像关于点 $(3,6)$ 中心对称, 因为函数 $g(x)$ 的定义域为 $\\mathbf{R}$,\n\n所以 $g(3)=6$\n\n因为 $f(x)+g(x+2)=5$, 所以 $f(1)=5-g(3)=-1$.\n\n所以\n\n$$\n\\sum_{k=1}^{22} f(k)=f(1)+f(2)+[f(3)+f(5)+\\ldots+f(21)]+[f(4)+f(6)+\\ldots+f(22)]=-1-3-10-10=-24\n$$\n\n故选: D\n\n",
+            "index": 46
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n1.设 $2(z+\\bar{z})+3(z-\\bar{z})=4+6 i$ ，则 $z=(\\quad)$\n\nA. $1-2 i$\n\nB. $1+2 i$\n\nC. $1+i$\n\nD. $1-i$\n\n",
+            "answer": "C",
+            "analysis": "解析:\n\n设 $z=a+b i$, 则 $\\bar{z}=a-b i, 2(z+\\bar{z})+3(z-\\bar{z})=4 a+6 b i=4+6 i$, 所以 $a=1, b=1$,\n\n所以 $z=1+i$.",
+            "index": 47
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n2.已知集合 $S=\\{s \\mid s=2 n+1, n \\in Z\\}, T=\\{t \\mid t=4 n+1, n \\in Z\\}$, 则 $S \\cap T=(\\quad)$\nA. $\\varnothing$\nB. $S$\nC. $T$\nD. $Z$\n\n",
+            "answer": "C",
+            "analysis": "解析:\n\n$s=2 n+1, \\quad n \\in Z$\n\n当 $n=2 k, k \\in Z$ 时, $S=\\{s \\mid s=4 k+1, k \\in Z\\}$ ； 当 $n=2 k+1, k \\in Z$ 时,\n\n$S=\\{s \\mid s=4 k+3, k \\in Z\\}$.所以 $T \\ddot{U} S, S \\cap T=T$. 故选 C.",
+            "index": 48
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n3. 已知命题 $p: \\exists x \\in R, \\sin x<1$; 命题 $q: \\forall x \\in R, e^{|x|} \\geq 1$, 则下列命题中为真命题的是 \nA. $p \\wedge q$\nB. $\\neg p \\wedge q$\nC. $p \\wedge \\neg q$\nD. $\\neg(p \\vee q)$\n\n",
+            "answer": "A",
+            "analysis": "解析:\n\n根据正弦函数的值域 $\\sin x \\in[-1,1]$, 故 $\\exists x \\in R, \\sin x<1, p$ 为真命题, 而函数 $y=y=e^{|x|}$ 为偶函数, 且 $x \\geq 0$ 时, $y=e^{|x|} \\geq 1$, 故 $\\forall x \\in R, y=e^{|x|} \\geq 1$ 恒成立., 则 $q$ 也为真命题, 所 以 $p \\wedge q$ 为真, 选 $\\mathrm{A}$.",
+            "index": 49
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n4. 设函数 $f(x)=\\frac{1-x}{1+x}$, 则下列函数中为奇函数的是 $(\\quad)$\nA. $f(x-1)-1$\nB. $f(x-1)+1$\nC. $f(x+1)-1$\nD. $f(x+1)+1$\n\n",
+            "answer": "B",
+            "analysis": "解析:\n\n$f(x)=\\frac{1-x}{1+x}=-1+\\frac{2}{1+x}, f(x)$ 向右平移一个单位, 向上平移一个单位得到 $g(x)=\\frac{2}{x}$ 为奇 函数.",
+            "index": 50
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n6. 将 5 名北京冬奥会志愿者分配到花样滑冰，短道速滑、冰球和冰显 4 个项目进行培训, 每名 志愿者只分配到 1 个项目, 每个项目至少分配 1 名志愿者, 则不同的分配方案共有（）\n\nA. 60 种\n\nB. 120 种\n\nC. 240 种\n\nD. 480 种\n\n",
+            "answer": "C",
+            "analysis": "解析:\n\n所求分配方案数为 $C_{5}^{2} A_{4}^{4}=240$.",
+            "index": 51
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n7.把函数 $y=f(x)$ 图像上所有点的横坐标缩短到原来的 $\\frac{1}{2}$ 倍, 纵坐标不变, 再把所得曲线 向右平移 $\\frac{\\pi}{3}$ 个单位长度, 得到函数 $y=\\sin \\left(x-\\frac{\\pi}{4}\\right)$ 的图像, 则 $f(x)=(\\quad)$\n\nA. $\\sin \\left(\\frac{x}{2}-\\frac{7 \\pi}{12}\\right)$\n\nB. $\\sin \\left(\\frac{x}{2}+\\frac{\\pi}{12}\\right)$\n\nC. $\\sin \\left(2 x-\\frac{7 \\pi}{12}\\right)$ D. $\\sin \\left(2 x+\\frac{\\pi}{12}\\right)$\n\n",
+            "answer": "B",
+            "analysis": "解析:\n\n逆向: $y=\\sin \\left(x-\\frac{\\pi}{4}\\right) \\stackrel{\\text { 左移 } \\frac{\\pi}{3}}{\\longrightarrow} y=\\sin \\left(x+\\frac{\\pi}{12}\\right) \\stackrel{\\text { 横坐标变为原来的2倍 }}{\\longrightarrow} y=\\sin \\left(\\frac{1}{2} x+\\frac{\\pi}{12}\\right)$.\n\n故选 B.",
+            "index": 52
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n11. 设 $B$ 是椭圆 $C: \\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的上顶点, 若 $C$ 上的任意一点 $P$ 都满足, $|P B| \\leq 2 b ， \\quad$ 则 $C$ 的离心率的取值范围是 $(\\quad)$\n\nA. $\\left[\\frac{\\sqrt{2}}{2}, 1\\right)$\n\nB. $\\left[\\frac{1}{2}, 1\\right)$\n\nC. $\\left(0, \\frac{\\sqrt{2}}{2}\\right]$\n\nD. $\\left(0, \\frac{1}{2}\\right]$\n\n",
+            "answer": "C",
+            "analysis": "解析:\n\n由题意, 点 $B(0, b)$, 设 $P\\left(x_{0}, y_{0}\\right)$, 则 $\\frac{x_{0}^{2}}{a^{2}}+\\frac{y_{0}^{2}}{b^{2}}=1 \\Rightarrow x_{0}^{2}=a^{2}\\left(1-\\frac{y_{0}^{2}}{b^{2}}\\right)$, 故\n\n$|P B|^{2}=x_{0}^{2}+\\left(y_{0}-b\\right)^{2}=a^{2}\\left(1-\\frac{y_{0}^{2}}{b^{2}}\\right)+y_{0}^{2}-2 b y_{0}+b^{2}=-\\frac{c^{2}}{b^{2}} y_{0}^{2}-2 b y_{0}+a^{2}+b^{2}$\n\n$y_{0} \\in[-b, b]$\n\n由题意, 当 $y_{0}=-b$ 时, $|P B|^{2}$ 最大, 则 $-\\frac{b^{3}}{c^{2}} \\leq-b, b^{2} \\geq c^{2}, a^{2}-c^{2} \\geq c^{2}, c=\\frac{c}{a} \\leq \\frac{\\sqrt{2}}{2}$,\n\n$c \\in\\left(0, \\frac{\\sqrt{2}}{2}\\right]$",
+            "index": 53
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "\n12. 设 $a=2 \\ln 1.01, b=\\ln 1.02, c=\\sqrt{1.04}-1$, 则 $($ )\nA. $a<b<c$\nB. $b<c<a$\nC. $b<a<c$\nD. $c<a<b$\n\n",
+            "answer": "B",
+            "analysis": "解析:\n\n设 $f(x)=\\ln (1+x)-\\sqrt{1+2 x}+1$, 则 $b-c=f(0.02)$ ，易得 $f^{\\prime}(x)=\\frac{1}{1+x}-\\frac{2}{2 \\sqrt{1+2 x}}=\\frac{\\sqrt{1+2 x}-(1+x)}{(1+x) \\sqrt{1+2 x}}$.\n\n当 $x \\geq 0$ 时, $1+x=\\sqrt{(1+x)^{2}} \\geq \\sqrt{1+2 x}$, 故 $f^{\\prime}(x) \\leq 0$.\n\n所以 $f(x)$ 在 $[0,+\\infty)$ 上单调递减, 所以 $f(0.02)<f(0)=0$, 故 $b<c$.\n\n再设 $g(x)=2 \\ln (1+x)-\\sqrt{1+4 x}+1$, 则 $a-c=g(0.01)$, 易得\n\n$g^{\\prime}(x)=\\frac{2}{1+x}-\\frac{4}{2 \\sqrt{1+4 x}}=2 \\cdot \\frac{\\sqrt{1+4 x}-(1-x)}{(1+x) \\sqrt{1+4 x}}$.\n\n当 $0 \\leq x<2$ 时, $\\sqrt{1+4 x} \\geq \\sqrt{1+2 x+x^{2}}=1+x$, 所以 $g^{\\prime}(x)$ 在 $[0.2)$ 上 $\\geq 0$.\n\n故 $g(x)$ 在 $[0.2)$ 上单调递增, 所以 $g(0.01)>g(0)=0$, 故 $a>c$.\n\n综上, $a>c>b$.",
+            "index": 54
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n1. (5 分) 已知集合 $A=\\{x \\mid x-1 \\geqslant 0\\}, B=\\{0,1,2\\}$, 则 $A \\cap B=（ \\quad)$\nA. $\\{0\\}$\nB. $\\{1\\}$\nC. $\\{1,2\\}$\nD. $\\{0,1,2\\}$",
+            "answer": "C",
+            "analysis": "解: $\\because A=\\{x \\mid x-1 \\geqslant 0\\}=\\{x \\mid x \\geqslant 1\\}, B=\\{0,1,2\\}$,\n\n$\\therefore A \\cap B=\\{x \\mid x \\geqslant 1\\} \\cap\\{0,1,2\\}=\\{1,2\\}$.\n\n故选: C.",
+            "index": 55
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n2. $(5$ 分 $)(1+i)(2-i)=(\\quad)$\nA. $-3-i$\nB. $-3+i$\nC. $3-i$\nD. $3+i$",
+            "answer": "D",
+            "analysis": "解: $(1+i)(2-i)=3+i$. 故选: D.",
+            "index": 56
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n4. (5 分) 若 $\\sin a=\\frac{1}{3}$, 则 $\\cos 2 a=(\\quad)$\nA. $\\frac{8}{9}$\nB. $\\frac{7}{9}$\nC. $-\\frac{7}{9}$\nD. $-\\frac{8}{9}$",
+            "answer": "B",
+            "analysis": "解: $\\because \\sin a=\\frac{1}{3}$,\n\n$\\therefore \\cos 2 a=1-2 \\sin ^{2} a=1-2 \\times \\frac{1}{9}=\\frac{7}{9}$.\n\n故选: $B$.",
+            "index": 57
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n5. (5 分) $\\left(x^{2}+\\frac{2}{x}\\right){ }^{5}$ 的展开式中 $x^{4}$ 的系数为 $(\\quad)$\nA. 10\nB. 20\nC. 40\nD. 80",
+            "answer": "C",
+            "analysis": "解：由二项式定理得 $\\left(x^{2}+\\frac{2}{x}\\right)^{5}$ 的展开式的通项为:\n\n$$\nT_{r+1}=C_{5}^{r}\\left(x^{2}\\right)^{5-r}\\left(\\frac{2}{x}\\right)^{r}=2^{r} C_{5}^{r} x^{10-3 r}\n$$\n\n由 $10-3 r=4$, 解得 $r=2$,\n\n$\\therefore\\left(\\mathrm{x}^{2}+\\frac{2}{\\mathrm{x}}\\right)^{5}$ 的展开式中 $\\mathrm{x}^{4}$ 的系数为 $2^{2} \\mathrm{C}_{5}^{2}=40$.\n\n故选: C.",
+            "index": 58
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n6. (5 分) 直线 $x+y+2=0$ 分别与 $x$ 轴, $y$ 轴交于 $A$, B 两点, 点 $P$ 在圆 $(x-2)$ ${ }^{2}+y^{2}=2$ 上，则 $\\triangle A B P$ 面积的取值范围是 $(\\quad)$\nA. $[2,6]$\nB. $[4,8]$\nC. $[\\sqrt{2}, 3 \\sqrt{2}]$\nD. $[2 \\sqrt{2}, 3 \\sqrt{2}]$",
+            "answer": "A",
+            "analysis": "解: $\\because$ 直线 $x+y+2=0$ 分别与 $x$ 轴, $y$ 轴交于 $A, B$ 两点, $\\therefore$ 令 $\\mathrm{x}=0$, 得 $\\mathrm{y}=-2$, 令 $\\mathrm{y}=0$, 得 $\\mathrm{x}=-2$,\n\n$\\therefore A(-2,0), B(0,-2),|A B|=\\sqrt{4+4}=2 \\sqrt{2}$,\n\n$\\because$ 点 $P$ 在圆 $(x-2)^{2}+y^{2}=2$ 上, $\\therefore$ 设 $P(2+\\sqrt{2} \\cos \\theta, \\sqrt{2} \\sin \\theta)$,\n\n$\\therefore$ 点 $\\mathrm{P}$ 到直线 $\\mathrm{x}+\\mathrm{y}+2=0$ 的距离: $\\mathrm{d}=\\frac{|2+\\sqrt{2} \\cos \\theta+\\sqrt{2} \\sin \\theta+2|}{\\sqrt{2}}=\\frac{\\left|2 \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)+4\\right|}{\\sqrt{2}}$,\n\n$\\because \\sin \\left(\\theta+\\frac{\\pi}{4}\\right) \\in[-1,1], \\quad \\therefore d=\\frac{\\left|2 \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)+4\\right|}{\\sqrt{2}} \\in[\\sqrt{2}, 3 \\sqrt{2}]$,\n\n$\\therefore \\triangle \\mathrm{ABP}$ 面积的取值范围是:\n\n$\\left[\\frac{1}{2} \\times 2 \\sqrt{2} \\times \\sqrt{2}, \\frac{1}{2} \\times 2 \\sqrt{2} \\times 3 \\sqrt{2}\\right]=[2,6]$.\n\n故选: $A$.",
+            "index": 59
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n8. (5 分) 某群体中的每位成员使用移动支付的概率都为 $\\mathrm{p}$, 各成员的支付方式 相互独立. 设 $\\mathrm{X}$ 为该群体的 10 位成员中使用移动支付的人数, $D X=2.4, P$ $(x=4)<P(X=6)$, 则 $p=(\\quad)$\nA. 0.7\nB. 0.6\nC. 0.4\nD. 0.3",
+            "answer": "B",
+            "analysis": "解：某群体中的每位成员使用移动支付的概率都为 $\\mathrm{p}$, 看做是独立重复 事件，满足 $X \\sim B \\quad(10, \\mathrm{p})$,\n\n$P(x=4)<P(X=6)$, 可得 $C_{10}^{4} p^{4}(1-p)^{6}<c_{10}^{6} p^{6}(1-p)^{4}$, 可得 $1-2 p<0$. 即 $p>\\frac{1}{2}$\n\n因为 $D X=2.4$, 可得 $10 p(1-p)=2.4$, 解得 $p=0.6$ 或 $p=0.4$ (舍去).\n\n故选: $B$.",
+            "index": 60
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n9. (5 分) $\\triangle A B C$ 的内角 A, B, C 的对边分别为 $a, b, C$. 若 $\\triangle A B C$ 的面积为 $\\frac{a^{2}+b^{2}-c^{2}}{4}$, 则 $\\mathrm{C}=(\\quad)$\nA. $\\frac{\\pi}{2}$\nB. $\\frac{\\pi}{3}$\nC. $\\frac{\\pi}{4}$\nD. $\\frac{\\pi}{6}$",
+            "answer": "C",
+            "analysis": "解: $\\because \\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$.\n\n$\\triangle A B C$ 的面积为 $\\frac{a^{2}+b^{2}-c^{2}}{4}$,\n\n$\\therefore S_{\\triangle A B C}=\\frac{1}{2} a b \\sin C=\\frac{a^{2}+b^{2}-c^{2}}{4}$ $\\therefore \\sin \\mathrm{C}=\\frac{\\mathrm{a}^{2}+\\mathrm{b}^{2}-\\mathrm{c}^{2}}{2 \\mathrm{ab}}=\\cos \\mathrm{C}$,\n\n$\\because 0<\\mathrm{C}<\\pi, \\quad \\therefore \\mathrm{C}=\\frac{\\pi}{4}$.\n\n故选: C.",
+            "index": 61
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n11. (5 分) 设 $F_{1}, F_{2}$ 是双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的左, 右焦点, $O$ 是坐标原点. 过 $F_{2}$ 作 $C$ 的一条渐近线的垂线, 垂足为 $P$, 若 $\\left|P F_{1}\\right|=\\sqrt{6}|O P|$, 则 $C$ 的离心率为 $(\\quad)$\nA. $\\sqrt{5}$\nB. 2\nC. $\\sqrt{3}$\nD. $\\sqrt{2}$",
+            "answer": "C",
+            "analysis": "解：双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1 \\quad(a>0 . b>0)$ 的一条渐近线方程为 $y=\\frac{b}{a} x$, $\\therefore$ 点 $\\mathrm{F}_{2}$ 到渐近线的距离 $\\mathrm{d}=\\frac{\\mathrm{bc}}{\\sqrt{\\mathrm{a}^{2}+\\mathrm{b}^{2}}}=\\mathrm{b}$, 即 $\\left|P F_{2}\\right|=b$,\n\n$\\therefore|\\mathrm{OP}|=\\sqrt{\\left|O \\mathrm{~F}_{2}\\right|^{2}-\\left|\\mathrm{PF}_{2}\\right|^{2}}=\\sqrt{c^{2}-\\mathrm{b}^{2}}=\\mathrm{a}, \\quad \\cos \\angle \\mathrm{PF} \\mathrm{F}_{2} \\mathrm{O}=\\frac{\\mathrm{b}}{\\mathrm{c}}$,\n\n$\\because\\left|\\mathrm{PF}_{1}\\right|=\\sqrt{6}|\\mathrm{OP}|$\n\n$\\therefore\\left|P F_{1}\\right|=\\sqrt{6} a$ 在三角形 $F_{1} P F_{2}$ 中, 由余弦定理可得 $\\left|P F_{1}\\right|^{2}=\\left|P F_{2}\\right|^{2}+\\left|F_{1} F_{2}\\right|^{2}-2\\left|P F_{2}\\right| \\cdot\\left|F_{1} F_{2}\\right| C O S \\angle$ $\\mathrm{PF}_{2} \\mathrm{O}$\n\n$\\therefore 6 \\mathrm{a}^{2}=\\mathrm{b}^{2}+4 c^{2}-2 \\times b \\times 2 c \\times \\frac{b}{c}=4 c^{2}-3 b^{2}=4 c^{2}-3 \\quad\\left(c^{2}-a^{2}\\right)$,\n\n即 $3 a^{2}=c^{2}$,\n\n即 $\\sqrt{3} a=c$,\n\n$\\therefore \\mathrm{e}=\\frac{\\mathrm{c}}{\\mathrm{a}}=\\sqrt{3}$,\n\n故选: C.",
+            "index": 62
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n12. (5 分) 设 $a=\\log _{0.2} 0.3, b=\\log _{2} 0.3$, 则 $(\\quad)$\nA. $a+b<a b<0$\nB. $a b<a+b<0$\nC. $a+b<0<a b$\nD. $a b<0<a+b$\n",
+            "answer": "B",
+            "analysis": "解: $\\because \\mathrm{a}=\\log _{0.2} 0.3=\\frac{1 \\mathrm{~g} 0.3}{-\\lg 5}, \\mathrm{~b}=\\log _{2} 0.3=\\frac{\\lg 0.3}{1 \\mathrm{~g} 2}$,\n\n$\\therefore \\mathrm{a}+\\mathrm{b}=\\frac{\\lg 0.3}{\\lg 2}-\\frac{\\lg 0.3}{\\lg 5}=\\frac{\\lg 0.3(\\lg 5-\\lg 2)}{\\lg 2 \\lg 5}=\\frac{\\lg 0.3 \\lg \\frac{5}{2}}{\\lg 2 \\lg 5}$,\n\n$\\mathrm{ab}=-\\frac{\\lg 0.3}{\\lg 2} \\cdot \\frac{\\lg 0.3}{\\lg 5}=\\frac{\\lg 0.3 \\cdot 1 \\mathrm{~g} \\frac{10}{3}}{\\lg 2 \\lg 5}$,\n\n$\\because \\lg \\frac{10}{3}>\\lg \\frac{5}{2}, \\frac{\\lg 0.3}{\\lg 2 \\lg 5}<0$,\n\n$\\therefore \\mathrm{ab}<\\mathrm{a}+\\mathrm{b}<0$.\n\n故选: B.",
+            "index": 63
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n2. (5 分) 若 $z=1+2 i$, 则 $\\frac{4 i}{z \\cdot \\bar{z}-1}=(\\quad)$\nA. 1\nB. -1\nC. i\nD. $-\\mathrm{i}$",
+            "answer": "C",
+            "analysis": " 解: $z=1+2 i$, 则 $\\frac{4 i}{z \\bar{z}-1}=\\frac{4 i}{(1+2 i)(1-2 i)-1}=\\frac{4 i}{5-1}=i$.\n\n故选: C.",
+            "index": 64
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n3. (5 分) 已知向量 $\\overrightarrow{\\mathrm{BA}}=\\left(\\frac{1}{2}, \\frac{\\sqrt{3}}{2}\\right), \\overrightarrow{\\mathrm{BC}}=\\left(\\frac{\\sqrt{3}}{2}, \\frac{1}{2}\\right)$, 则 $\\angle \\mathrm{ABC}=(\\quad)$\nA. $30^{\\circ}$\nB. $45^{\\circ}$\nC. $60^{\\circ}$\nD. $120^{\\circ}$",
+            "answer": "A",
+            "analysis": "解: $\\overrightarrow{B A} \\cdot \\overrightarrow{\\mathrm{BC}}=\\frac{\\sqrt{3}}{4}+\\frac{\\sqrt{3}}{4}=\\frac{\\sqrt{3}}{2},|\\overrightarrow{B A}|=|\\overrightarrow{\\mathrm{BC}}|=1$;\n\n$\\therefore \\cos \\angle A B C=\\frac{\\overrightarrow{B A} \\cdot \\overrightarrow{B C}}{|\\overrightarrow{B A}||\\overrightarrow{B C}|}=\\frac{\\sqrt{3}}{2}$\n\n又 $0^{\\circ} \\leqslant \\angle A B C \\leqslant 180^{\\circ}$;\n\n$\\therefore \\angle \\mathrm{ABC}=30^{\\circ}$.\n\n故选: A.",
+            "index": 65
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n5. (5 分) 若 $\\tan a=\\frac{3}{4}$, 则 $\\cos ^{2} a+2 \\sin 2 a=(\\quad)$\nA. $\\frac{64}{25}$\nB. $\\frac{48}{25}$\nC. 1\nD. $\\frac{16}{25}$",
+            "answer": "A",
+            "analysis": "解: $\\because \\tan \\mathrm{a}=\\frac{3}{4}$,\n\n$\\therefore \\cos ^{2} \\alpha+2 \\sin 2 \\alpha=\\frac{\\cos ^{2} \\alpha+4 \\sin \\alpha \\cos \\alpha}{\\sin ^{2} \\alpha+\\cos ^{2} \\alpha}=\\frac{1+4 \\tan \\alpha}{\\tan ^{2} \\alpha+1}=\\frac{1+4 \\times \\frac{3}{4}}{\\frac{9}{16}+1}=\\frac{64}{25}$.\n\n故选: A.",
+            "index": 66
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n6. (5 分) 已知 $a=2^{\\frac{4}{3}}, b=3^{\\frac{2}{3}}, c=25^{\\frac{1}{3}}$, 则 ( )\nA. $b<a<c$\nB. $a<b<c$\nC. $\\mathrm{b}<\\mathrm{c}<\\mathrm{a}$\nD. $c<a<b$",
+            "answer": "A",
+            "analysis": "解: $\\because a=2^{\\frac{4}{3}}=4^{\\frac{2}{3}}$,\n\n$b=3^{\\frac{2}{3}}$\n\n$\\mathrm{C}=25^{\\frac{1}{3}}=5^{\\frac{2}{3}}$\n\n综上可得： $b<a<c$,\n\n故选: A.",
+            "index": 67
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n10. (5 分) 在封闭的直三棱柱 $A B C-A_{1} B_{1} C_{1}$ 内有一个体积为 $V$ 的球, 若 $A B \\perp$ $B C, A B=6, B C=8, A A_{1}=3$, 则 $V$ 的最大值是 $(\\quad)$\nA. $4 \\pi$\nB. $\\frac{9 \\pi}{2}$\nC. $6 \\pi$\nD. $\\frac{32 \\pi}{3}$",
+            "answer": "B",
+            "analysis": "解: $\\because \\mathrm{AB} \\perp \\mathrm{BC}, \\mathrm{AB}=6, \\mathrm{BC}=8$,\n\n$\\therefore A C=10$ 故三角形 $A B C$ 的内切圆半径 $r=\\frac{6+8-10}{2}=2$,\n\n又由 $\\mathrm{AA}_{1}=3$,\n\n故直三棱柱 $A B C-A_{1} B_{1} C_{1}$ 的内切球半径为 $\\frac{3}{2}$,\n\n此时 $\\vee$ 的最大值 $\\frac{4}{3} \\pi \\cdot\\left(\\frac{3}{2}\\right)^{3}=\\frac{9 \\pi}{2}$,\n\n故选: B.",
+            "index": 68
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n11. (5 分) 已知 $O$ 为坐标原点, $F$ 是椭圆 $C: \\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的左焦点, $A, B$ 分别为 $C$ 的左, 右顶点. $P$ 为 $C$ 上一点, 且 $P F \\perp x$ 轴, 过点 $A$ 的直线 I 与线段 $P F$ 交于点 $M$, 与 $y$ 轴交于点 $E$. 若直线 $B M$ 经过 $O E$ 的中点, 则 $C$ 的离心率为 $(\\quad)$\nA. $\\frac{1}{3}$\nB. $\\frac{1}{2}$\nC. $\\frac{2}{3}$\nD. $\\frac{3}{4}$",
+            "answer": "A",
+            "analysis": "解：由题意可设 $F(-c, 0), A(-a, 0), B(a, 0)$,\n\n设直线 $A E$ 的方程为 $y=k(x+a)$,\n\n令 $x=-c$, 可得 $M(-c, k(a-c))$, 令 $x=0$, 可得 $E(0, k a)$,\n\n设 $O E$ 的中点为 $H$, 可得 $H\\left(0, \\frac{k a}{2}\\right)$, 由 $B, H, M$ 三点共线，可得 $k_{B H}=k_{B M}$,\n\n即为 $\\frac{\\frac{k a}{2}}{-a}=\\frac{k(a-c)}{-c-a}$\n\n化简可得 $\\frac{a-c}{a+c}=\\frac{1}{2}$, 即为 $a=3 c$,\n\n可得 $\\mathrm{e}=\\frac{c}{\\mathrm{a}}=\\frac{1}{3}$.\n\n另解: 由 $\\triangle A M F \\backsim \\triangle A E O$,\n\n可得 $\\frac{a-c}{a}=\\frac{M F}{O E}$,\n\n由 $\\triangle B O H \\backsim \\triangle B F M$,\n\n可得 $\\frac{a}{a+c}=\\frac{O H}{F M}=\\frac{O E}{2 F M M}$,\n\n即有 $\\frac{2(a-c)}{a}=\\frac{a+c}{a}$ 即 $a=3 c$,\n\n可得 $\\mathrm{e}=\\frac{c}{\\mathrm{a}}=\\frac{1}{3}$.\n\n故选: A.",
+            "index": 69
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n12. (5 分) 定义“规范 01 数列” $\\left\\{a_{n}\\right\\}$ 如下: $\\left\\{a_{n}\\right\\}$ 共有 $2 m$ 项, 其中 $m$ 项为 $0, m$ 项 为 1 , 且对任意 $k \\leqslant 2 m, a_{1}, a_{2}, \\ldots, a_{k}$ 中 0 的个数不少于 1 的个数, 若 $m=4$, 则不同的“规范 01 数列”共有（）\nA. 18 个\nB. 16 个\nC. 14 个\nD. 12 个 \n\n\\section{",
+            "answer": "C",
+            "analysis": "解：由题意可知, “规范 01 数列”有偶数项 $2 \\mathrm{~m}$ 项, 且所含 0 与 1 的个 数相等, 首项为 0 , 末项为 1 , 若 $m=4$, 说明数列有 8 项, 满足条件的数列 有：\n\n$0,0,0,0,1,1,1,1 ; 0,0,0,1,0,1,1,1 ; 0,0,0,1,1$, $0,1,1 ; 0,0,0,1,1,1,0,1 ; 0,0,1,0,0,1,1,1$;\n\n$0,0,1,0,1,0,1,1 ; 0,0,1,0,1,1,0,1 ; 0,0,1,1,0$, $1,0,1 ; 0,0,1,1,0,0,1,1 ; 0,1,0,0,0,1,1,1$;\n\n$0,1,0,0,1,0,1,1 ; 0,1,0,0,1,1,0,1 ; 0,1,0,1,0$, $0,1,1 ; 0,1,0,1,0,1,0,1$. 共 14 个.\n\n故选: C.",
+            "index": 70
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n1. (5 分) 已知集合 $A=\\left\\{(x, y) \\mid x^{2}+y^{2}=1\\right\\}, B=\\{(x, y) \\mid y=x\\}$, 则 $A \\cap B$ 中元 素的个数为 $(\\quad)$\nA. 3\nB. 2\nC. 1\nD. 0",
+            "answer": "B",
+            "analysis": "解: 由 $\\left\\{\\begin{array}{l}x^{2}+y^{2}=1 \\\\ y=x\\end{array}\\right.$, 解得: $\\left\\{\\begin{array}{l}x=\\frac{\\sqrt{2}}{2} \\\\ y=\\frac{\\sqrt{2}}{2}\\end{array}\\right.$ 或 $\\left\\{\\begin{array}{c}x=-\\frac{\\sqrt{2}}{2} \\\\ y=\\frac{\\sqrt{2}}{2}\\end{array}\\right.$,\n\n$\\therefore A \\cap B$ 的元素的个数是 2 个,\n\n故选: B.",
+            "index": 71
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n2. (5 分) 设复数 $z$ 满足 $(1+i) \\quad z=2 i$, 则 $|z|=(\\quad)$\nA. $\\frac{1}{2}$\nB. $\\frac{\\sqrt{2}}{2}$\nC. $\\sqrt{2}$\nD. 2",
+            "answer": "C",
+            "analysis": "解: $\\because(1+\\mathrm{i}) \\mathrm{z}=2 \\mathrm{i}, \\quad \\therefore(1-\\mathrm{i})(1+\\mathrm{i}) \\quad \\mathrm{z}=2 \\mathrm{i}(1-\\mathrm{i}), \\mathrm{z}=\\mathrm{i}+1$.\n\n则 $|z|=\\sqrt{2}$.\n\n故选: C.",
+            "index": 72
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n4. (5 分) $(\\mathrm{x}+\\mathrm{y})(2 \\mathrm{x}-\\mathrm{y})^{5}$ 的展开式中的 $x^{3} \\mathrm{y}^{3}$ 系数为 $(\\quad)$\nA. -80\nB. -40\nC. 40\nD. 80 ",
+            "answer": "C",
+            "analysis": " 解: $(2 x-y)^{5}$ 的展开式的通项公式: $T_{r+1}=\\left[_{5}^{r}(2 x)^{5-r}(-y)^{r}=2^{5-r}\\right.$ $(-1){ }^{r}\\left[{ }_{5}^{r} x^{5-r} y\\right.$\n\n令 $5-r=2, r=3$, 解得 $r=3$.\n\n令 $5-r=3, r=2$, 解得 $r=2$.\n\n$\\therefore(x+y)(2 x-y)^{5}$ 的展开式中的 $x^{3} y^{3}$ 系数 $=2^{2} \\times(-1)^{3}\\left[_{5}^{3}+2^{3} \\times 1 \\times\\left[_{5}^{2}=40\\right.\\right.$. 故选: C.",
+            "index": 73
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n5. (5 分) 已知双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1 \\quad(a>0, b>0)$ 的一条渐近线方程为 $y=\\frac{\\sqrt{5}}{2} x$, 且与椭圆 $\\frac{x^{2}}{12}+\\frac{y^{2}}{3}=1$ 有公共焦点, 则 $C$ 的方程为 $(\\quad)$\nA. $\\frac{x^{2}}{8}-\\frac{y^{2}}{10}=1$\nB. $\\frac{x^{2}}{4}-\\frac{y^{2}}{5}=1$\nC. $\\frac{x^{2}}{5}-\\frac{y^{2}}{4}=1$\nD. $\\frac{x^{2}}{4}-\\frac{y^{2}}{3}=1$",
+            "answer": "B",
+            "analysis": "解: 椭圆 $\\frac{x^{2}}{12}+\\frac{y^{2}}{3}=1$ 的焦点坐标 $( \\pm 3,0)$,\n\n则双曲线的焦点坐标为 $( \\pm 3,0)$, 可得 $c=3$,\n\n双曲线 C: $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1 \\quad(a>0, b>0)$ 的一条渐近线方程为 $y=\\frac{\\sqrt{5}}{2} x$, 可得 $\\frac{b}{a}=\\frac{\\sqrt{5}}{2}$, 即 $\\frac{c^{2}-a^{2}}{a^{2}}=\\frac{5}{4}$, 可得 $\\frac{c}{a}=\\frac{3}{2}$, 解得 $a=2, b=\\sqrt{5}$,\n\n所求的双曲线方程为: $\\frac{x^{2}}{4}-\\frac{y^{2}}{5}=1$.\n\n故选: B.",
+            "index": 74
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n6. (5 分) 设函数 $f(x)=\\cos \\left(x+\\frac{\\pi}{3}\\right)$, 则下列结论错误的是 $(\\quad)$\nA. $f(x)$ 的一个周期为 $-2 \\pi$\nB. $y=f(x)$ 的图象关于直线 $x=\\frac{8 \\pi}{3}$ 对称\nC. $f(x+\\pi)$ 的一个零点为 $x=\\frac{\\pi}{6}$\nD. $f(x)$ 在 $\\left(\\frac{\\pi}{2}, \\pi\\right)$ 单调递减",
+            "answer": "D",
+            "analysis": " 解: $A$. 函数的周期为 $2 k \\pi$, 当 $k=-1$ 时, 周期 $T=-2 \\pi$, 故 $A$ 正确,\n\nB. 当 $x=\\frac{8 \\pi}{3}$ 时, $\\cos \\left(x+\\frac{\\pi}{3}\\right)=\\cos \\left(\\frac{8 \\pi}{3}+\\frac{\\pi}{3}\\right)=\\cos \\frac{9 \\pi}{3}=\\cos 3 \\pi=-1$ 为最小 值, 此时 $y=f(x)$ 的图象关于直线 $x=\\frac{8 \\pi}{3}$ 对称, 故 $B$ 正确,\n\nC 当 $x=\\frac{\\pi}{6}$ 时, $f\\left(\\frac{\\pi}{6}+\\pi\\right)=\\cos \\left(\\frac{\\pi}{6}+\\pi+\\frac{\\pi}{3}\\right)=\\cos \\frac{3 \\pi}{2}=0$, 则 $f(x+\\pi)$ 的一个 零点为 $x=\\frac{\\pi}{6}$, 故 $C$ 正确,\n\nD. 当 $\\frac{\\pi}{2}<x<\\pi$ 时, $\\frac{5 \\pi}{6}<x+\\frac{\\pi}{3}<\\frac{4 \\pi}{3}$, 此时函数 $f(x)$ 不是单调函数, 故 $D$ 错误,\n\n故选: D.",
+            "index": 75
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n9. (5 分) 等差数列 $\\left\\{a_{n}\\right\\}$ 的首项为 1, 公差不为 0 . 若 $a_{2}, a_{3}, a_{6}$ 成等比数列, 则 $\\left\\{a_{n}\\right\\}$ 前 6 项的和为 $(\\quad)$\nA. -24\nB. -3\nC. 3\nD. 8",
+            "answer": "A",
+            "analysis": "解: $\\because$ 等差数列 $\\left\\{a_{n}\\right\\}$ 的首项为 1, 公差不为 $0 . a_{2}, a_{3}, a_{6}$ 成等比数列, $\\therefore \\mathrm{a}_{3}^{2}=\\mathrm{a}_{2} \\cdot \\mathrm{a}_{6}$\n\n$\\therefore\\left(a_{1}+2 d\\right)^{2}=\\left(a_{1}+d\\right) \\quad\\left(a_{1}+5 d\\right)$, 且 $a_{1}=1, d \\neq 0$,\n\n解得 $d=-2$,\n\n$\\therefore\\left\\{a_{n}\\right\\}$ 前 6 项的和为 $S_{6}=6 a_{1}+\\frac{6 \\times 5}{2} d=6 \\times 1+\\frac{6 \\times 5}{2} \\times(-2)=-24$.\n\n故选: A.",
+            "index": 76
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n10. (5 分) 已知椭圆 $C: \\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1 \\quad(a>b>0)$ 的左、右顶点分别为 $A_{1}, A_{2}$, 且以线段 $A_{1} A_{2}$ 为直径的圆与直线 $b x-a y+2 a b=0$ 相切, 则 $C$ 的离心率为\nA. $\\frac{\\sqrt{6}}{3}$\nB. $\\frac{\\sqrt{3}}{3}$\nC. $\\frac{\\sqrt{2}}{3}$\nD. $\\frac{1}{3}$",
+            "answer": "A",
+            "analysis": "解: 以线段 $A_{1} A_{2}$ 为直径的圆与直线 $b x-a y+2 a b=0$ 相切, $\\therefore$ 原点到直线的距离 $\\frac{2 a b}{\\sqrt{a^{2}+b^{2}}}=a$, 化为: $a^{2}=3 b^{2}$.\n\n$\\therefore$ 椭圆 $\\mathrm{C}$ 的离心率 $\\mathrm{e}=\\frac{\\mathrm{c}}{\\mathrm{a}}=\\sqrt{1-\\frac{\\mathrm{b}^{2}}{\\mathrm{a}^{2}}}=\\frac{\\sqrt{6}}{3}$.\n\n故选: A.",
+            "index": 77
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "\n\n11. (5 分) 已知函数 $f(x)=x^{2}-2 x+a\\left(e^{x-1}+e^{-x+1}\\right)$ 有唯一零点, 则 $a=(\\quad)$\nA. $\\quad-\\frac{1}{2}$\nB. $\\frac{1}{3}$\nC. $\\frac{1}{2}$\nD. 1",
+            "answer": "C",
+            "analysis": "解: 因为 $f(x)=x^{2}-2 x+a\\left(e^{x-1}+e^{-x+1}\\right)=-1+(x-1)^{2}+a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ $=0$,\n\n所以函数 $f(x)$ 有唯一零点等价于方程 $1-(x-1)^{2}=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 有唯一解, 等价于函数 $y=1-(x-1)^{2}$ 的图象与 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的图象只有一个交点.\n\n(1)当 $a=0$ 时, $f(x)=x^{2}-2 x \\geqslant-1$, 此时有两个零点, 矛盾;\n\n(2)当 $a<0$ 时, 由于 $y=1-(x-1)^{2}$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递 减,\n\n且 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递减, 所以函数 $y=1-(x-1)^{2}$ 的图象的最高点为 $A(1,1), y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的\n\n图象的最高点为 $B(1,2 a)$,\n\n由于 $2 a<0<1$, 此时函数 $y=1-(x-1)^{2}$ 的图象与 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的图象 有两个交点，矛盾;\n\n(3)当 $a>0$ 时, 由于 $y=1-(x-1)^{2}$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递 减,\n\n且 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 在 $(-\\infty, 1)$ 上递减、在 $(1,+\\infty)$ 上递增,\n\n所以函数 $y=1-(x-1)^{2}$ 的图象的最高点为 $A(1,1), y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的\n\n图象的最低点为 $B(1,2 a)$,\n\n由题可知点 $A$ 与点 $B$ 重合时满足条件, 即 $2 a=1$, 即 $a=\\frac{1}{2}$, 符合条件;\n\n综上所述, $a=\\frac{1}{2}$,\n\n故选: C.",
+            "index": 78
+        }
+    ]
+}
