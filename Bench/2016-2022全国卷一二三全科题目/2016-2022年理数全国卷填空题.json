@@ -232,6 +232,62 @@
             "answer": " $\\left(-\\frac{1}{4},+\\infty\\right)$.",
             "analysis": "解：若 $x \\leqslant 0$, 则 $x-\\frac{1}{2} \\leqslant-\\frac{1}{2}$,\n\n则 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 等价为 $x+1+x-\\frac{1}{2}+1>1$, 即 $2 x>-\\frac{1}{2}$, 则 $x>-\\frac{1}{4}$, 此时 $-\\frac{1}{4}<x \\leqslant 0$,\n\n当 $x>0$ 时, $f(x)=2^{x}>1, x-\\frac{1}{2}>-\\frac{1}{2}$,\n\n当 $x-\\frac{1}{2}>0$ 即 $x>\\frac{1}{2}$ 时, 满足 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n当 $0 \\geqslant x-\\frac{1}{2}>-\\frac{1}{2}$, 即 $\\frac{1}{2} \\geqslant x>0$ 时, $f\\left(x-\\frac{1}{2}\\right)=x-\\frac{1}{2}+1=x+\\frac{1}{2}>\\frac{1}{2}$,\n\n此时 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n综上 $x>-\\frac{1}{4}$,\n\n故答案为: $\\left(-\\frac{1}{4},+\\infty\\right)$.",
             "index": 28
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n14. $\\left(x^{2}+\\frac{2}{x}\\right)^{6}$ 的展开式中常数项是 (用数字作答).\n\n",
+            "answer": " 240\n\n",
+            "analysis": "【详解】 $\\because\\left(x^{2}+\\frac{2}{x}\\right)^{6}$\n\n其二项式展开通项:\n\n$T_{r+1}=C_{6}^{r} \\cdot\\left(x^{2}\\right)^{6-r} \\cdot\\left(\\frac{2}{x}\\right)^{r}$\n\n$=C_{6}^{r} \\cdot x^{12-2 r}(2)^{r} \\cdot x^{-r}$\n\n$=C_{6}^{r}(2)^{r} \\cdot x^{12-3 r}$\n\n当 $12-3 r=0$, 解得 $r=4$\n\n$\\therefore\\left(x^{2}+\\frac{2}{x}\\right)^{6}$ 的展开式中常数项是: $C_{6}^{4} \\cdot 2^{4}=C_{6}^{2} \\cdot 16=15 \\times 16=240$.\n\n故答案为: 240 .\n\n",
+            "index": 29
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n16. 关于函数 $f(x)=\\sin x+\\frac{1}{\\sin x}$ 有如下四个命题:\n\n(1) $f(x)$ 的图像关于 $y$ 轴对称.\n\n(2) $f(x)$ 的图像关于原点对称.\n\n(3) $f(x)$ 的图像关于直线 $x=\\frac{\\pi}{2}$ 对称.\n\n(4) $f(x)$ 的最小值为 2 .\n\n其中所有真命题的序号是\n\n",
+            "answer": "(2)}\n\n",
+            "analysis": "【详解】对于命题(1), $f\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2}+2=\\frac{5}{2}, f\\left(-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}-2=-\\frac{5}{2}$, 则 $f\\left(-\\frac{\\pi}{6}\\right) \\neq f\\left(\\frac{\\pi}{6}\\right)$, 所以, 函数 $f(x)$ 的图象不关于 $y$ 轴对称，命题(1)错误;\n\n对于命题(2), 函数 $f(x)$ 的定义域为 $\\{x \\mid x \\neq k \\pi, k \\in Z\\}$, 定义域关于原点对称, $f(-x)=\\sin (-x)+\\frac{1}{\\sin (-x)}=-\\sin x-\\frac{1}{\\sin x}=-\\left(\\sin x+\\frac{1}{\\sin x}\\right)=-f(x)$,\n\n所以, 函数 $f(x)$ 的图象关于原点对称，命题(2)正确;\n\n对于命题(3), $\\because f\\left(\\frac{\\pi}{2}-x\\right)=\\sin \\left(\\frac{\\pi}{2}-x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}-x\\right)}=\\cos x+\\frac{1}{\\cos x}$,\n\n$f\\left(\\frac{\\pi}{2}+x\\right)=\\sin \\left(\\frac{\\pi}{2}+x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}+x\\right)}=\\cos x+\\frac{1}{\\cos x}, \\quad$ 则 $f\\left(\\frac{\\pi}{2}-x\\right)=f\\left(\\frac{\\pi}{2}+x\\right)$,\n\n所以, 函数 $f(x)$ 的图象关于直线 $x=\\frac{\\pi}{2}$ 对称, 命题(3)正确;\n\n对于命题(4), 当 $-\\pi<x<0$ 时, $\\sin x<0$, 则 $f(x)=\\sin x+\\frac{1}{\\sin x}<0<2$,\n\n命题(4)错误.\n\n故答案为: (2)(3).\n\n",
+            "index": 30
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n13. 已知单位向量 $a, b$ 的夹角为 $45^{\\circ}, k a-b$ 与 $a$ 垂直, 则 $k=$\n\n",
+            "answer": " $\\frac{\\sqrt{2}}{2}$\n\n",
+            "analysis": "【详解】由题意可得: $\\vec{a} \\cdot \\vec{b}=1 \\times 1 \\times \\cos 45^{\\circ}=\\frac{\\sqrt{2}}{2}$,\n\n由向量垂直的充分必要条件可得: $(k \\vec{a}-\\vec{b}) \\cdot \\vec{a}=0$,\n\n即: $k \\times \\vec{a}^{2}-\\vec{a} \\cdot \\vec{b}=k-\\frac{\\sqrt{2}}{2}=0$, 解得: $k=\\frac{\\sqrt{2}}{2}$.\n\n故答案为: $\\frac{\\sqrt{2}}{2}$.\n\n",
+            "index": 31
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n14.4 名同学到 3 个小区参加垃圾分类宣传活动, 每名同学只去 1 个小区, 每个小区至少安排 1 名同学, 则不同 的安排方法共有 种.\n\n",
+            "answer": " 36}\n\n",
+            "analysis": "【详解】 $\\because 4$ 名同学到 3 个小区参加垃圾分类宣传活动, 每名同学只去 1 个小区, 每个小区至少安排 1 名同学\n\n$\\therefore$ 先取2名同学看作一组, 选法有: $C_{4}^{2}=6$\n\n现在可看成是 3 组同学分配到 3 个小区, 分法有: $A_{3}^{3}=6$\n\n根据分步乘法原理, 可得不同的安排方法 $6 \\times 6=36$ 种\n\n故答案为: 36 .\n\n",
+            "index": 32
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n15. 设复数 $z_{1}, z_{2}$ 满足 $\\left|z_{1}\\right|=\\left|z_{2}\\right|=2, z_{1}+z_{2}=\\sqrt{3}+\\mathrm{i}$, 则 $\\left|z_{1}-z_{2}\\right|=$\n\n",
+            "answer": " $2 \\sqrt{3}$\n\n",
+            "analysis": "【详解】 $\\because\\left|z_{1}\\right|=\\left|z_{2}\\right|=2$, 可设 $z_{1}=2 \\cos \\theta+2 \\sin \\theta \\cdot i, z_{2}=2 \\cos \\alpha+2 \\sin \\alpha \\cdot i$,\n\n$\\therefore z_{1}+z_{2}=2(\\cos \\theta+\\cos \\alpha)+2(\\sin \\theta+\\sin \\alpha) \\cdot i=\\sqrt{3}+i$,\n\n$\\therefore\\left\\{\\begin{array}{l}2(\\cos \\theta+\\cos \\alpha)=\\sqrt{3} \\\\ 2(\\sin \\theta+\\sin \\alpha)=1\\end{array}\\right.$, 两式平方作和得: $4(2+2 \\cos \\theta \\cos \\alpha+2 \\sin \\theta \\sin \\alpha)=4$,\n\n化简得: $\\cos \\theta \\cos \\alpha+\\sin \\theta \\sin \\alpha=-\\frac{1}{2}$\n\n$$\n\\begin{aligned}\n& \\therefore\\left|z_{1}-z_{2}\\right|=|2(\\cos \\theta-\\cos \\alpha)+2(\\sin \\theta-\\sin \\alpha) \\cdot i| \\\\\n& =\\sqrt{4(\\cos \\theta-\\cos \\alpha)^{2}+4(\\sin \\theta-\\sin \\alpha)^{2}}=\\sqrt{8-8(\\cos \\theta \\cos \\alpha+\\sin \\theta \\sin \\alpha)}=\\sqrt{8+4}=2 \\sqrt{3} .\n\\end{aligned}\n$$\n\n故答案为: $2 \\sqrt{3}$.\n\n",
+            "index": 33
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n14. 设 $a, b$ 为单位向量, 且 $|\\boldsymbol{a}+\\boldsymbol{b}|=1$, 则 $|a-b|=$\n\n",
+            "answer": " $\\sqrt{3}$\n\n",
+            "analysis": "【详解】因为 $\\vec{a}, \\vec{b}$ 为单位向量, 所以 $|\\vec{a}|=|b|=1$\n\n所以 $|\\vec{a}+\\vec{b}|=\\sqrt{(\\vec{a}+\\vec{b})^{2}}=\\sqrt{|\\vec{a}|^{2}+2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^{2}}=\\sqrt{2+2 \\vec{a} \\cdot \\vec{b}}=1$\n\n解得: $2 \\vec{a} \\cdot \\vec{b}=-1$\n\n所以 $|\\vec{a}-\\vec{b}|=\\sqrt{(\\vec{a}-\\vec{b})^{2}}=\\sqrt{|\\vec{a}|^{2}-2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^{2}}=\\sqrt{3}$\n\n故答案为: $\\sqrt{3}$\n\n",
+            "index": 34
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n15. 已知 $F$ 为双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n的右焦点, $A$ 为 $C$ 的右顶点, $B$ 为 $C$ 上的点, 且 $B F$ 垂直于 $x$ 轴. 若 $A B$ 的斜率为 3 , 则 $C$ 的离心率为\n\n",
+            "answer": "2\n\n",
+            "analysis": "【详解】依题可得, $\\frac{|B F|}{|A F|}=3$, 而 $|B F|=\\frac{b^{2}}{a},|A F|=c-a$, 即 $\\frac{\\frac{b^{2}}{a}}{c-a}=3$, 变形得 $c^{2}-a^{2}=3 a c-3 a^{2}$ , 化简可得, $e^{2}-3 e+2=0$, 解得 $e=2$ 或 $e=1$ (舍去).\n\n故答案为: 2 .\n\n",
+            "index": 35
         }
     ]
 }

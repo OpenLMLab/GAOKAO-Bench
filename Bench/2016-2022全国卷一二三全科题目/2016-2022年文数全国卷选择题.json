@@ -680,6 +680,214 @@
             "answer": "D",
             "analysis": "解析:\n\n$f^{\\prime}(x)=2 a(x-a)(x-b)+a(x-a)^{2}=a(x-a)(3 x-2 b-a)$\n\n当 $a>0$ 时, 原函数先增再减后增.\n\n原函数在 $f^{\\prime}(x)=0$ 的较小零点时取得极大值.\n\n即 $a<\\frac{a+2 b}{3}$, 即 $a<b, \\therefore a^{2}<a b$.\n\n当 $a<0$ 时, 原函数先减再增后减.\n\n原函数在 $f^{\\prime}(x)=0$ 的较大零点时取得极大值.\n\n即 $a>\\frac{a+2 b}{3}, a>b, a^{2}<a b$, 故选 D.",
             "index": 84
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n1.已知集合 $A=\\{x|| x \\mid<3, x \\in Z\\}, B=\\{x|| x \\mid>1, x \\in Z\\}$, 则 $A \\cap B=(\\quad)$\nA. $\\varnothing$\nB. $\\{-3,-2,2,3)$\nC. $\\{-2,0,2\\}$\nD. $\\{-2,2\\}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】因为 $A=\\{x|| x \\mid<3, x \\in Z\\}=\\{-2,-1,0,1,2\\}$, $B=\\{x|| x \\mid>1, x \\in Z\\}=\\{x \\mid x>1$ 或 $x<-1, x \\in Z\\} ，$\n\n所以 $A \\cap B=\\{2,-2\\}$.\n\n故选：D.\n\n",
+            "index": 85
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n2. $(1-\\mathrm{i})^{4}=(\\quad)$\nA. -4\nB. 4\nC. $-4 i$\nD. $4 i$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $(1-i)^{4}\\left([=1-i)^{2}\\right]^{2}\\left(=1-2 i+i^{2}\\right)^{2}-(=2 i)^{2}-=4$.\n\n故选: A.\n\n",
+            "index": 86
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n4.在新冠肺炎疫情防控期间，某超市开通网上销售业务，每天能完成1200份订单的\n\n配货, 由于订单量大幅增加, 导致订单积压.为解决困难, 许多志愿者踊跃报名参加配货工作.已知该超市 某日积压 500 份订单末配货, 预计第二天的新订单超过 1600 份的概率为 0.05 , 志愿者每人每天能完成 50 份订 单的配货, 为使第二天完成积压订单及当日订单的配货的概率不小于 0.95 , 则至少需要志愿者（）\nA. 10 名\nB. 18 名\nC. 24名\nD. 32 名\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题意, 第二天新增订单数为 $500+1600-1200=900$,\n\n故需要志愿者 $\\frac{900}{50}=18$ 名.\n\n故选: B\n\n【点晴】本题主要考查函数模型的简单应用, 属于基础题.",
+            "index": 87
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n5.已知单位向量 $\\boldsymbol{a}, \\boldsymbol{b}$ 的夹角为 $60^{\\circ}$, 则在下列向量中, 与 $\\boldsymbol{b}$ 垂直的是（）\nA. $\\boldsymbol{a}+2 \\boldsymbol{b}$\nB. $2 \\boldsymbol{a}+\\boldsymbol{b}$\nC. $\\boldsymbol{a}-2 \\boldsymbol{b}$\nD. $2 \\boldsymbol{a}-\\boldsymbol{b}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】由已知可得: $\\vec{a} \\cdot \\vec{b}=|\\vec{a}| \\cdot|\\vec{b}| \\cdot \\cos 60^{\\circ}=1 \\times 1 \\times \\frac{1}{2}=\\frac{1}{2}$.\n\n$\\mathrm{A}$ : 因为 $(\\vec{a}+2 \\vec{b}) \\cdot \\vec{b}=\\vec{a} \\cdot \\vec{b}+2 \\vec{b}^{2}=\\frac{1}{2}+2 \\times 1=\\frac{5}{2} \\neq 0$, 所以本选项不符合题意;\n\nB: 因为 $(2 \\vec{a}+\\vec{b}) \\cdot \\vec{b}=2 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}=2 \\times \\frac{1}{2}+1=2 \\neq 0$, 所以本选项不符合题意;\n\nC: 因为 $(\\vec{a}-2 \\vec{b}) \\cdot \\vec{b}=\\vec{a} \\cdot \\vec{b}-2 \\vec{b}^{2}=\\frac{1}{2}-2 \\times 1=-\\frac{3}{2} \\neq 0$, 所以本选项不符合题意;\n\nD: 因为 $(2 \\vec{a}-\\vec{b}) \\cdot \\vec{b}=2 \\vec{a} \\cdot \\vec{b}-\\vec{b}^{2}=2 \\times \\frac{1}{2}-1=0$, 所以本选项符合题意.\n\n故选: D.\n\n",
+            "index": 88
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n6. 记 $S_{n}$ 为等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{5}-a_{3}=12, a_{6}-a_{4}=24$, 则 $\\frac{S_{n}}{a_{n}}=(\\quad)$\nA. $2^{n}-1$\nB. $2-2^{1-n}$\nC. $2-2^{n-1}$\nD. $2^{1-n}-1$\n\n",
+            "answer": "B",
+            "analysis": "【详解】设等比数列的公比为 $q$,\n\n由 $a_{5}-a_{3}=12, a_{6}-a_{4}=24$ 可得: $\\left\\{\\begin{array}{l}a_{1} q^{4}-a_{1} q^{2}=12 \\\\ a_{1} q^{5}-a_{1} q^{3}=24\\end{array} \\Rightarrow\\left\\{\\begin{array}{l}q=2 \\\\ a_{1}=1\\end{array}\\right.\\right.$,\n\n所以 $a_{n}=a_{1} q^{n-1}=2^{n-1}, S_{n}=\\frac{a_{1}\\left(1-q^{n}\\right)}{1-q}=\\frac{1-2^{n}}{1-2}=2^{n}-1$,\n\n因此 $\\frac{S_{n}}{a_{n}}=\\frac{2^{n}-1}{2^{n-1}}=2-2^{1-n}$.\n\n故选: B.\n\n",
+            "index": 89
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n8. 若过点 $(2,1)$ 的圆与两坐标轴都相切, 则圆心到直线 $2 x-y-3=0$ 的距离为 ( )\nA. $\\frac{\\sqrt{5}}{5}$\nB. $\\frac{2 \\sqrt{5}}{5}$\nC. $\\frac{3 \\sqrt{5}}{5}$\nD. $\\frac{4 \\sqrt{5}}{5}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】由于圆上的点 $(2,1)$ 在第一象限, 若圆心不在第一象限,\n\n则圆与至少与一条坐标轴相交, 不合乎题意, 所以圆心必在第一象限,\n\n设圆心的坐标为 $(a, a)$, 则圆的半径为 $a$,\n\n圆的标准方程为 $(x-a)^{2}+(y-a)^{2}=a^{2}$.\n\n由题意可得 $(2-a)^{2}+(1-a)^{2}=a^{2}$, 可得 $a^{2}-6 a+5=0$, 解得 $a=1$ 或 $a=5$,\n\n所以圆心的坐标为 $(1,1)$ 或 $(5,5)$,\n\n圆心到直线 $2 x-y-3=0$ 的距离均为 $d=\\frac{|-2|}{\\sqrt{5}}=\\frac{2 \\sqrt{5}}{5}$;\n\n所以，圆心到直线 $2 x-y-3=0$ 的距离为 $\\frac{2 \\sqrt{5}}{5}$.\n\n故选: B.\n\n",
+            "index": 90
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n9. 设 $O$ 为坐标原点, 直线 $x=a$ 与双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的两条渐近线分别交于 $D, E$ 两点, 若 $\\square O D E$ 的面积为 8 , 则 $C$ 的焦距的最小值为 ( )\nA. 4\nB. 8\nC. 16\nD. 32\n\n",
+            "answer": "B",
+            "analysis": "【详解】 $\\because C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n$\\therefore$ 双曲线的渐近线方程是 $y= \\pm \\frac{b}{a} x$\n\n$\\because$ 直线 $x=a$ 与双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的两条渐近线分别交于 $D, E$ 两点\n\n不妨设 $D$ 为在第一象限, $E$ 在第四象限\n\n联立 $\\left\\{\\begin{array}{l}x=a \\\\ y=\\frac{b}{a} x\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}x=a \\\\ y=b\\end{array}\\right.$\n\n故 $D(a, b)$\n\n联立 $\\left\\{\\begin{array}{l}x=a \\\\ y=-\\frac{b}{a} x\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}x=a \\\\ y=-b\\end{array}\\right.$\n\n故 $E(a,-b)$ $\\therefore|E D|=2 b$\n\n$\\therefore \\square O D E$ 面积为: $S_{\\triangle O D E}=\\frac{1}{2} a \\times 2 b=a b=8$\n\n$\\because$ 双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n$\\therefore$ 其焦距为 $2 c=2 \\sqrt{a^{2}+b^{2}} \\geq 2 \\sqrt{2 a b}=2 \\sqrt{16}=8$\n\n当且仅当 $a=b=2 \\sqrt{2}$ 取等号\n\n$\\therefore C$ 的焦距的最小值： 8\n\n故选: B.\n\n",
+            "index": 91
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n10. 设函数 $f(x)=x^{3}-\\frac{1}{x^{3}}$, 则 $f(x)(\\quad)$\nA. 是奇函数, 且在 $(0,+\\infty)$ 单调递增\nB. 是奇函数, 且在 $(0,+\\infty)$ 单调递减\nC. 是偶函数, 且在 $(0,+\\infty)$ 单调递增\nD. 是偶函数, 且在 $(0,+\\infty)$ 单调递减\n\n",
+            "answer": "A",
+            "analysis": "【详解】 因为函数 $f(x)=x^{3}-\\frac{1}{x^{3}}$ 定义域为 $\\{x \\mid x \\neq 0\\}$, 其关于原点对称, 而 $f(-x)=-f(x)$,\n\n所以函数 $f(x)$ 为奇函数.\n\n又因为函数 $y=x^{3}$ 在 $(0,+\\not)$ 上单调递增, 在 $(-¥, 0)$ 上单调递增,\n\n而 $y=\\frac{1}{x^{3}}=x^{-3}$ 在 $(0,+\\not)$ 上单调递减, 在 $(-¥, 0)$ 上单调递减,\n\n所以函数 $f(x)=x^{3}-\\frac{1}{x^{3}}$ 在 $(0,+¥)$ 上单调递增，在 $(-\\neq, 0)$ 上单调递增.\n\n故选: A.\n\n",
+            "index": 92
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n11.已知 $\\triangle A B C$ 是面积为 $\\frac{9 \\sqrt{3}}{4}$\n\n的等边三角形, 且其顶点都在球 $O$ 的球面上. 若球 $O$ 的表面积为 $16 \\pi$, 则 $O$ 到平面 $A B C$ 的距离为（）\nA. $\\sqrt{3}$\nB. $\\frac{3}{2}$\nC. 1\nD. $\\frac{\\sqrt{3}}{2}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】设球 $O$ 的半径为 $R$, 则 $4 \\pi R^{2}=16 \\pi$, 解得： $R=2$.\n\n设 $\\square A B C$ 外接圆半径为 $r$, 边长为 $a$,\n\n$\\because \\square A B C$ 是面积为 $\\frac{9 \\sqrt{3}}{4}$ 的等边三角形,\n\n$\\therefore \\frac{1}{2} a^{2} \\times \\frac{\\sqrt{3}}{2}=\\frac{9 \\sqrt{3}}{4}$, 解得: $a=3, \\therefore r=\\frac{2}{3} \\times \\sqrt{a^{2}-\\frac{a^{2}}{4}}=\\frac{2}{3} \\times \\sqrt{9-\\frac{9}{4}}=\\sqrt{3}$,\n\n$\\therefore$ 球心 $O$ 到平面 $A B C$ 的距离 $d=\\sqrt{R^{2}-r^{2}}=\\sqrt{4-3}=1$.\n\n故选: C.\n\n",
+            "index": 93
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n12. 若 $2^{x}-2^{y}<3^{-x}-3^{-y}$ ，则 $(\\quad)$\nA. $\\ln (y-x+1)>0$\nB. $\\ln (y-x+1)<0$\nC. $\\ln |x-y|>0$\nD. $\\ln |x-y|<0$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由 $2^{x}-2^{y}<3^{-x}-3^{-y}$ 得: $2^{x}-3^{-x}<2^{y}-3^{-y}$,\n\n令 $f(t)=2^{t}-3^{-t}$, $\\because y=2^{x}$ 为 $R$ 上的增函数, $y=3^{-x}$ 为 $R$ 上的减函数, $\\therefore f(t)$ 为 $R$ 上的增函数,\n\n$\\therefore x<y$,\n\n$\\mathrm{Q} y-x>0 \\therefore, y-x+1>1 \\therefore, \\ln (y-x+1>) 0$, 则A正确, B错误;\n\n$\\mathrm{Q}|x-y|$ 与 1 的大小不确定, 故CD无法确定.\n\n故选: A.\n\n",
+            "index": 94
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n1.已知集合 $A=\\{1,2,3,5,7,11\\}, B=\\{x \\mid 3<x<15\\}$, 则 $A \\cap B$ 中元素的个数为（）\nA. 2\nB. 3\nC. 4\nD. 5\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题意, $A \\cap B=\\{5,7,11\\}$, 故 $A \\cap B$ 中元素的个数为 3 .\n\n故选: B\n\n【点晴】本题主要考查集合的交集运算, 考查学生对交集定义的理解, 是一道容易题.",
+            "index": 95
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n2. 若 $\\bar{z}(1+i)=1-i$, 则 $z=(\\quad)$\nA. $1-i$\nB. $1+i$\nC. $-i$\nD. $i$\n\n",
+            "answer": "D",
+            "analysis": "【详解】 因为 $\\bar{z}=\\frac{1-i}{1+i}=\\frac{(1-i)^{2}}{(1+i)(1-i)}=\\frac{-2 i}{2}=-i$, 所以 $z=i$.\n\n故选: D 【点晴】本题主要考查复数的除法运算, 涉及到共轭复数的概念, 是一道基础题.",
+            "index": 96
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n3. 设一组样本数据 $x_{1}, x_{2}, \\ldots, x_{n}$ 的方差为 0.01 , 则数据 $10 x_{1}, 10 x_{2}, \\ldots, 10 x_{n}$ 的方差为 $($ )\nA. 0.01\nB. 0.1\nC. 1\nD. 10\n\n",
+            "answer": "C",
+            "analysis": "【详解】因为数据 $a x_{i}+b,(i=1,2, \\mathrm{~L}, n)$ 的方差是数据 $x_{i},(i=1,2, \\mathrm{~L}, n)$ 的方差的 $a^{2}$ 倍,\n\n所以所求数据方差为 $10^{2} \\times 0.01=1$\n\n故选: C\n\n",
+            "index": 97
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n4.Logistic 模型是常用数学模型之一, 可应用于流行病学领城. 有学者根据公布数据建立了某 地区新冠肺炎累计确诊病例数 $I(t)\\left(t\\right.$ 的单位: 天)的 Logistic 模型: $I(t)=\\frac{K}{1+\\mathrm{e}^{-0.23(t-53)}}$, 其中 $K$ 为最大确诊病例数. 当 $I\\left(t^{*}\\right)=0.95 K$ 时，标志着已初步遏制疫情, 则 $t^{*}$ 约为 $(\\quad) \\quad(\\ln 19 \\approx 3)$\nA. 60\nB. 63\nC. 66\nD. 69\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $\\because I(t)=\\frac{K}{1+e^{-0.23(t-53)}}$, 所以 $I\\left(t^{\\star}\\right)=\\frac{K}{1+e^{-0.23\\left(t^{\\star}-53\\right)}}=0.95 K$, 则 $e^{0.23\\left(t^{\\star}-53\\right)}=19$,\n\n所以, $0.23\\left(t^{*}-53\\right)=\\ln 19 \\approx 3$, 解得 $t^{*} \\approx \\frac{3}{0.23}+53 \\approx 66$.\n\n故选: C.\n\n",
+            "index": 98
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n5. 已知 $\\sin \\theta+\\sin \\left(\\theta+\\frac{\\pi}{3}\\right)=1$, 则 $\\sin \\left(\\theta+\\frac{\\pi}{6}\\right)=(\\quad)$ \nA. $\\frac{1}{2}$\nB. $\\frac{\\sqrt{3}}{3}$\nC. $\\frac{2}{3}$\nD. $\\frac{\\sqrt{2}}{2}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题意可得： $\\sin \\theta+\\frac{1}{2} \\sin \\theta+\\frac{\\sqrt{3}}{2} \\cos \\theta=1$,\n\n则: $\\frac{3}{2} \\sin \\theta+\\frac{\\sqrt{3}}{2} \\cos \\theta=1, \\frac{\\sqrt{3}}{2} \\sin \\theta+\\frac{1}{2} \\cos \\theta=\\frac{\\sqrt{3}}{3}$,\n\n从而有: $\\sin \\theta \\cos \\frac{\\pi}{6}+\\cos \\theta \\sin \\frac{\\pi}{6}=\\frac{\\sqrt{3}}{3}$,\n\n即 $\\sin \\left(\\theta+\\frac{\\pi}{6}\\right)=\\frac{\\sqrt{3}}{3}$.\n\n故选: B.\n\n",
+            "index": 99
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n7. 设 $O$ 为坐标原点, 直线 $x=2$ 与抛物线 $C: y^{2}=2 p x(p>0)$ 交于 $D, E$ 两点, 若 $O D \\perp O E$, 则 $C$ 的焦点坐标为 $(\\quad)$\nA. $\\left(\\frac{1}{4}, 0\\right)$\nB. $\\left(\\frac{1}{2}, 0\\right)$\nC. $(1,0)$\nD. $(2,0)$\n\n",
+            "answer": "B",
+            "analysis": "【详解】因为直线 $x=2$ 与抛物线 $y^{2}=2 p x(p>0)$ 交于 $C, D$ 两点, 且 $O D \\perp O E$, 根据抛物线的对称性可以确定 $\\angle D O x=\\angle C O x=\\frac{\\pi}{4}$, 所以 $C(2,2)$, 代人抛物线方程 $4=4 p$, 求得 $p=1$, 所以其焦点坐标为 $\\left(\\frac{1}{2}, 0\\right)$, 故选: B.\n\n",
+            "index": 100
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n8.点 $(0,-1)$ 到直线 $y=k(x+1)$ 距离的最大值为 $(\\quad)$\nA. 1\nB. $\\sqrt{2}$\nC. $\\sqrt{3}$\nD. 2\n\n",
+            "answer": "B",
+            "analysis": "【详解】由 $y=k(x+1)$ 可知直线过定点 $P(-1,0)$, 设 $A(0,-1)$,\n\n当直线 $y=k(x+1)$ 与 $A P$ 垂直时, 点 $A$ 到直线 $y=k(x+1)$ 距离最大,\n\n即为 $|A P|=\\sqrt{2}$.\n\n故选: B.\n\n",
+            "index": 101
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n10. 设 $a=\\log _{3} 2, b=\\log _{5} 3, c=\\frac{2}{3}$, 则 $(\\quad)$\nA. $a<c<b$\nB. $a<b<c$\nC. $b<c<a$\nD. $c<a<b$\n\n",
+            "answer": "A",
+            "analysis": "【详解】因为 $a=\\frac{1}{3} \\log _{3} 2^{3}<\\frac{1}{3} \\log _{3} 9=\\frac{2}{3}=c, b=\\frac{1}{3} \\log _{5} 3^{3}>\\frac{1}{3} \\log _{5} 25=\\frac{2}{3}=c$,\n\n所以 $a<c<b$.\n\n故选: A\n\n【点晴】本题考查对数式大小的比较, 考查学生转化与回归的思想, 是一道中档题.",
+            "index": 102
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n11. 在 $\\triangle A B C$ 中, $\\cos C=\\frac{2}{3}, A C=4, B C=3$, 则 $\\tan B=(\\quad)$ \nA. $\\sqrt{5}$\nB. $2 \\sqrt{5}$\nC. $4 \\sqrt{5}$\nD. $8 \\sqrt{5}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】设 $A B=c, B C=a, C A=b$\n\n$c^{2}=a^{2}+b^{2}-2 a b \\cos C=9+16-2 \\times 3 \\times 4 \\times \\frac{2}{3}=9 \\therefore c=3$\n\n$\\cos B=\\frac{a^{2}+c^{2}-b^{2}}{2 a c}=\\frac{1}{9} \\therefore \\sin B=\\sqrt{1-\\left(\\frac{1}{9}\\right)^{2}}=\\frac{4 \\sqrt{5}}{9} \\therefore \\tan B=4 \\sqrt{5}$\n\n故选: C\n\n",
+            "index": 103
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n12. 已知函数 $f(x)=\\sin x+\\frac{1}{\\sin x}$, 则 $(\\quad)$\nA. $f(x)$ 的最小值为 2\nB. $f(x)$ 的图像关于 $y$ 轴对称\nC. $f(x)$ 的图像关于直线 $x=\\pi$ 对称\nD. $f(x)$ 的图像关于直线 $x=\\frac{\\pi}{2}$ 对称\n\n",
+            "answer": "D",
+            "analysis": "【详解】 $\\because \\sin x$ 可以为负, 所以 $\\mathrm{A}$ 错;\n\n$Q \\sin x \\neq 0 \\therefore x \\neq k \\pi(k \\in Z) Q f(-x)=-\\sin x-\\frac{1}{\\sin x}=-f(x) \\therefore f(x)$ 关于原点对称;\n\n$Q f(2 \\pi-x)=-\\sin x-\\frac{1}{\\sin x} \\neq f(x), f(\\pi-x)=\\sin x+\\frac{1}{\\sin x}=f(x)$, 故 B 错;\n\n$\\therefore f(x)$ 关于直线 $x=\\frac{\\pi}{2}$ 对称, 故 $\\mathrm{C}$ 错, $\\mathrm{D}$ 对\n\n故选: D\n\n",
+            "index": 104
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n1. 已知集合 $A=\\left\\{x \\mid x^{2}-3 x-4<0\\right\\}, B=\\{-4,1,3,5\\}$, 则 $\\left.A \\cap B=（ \\quad\\right)$\nA. $\\{-4,1\\}$\nB. $\\{1,5\\}$\nC. $\\{3,5\\}$\nD. $\\{1,3\\}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】由 $x^{2}-3 x-4<0$ 解得 $-1<x<4$,\n\n所以 $A=\\{x \\mid-1<x<4\\}$,\n\n又因为 $B=\\{-4,1,3,5\\}$, 所以 $A \\cap B=\\{1,3\\}$,\n\n故选: D.\n\n",
+            "index": 105
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n2. 若 $z=1+2 i+i^{3}$ ，则 $|z|=(\\quad)$\nA. 0\nB. 1\nC. $\\sqrt{2}$\nD. 2 \n\n",
+            "answer": "C",
+            "analysis": "【详解】因为 $z=1+2 i+i^{3}=1+2 i-i=1+i$, 所以 $|z|=\\sqrt{1^{2}+1^{2}}=\\sqrt{2}$.\n\n故选: C.\n\n",
+            "index": 106
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n6. 已知圆 $x^{2}+y^{2}-6 x=0$, 过点 $(1,2)$ 的直线被该圆所截得的弦的长度的最小值为 ( ) \nA. 1\nB. 2\nC. 3\nD. 4\n\n",
+            "answer": "B",
+            "analysis": "【详解】圆 $x^{2}+y^{2}-6 x=0$ 化为 $(x-3)^{2}+y^{2}=9$, 所以圆心 $C$ 坐标为 $C(3,0)$, 半径为 3 ,\n\n设 $P(1,2)$, 当过点 $P$ 的直线和直线 $C P$ 垂直时, 圆心到过点 $P$ 的直线的距离最大, 所求的弦长最短,\n\n根据弦长公式最小值为 $2 \\sqrt{9-|C P|^{2}}=2 \\sqrt{9-8}=2$.\n\n故选: B.\n\n",
+            "index": 107
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n8. 设 $a \\log _{3} 4=2$ ，则 $4^{-a}=(\\quad)$\nA. $\\frac{1}{16}$\nB. $\\frac{1}{9}$\nC. $\\frac{1}{8}$\nD. $\\frac{1}{6}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】由 $a \\log _{3} 4=2$ 可得 $\\log _{3} 4^{a}=2$ ，所以 $4^{a}=9$,\n\n所以有 $4^{-a}=\\frac{1}{9}$,\n\n故选: B.\n\n",
+            "index": 108
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n10. 设 $\\left\\{a_{n}\\right\\}$ 是等比数列, 且 $a_{1}+a_{2}+a_{3}=1, a_{2}+a_{3}+a_{4}=2$, 则 $a_{6}+a_{7}+a_{8}=(\\quad)$\nA. 12\nB. 24\nC. 30\nD. 32\n\n",
+            "answer": "D",
+            "analysis": "【详解】设等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $q$, 则 $a_{1}+a_{2}+a_{3}=a_{1}\\left(1+q+q^{2}\\right)=1$,\n\n$a_{2}+a_{3}+a_{4}=a_{1} q+a_{1} q^{2}+a_{1} q^{3}=a_{1} q\\left(1+q+q^{2}\\right)=q=2$ 因此, $a_{6}+a_{7}+a_{8}=a_{1} q^{5}+a_{1} q^{6}+a_{1} q^{7}=a_{1} q^{5}\\left(1+q+q^{2}\\right)=q^{5}=32$.\n\n故选：D.\n\n",
+            "index": 109
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n11. 设 $F_{1}, F_{2}$ 是双曲线 $C: x^{2}-\\frac{y^{2}}{3}=1$ 的两个焦点, $O$ 为坐标原点, 点 $P$ 在 $C$ 上且 $|O P|=2$, 则 $\\triangle P F_{1} F_{2}$ 的面积为 ( )\nA. $\\frac{7}{2}$\nB. 3\nC. $\\frac{5}{2}$\nD. 2\n\n",
+            "answer": "B",
+            "analysis": "【详解】由已知, 不妨设 $F_{1}(-2,0), F_{2}(2,0)$,\n\n则 $a=1, c=2$, 因为 $|O P|=1=\\frac{1}{2}\\left|F_{1} F_{2}\\right|$,\n\n所以点 $P$ 在以 $F_{1} F_{2}$ 为直径的圆上,\n\n即 $\\square F_{1} F_{2} P$ 是以 $P$ 为直角顶点的直角三角形,\n\n故 $\\left|P F_{1}\\right|^{2}+\\left|P F_{2}\\right|^{2}=\\left|F_{1} F_{2}\\right|^{2}$ ，\n\n即 $\\left|P F_{1}\\right|^{2}+\\left|P F_{2}\\right|^{2}=16$, 又 $\\left|P F_{1}\\right|-\\left|P F_{2}\\right|=2 a=2$ ，\n\n所以 $4=|| P F_{1}|-| P F_{2}\\left\\|^{2}=\\left|P F_{1}\\right|^{2}+\\left|P F_{2}\\right|^{2}-2\\left|P F_{1} \\| P F_{2}\\right|=16-2\\left|P F_{1}\\right|\\left|P F_{2}\\right|\\right.$,\n\n解得 $\\left|P F_{1}\\right|\\left|P F_{2}\\right|=6$, 所以 $S_{\\triangle F_{1} F_{2} P}=\\frac{1}{2}\\left|P F_{1}\\right|\\left|P F_{2}\\right|=3$\n\n故选：B\n\n【点晴】本题考查双曲线中焦点三角面积的计算问题, 涉及到双曲线的定义, 考查学生的数学运算能力, 是一道中档题.",
+            "index": 110
         }
     ]
 }

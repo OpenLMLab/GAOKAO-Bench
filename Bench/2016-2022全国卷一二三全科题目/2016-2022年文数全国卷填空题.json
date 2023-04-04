@@ -480,6 +480,62 @@
             "answer": "\n\n$2 \\sqrt{2}$\n\n",
             "analysis": "解析:\n\n由面积公式 $S=\\frac{1}{2} a c \\sin B=\\sqrt{3}$, 且 $B=60^{\\circ}$, 解得 $a c=4$,\n\n又由余弦定理 $b^{2}=a^{2}+c^{2}-2 a c \\cos B, a^{2}+c^{2}=3 a c$, 且 $b>0$\n\n解得 $b=2 \\sqrt{2}$.",
             "index": 59
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n13. 若 $\\sin x=-\\frac{2}{3}$, 则 $\\cos 2 x=$\n\n",
+            "answer": " $\\frac{1}{9}$\n\n",
+            "analysis": "【详解】 $\\cos 2 x=1-2 \\sin ^{2} x=1-2 \\times\\left(-\\frac{2}{3}\\right)^{2}=1-\\frac{8}{9}=\\frac{1}{9}$.\n\n故答案为: $\\frac{1}{9}$.\n\n",
+            "index": 60
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n14. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{1}=-2, a_{2}+a_{6}=2$, 则 $S_{10}=$\n\n",
+            "answer": " 25\n\n",
+            "analysis": "【详解】 $\\because\\left\\{a_{n}\\right\\}$ 是等差数列, 且 $a_{1}=-2, a_{2}+a_{6}=2$\n\n设 $\\left\\{a_{n}\\right\\}$ 等差数列的公差 $d$\n\n根据等差数列通项公式: $a_{n}=a_{1}+(n-1) d$\n\n可得 $a_{1}+d+a_{1}+5 d=2$\n\n即: $-2+d+(-2)+5 d=2$ 整理可得: $6 d=6$\n\n解得: $d=1$\n\n$\\because$ 根据等差数列前 $n$ 项和公式: $S_{n}=n a_{1}+\\frac{n(n-1)}{2} d, n \\in N^{*}$\n\n可得: $S_{10}=10(-2)+\\frac{10 \\times(10-1)}{2}=-20+45=25$\n\n$\\therefore S_{10}=25$.\n\n故答案为: 25 .\n\n",
+            "index": 61
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n14. 设双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的一条渐近线为 $y=\\sqrt{2} x$, 则 $C$ 的离心率为\n\n",
+            "answer": " $\\sqrt{3}$ \n\n",
+            "analysis": "【详解】由双曲线方程 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1$ 可得其焦点在 $x$ 轴上，\n\n因为其一条渐近线为 $y=\\sqrt{2} x$,\n\n所以 $\\frac{b}{a}=\\sqrt{2}, e=\\frac{c}{a}=\\sqrt{1+\\frac{b^{2}}{a^{2}}}=\\sqrt{3}$.\n\n故答案为: $\\sqrt{3}$\n\n",
+            "index": 62
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n15. 设函数 $f(x)=\\frac{\\mathrm{e}^{x}}{x+a}$. 若 $f^{\\prime}(1)=\\frac{e}{4}$, 则 $a=$\n\n",
+            "answer": " 1\n\n",
+            "analysis": "【详解】由函数的解析式可得: $f^{\\prime}(x)=\\frac{e^{x}(x+a)-e^{x}}{(x+a)^{2}}=\\frac{e^{x}(x+a-1)}{(x+a)^{2}}$,\n\n则: $f^{\\prime}(1)=\\frac{e^{1} \\times(1+a-1)}{(1+a)^{2}}=\\frac{a e}{(a+1)^{2}}$, 据此可得: $\\frac{a e}{(a+1)^{2}}=\\frac{e}{4}$,\n\n整理可得: $a^{2}-2 a+1=0$, 解得： $a=1$.\n\n故答案为: 1 .\n\n",
+            "index": 63
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n14. 设向量 $\\boldsymbol{a}=(1,-1), \\boldsymbol{b}=(m+1,2 m-4)$, 若 ${ }^{\\prime} a \\perp b^{\\prime}$, 则 $m=$\n\n",
+            "answer": "5\n\n",
+            "analysis": "【详解】由 ${ }^{\\prime} a \\perp b$\n\n又因为 $\\vec{a}=(1,-1), \\vec{b}=(m+1,2 m-4)$,\n\n所以 $\\vec{a} \\cdot \\vec{b}=1 \\cdot(m+1)+(-1) \\cdot(2 m-4)=0$ ，\n\n即 $m=5$ ，\n\n故答案为: 5 .\n\n",
+            "index": 64
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n15. 曲线 $y=\\ln x+x+1$ 的一条切线的斜率为 2 , 则该切线的方程为\n\n",
+            "answer": " $y=2 x$\n\n",
+            "analysis": "【详解】设切线的切点坐标为 $\\left(x_{0}, y_{0}\\right), y=\\ln x+x+1, y^{\\prime}=\\frac{1}{x}+1$,\n\n$\\left.y^{\\prime}\\right|_{x=x_{0}}=\\frac{1}{x_{0}}+1=2, x_{0}=1, y_{0}=2$, 所以切点坐标为 $(1,2)$,\n\n所求的切线方程为 $y-2=2(x-1)$, 即 $y=2 x$.\n\n故答案为: $y=2 x$.\n\n",
+            "index": 65
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n16. 数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{n+2}+(-1)^{n} a_{n}=3 n-1$, 前 16 项和为 540 , 则 $a_{1}=$\n\n",
+            "answer": " 7\n\n",
+            "analysis": "【详解】 $a_{n+2}+(-1)^{n} a_{n}=3 n-1$,\n\n当 $n$ 为奇数时, $a_{n+2}=a_{n}+3 n-1$; 当 $n$ 为偶数时, $a_{n+2}+a_{n}=3 n-1$.\n\n设数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$,\n\n$S_{16}=a_{1}+a_{2}+a_{3}+a_{4}+\\cdots+a_{16}$\n\n$=a_{1}+a_{3}+a_{5} \\cdots+a_{15}+\\left(a_{2}+a_{4}\\right)+\\cdots\\left(a_{14}+a_{16}\\right)$\n\n$=a_{1}+\\left(a_{1}+2\\right)+\\left(a_{1}+10\\right)+\\left(a_{1}+24\\right)+\\left(a_{1}+44\\right)+\\left(a_{1}+70\\right)$\n\n$+\\left(a_{1}+102\\right)+\\left(a_{1}+140\\right)+(5+17+29+41)$ $=8 a_{1}+392+92=8 a_{1}+484=540$,\n\n$\\therefore a_{1}=7$.\n\n故答案为: 7 .\n\n",
+            "index": 66
         }
     ]
 }

@@ -632,6 +632,238 @@
             "answer": "C",
             "analysis": "解: 因为 $f(x)=x^{2}-2 x+a\\left(e^{x-1}+e^{-x+1}\\right)=-1+(x-1)^{2}+a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ $=0$,\n\n所以函数 $f(x)$ 有唯一零点等价于方程 $1-(x-1)^{2}=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 有唯一解, 等价于函数 $y=1-(x-1)^{2}$ 的图象与 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的图象只有一个交点.\n\n(1)当 $a=0$ 时, $f(x)=x^{2}-2 x \\geqslant-1$, 此时有两个零点, 矛盾;\n\n(2)当 $a<0$ 时, 由于 $y=1-(x-1)^{2}$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递 减,\n\n且 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递减, 所以函数 $y=1-(x-1)^{2}$ 的图象的最高点为 $A(1,1), y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的\n\n图象的最高点为 $B(1,2 a)$,\n\n由于 $2 a<0<1$, 此时函数 $y=1-(x-1)^{2}$ 的图象与 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的图象 有两个交点，矛盾;\n\n(3)当 $a>0$ 时, 由于 $y=1-(x-1)^{2}$ 在 $(-\\infty, 1)$ 上递增、在 $(1,+\\infty)$ 上递 减,\n\n且 $y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 在 $(-\\infty, 1)$ 上递减、在 $(1,+\\infty)$ 上递增,\n\n所以函数 $y=1-(x-1)^{2}$ 的图象的最高点为 $A(1,1), y=a\\left(e^{x-1}+\\frac{1}{e^{x-1}}\\right)$ 的\n\n图象的最低点为 $B(1,2 a)$,\n\n由题可知点 $A$ 与点 $B$ 重合时满足条件, 即 $2 a=1$, 即 $a=\\frac{1}{2}$, 符合条件;\n\n综上所述, $a=\\frac{1}{2}$,\n\n故选: C.",
             "index": 78
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n1.已知集合 $A=\\left\\{(x, y) \\mid x, y \\in \\mathbf{N}^{*}, y \\geq x\\right\\}, B=\\{(x, y) \\mid x+y=8\\}$, 则 $A \\cap B$ 中元素的个数为 $(\\quad)$\nA. 2\nB. 3\nC. 4\nD. 6\n\n",
+            "answer": "C",
+            "analysis": "【详解】由题意, $A \\cap B$ 中的元素满足 $\\left\\{\\begin{array}{c}y \\geq x \\\\ x+y=8\\end{array}\\right.$, 且 $x, y \\in N^{*}$,\n\n由 $x+y=8 \\geq 2 x$, 得 $x \\leq 4$,\n\n所以满足 $x+y=8$ 的有 $(1,7),(2,6),(3,5),(4,4)$,\n\n故 $A \\cap B$ 中元素的个数为 4 .\n\n故选: C.\n\n【点晴】本题主要考查集合的交集运算, 考查学生对交集定义的理解, 是一道容易题.",
+            "index": 79
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n2.复数 $\\frac{1}{1-3 i}$ 的虚部是 $(\\quad)$\nA. $-\\frac{3}{10}$\nB. $-\\frac{1}{10}$\nC. $\\frac{1}{10}$\nD. $\\frac{3}{10}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】 因为 $z=\\frac{1}{1-3 i}=\\frac{1+3 i}{(1-3 i)(1+3 i)}=\\frac{1}{10}+\\frac{3}{10} i$,\n\n所以复数 $z=\\frac{1}{1-3 i}$ 的虚部为 $\\frac{3}{10}$.\n\n故选: D.\n\n【点晴】本题主要考查复数的除法运算, 涉及到复数的虚部的定义, 是一道基础题.",
+            "index": 80
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n3. 在一组样本数据中, $1,2,3,4$ 出现的频率分别为 $p_{1}, p_{2}, p_{3}, p_{4}$, 且 $\\sum_{i=1}^{4} p_{i}=1$, 则下面四种 情形中，对应样本的标准差最大的一组是（）\nA. $p_{1}=p_{4}=0.1, p_{2}=p_{3}=0.4$\nB. $p_{1}=p_{4}=0.4, p_{2}=p_{3}=0.1$\nC. $p_{1}=p_{4}=0.2, p_{2}=p_{3}=0.3$\nD. $p_{1}=p_{4}=0.3, p_{2}=p_{3}=0.2$\n\n",
+            "answer": "B",
+            "analysis": "【详解】对于 $\\mathrm{A}$ 选项，该组数据的平均数为 $\\overline{x_{A}}=(1+4) \\times 0.1+(2+3) \\times 0.4=2.5$,\n\n方差为 $s_{A}^{2}=(1-2.5)^{2} \\times 0.1+(2-2.5)^{2} \\times 0.4+(3-2.5)^{2} \\times 0.4+(4-2.5)^{2} \\times 0.1=0.65$;\n\n对于 B 选项，该组数据的平均数为 $\\overline{x_{B}}=(1+4) \\times 0.4+(2+3) \\times 0.1=2.5$,\n\n方差为 $s_{B}^{2}=(1-2.5)^{2} \\times 0.4+(2-2.5)^{2} \\times 0.1+(3-2.5)^{2} \\times 0.1+(4-2.5)^{2} \\times 0.4=1.85$;\n\n对于 $\\mathrm{C}$ 选项，该组数据的平均数为 $\\overline{x_{C}}=(1+4) \\times 0.2+(2+3) \\times 0.3=2.5$,\n\n方差为 $s_{C}^{2}=(1-2.5)^{2} \\times 0.2+(2-2.5)^{2} \\times 0.3+(3-2.5)^{2} \\times 0.3+(4-2.5)^{2} \\times 0.2=1.05$;\n\n对于 D 选项，该组数据的平均数为 $\\overline{x_{D}}=(1+4) \\times 0.3+(2+3) \\times 0.2=2.5$ ，\n\n方差为 $s_{D}^{2}=(1-2.5)^{2} \\times 0.3+(2-2.5)^{2} \\times 0.2+(3-2.5)^{2} \\times 0.2+(4-2.5)^{2} \\times 0.3=1.45$.\n\n因此，B 选项这一组的标准差最大.\n\n故选: B. ",
+            "index": 81
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n4.Logistic 模型是常用数学模型之一, 可应用于流行病学领城. 有学者根据公布数据建立了某 地区新冠肺炎累计确诊病例数 $I(t)\\left(t\\right.$ 的单位: 天)的 Logistic 模型: $I(t)=\\frac{K}{1+\\mathrm{e}^{-0.23(t-53)}}$, 其中 $K$ 为最大确诊病例数．当 $I\\left(t^{*}\\right)=0.95 K$ 时，标志着已初步遏制疫情, 则 $t^{*}$ 约为 $(\\quad) \\quad(\\ln 19 \\approx 3)$\nA. 60\nB. 63\nC. 66\nD. 69\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $\\because I(t)=\\frac{K}{1+e^{-0.23(t-53)}}$, 所以 $I\\left(t^{\\star}\\right)=\\frac{K}{1+e^{-0.23\\left(t^{*}-53\\right)}}=0.95 K$, 则 $e^{0.23\\left(t^{*}-53\\right)}=19$,\n\n所以, $0.23\\left(t^{*}-53\\right)=\\ln 19 \\approx 3$, 解得 $t^{\\star} \\approx \\frac{3}{0.23}+53 \\approx 66$.\n\n故选: C.\n\n",
+            "index": 82
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n5. 设 $O$ 为坐标原点, 直线 $x=2$ 与抛物线 $C: y^{2}=2 p x(p>0)$ 交于 $D, E$ 两点, 若 $O D \\perp O E$, 则 $C$ 的焦点坐标为 $(\\quad)$\nA. $\\left(\\frac{1}{4}, 0\\right)$\nB. $\\left(\\frac{1}{2}, 0\\right)$\nC. $(1,0)$\nD. $(2,0)$\n\n",
+            "answer": "B",
+            "analysis": "【详解】因为直线 $x=2$ 与抛物线 $y^{2}=2 p x(p>0)$ 交于 $C, D$ 两点, 且 $O D \\perp O E$, 根据抛物线的对称性可以确定 $\\angle D O x=\\angle C O x=\\frac{\\pi}{4}$, 所以 $C(2,2)$ ， 代人抛物线方程 $4=4 p$, 求得 $p=1$, 所以其焦点坐标为 $\\left(\\frac{1}{2}, 0\\right)$, 故选: B.\n\n",
+            "index": 83
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n6. 已知向量 $\\boldsymbol{a}, \\boldsymbol{b}$ 满足 $|a|=5,|b|=6, a \\cdot b=-6$, 则 $\\cos \\langle\\boldsymbol{a}, \\boldsymbol{a}+\\boldsymbol{b}\\rangle=(\\quad)$\nA. $-\\frac{31}{35}$\nB. $-\\frac{19}{35}$\nC. $\\frac{17}{35}$\nD. $\\frac{19}{35}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】 $\\because|\\vec{a}|=5,|\\vec{b}|=6, \\vec{a} \\cdot \\vec{b}=-6, \\quad \\therefore \\vec{a} \\cdot(\\vec{a}+\\vec{b})=|\\vec{a}|^{2}+\\vec{a} \\cdot \\vec{b}=5^{2}-6=19$ ．\n\n$|\\vec{a}+\\vec{b}|=\\sqrt{(\\vec{a}+\\vec{b})^{2}}=\\sqrt{\\vec{a}^{2}+2 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}}=\\sqrt{25-2 \\times 6+36}=7$\n\n因此, $\\cos \\langle\\vec{a}, \\vec{a}+\\vec{b}\\rangle=\\frac{\\vec{a} \\cdot(\\vec{a}+\\vec{b})}{|\\vec{a}| \\cdot|\\vec{a}+\\vec{b}|}=\\frac{19}{5 \\times 7}=\\frac{19}{35}$.\n\n故选: D.\n\n",
+            "index": 84
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n7. 在 $\\triangle A B C$ 中, $\\cos C=\\frac{2}{3}, A C=4, B C=3$, 则 $\\cos B=(\\quad)$\nA. $\\frac{1}{9}$\nB. $\\frac{1}{3}$\nC. $\\frac{1}{2}$\nD. $\\frac{2}{3}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $\\because$ 在 $\\triangle A B C$ 中, $\\cos C=\\frac{2}{3}, A C=4, B C=3$\n\n根据余弦定理: $A B^{2}=A C^{2}+B C^{2}-2 A C \\cdot B C \\cdot \\cos C$ $A B^{2}=4^{2}+3^{2}-2 \\times 4 \\times 3 \\times \\frac{2}{3}$\n\n可得 $A B^{2}=9$ ， 即 $A B=3$\n\n由 $\\because \\cos B=\\frac{A B^{2}+B C^{2}-A C^{2}}{2 A B \\cdot B C}=\\frac{9+9-16}{2 \\times 3 \\times 3}=\\frac{1}{9}$\n\n故 $\\cos B=\\frac{1}{9}$.\n\n故选: A.\n\n",
+            "index": 85
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n9. 已知 $2 \\tan \\theta-\\tan \\left(\\theta+\\frac{\\pi}{4}\\right)=7$, 则 $\\tan \\theta=(\\quad)$\nA. -2\nB. -1\nC. 1\nD. 2\n\n",
+            "answer": "D",
+            "analysis": "【详解】 $\\because 2 \\tan \\theta-\\tan \\left(\\theta+\\frac{\\pi}{4}\\right)=7, \\therefore 2 \\tan \\theta-\\frac{\\tan \\theta+1}{1-\\tan \\theta}=7$,\n\n令 $t=\\tan \\theta, t \\neq 1$, 则 $2 t-\\frac{1+t}{1-t}=7$, 整理得 $t^{2}-4 t+4=0$, 解得 $t=2$, 即 $\\tan \\theta=2$.\n\n故选: D.\n\n",
+            "index": 86
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n10. 若直线 $l$ 与曲线 $y=\\sqrt{x}$ 和 $x^{2}+y^{2}=\\frac{1}{5}$ 都相切, 则 $l$ 的方程为 $(\\quad)$\nA. $y=2 x+1$\nB. $y=2 x+\\frac{1}{2}$\nC. $y=\\frac{1}{2} x+1$\nD.\n\n$y=\\frac{1}{2} x+\\frac{1}{2}$\n\n",
+            "answer": "D",
+            "analysis": "【详解】设直线 $l$ 在曲线 $y=\\sqrt{x}$ 上的切点为 $\\left(x_{0}, \\sqrt{x_{0}}\\right)$, 则 $x_{0}>0$,\n\n函数 $y=\\sqrt{x}$ 的导数为 $y^{\\prime}=\\frac{1}{2 \\sqrt{x}}$, 则直线 $l$ 的斜率 $k=\\frac{1}{2 \\sqrt{x_{0}}}$,\n\n设直线 $l$ 的方程为 $y-\\sqrt{x_{0}}=\\frac{1}{2 \\sqrt{x_{0}}}\\left(x-x_{0}\\right)$, 即 $x-2 \\sqrt{x_{0}} y+x_{0}=0$,\n\n由于直线 $l$ 与圆 $x^{2}+y^{2}=\\frac{1}{5}$ 相切, 则 $\\frac{x_{0}}{\\sqrt{1+4 x_{0}}}=\\frac{1}{\\sqrt{5}}$,\n\n两边平方并整理得 $5 x_{0}^{2}-4 x_{0}-1=0$, 解得 $x_{0}=1, x_{0}=-\\frac{1}{5}$ (舍),\n\n则直线 $l$ 的方程为 $x-2 y+1=0$, 即 $y=\\frac{1}{2} x+\\frac{1}{2}$.\n\n故选: D.\n\n",
+            "index": 87
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n11. 设双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1 \\quad(a>0, b>0)$ 的左、右焦点分别为 $F_{1}, F_{2}$, 离心率为 $\\sqrt{5} . P$ 是 $C$ 上一点, 且 $F_{1} P \\perp F_{2} P$. 若 $\\triangle P F_{1} F_{2}$ 的面积为 4 , 则 $a=(\\quad)$\nA. 1\nB. 2\nC. 4\nD. 8\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $\\because \\frac{c}{a}=\\sqrt{5}, \\therefore c=\\sqrt{5} a$ ，根据双曲线的定义可得 ||$P F_{1}|-| P F_{2} \\|=2 a$ ，\n\n$S_{\\triangle P F_{1} F_{2}}=\\frac{1}{2}\\left|P F_{1}\\right| \\cdot\\left|P F_{2}\\right|=4$, 即 $\\left|P F_{1}\\right| \\cdot\\left|P F_{2}\\right|=8$ ，\n\n$\\because F_{1} P \\perp F_{2} P, \\quad \\therefore\\left|P F_{1}\\right|^{2}+\\left|P F_{2}\\right|^{2}=(2 c)^{2}$\n\n$\\therefore\\left(\\left|P F_{1}\\right|-\\left|P F_{2}\\right|\\right)^{2}+2\\left|P F_{1}\\right| \\cdot\\left|P F_{2}\\right|=4 c^{2}$, 即 $a^{2}-5 a^{2}+4=0$, 解得 $a=1$, 故选: A.\n\n",
+            "index": 88
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "\n12. 已知 $5^{5}<8^{4}, 13^{4}<8^{5}$. 设 $a=\\log _{5} 3, b=\\log _{8} 5, c=\\log _{13} 8$, 则 $(\\quad)$\nA. $a<b<c$\nB. $b<a<c$\nC. $b<c<a$\nD. $c<a<b$\n\n",
+            "answer": "A",
+            "analysis": "【详 解 】 由 题 意 可 知 $a$ 、 $b$ 、 $c \\in(0,1)$, $\\frac{a}{b}=\\frac{\\log _{5} 3}{\\log _{8} 5}=\\frac{\\lg 3}{\\lg 5} \\cdot \\frac{\\lg 8}{\\lg 5}<\\frac{1}{(\\lg 5)^{2}} \\cdot\\left(\\frac{\\lg 3+\\lg 8}{2}\\right)^{2}=\\left(\\frac{\\lg 3+\\lg 8}{2 \\lg 5}\\right)^{2}=\\left(\\frac{\\lg 24}{\\lg 25}\\right)^{2}<1, \\quad \\therefore a<b ;$ 由 $b=\\log _{8} 5$, 得 $8^{b}=5$, 由 $5^{5}<8^{4}$, 得 $8^{5 b}<8^{4}, \\therefore 5 b<4$, 可得 $b<\\frac{4}{5}$; 由 $c=\\log _{13} 8$, 得 $13^{c}=8$, 由 $13^{4}<8^{5}$, 得 $13^{4}<13^{5 c}, \\therefore 5 c>4$, 可得 $c>\\frac{4}{5}$. 综上所述, $a<b<c$.\n\n故选: A.\n\n",
+            "index": 89
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n1. 已知集合 $U=\\{-2,-1,0,1,2,3\\}, A=\\{-1,0,1\\}, B=\\{1,2\\}$, 则 $\\oint_{U}(A \\cup B)=()$\nA. $\\{-2,3\\}$\nB. $\\{-2,2,3\\}$\nC. $\\{-2,-1,0,3\\}$\nD. $\\{-2,-1,0,2,3\\}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由题意可得： $A \\cup B=\\{-1,0,1,2\\}$ ，则 $ð_{U}(A \\cup B)=\\{-2,3\\}$.\n\n故选: A.\n\n",
+            "index": 90
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n2. 若 $\\alpha$ 为第四象限角, 则（）\nA. $\\cos 2 \\alpha>0$\nB. $\\cos 2 \\alpha<0$\nC. $\\sin 2 \\alpha>0$\nD. $\\sin 2 \\alpha<0$\n\n",
+            "answer": "D",
+            "analysis": "【详解】当 $\\alpha=-\\frac{\\pi}{6}$ 时, $\\cos 2 \\alpha=\\cos \\left(-\\frac{\\pi}{3}\\right)>0$, 选项B错误；\n\n当 $\\alpha=-\\frac{\\pi}{3}$ 时, $\\cos 2 \\alpha=\\cos \\left(-\\frac{2 \\pi}{3}\\right)<0$, 选项A错误;\n\n由 $\\alpha$ 在第四象限可得： $\\sin \\alpha<0, \\cos \\alpha>0$, 则 $\\sin 2 \\alpha=2 \\sin \\alpha \\cos \\alpha<0$, 选项C错误，选项D正确;\n\n故选: D. ",
+            "index": 91
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n3.在新冠肺炎疫情防控期间, 某超市开通网上销售业务, 每天能完成1200份订单的配货, 由于订单量大幅 增加, 导致订单积压. 为解决困难, 许多志愿者踊跃报名参加配货工作. 已知该超市某日积压 500 份订单末配 货, 预计第二天的新订单超过 1600 份的概率为 0.05 , 志愿者每人每天能完成 50 份订单的配货, 为使第二天 完成积压订单及当日订单的配货的概率不小于 0.95 ，则至少需要志愿者（）\nA. 10 名\nB. 18 名\nC. 24名\nD. 32 名\n\n",
+            "answer": "B",
+            "analysis": "【详解】由题意, 第二天新增订单数为 $500+1600-1200=900$,\n\n故需要志愿者 $\\frac{900}{50}=18$ 名.\n\n故选: B\n\n【点晴】本题主要考查函数模型的简单应用, 属于基础题.",
+            "index": 92
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n5. 若过点 $(2,1)$ 的圆与两坐标轴都相切, 则圆心到直线 $2 x-y-3=0$ 的距离为 $(\\quad)$\nA. $\\frac{\\sqrt{5}}{5}$\nB. $\\frac{2 \\sqrt{5}}{5}$\nC. $\\frac{3 \\sqrt{5}}{5}$\nD. $\\frac{4 \\sqrt{5}}{5}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】由于圆上的点 $(2,1)$ 在第一象限, 若圆心不在第一象限,\n\n则圆与至少与一条坐标轴相交, 不合乎题意, 所以圆心必在第一象限,\n\n设圆心的坐标为 $(a, a)$, 则圆的半径为 $a$,\n\n圆的标准方程为 $(x-a)^{2}+(y-a)^{2}=a^{2}$. 由题意可得 $(2-a)^{2}+(1-a)^{2}=a^{2}$,\n\n可得 $a^{2}-6 a+5=0$, 解得 $a=1$ 或 $a=5$,\n\n所以圆心的坐标为 $(1,1)$ 或 $(5,5)$,\n\n圆心到直线 $2 x-y-3=0$ 的距离均为 $d=\\frac{|-2|}{\\sqrt{5}}=\\frac{2 \\sqrt{5}}{5}$;\n\n所以，圆心到直线 $2 x-y-3=0$ 的距离为 $\\frac{2 \\sqrt{5}}{5}$.\n\n故选: B.\n\n",
+            "index": 93
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n6. 数列 $\\left\\{a_{n}\\right\\}$ 中, $a_{1}=2, a_{m+n}=a_{m} a_{n}$, 若 $a_{k+1}+a_{k+2}+\\cdots+a_{k+10}=2^{15}-2^{5}$, 则 $k=(\\quad)$\nA. 2\nB. 3\nC. 4\nD. 5\n\n",
+            "answer": "C",
+            "analysis": "【详解】在等式 $a_{m+n}=a_{m} a_{n}$ 中, 令 $m=1$, 可得 $a_{n+1}=a_{n} a_{1}=2 a_{n}, \\therefore \\frac{a_{n+1}}{a_{n}}=2$,\n\n所以, 数列 $\\left\\{a_{n}\\right\\}$ 是以 2 为首项, 以 2 为公比的等比数列, 则 $a_{n}=2 \\times 2^{n-1}=2^{n}$,\n\n$\\therefore a_{k+1}+a_{k+2}+\\cdots+a_{k+10}=\\frac{a_{k+1} \\cdot\\left(1-2^{10}\\right)}{1-2}=\\frac{2^{k+1} \\cdot\\left(1-2^{10}\\right)}{1-2}=2^{k+1}\\left(2^{10}-1\\right)=2^{5}\\left(2^{10}-1\\right)$,\n\n$\\therefore 2^{k+1}=2^{5}$, 则 $k+1=5$, 解得 $k=4$.\n\n故选: C.\n\n",
+            "index": 94
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n8. 设 $O$ 为坐标原点, 直线 $x=a$ 与双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的两条渐近线分别交于 $D, E$ 两点, 若 $\\square O D E$ 的面积为 8 , 则 $C$ 的焦距的最小值为（）\nA. 4\nB. 8\nC. 16\nD. 32\n\n",
+            "answer": "B",
+            "analysis": "【详解】 $\\because C \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n$\\therefore$ 双曲线的渐近线方程是 $y= \\pm \\frac{b}{a} x$\n\n$\\because$ 直线 $x=a$ 与双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的两条渐近线分别交于 $D, E$ 两点\n\n不妨设 $D$ 为在第一象限, $E$ 在第四象限\n\n联立 $\\left\\{\\begin{array}{l}x=a \\\\ y=\\frac{b}{a} x\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}x=a \\\\ y=b\\end{array}\\right.$\n\n故 $D(a, b)$\n\n联立 $\\left\\{\\begin{array}{l}x=a \\\\ y=-\\frac{b}{a} x\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}x=a \\\\ y=-b\\end{array}\\right.$\n\n故 $E(a,-b)$\n\n$\\therefore|E D|=2 b$\n\n$\\therefore \\square O D E$ 面积为: $S_{\\triangle O D E}=\\frac{1}{2} a \\times 2 b=a b=8$\n\n$\\because$ 双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n$\\therefore$ 其焦距为 $2 c=2 \\sqrt{a^{2}+b^{2}} \\geq 2 \\sqrt{2 a b}=2 \\sqrt{16}=8$\n\n当且仅当 $a=b=2 \\sqrt{2}$ 取等号\n\n$\\therefore C$ 的焦距的最小值： 8\n\n故选: B. ",
+            "index": 95
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n9. 设函数 $f(x)=\\ln |2 x+1-| \\ln |2 x-1|$, 则 $f(x)(\\quad)$\nA. 是偶函数, 且在 $\\left(\\frac{1}{2},+\\infty\\right)$ 单调递增\nB. 是奇函数, 且在 $\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)$ 单调递减\nC. 是偶函数, 且在 $\\left(-\\infty,-\\frac{1}{2}\\right)$ 单调递增\nD. 是奇函数, 且在 $\\left(-\\infty,-\\frac{1}{2}\\right)$ 单调递减\n\n",
+            "answer": "D",
+            "analysis": "【详解】由 $f(x)=\\ln |2 x+1|-\\ln |2 x-1|$ 得 $f(x)$ 定义域为 $\\left\\{x \\mid x \\neq \\pm \\frac{1}{2}\\right\\}$, 关于坐标原点对称,\n\n又 $f(-x)=\\ln |1-2 x|-\\ln |-2 x-1|=\\ln |2 x-1|-\\ln |2 x+1|=-f(x)$,\n\n$\\therefore f(x)$ 为定义域上的奇函数，可排除 $\\mathrm{AC}$;\n\n当 $x \\in\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)$ 时, $f(x)=\\ln (2 x+1)-\\ln (1-2 x)$,\n\n$\\mathrm{Q} y=\\ln (2 x+1)$ 在 $\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)$ 上单调递增, $y=\\ln (1-2 x)$ 在 $\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)$ 上单调递减,\n\n$\\therefore f(x)$ 在 $\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)$ 上单调递增，排除 $\\mathrm{B}$;\n\n当 $x \\in\\left(-\\infty,-\\frac{1}{2}\\right)$ 时, $f(x)=\\ln (-2 x-1)-\\ln (1-2 x)=\\ln \\frac{2 x+1}{2 x-1}=\\ln \\left(1+\\frac{2}{2 x-1}\\right)$,\n\n$\\because \\mu=1+\\frac{2}{2 x-1}$ 在 $\\left(-\\infty,-\\frac{1}{2}\\right)$ 上单调递减, $f(\\mu)=\\ln \\mu$ 在定义域内单调递增,\n\n根据复合函数单调性可知: $f(x)$ 在 $\\left(-\\infty,-\\frac{1}{2}\\right)$ 上单调递减, D正确. 故选: D.\n\n",
+            "index": 96
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n10.已知 $\\triangle A B C$ 是面积为 $\\frac{9 \\sqrt{3}}{4}$ 的等边三角形, 且其顶点都在球 $O$ 的球面上. 若球 $O$ 的表面积为 $16 \\pi$, 则 $O$ 到平面 $A B C$ 的距离为（）\nA. $\\sqrt{3}$\nB. $\\frac{3}{2}$\nC. 1\nD. $\\frac{\\sqrt{3}}{2}$\n\n",
+            "answer": "C",
+            "analysis": "【详解】设球 $O$ 的半径为 $R$, 则 $4 \\pi R^{2}=16 \\pi$, 解得: $R=2$.\n\n设 $\\square A B C$ 外接圆半径为 $r$, 边长为 $a$,\n\n$\\because \\square A B C$ 是面积为 $\\frac{9 \\sqrt{3}}{4}$ 的等边三角形,\n\n$\\therefore \\frac{1}{2} a^{2} \\times \\frac{\\sqrt{3}}{2}=\\frac{9 \\sqrt{3}}{4}$, 解得: $a=3, \\therefore r=\\frac{2}{3} \\times \\sqrt{a^{2}-\\frac{a^{2}}{4}}=\\frac{2}{3} \\times \\sqrt{9-\\frac{9}{4}}=\\sqrt{3}$,\n\n$\\therefore$ 球心 $O$ 到平面 $A B C$ 的距离 $d=\\sqrt{R^{2}-r^{2}}=\\sqrt{4-3}=1$.\n\n故选: C.\n\n",
+            "index": 97
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n11. 若 $2^{x}-2^{y}<3^{-x}-3^{-y}$, 则（）\nA. $\\ln (y-x+1)>0$\nB. $\\ln (y-x+1)<0$\nC. $\\ln |x-y|>0$\nD. $\\ln |x-y|<0$\n\n",
+            "answer": "A",
+            "analysis": "【详解】由 $2^{x}-2^{y}<3^{-x}-3^{-y}$ 得: $2^{x}-3^{-x}<2^{y}-3^{-y}$,\n\n令 $f(t)=2^{t}-3^{-t}$,\n\n$\\because y=2^{x}$ 为 $R$ 上的增函数, $y=3^{-x}$ 为 $R$ 上的减函数, $\\therefore f(t)$ 为 $R$ 上的增函数,\n\n$\\therefore x<y$,\n\n$\\mathrm{Q} y-x>0, \\therefore y-x+1>1, \\therefore \\ln (y-x+1)>0$, 则A正确, B错误;\n\n$\\mathrm{Q}|x-y|$ 与 1 的大小不确定，故 $\\mathrm{CD}$ 无法确定.\n\n故选: A.\n\n",
+            "index": 98
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "\n12.0-1周期序列在通信技术中有着重要应用. 若序列 $a_{1} a_{2} \\cdots a_{n} \\cdots$ 满足 $a_{i} \\in\\{0,1\\}(i=1,2, \\cdots)$, 且存在正整数 $m$ , 使得 $a_{i+m}=a_{i}(i=1,2, \\cdots)$ 成立, 则称其为 $0-1$ 周期序列, 并称满足 $a_{i+m}=a_{i}(i=1,2, \\cdots)$ 的最小正整数 $m$ 为这个序列的周期.对于周期为 $m$ 的 $0-1$ 序列 $a_{1} a_{2} \\cdots a_{n} \\cdots, C(k)=\\frac{1}{m} \\sum_{i=1}^{m} a_{i} a_{i+k}(k=1,2, \\cdots, m-1)$ 是描述其性质的重要指标, 下列周期为 5 的 $0-1$ 序列中， 满足 $C(k) \\leq \\frac{1}{5}(k=1,2,3,4)$ 的序列是 $(\\quad)$\nA. $11010 \\cdots$\nB. $11011 \\cdots$\nC. $10001 \\cdots$\nD. $11001 \\cdots$\n\n",
+            "answer": "C",
+            "analysis": "【详解】由 $a_{i+m}=a_{i}$ 知, 序列 $a_{i}$ 的周期为 $m$, 由已知, $m=5$,\n\n$C(k)=\\frac{1}{5} \\sum_{i=1}^{5} a_{i} a_{i+k}, k=1,2,3,4$\n\n对于选项A,\n\n$C(1)=\\frac{1}{5} \\sum_{i=1}^{5} a_{i} a_{i+1}=\\frac{1}{5}\\left(a_{1} a_{2}+a_{2} a_{3}+a_{3} a_{4}+a_{4} a_{5}+a_{5} a_{6}\\right)=\\frac{1}{5}(1+0+0+0+0)=\\frac{1}{5} \\leq \\frac{1}{5}$\n\n$C(2)=\\frac{1}{5} \\sum_{i=1}^{5} a_{i} a_{i+2}=\\frac{1}{5}\\left(a_{1} a_{3}+a_{2} a_{4}+a_{3} a_{5}+a_{4} a_{6}+a_{5} a_{7}\\right)=\\frac{1}{5}(0+1+0+1+0)=\\frac{2}{5}$, 不满足;\n\n对于选项B, $C(1)=\\frac{1}{5} \\sum_{i=1}^{5} a_{i} a_{i+1}=\\frac{1}{5}\\left(a_{1} a_{2}+a_{2} a_{3}+a_{3} a_{4}+a_{4} a_{5}+a_{5} a_{6}\\right)=\\frac{1}{5}(1+0+0+1+1)=\\frac{3}{5}$, 不满足;\n\n对于选项D,\n\n$C(1)=\\frac{1}{5} \\sum_{i=1}^{5} a_{i} a_{i+1}=\\frac{1}{5}\\left(a_{1} a_{2}+a_{2} a_{3}+a_{3} a_{4}+a_{4} a_{5}+a_{5} a_{6}\\right)=\\frac{1}{5}(1+0+0+0+1)=\\frac{2}{5}$, 不满足;\n\n故选: C\n\n【点晴】本题考查数列的新定义问题, 涉及到周期数列, 考查学生对新定义的理解能力以及数学运算能力 , 是一道中档题.",
+            "index": 99
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n1. 若 $\\mathrm{z}=1+i$ ，则 $\\left|\\mathrm{z}^{2}-2 z\\right|=(\\quad)$\nA. 0\nB. 1\nC. $\\sqrt{2}$\nD. 2\n\n",
+            "answer": "D",
+            "analysis": "【详解】由题意可得: $z^{2}=(1+i)^{2}=2 i$, 则 $z^{2}-2 z=2 i-2(1+i)=-2$.\n\n故 $\\left|z^{2}-2 z\\right|=|-2|=2$.\n\n故选: D.\n\n",
+            "index": 100
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n2. 设集合 $A=\\left\\{x \\mid x^{2}-4 \\leq 0\\right\\}, B=\\{x \\mid 2 x+a \\leq 0\\}$, 且 $A \\cap B=\\{x \\mid-2 \\leq x \\leq 1\\}$, 则 $a=(\\quad)$\nA. -4\nB. -2\nC. 2\nD. 4\n\n",
+            "answer": "B",
+            "analysis": "【详解】求解二次不等式 $x^{2}-4 \\leq 0$ 可得: $A=\\{x \\mid-2 \\leq x \\leq 2\\}$,\n\n求解一次不等式 $2 x+a \\leq 0$ 可得: $B=\\left\\{x \\mid x \\leq-\\frac{a}{2}\\right\\}$.\n\n由于 $A \\cap B=\\{x \\mid-2 \\leq x \\leq 1\\}$, 故: $-\\frac{a}{2}=1$, 解得: $a=-2$.\n\n故选: B.\n\n",
+            "index": 101
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n4. 已知 $A$ 为抛物线 $C: y^{2}=2 p x(p>0)$ 上一点, 点 $A$ 到 $C$ 的焦点的距离为 12 , 到 $y$ 轴的距离为 9 , 则 $p=()$\nA. 2\nB. 3\nC. 6\nD. 9\n\n",
+            "answer": "C",
+            "analysis": "【详解】设抛物线的焦点为 $F$, 由抛物线的定义知 $|A F|=x_{A}+\\frac{p}{2}=12$, 即 $12=9+\\frac{p}{2}$, 解得 $p=6$.\n\n故选: C.\n\n【点晴】本题主要考查利用抛物线的定义计算焦半径, 考查学生转化与化归思想, 是一道容易题.",
+            "index": 102
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n6. 函数 $f(x)=x^{4}-2 x^{3}$ 的图像在点 $(1, f(1))$ 处的切线方程为 ()\nA. $y=-2 x-1$\nB. $y=-2 x+1$\nC. $y=2 x-3$\nD. $y=2 x+1$\n\n",
+            "answer": "B",
+            "analysis": "【详解】 $\\because f(x)=x^{4}-2 x^{3}, \\therefore f^{\\prime}(x)=4 x^{3}-6 x^{2}, \\therefore f(1)=-1, f^{\\prime}(1)=-2$,\n\n因此, 所求切线的方程为 $y+1=-2(x-1)$, 即 $y=-2 x+1$.\n\n故选: B.\n\n",
+            "index": 103
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n8. $\\left(x+\\frac{y^{2}}{x}\\right)(x+y)^{5}$ 的展开式中 $x^{3} y^{3}$ 的系数为 $(\\quad)$\nA. 5\nB. 10\nC. 15\nD. 20\n\n",
+            "answer": "C",
+            "analysis": "【详解】 $(x+y)^{5}$ 展开式的通项公式为 $T_{r+1}=C_{5}^{r} x^{5-r} y^{r} \\quad(r \\in N$ 且 $r \\leq 5)$\n\n所以 $\\left(x+\\frac{y^{2}}{x}\\right)$ 与 $(x+y)^{5}$ 展开式的乘积可表示为:\n\n$x T_{r+1}=x C_{5}^{r} x^{5-r} y^{r}=C_{5}^{r} x^{6-r} y^{r}$ 或 $\\frac{y^{2}}{x} T_{r+1}=\\frac{y^{2}}{x} C_{5}^{r} x^{5-r} y^{r}=C_{5}^{r} x^{4-r} y^{r+2}$\n\n在 $x T_{r+1}=C_{5}^{r} x^{6-r} y^{r}$ 中, 令 $r=3$, 可得: $x T_{4}=C_{5}^{3} x^{3} y^{3}$, 该项中 $x^{3} y^{3}$ 的系数为 10 ,\n\n在 $\\frac{y^{2}}{x} T_{r+1}=C_{5}^{r} x^{4-r} y^{r+2}$ 中, 令 $r=1$, 可得: $\\frac{y^{2}}{x} T_{2}=C_{5}^{1} x^{3} y^{3}$, 该项中 $x^{3} y^{3}$ 的系数为 5\n\n所以 $x^{3} y^{3}$ 的系数为 $10+5=15$\n\n故选: C\n\n",
+            "index": 104
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n9. 已知 $\\alpha \\in(0, \\pi)$, 且 $3 \\cos 2 \\alpha-8 \\cos \\alpha=5$, 则 $\\sin \\alpha=($ ( )\nA. $\\frac{\\sqrt{5}}{3}$\nB. $\\frac{2}{3}$\nC. $\\frac{1}{3}$\nD. $\\frac{\\sqrt{5}}{9}$\n\n",
+            "answer": "A",
+            "analysis": "【详解】 $3 \\cos 2 \\alpha-8 \\cos \\alpha=5$, 得 $6 \\cos ^{2} \\alpha-8 \\cos \\alpha-8=0$,\n\n即 $3 \\cos ^{2} \\alpha-4 \\cos \\alpha-4=0$, 解得 $\\cos \\alpha=-\\frac{2}{3}$ 或 $\\cos \\alpha=2$ （舍去）, 又 $\\because \\alpha \\in(0, \\pi), \\therefore \\sin \\alpha=\\sqrt{1-\\cos ^{2} \\alpha}=\\frac{\\sqrt{5}}{3}$.\n\n故选: A.\n\n",
+            "index": 105
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n11. 已知 $\\odot M: x^{2}+y^{2}-2 x-2 y-2=0$, 直线 $l: 2 x+y+2=0, P$ 为 $l$ 上的动点, 过点 $P$ 作 $\\odot M$ 的切 线 $P A, P B$, 切点为 $A, B$, 当 $|P M| \\cdot|A B|$ 最小时, 直线 $A B$ 的方程为（ ()\nA. $2 x-y-1=0$\nB. $2 x+y-1=0$\nC. $2 x-y+1=0$\nD. $2 x+y+1=0$\n\n",
+            "answer": "D",
+            "analysis": "【详解】圆的方程可化为 $(x-1)^{2}+(y-1)^{2}=4$, 点 $M$ 到直线 $l$ 的距离为 $d=\\frac{|2 \\times 1+1+2|}{\\sqrt{2^{2}+1^{2}}}=\\sqrt{5}>2$ , 所以直线 $l$ 与圆相离.\n\n依圆的知识可知, 四点 $A, P, B, M$ 四点共圆, 且 $A B \\perp M P$, 所以\n\n$|P M| \\cdot|A B|=2 S_{\\triangle P A M}=2 \\times \\frac{1}{2} \\times|P A| \\times|A M|=2|P A|$, 而 $|P A|=\\sqrt{|M P|^{2}-4}$ ，\n\n当直线 $M P \\perp l$ 时, $|M P|_{\\min }=\\sqrt{5},|P A|_{\\min }=1$, 此时 $|P M| \\cdot|A B|$ 最小.\n\n$\\therefore M P: y-1=\\frac{1}{2}(x-1)$ 即 $y=\\frac{1}{2} x+\\frac{1}{2}$, 由 $\\left\\{\\begin{array}{c}y=\\frac{1}{2} x+\\frac{1}{2} \\\\ 2 x+y+2=0\\end{array}\\right.$ 解得, $\\left\\{\\begin{array}{l}x=-1 \\\\ y=0\\end{array}\\right.$.\n\n所以以 $M P$ 为直径的圆的方程为 $(x-1)(x+1)+y(y-1)=0$, 即 $x^{2}+y^{2}-y-1=0$,\n\n两圆的方程相减可得: $2 x+y+1=0$, 即为直线 $A B$ 的方程.\n\n故选: D.\n\n",
+            "index": 106
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "\n12.若 $2^{a}+\\log _{2} a=4^{b}+2 \\log _{4} b$ ，则（ $)$\nA. $a>2 b$\nB. $a<2 b$\nC. $a>b^{2}$\nD. $a<b^{2}$\n\n",
+            "answer": "B",
+            "analysis": "【详解】 设 $f(x)=2^{x}+\\log _{2} x$, 则 $f(x)$ 为增函数, 因为 $2^{a}+\\log _{2} a=4^{b}+2 \\log _{4} b=2^{2 b}+\\log _{2} b$\n\n所以 $f(a)-f(2 b)=2^{a}+\\log _{2} a-\\left(2^{2 b}+\\log _{2} 2 b\\right)=2^{2 b}+\\log _{2} b-\\left(2^{2 b}+\\log _{2} 2 b\\right)=\\log _{2} \\frac{1}{2}=-1<0$,\n\n所以 $f(a)<f(2 b)$, 所以 $a<2 b$.\n\n$f(a)-f\\left(b^{2}\\right)=2^{a}+\\log _{2} a-\\left(2^{b^{2}}+\\log _{2} b^{2}\\right)=2^{2 b}+\\log _{2} b-\\left(2^{b^{2}}+\\log _{2} b^{2}\\right)=2^{2 b}-2^{b^{2}}-\\log _{2} b$,\n\n当 $b=1$ 时, $f(a)-f\\left(b^{2}\\right)=2>0$, 此时 $f(a)>f\\left(b^{2}\\right)$, 有 $a>b^{2}$\n\n当 $b=2$ 时, $f(a)-f\\left(b^{2}\\right)=-1<0$, 此时 $f(a)<f\\left(b^{2}\\right)$, 有 $a<b^{2}$, 所以C、D错误.\n\n故选: B.\n\n【点晴】本题主要考查函数与方程的综合应用, 涉及到构造函数, 利用函数的单调性比较大小, 是一道中 档题.",
+            "index": 107
         }
     ]
 }
