@@ -472,6 +472,22 @@
             "answer": "【解析】}\n\n【分析】}\n\n(1) 利用 $\\sin ^{2} t+\\cos ^{2} t=1$ 消去参数 $t$, 求出曲线 $C_{1}$ 的普通方程, 即可得出结论;\n\n(2) 当 $k=4$ 时, $x \\geq 0, y \\geq 0$, 曲线 $C_{1}$ 的参数方程化为 $\\left\\{\\begin{array}{l}\\sqrt{x}=\\cos ^{2} t \\\\ \\sqrt{y}=\\sin ^{2} t\\end{array}\\right.$ ( $t$ 为参数), 两式相加消去参数 $t$ , 得 $C_{1}$ 普通方程, 由 $\\rho \\cos \\theta=x, \\rho \\sin \\theta=y$, 将曲线 $C_{2}$ 化为直角坐标方程, 联立 $C_{1}, C_{2}$ 方程，即可求解.\n\n【详解】 (1) 当 $k=1$ 时, 曲线 $C_{1}$ 的参数方程为 $\\left\\{\\begin{array}{l}x=\\cos t \\\\ y=\\sin t\\end{array}(t\\right.$ 为参数 $)$,\n\n两式平方相加得 $x^{2}+y^{2}=1$,\n\n所以曲线 $C_{1}$ 表示以坐标原点为圆心, 半径为 1 的圆;\n\n(2) 当 $k=4$ 时, 曲线 $C_{1}$ 的参数方程为 $\\left\\{\\begin{array}{l}x=\\cos ^{4} t \\\\ y=\\sin ^{4} t\\end{array}\\right.$ ( $t$ 为参数),\n\n所以 $x \\geq 0, y \\geq 0$, 曲线 $C_{1}$ 的参数方程化为 $\\left\\{\\begin{array}{l}\\sqrt{x}=\\cos ^{2} t \\\\ \\sqrt{y}=\\sin ^{2} t\\end{array}\\right.$ ( $t$ 为参数),\n\n两式相加得曲线 $C_{1}$ 方程为 $\\sqrt{x}+\\sqrt{y}=1$,\n\n得 $\\sqrt{y}=1-\\sqrt{x}$, 平方得 $y=x-2 \\sqrt{x}+1,0 \\leq x \\leq 1,0 \\leq y \\leq 1$,\n\n曲线 $C_{2}$ 的极坐标方程为 $4 \\rho \\cos \\theta-16 \\rho \\sin \\theta+3=0$,\n\n曲线 $C_{2}$ 直角坐标方程为 $4 x-16 y+3=0$,\n\n联立 $C_{1}, C_{2}$ 方程 $\\left\\{\\begin{array}{l}y=x-2 \\sqrt{x}+1 \\\\ 4 x-16 y+3=0\\end{array}\\right.$,\n\n整理得 $12 x-32 \\sqrt{x}+13=0$, 解得 $\\sqrt{x}=\\frac{1}{2}$ 或 $\\sqrt{x}=\\frac{13}{6}$ (舍去)，\n\n$\\therefore x=\\frac{1}{4}, y=\\frac{1}{4}, \\therefore C_{1}, C_{2}$ 公共点的直角坐标为 $\\left(\\frac{1}{4}, \\frac{1}{4}\\right)$.\n\n",
             "analysis": "【分析】}\n\n(1) 利用 $\\sin ^{2} t+\\cos ^{2} t=1$ 消去参数 $t$, 求出曲线 $C_{1}$ 的普通方程, 即可得出结论;\n\n(2) 当 $k=4$ 时, $x \\geq 0, y \\geq 0$, 曲线 $C_{1}$ 的参数方程化为 $\\left\\{\\begin{array}{l}\\sqrt{x}=\\cos ^{2} t \\\\ \\sqrt{y}=\\sin ^{2} t\\end{array}\\right.$ ( $t$ 为参数), 两式相加消去参数 $t$ , 得 $C_{1}$ 普通方程, 由 $\\rho \\cos \\theta=x, \\rho \\sin \\theta=y$, 将曲线 $C_{2}$ 化为直角坐标方程, 联立 $C_{1}, C_{2}$ 方程，即可求解.\n\n",
             "index": 58
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "22. 在直角坐标系 $x O y$ 中, $\\odot C$ 的圆心为 $C(2,1)$, 半径为 1 .\n(1) 写出 $\\odot C$ 的一个参数方程;\n(2) 过点 $F(4,1)$ 作 $\\odot C$ 的两条切线. 以坐标原点为极点, $X$ 轴正半轴为极轴建立坐标系, 求 这两条切线的极坐标方程.",
+            "answer": "答案:\n见解析\n解析:\n(1) $\\odot C$ 的参数方程为 $\\left\\{\\begin{array}{l}x=2+\\cos \\theta \\\\ y=1+\\sin \\theta\\end{array}\\right.$ ( $\\theta$ 为参数 $)$\n(2) $\\odot C$ 的方程为 $(x-2)^{2}+(y-1)^{2}=1$\n(1)当直线斜率不存在时, 直线方程为 $x=4$, 此时圆心到直线距离为 $2>r$, 舍去;\n(2)当直线斜率存在时, 设直线方程为 $y-1=k(x-4)$, 化简为 $k x-y-4 k+1=0$,\n此时圆心 $C(2,1)$ 到直线的距离为 $d=\\frac{|2 k-1-4 k+1|}{\\sqrt{k^{2}+1}}=r=1$,\n化简得 $2|k|=\\sqrt{k^{2}+1}$ ，\n两边平方有 $4 k^{2}=k^{2}+1$, 所以 $k= \\pm \\frac{\\sqrt{3}}{3}$.\n代人直线方程并化简得 $x-\\sqrt{3} y+\\sqrt{3}-4=0$ 或 $x+\\sqrt{3} y-\\sqrt{3}-4=0$ 化为极坐标方程为 $\\rho \\cos \\theta-\\sqrt{3} \\rho \\sin \\theta=4-\\sqrt{3} \\Leftrightarrow \\rho \\sin \\left(\\theta+\\frac{5 \\pi}{6}\\right)=4-\\sqrt{3}$\n或 $\\rho \\cos \\theta+\\sqrt{3} \\rho \\sin \\theta=4+\\sqrt{3} \\Leftrightarrow \\rho \\sin \\left(\\theta+\\frac{\\pi}{6}\\right)=4+\\sqrt{3}$.\n",
+            "analysis": "",
+            "index": 59
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "23.已知函数 $f(x)=|x-a|+|x+3|$.\n(1) 当 $a=1$ 时, 求不等式 $f(x) \\geq 6$ 的解集;\n(2) 若 $f(x)>-a$, 求 $a$ 的取值范围.",
+            "answer": "答案:\n见解析\n解析:\n当 $a=1$ 时, $f(x) \\geq 6 \\Leftrightarrow|x-1|+|x+3| \\geq 6$,\n当 $x \\leq-3$ 时, 不等式 $\\Leftrightarrow 1-x-x-3 \\geq 6$, 解得 $x \\leq-4$;\n当 $-3<x<1$ 时, 不等式 $\\Leftrightarrow 1-x+x+3 \\geq 6$, 解得 $x \\in \\varnothing$;\n当 $x \\geq 1$ 时, 不等式 $\\Leftrightarrow x-1+x+3 \\geq 6$, 解得 $x \\geq 2$.\n综上, 原不等式的解集为 $(-\\infty,-4] \\cup[2,+\\infty)$.\n(2) 若 $f(x)>-a$, 即 $f(x)_{\\min }>-a$,\n因为 $f(x)=|x-a|+|x+3| \\geq|(x-a)-(x+3)|=|a+3|$ （当且仅当 $(x-a)(x+3) \\leq 0$ 时,\n等号成立), 所以 $f(x)_{\\text {min }}=|a+3|$, 所以 $|a+3|>-a$, 即 $a+3<a$ 或 $a+3>-a$, 解得 $a \\in\\left(-\\frac{3}{2},+\\infty\\right)$",
+            "analysis": "",
+            "index": 60
         }
     ]
 }
