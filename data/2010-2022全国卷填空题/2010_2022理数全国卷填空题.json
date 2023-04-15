@@ -1,0 +1,734 @@
+{
+    "keywords": "2010_2022理数全国卷填空题",
+    "example": [
+        {
+            "year": "2010",
+            "category": "（新课标）",
+            "question": "13. (5 分) 设 $y=f(x)$ 为区间 $[0,1]$ 上的连续函数, 且恒有 $0 \\leqslant f(x) \\leqslant 1$, 可 以用随机模拟方法近似计算积分 $\\int_{0}^{1} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx}$, 先产生两组（每组 $\\mathrm{N}$ 个）区间 $[0$ ，1] 上的均匀随机数 $x_{1}, x_{2}, \\ldots x_{N}$ 和 $y_{1}, y_{2}, \\ldots y_{N}$, 由此得到 $N$ 个点 $\\left(x_{i}, y_{i}\\right)($ $i=1,2, \\ldots, N)$, 再数出其中满足 $y_{i} \\leqslant f\\left(x_{i}\\right) \\quad(i=1,2, \\ldots, N)$ 的点数 $N_{1}$, 那么由随机模拟方案可得积分 $\\int_{0}^{1} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx}$ 的近似值为\n",
+            "answer": "$\\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$\n",
+            "analysis": "解: 由题意可知 $\\frac{N_{1}}{N} \\approx \\frac{\\int{ }_{0}^{1} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx}}{1}$ 得 $\\int{ }_{0}^{1} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx} \\approx \\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$,\n\n故积分 $\\int_{0}^{1} f(x) d x$ 的近似值为 $\\frac{N_{1}}{N}$.\n\n故答案为: $\\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$.\n",
+            "index": 0,
+            "score": "5分"
+        },
+        {
+            "year": "2010",
+            "category": "（新课标）",
+            "question": "14. (5 分) 正视图为一个三角形的几何体可以是 (㝍出三种)\n",
+            "answer": "三棱雉、圆雉、三棱柱\n",
+            "analysis": "解: 正视图为一个三角形的几何体可以是三棱雉、三棱柱（放倒的情形 )、圆雉、四棱雉等等. 故答案为: 三棱雉、圆雉、三棱柱.\n",
+            "index": 1,
+            "score": "5分"
+        },
+        {
+            "year": "2010",
+            "category": "（新课标）",
+            "question": "15. (5 分) 过点 $A(4,1)$ 的圆 $C$ 与直线 $x-y=1$ 相切于点 $B(2,1)$, 则圆 $C$ 的方程为\n",
+            "answer": "$(x-3)^{2}+y^{2}=2$\n",
+            "analysis": "解：设圆的方程为 $(x-a)^{2}+(y-b)^{2}=r^{2}$,\n\n则 $(4-a)^{2+}(1-b)^{2}=r^{2},(2-a)^{2+}(1-b)^{2}=r^{2}, \\frac{b-1}{a-2}=-1$,\n\n解得 $a=3, b=0, r=\\sqrt{2}$, 故所求圆的方程为 $(x-3)^{2}+y^{2}=2$.\n\n故答案为: $(x-3)^{2}+y^{2}=2$.\n",
+            "index": 2,
+            "score": "5分"
+        },
+        {
+            "year": "2011",
+            "category": "（新课标）",
+            "question": "14. (5 分) 在平面直角坐标系 $x O y$, 椭圆 $C$ 的中心为原点, 焦点 $F_{1} F_{2}$ 在 $x$ 轴上, 离心率为 $\\frac{\\sqrt{2}}{2}$. 过 $F_{1}$ 的直线交于 $A, B$ 两点, 且 $\\triangle A B F_{2}$ 的周长为 16 , 那么 $C$ 的 方程为\n",
+            "answer": "$\\frac{x^{2}}{16}+\\frac{y^{2}}{8}=1$\n",
+            "analysis": "解: 根据题意, $\\triangle A B F_{2}$ 的周长为 16 , 即 $\\mathrm{BF}_{2}+A F_{2}+B_{1}+A F_{1}=16$;\n\n根据椭圆的性质, 有 $4 a=16$, 即 $a=4$;\n\n椭圆的离心率为 $\\frac{\\sqrt{2}}{2}$, 即 $\\frac{c}{a}=\\frac{\\sqrt{2}}{2}$, 则 $a=\\sqrt{2} c$,\n\n将 $a=\\sqrt{2} c$, 代入可得, $c=2 \\sqrt{2}$, 则 $b^{2}=a^{2}-c^{2}=8$;\n\n则椭圆的方程为 $\\frac{x^{2}}{16}+\\frac{y^{2}}{8}=1$;\n\n故答案为: $\\frac{x^{2}}{16}+\\frac{y^{2}}{8}=1$.\n",
+            "index": 3,
+            "score": "5分"
+        },
+        {
+            "year": "2011",
+            "category": "（新课标）",
+            "question": "15. (5 分) 已知矩形 $A B C D$ 的顶点都在半径为 4 的球 $O$ 的球面上, 且 $A B=6, B C=2$ $\\sqrt{3}$, 则棱雉 $\\mathrm{O}-\\mathrm{ABCD}$ 的体积为\n",
+            "answer": "$8 \\sqrt{3}$\n",
+            "analysis": "解: 矩形的对角线的长为: $\\sqrt{6^{2}+(2 \\sqrt{3})^{2}}=4 \\sqrt{3}$, 所以球心到矩形的距 离为: $\\sqrt{4^{2}-(2 \\sqrt{3})^{2}}=2$,\n\n所以棱雉 $O-A B C D$ 的体积为: $\\frac{1}{3} \\times 6 \\times 2 \\sqrt{3} \\times 2=8 \\sqrt{3}$.\n\n故答案为: $8 \\sqrt{3}$\n",
+            "index": 4,
+            "score": "5分"
+        },
+        {
+            "year": "2011",
+            "category": "（新课标）",
+            "question": "16. (5 分) 在 $\\triangle A B C$ 中, $B=60^{\\circ}, A C=\\sqrt{3}$, 则 $A B+2 B C$ 的最大值为\n",
+            "answer": "$2 \\sqrt{7}$\n",
+            "analysis": "解: 设 $A B=c A C=b B C=a$\n\n由余弦定理\n\n$\\cos B=\\frac{a^{2}+c^{2}-b^{2}}{2 a c}$\n\n所以 $a^{2}+c^{2}-a c=b^{2}=3$\n\n设 $\\mathrm{c}+2 \\mathrm{a}=\\mathrm{m}$\n\n代入上式得\n\n$7 a^{2}-5 a m+m^{2}-3=0$\n\n$\\triangle=84-3 m^{2} \\geqslant 0$ 故 $m \\leqslant 2 \\sqrt{7}$\n\n当 $m=2 \\sqrt{7}$ 时, 此时 $a=\\frac{5 \\sqrt{7}}{7}, c=\\frac{4 \\sqrt{7}}{7}$ 符合题意\n\n因此最大值为 $2 \\sqrt{7}$\n\n另解: 因为 $B=60^{\\circ}, A+B+C=180^{\\circ}$, 所以 $A+C=120^{\\circ}$,\n\n由正弦定理，有\n\n$\\frac{A B}{\\sin C}=\\frac{B C}{\\sin A}=\\frac{A C}{\\sin B}=\\frac{\\sqrt{3}}{\\sin 60^{\\circ}}=2$,\n\n所以 $A B=2 \\sin C, B C=2 \\sin A$.\n\n所以 $A B+2 B C=2 \\sin C+4 \\sin A=2 \\sin \\left(120^{\\circ}-A\\right)+4 \\sin A$\n\n$=2\\left(\\sin 120^{\\circ} \\cos A-\\cos 120^{\\circ} \\sin A\\right)+4 \\sin A$\n\n$=\\sqrt{3} \\cos A+5 \\sin A$ $=2 \\sqrt{7} \\sin (A+\\phi), \\quad\\left(\\right.$ 其中 $\\left.\\sin \\phi=\\frac{\\sqrt{3}}{2 \\sqrt{7}}, \\cos \\phi=\\frac{5}{2 \\sqrt{7}}\\right)$\n\n所以 $A B+2 B C$ 的最大值为 $2 \\sqrt{7}$.\n\n故答案为: $2 \\sqrt{7}$\n",
+            "index": 5,
+            "score": "5分"
+        },
+        {
+            "year": "2012",
+            "category": "（新课标）",
+            "question": "13. （5 分）已知向量 $\\vec{a}, \\vec{b}$ 夹角为 $45^{\\circ}$, 且 $|\\vec{a}|=1,|2 \\vec{a}-\\vec{b}|=\\sqrt{10}$, 则 $|\\vec{b}|=$\n",
+            "answer": "$3 \\sqrt{2}$\n",
+            "analysis": "解: $\\because<\\vec{a}, \\vec{b}>=45^{\\circ},|\\vec{a}|=1$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=|\\vec{a}||\\vec{b}| \\cos 45^{\\circ}=\\frac{\\sqrt{2}}{2}|\\vec{b}|$\n\n$\\therefore|2 \\vec{a}-\\vec{b}|=\\sqrt{(2 \\vec{a}-\\vec{b})^{2}}=\\sqrt{4 \\vec{a}^{2}-4 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}}=\\sqrt{4-2 \\sqrt{2}|\\vec{b}|+|\\vec{b}|^{2}}=\\sqrt{10}$\n\n解得 $|\\vec{b}|=3 \\sqrt{2}$\n\n故答案为: $3 \\sqrt{2}$\n",
+            "index": 6,
+            "score": "5分"
+        },
+        {
+            "year": "2012",
+            "category": "（新课标）",
+            "question": "16. (5 分) 数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{n+1}+(-1)^{n} a_{n}=2 n-1$, 则 $\\left\\{a_{n}\\right\\}$ 的前 60 项和为\n",
+            "answer": "1830\n",
+            "analysis": "解: $\\because a_{n+1}+(-1)^{n} a_{n}=2 n-1$,\n\n故有 $a_{2}-a_{1}=1, a_{3}+a_{2}=3, a_{4}-a_{3}=5, a_{5}+a_{4}=7, a_{6}-a_{5}=9, a_{7}+a_{6}=11, \\ldots a_{50}-a_{49}=97$\n\n从而可得 $a_{3}+a_{1}=2, a_{4}+a_{2}=8, a_{7}+a_{5}=2, a_{8}+a_{6}=24, a_{9}+a_{11}=2, a_{12}+a_{10}=40, a_{13}+a_{11}=2$ $, \\mathrm{a}_{16}+\\mathrm{a}_{14}=56, \\ldots$\n\n从第一项开始, 依次取 2 个相邻奇数项的和都等于 2 , 从第二项开始, 依次取 2 个相邻偶数项的和构成以 8 为首项, 以 16 为公差的等差数列. $\\left\\{a_{n}\\right\\}$ 的前 60 项和为 $15 \\times 2+\\left(15 \\times 8+\\frac{15 \\times 14}{2} \\times 16\\right)=1830$\n故答案为: 1830\n",
+            "index": 7,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "question": "13. (5 分) 已知两个单位向量 $\\vec{a}, \\vec{b}$ 的夹角为 $60^{\\circ}, \\vec{c}=t \\vec{a}+(1-t) \\vec{b}$. 若 $\\vec{b} \\cdot \\vec{c}=0$, 则 $t=$\n",
+            "answer": "2\n",
+            "analysis": "解: $\\because \\vec{c}=t \\vec{a}+(1-t) \\vec{b}, \\vec{c} \\cdot \\vec{b}=0, \\quad \\therefore \\vec{c} \\cdot \\vec{b}=t \\vec{a} \\cdot \\vec{b}+(1-t) \\vec{b}^{2}=0$,\n\n$\\therefore \\mathrm{t} \\cos 60^{\\circ}+1-t=0, \\therefore 1-\\frac{1}{2} t=0$, 解得 $t=2$.\n\n故答案为: 2 .\n",
+            "index": 8,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "question": "14. (5 分) 若数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}=\\frac{2}{3} a_{n}+\\frac{1}{3}$, 则数列 $\\left\\{a_{n}\\right\\}$ 的通项公式是 $a_{n}=$\n",
+            "answer": "$(-2)^{n-1}$\n",
+            "analysis": "解：当 $n=1$ 时, $a_{1}=s_{1}=\\frac{2}{3} a_{1}+\\frac{1}{3}$, 解得 $a_{1}=1$\n\n当 $n \\geqslant 2$ 时, $a_{n}=S_{n}-S_{n-1}=\\left(\\frac{2}{3} a_{n}+\\frac{1}{3}\\right)-\\left(\\frac{2}{3} a_{n-1}+\\frac{1}{3}\\right)=\\frac{2}{3} a_{n}-\\frac{2}{3} a_{n-1}$,\n\n整理可得 $\\frac{1}{3} a_{n}=-\\frac{2}{3} a_{r-1}$, 即 $\\frac{a_{n}}{a_{n-1}}=-2$,\n\n故数列 $\\left\\{a_{n}\\right\\}$ 从第二项开始是以 -2 为首项, -2 为公比的等比数列, 故当 $n \\geqslant 2$ 时, $a_{n}=(-2)^{n-1}$, 经验证当 $n=1$ 时, 上式也适合,\n\n故答案为: $(-2)^{n-1}$\n",
+            "index": 9,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "question": "15. （5 分) 设当 $x=\\theta$ 时, 函数 $f(x)=\\sin x-2 \\cos x$ 取得最大值, 则 $\\cos \\theta=$\n",
+            "answer": "$-\\frac{2 \\sqrt{5}}{5}$\n",
+            "analysis": "解: $f(x)=\\sin x-2 \\cos x=\\sqrt{5}\\left(\\frac{\\sqrt{5}}{5} \\sin x-\\frac{2 \\sqrt{5}}{5} \\cos x\\right)=\\sqrt{5} \\sin (x-\\alpha)$ （其 中 $\\cos \\alpha=\\frac{\\sqrt{5}}{5}, \\sin \\alpha=\\frac{2 \\sqrt{5}}{5}$, ,\n\n$\\because \\mathrm{x}=\\theta$ 时, 函数 $\\mathrm{f}(\\mathrm{x})$ 取得最大值,\n\n$\\therefore \\sin (\\theta-\\alpha)=1$, 即 $\\sin \\theta-2 \\cos \\theta=\\sqrt{5}$,\n\n又 $\\sin ^{2} \\theta+\\cos ^{2} \\theta=1$,\n\n联立得 $(2 \\cos \\theta+\\sqrt{5})^{2}+\\cos ^{2} \\theta=1$, 解得 $\\cos \\theta=-\\frac{2 \\sqrt{5}}{5}$.\n\n故答案为: $-\\frac{2 \\sqrt{5}}{5}$\n",
+            "index": 10,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "question": "16. （5 分）若函数 $f(x)=\\left(1-x^{2}\\right)\\left(x^{2}+a x+b\\right)$ 的图象关于直线 $x=-2$ 对称, 则 $f(x)$ 的最大值为\n",
+            "answer": "16\n",
+            "analysis": "解: $\\because$ 函数 $f(x)=\\left(1-x^{2}\\right)\\left(x^{2}+a x+b\\right)$ 的图象关于直线 $x=-2$ 对称, $\\therefore f(-1)=f(-3)=0$ 且 $f(1)=f(-5)=0$,\n\n即 $\\left[1-(-3)^{2}\\right]\\left[(-3)^{2}+a \\cdot(-3)+b\\right]=0$ 且 $\\left[1-(-5)^{2}\\right]\\left[(-5)^{2}+a \\cdot(-5\\right.$ $+b]=0$,\n\n解之得 $\\left\\{\\begin{array}{c}a=8 \\\\ b=15\\end{array}\\right.$,\n\n因此, $f(x)=\\left(1-x^{2}\\right)\\left(x^{2}+8 x+15\\right)=-x^{4}-8 x^{3}-14 x^{2}+8 x+15$,\n\n求导数, 得 $f^{\\prime}(x)=-4 x^{3}-24 x^{2}-28 x+8$,\n\n令 $f^{\\prime}(x)=0$, 得 $x_{1}=-2-\\sqrt{5}, x_{2}=-2, x_{3}=-2+\\sqrt{5}$,\n\n当 $x \\in(-\\infty,-2-\\sqrt{5})$ 时, $f^{\\prime}(x)>0$; 当 $x \\in(-2-\\sqrt{5},-2)$ 时, $f^{\\prime}(x)<$ 0\n\n当 $x \\in(-2,-2+\\sqrt{5})$ 时, $f^{\\prime}(x)>0$; 当 $x \\in(-2+\\sqrt{5},+\\infty)$ 时, $f^{\\prime}(x)<0$ $\\therefore f(x)$ 在区间 $(-\\infty,-2-\\sqrt{5})$ 、 $(-2,-2+\\sqrt{5})$ 上是增函数, 在区间 $(-2-$ $\\sqrt{5},-2) 、(-2+\\sqrt{5},+\\infty)$ 上是减函数.\n\n又 $\\because f(-2-\\sqrt{5})=f(-2+\\sqrt{5})=16$,\n\n$\\therefore f(x)$ 的最大值为 16 .\n\n故答案为: 16 .\n",
+            "index": 11,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分) 已知正方形 $A B C D$ 的边长为 $2, E$ 为 $C D$ 的中点, 则 $\\overrightarrow{\\mathrm{AE}} \\cdot \\overrightarrow{\\mathrm{BD}}=$\n",
+            "answer": "2\n",
+            "analysis": "解: $\\because$ 已知正方形 $A B C D$ 的边长为 $2, E$ 为 $C D$ 的中点, 则 $\\overrightarrow{A B} \\cdot \\overrightarrow{A D}=0$, 故 $\\overrightarrow{\\mathrm{AE}} \\cdot \\overrightarrow{\\mathrm{BD}}=(\\overrightarrow{\\mathrm{AD}}+\\overrightarrow{\\mathrm{DE}}) \\cdot(\\overrightarrow{\\mathrm{BA}}+\\overrightarrow{\\mathrm{AD}})=\\left(\\overrightarrow{\\mathrm{AD}}+\\frac{1}{2} \\overrightarrow{\\mathrm{AB}}\\right) \\cdot(\\overrightarrow{\\mathrm{AD}}-\\overrightarrow{\\mathrm{AB}})=\\overrightarrow{\\mathrm{AD}}^{2}-\\overrightarrow{\\mathrm{AD}} \\cdot \\overrightarrow{\\mathrm{AB}}+$ $\\frac{1}{2} \\overrightarrow{\\mathrm{AB}} \\cdot \\overrightarrow{\\mathrm{AD}}^{-}-\\frac{1}{2} \\overrightarrow{\\mathrm{AB}}^{2}=4+0-0-\\frac{1}{2} \\times 4=2$,\n\n故答案为: 2 .\n",
+            "index": 12,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "question": "14. (5 分) 从 $\\mathrm{n}$ 个正整数 $1,2, \\ldots, \\mathrm{n}$ 中任意取出两个不同的数, 若取出的两 数之和等于 5 的概率为 $\\frac{1}{14}$, 则 $n=$\n",
+            "answer": "8\n",
+            "analysis": "解: 从 $n$ 个正整数 $1,2, \\ldots, n$ 中任意取出两个不同的数, 取出的两数 之和等于 5 的情况有: $(1,4) ，(2,3)$ 共 2 种情况;\n\n从 $\\mathrm{n}$ 个正整数 $1,2, \\ldots, n$ 中任意取出两个不同的数的所有不同取法种数为 $C_{n}^{2}$,\n\n由古典概型概率计算公式得:\n\n从 $\\mathrm{n}$ 个正整数 $1,2, \\ldots, n$ 中任意取出两个不同的数, 取出的两数之和等于 5 的 概率为 $p=\\frac{2}{C_{n}^{2}}=\\frac{1}{14}$. 所以 $C_{n}^{2}=28$, 即 $\\frac{n(n-1)}{2}=28$, 解得 $n=8$.\n\n故答案为: 8 .\n",
+            "index": 13,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分) 设 $\\theta$ 为第二象限角, 若 $\\tan \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{1}{2}$, 则 $\\sin \\theta+\\cos \\theta=$\n",
+            "answer": "$-\\frac{\\sqrt{10}}{5}$\n",
+            "analysis": "解: $\\because \\tan \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{\\tan \\theta+1}{1-\\tan \\theta}=\\frac{1}{2}$,\n\n$\\therefore \\tan \\theta=-\\frac{1}{3}$,\n\n而 $\\cos ^{2} \\theta=\\frac{\\cos ^{2} \\theta}{\\sin ^{2} \\theta+\\cos ^{2} \\theta}=\\frac{1}{1+\\tan ^{2} \\theta}$,\n\n$\\because \\theta$ 为第二象限角,\n\n$\\therefore \\cos \\theta=-\\sqrt{\\frac{1}{1+\\tan ^{2} \\theta}}=-\\frac{3 \\sqrt{10}}{10}, \\sin \\theta=\\sqrt{1-\\cos ^{2} \\theta}=\\frac{\\sqrt{10}}{10}$,\n\n则 $\\sin \\theta+\\cos \\theta=\\frac{\\sqrt{10}}{10}-\\frac{3 \\sqrt{10}}{10}=-\\frac{\\sqrt{10}}{5}$.\n\n故答案为: $-\\frac{\\sqrt{10}}{5}$\n",
+            "index": 14,
+            "score": "5分"
+        },
+        {
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "question": "16. (5 分) 等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$, 已知 $S_{10}=0, S_{15}=25$, 则 $n S_{n}$ 的最小 值为\n",
+            "answer": "-49\n",
+            "analysis": "解: 设等差数列 $\\left\\{a_{n}\\right\\}$ 的首项为 $a_{1}$, 公差为 $d$,\n\n$\\because s_{10}=10 a_{1}+45 d=0, s_{15}=15 a_{1}+105 d=25$,\n\n$\\therefore \\mathrm{a}_{1}=-3, \\mathrm{~d}=\\frac{2}{3}$,\n\n$\\therefore \\mathrm{S}_{\\mathrm{n}}=\\mathrm{na}_{1}+\\frac{\\mathrm{n}(\\mathrm{n}-1)}{2} \\mathrm{~d}=\\frac{1}{3} \\mathrm{n}^{2}-\\frac{10}{3} n$,\n\n$\\therefore n S_{n}=\\frac{1}{3} n^{3}-\\frac{10}{3} n^{2}$, 令 $n S_{n}=f(n)$,\n\n$\\therefore f^{\\prime}(n)=n^{2}-\\frac{20}{3} n$\n\n$\\therefore$ 当 $n=\\frac{20}{3}$ 时, $f(n)$ 取得极值, 当 $n<\\frac{20}{3}$ 时, $f(n)$ 递减; 当 $n>\\frac{20}{3}$ 时, $f(n)$ 递增;\n\n因此只需比较 $f$ (6) 和 $f(7)$ 的大小即可.\n\n$f(6)=-48, f(7)=-49$,\n\n故 $n S_{n}$ 的最小值为 -49 .\n\n故答案为: -49 .\n",
+            "index": 15,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "question": "13. （5 分) $(x-y)(x+y)^{8}$ 的展开式中 $x^{2} y^{7}$ 的系数为___. (用数字填写 答案)\n",
+            "answer": "-20\n",
+            "analysis": "解: $(x+y)^{8}$ 的展开式中, 含 $x y^{7}$ 的系数是: 8 .\n\n含 $x^{2} y^{6}$ 的系数是 28 ,\n\n$\\therefore(x-y)(x+y)^{8}$ 的展开式中 $x^{2} y^{7}$ 的系数为: $8-28=-20$.\n\n故答案为: - 20\n",
+            "index": 16,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "question": "14.（5 分）甲、乙、丙三位同学被问到是否去过 $A, B ， C$ 三个城市时, 甲说：我去过的城市比乙多，但没去过 $B$ 城市;\n\n乙说：我没去过 $C$ 城市;\n\n丙说：我们三人去过同一城市;\n\n由此可判断乙去过的城市为\n",
+            "answer": "$A$\n",
+            "analysis": "解：由乙说: 我没去过 $\\mathrm{C}$ 城市, 则乙可能去过 $\\mathrm{A}$ 城市或 $\\mathrm{B}$ 城市, 但甲说: 我去过的城市比乙多, 但没去过 B 城市, 则乙只能是去过 A, B 中的任 一个,\n\n再由丙说: 我们三人去过同一城市,\n\n则由此可判断乙去过的城市为 A.\n\n故答案为: $A$.\n",
+            "index": 17,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "question": "15. (5 分) 已知 $A, B, C$ 为圆 $O$ 上的三点, 若 $\\overrightarrow{\\mathrm{AO}}=\\frac{1}{2}(\\overrightarrow{\\mathrm{AB}}+\\overrightarrow{\\mathrm{AC}})$, 则 $\\overrightarrow{\\mathrm{AB}} \\overrightarrow{\\mathrm{AC}}$ 的 夹角为\n",
+            "answer": "$90^{\\circ}$\n",
+            "analysis": "解：在圆中若 $\\overrightarrow{\\mathrm{AO}}=\\frac{1}{2}(\\overrightarrow{\\mathrm{AB}}+\\overrightarrow{\\mathrm{AC}})$,\n\n即 $2 \\overrightarrow{\\mathrm{AO}}=\\overrightarrow{\\mathrm{AB}}+\\overrightarrow{\\mathrm{AC}}$,\n\n即 $\\overrightarrow{A B}+\\overrightarrow{A C}$ 的和向量是过 $A$, $O$ 的直径,\n\n则以 $A B, A C$ 为邻边的四边形是矩形,\n\n则 $\\overrightarrow{\\mathrm{AB}} \\perp \\overrightarrow{\\mathrm{AC}}$,\n\n即 $\\overrightarrow{\\mathrm{AB}}$ 与 $\\overrightarrow{\\mathrm{AC}}$ 的夹角为 $90^{\\circ}$,\n\n故答案为: $90^{\\circ}$\n",
+            "index": 18,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "question": "16. (5 分) 已知 $a, b, c$ 分别为 $\\triangle A B C$ 的三个内角 $A, B, C$ 的对边, $a=2$ 且 $(2+b$ ) $(\\sin A-\\sin B)=(c-b) \\sin C$, 则 $\\triangle A B C$ 面积的最大值为\n",
+            "answer": "$\\sqrt{3}$\n",
+            "analysis": "解: 因为: $(2+b)(\\sin A-\\sin B)=(c-b) \\sin C$\n\n$\\Rightarrow(2+b) \\quad(a-b)=(c-b) c$\n\n$\\Rightarrow 2 a-2 b+a b-b^{2}=c^{2}-b c$\n\n又因为: $a=2$,\n\n所以: $a^{2}-b^{2}=c^{2}-b c \\Rightarrow b^{2}+c^{2}-a^{2}=b c \\Rightarrow \\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2 b c}=\\frac{1}{2} \\Rightarrow A=\\frac{\\pi}{3}$, $\\triangle \\mathrm{ABC}$ 面积 $\\mathrm{S}=\\frac{1}{2} b c \\sin A=\\frac{\\sqrt{3}}{4} b c$,\n\n而 $b^{2}+c^{2}-a^{2}=b c$\n\n$\\Rightarrow b^{2}+c^{2}-b c=a^{2}$\n\n$\\Rightarrow b^{2}+c^{2}-b c=4$\n\n$\\Rightarrow b c \\leqslant 4$\n\n所以: $S=\\frac{1}{2} b c \\sin A=\\frac{\\sqrt{3}}{4} b c \\leqslant \\sqrt{3}$, 即 $\\triangle A B C$ 面积的最大值为 $\\sqrt{3}$.\n\n故答案为: $\\sqrt{3}$.\n",
+            "index": 19,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分） $(x+a)^{10}$ 的展开式中, $x^{7}$ 的系数为 15 , 则 $a=$\n",
+            "answer": "$\\frac{1}{2}$\n",
+            "analysis": "解: $(x+a)^{10}$ 的展开式的通项公式为 $T_{r+1}=C_{10}^{r} \\bullet x^{10-r} \\bullet a^{r}$,\n\n令 10- $r=7$, 求得 $r=3$, 可得 $x^{7}$ 的系数为 $a^{3} \\bullet C_{10}^{3}=120 a^{3}=15$,\n\n$\\therefore a=\\frac{1}{2}$\n\n故答案为: $\\frac{1}{2}$.\n",
+            "index": 20,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "question": "14. (5 分) 函数 $f(x)=\\sin (x+2 \\phi)-2 \\sin \\phi \\cos (x+\\phi)$ 的最大值为\n",
+            "answer": "1\n",
+            "analysis": "解：函数 $f(x)=\\sin (x+2 \\phi)-2 \\sin \\phi \\cos (x+\\phi)=\\sin [(x+\\phi)$\n\n$+\\phi]-2 \\sin \\phi \\cos (x+\\phi)$\n\n$=\\sin (x+\\phi) \\cos \\phi+\\cos (x+\\phi) \\sin \\phi-2 \\sin \\phi \\cos (x+\\phi)=\\sin (x+\\phi) \\cos \\phi^{-} \\cos (x+\\phi$\n\n$\\sin \\phi$\n\n$=\\sin [(x+\\phi)-\\phi]=\\sin x$\n\n故函数 $f(x)$ 的最大值为 1 ,\n\n故答案为: 1 .\n",
+            "index": 21,
+            "score": "5分"
+        },
+        {
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分) 已知偶函数 $f(x)$ 在 $[0,+\\infty)$ 单调递减, $f(2)=0$, 若 $f(x-1)>$ 0 , 则 $x$ 的取值范围是\n",
+            "answer": "$(-1,3)$\n",
+            "analysis": "解: $\\because$ 偶函数 $f(x)$ 在 $[0,+\\infty)$ 单调递减, $f(2)=0$,\n\n$\\therefore$ 不等式 $f(x-1)>0$ 等价为 $f(x-1)>f(2)$,\n\n即 $f(|x-1|)>f(2) ，$\n\n$\\therefore|x-1|<2$\n\n解得 $-1<x<3$,\n\n故答案为: $(-1,3)$\n",
+            "index": 22,
+            "score": "5分"
+        },
+        {
+            "year": "2015",
+            "category": "（新课标ⅰ）",
+            "question": "13. (5 分) 若函数 $f(x)=x \\ln \\left(x+\\sqrt{a+x^{2}}\\right)$ 为偶函数, 则 $a=$\n",
+            "answer": "1\n",
+            "analysis": "解: $\\because f(x)=x \\ln \\left(x+\\sqrt{a+x^{2}}\\right)$ 为偶函数,\n\n$\\therefore f(-x)=f(x)$,\n\n$\\therefore(-x) \\ln \\left(-x+\\sqrt{a+x^{2}}\\right)=x \\ln \\left(x+\\sqrt{a+x^{2}}\\right)$,\n\n$\\therefore-\\ln \\left(-x+\\sqrt{a+x^{2}}\\right)=\\ln \\left(x+\\sqrt{a+x^{2}}\\right)$,\n\n$\\therefore \\ln \\left(-x+\\sqrt{a+x^{2}}\\right)+\\ln \\left(x+\\sqrt{a+x^{2}}\\right)=0$,\n\n$\\therefore \\ln \\left(\\sqrt{a+x^{2}}+x\\right) \\quad\\left(\\sqrt{a+x^{2}}-x\\right)=0$\n\n$\\therefore \\ln a=0$,\n\n$\\therefore a=1$.\n\n故答案为: 1 .\n",
+            "index": 23,
+            "score": "5分"
+        },
+        {
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分) 设向量 $\\vec{a}, \\vec{b}$ 不平行, 向量 $\\lambda \\vec{a}+\\vec{b}$ 与 $\\vec{a}+2 \\vec{b}$ 平行, 则实数 $\\lambda=$\n",
+            "answer": "$\\frac{1}{2}$\n",
+            "analysis": "解: $\\because$ 向量 $\\vec{a}, \\vec{b}$ 不平行, 向量 $\\lambda \\vec{a}+\\vec{b}$ 与 $\\vec{a}+2 \\vec{b}$ 平行,\n\n$\\therefore \\lambda \\vec{a}+\\vec{b}=t(\\vec{a}+2 \\vec{b})=t \\vec{a}+2 t \\vec{b}$, $\\therefore\\left\\{\\begin{array}{c}\\lambda=\\mathrm{t} \\\\ 1=2 \\mathrm{t}\\end{array}\\right.$, 解得实数 $\\lambda=\\frac{1}{2}$.\n\n故答案为: $\\frac{1}{2}$.\n",
+            "index": 24,
+            "score": "5分"
+        },
+        {
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分) $(a+x)(1+x)^{4}$ 的展开式中 $x$ 的奇数次幂项的系数之和为 32 , 则 $a=$\n",
+            "answer": "3\n",
+            "analysis": "解：设 $f(x)=(a+x)(1+x)^{4}=a_{0}+a_{1} x+a_{2} x^{2}+\\ldots+a_{5} x^{5}$,\n\n令 $x=1$, 则 $a_{0}+a_{1}+a_{2}+\\ldots+a_{5}=f(1 ）=16(a+1)$, (1)\n\n令 $x=-1$, 则 $a_{0}-a_{1}+a_{2}-\\ldots-a_{5}=f(-1)=0$. (2)\n\n(1)- (2)得, 2 $\\left(a_{1}+a_{3}+a_{5}\\right)=16(a+1)$,\n\n所以 $2 \\times 32=16(a+1)$,\n\n所以 $a=3$.\n\n故答案为: 3 .\n",
+            "index": 25,
+            "score": "5分"
+        },
+        {
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "question": "16. (5 分) 设数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$, 且 $a_{1}=-1, a_{n+1}=S_{n+1} S_{n}$, 则 $S_{n}=$\n",
+            "answer": "$-\\frac{1}{n}$\n",
+            "analysis": "解: $\\because a_{n+1}=S_{n+1} s_{n}$,\n\n$\\therefore \\mathrm{s}_{\\mathrm{n}+1}-\\mathrm{S}_{\\mathrm{n}}=\\mathrm{S}_{\\mathrm{n}+1} \\mathrm{~S}_{\\mathrm{n}}$,\n\n$\\therefore \\frac{1}{S_{n}}-\\frac{1}{S_{n+1}}=1$,\n\n又 $\\because a_{1}=-1$, 即 $\\frac{1}{S_{1}}=-1$,\n\n$\\therefore$ 数列 $\\left\\{\\frac{1}{S_{n}}\\right\\}$ 是以首项是- 1 、公差为- 1 的等差数列,\n\n$\\therefore \\frac{1}{S_{n}}=-\\mathrm{n}$,\n\n$\\therefore S_{n}=-\\frac{1}{n}$,\n\n故答案为: $-\\frac{1}{n}$.\n",
+            "index": 26,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "question": "13. (5 分) 设向量 $\\vec{a}=(m, 1), \\vec{b}=(1,2)$, 且 $|\\vec{a}+\\vec{b}|^{2}=|\\vec{a}|^{2}+|\\vec{b}|^{2}$, 则 $m=$\n",
+            "answer": "-2\n",
+            "analysis": "解: $|\\vec{a}+\\vec{b}|^{2}=|\\vec{a}|^{2}+|\\vec{b}|^{2}$,\n\n可得 $\\vec{a} \\cdot \\vec{b}=0$.\n\n向量 $\\vec{a}=(m, 1), \\vec{b}=(1,2)$,\n\n可得 $m+2=0$, 解得 $m=-2$.\n\n故答案为: -2 .\n",
+            "index": 27,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "question": "14. (5 分) $(2 x+\\sqrt{x})^{5}$ 的展开式中, $x^{3}$ 的系数是___. (用数字填写答案)\n",
+            "answer": "10\n",
+            "analysis": "解: $(2 x+\\sqrt{x})^{5}$ 的展开式中, 通项公式为: $T_{r+1}=\\left[{ }_{5}^{r}(2 x)^{5-r}(\\sqrt{x})^{r}=2^{5-r}\\right.$ $C_{5}^{r} \\cdot x^{5 \\frac{r}{2}}$\n\n令 $5-\\frac{r}{2}=3$, 解得 $r=4$\n\n$\\therefore x^{3}$ 的系数 $2 \\mathrm{C}_{5}^{4}=10$.\n\n故答案为: 10 .\n",
+            "index": 28,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "question": "15. (5 分) 设等比数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{1}+a_{3}=10, a_{2}+a_{4}=5$, 则 $a_{1} a_{2} \\ldots a_{n}$ 的最大值为\n",
+            "answer": "64\n",
+            "analysis": "解：等比数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{1}+a_{3}=10, a_{2}+a_{4}=5$,\n\n可得 $q\\left(a_{1}+a_{3}\\right)=5$, 解得 $q=\\frac{1}{2}$.\n\n$a_{1}+q^{2} a_{1}=10$, 解得 $a_{1}=8$.\n\n则 $a_{1} a_{2} \\ldots a_{n}=a_{1} \\bullet^{n} q^{1+2+3+\\ldots+(n-1)}=8^{n} \\bullet\\left(\\frac{1}{2}\\right)^{\\frac{n(n-1)}{2}}=2^{3 r \\frac{n^{2}-n}{2}}=2^{\\frac{7 r-n^{2}}{2}}$,\n\n当 $n=3$ 或 4 时, 表达式取得最大值: $2^{\\frac{12}{2}}=2^{6}=64$.\n\n故答案为: 64 .\n",
+            "index": 29,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 若 $\\cos A=\\frac{4}{5}, \\cos C=\\frac{5}{13}$ , $a=1$, 则 $b=$\n",
+            "answer": "$\\frac{21}{13}$\n",
+            "analysis": "解: 由 $\\cos \\mathrm{A}=\\frac{4}{5}, \\cos \\mathrm{C}=\\frac{5}{13}$, 可得\n\n$\\sin \\mathrm{A}=\\sqrt{1-\\cos ^{2} \\mathrm{~A}}=\\sqrt{1-\\frac{16}{25}}=\\frac{3}{5}$,\n\n$\\sin \\mathrm{C}=\\sqrt{1-\\cos ^{2} \\mathrm{C}}=\\sqrt{1-\\frac{25}{169}}=\\frac{12}{13}$,\n\n$\\sin B=\\sin (A+C)=\\sin A \\cos C+\\cos A \\sin C=\\frac{3}{5} \\times \\frac{5}{13}+\\frac{4}{5} \\times \\frac{12}{13}=\\frac{63}{65}$,\n\n由正弦定理可得 $b=\\frac{a \\sin B}{\\sin A}$\n\n$=\\frac{1 \\times \\frac{63}{65}}{\\frac{3}{5}}=\\frac{21}{13}$.\n\n故答案为: $\\frac{21}{13}$.\n",
+            "index": 30,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "question": "14. （5 分） $\\alpha, \\beta$ 是两个平面, $m, n$ 是两条直线, 有下列四个命题:\n\n(1)如果 $m \\perp n, m \\perp \\alpha, n / / \\beta$, 那么 $\\alpha \\perp \\beta$.\n\n(2)如果 $m \\perp \\alpha, n / / \\alpha$, 那么 $m \\perp n$.\n\n(3)如果 $\\alpha / / \\beta, m \\subset \\alpha$, 那么 $m / / \\beta$.\n\n(4)如果 $m / / n, \\alpha / / \\beta$, 那么 $m$ 与 $\\alpha$ 所成的角和 $n$ 与 $\\beta$ 所成的角相等.\n\n其中正确的命题是 (填序号)\n",
+            "answer": "(2)(3)\n",
+            "analysis": "解: (1)如果 $m \\perp n, m \\perp \\alpha, n / / \\beta$, 不能得出 $\\alpha \\perp \\beta$, 故错误; (2)如果 $n / / \\alpha$, 则存在直线 $I \\subset \\alpha$, 使 $n / / l$, 由 $m \\perp \\alpha$, 可得 $m \\perp l$, 那么 $m \\perp n$. 故 正确;\n\n(3)如果 $\\alpha / / \\beta, m \\subset \\alpha$, 那么 $m$ 与 $\\beta$ 无公共点, 则 $m / / \\beta$. 故正确\n\n(4)如果 $m / / n, \\alpha / / \\beta$, 那么 $m, n$ 与 $\\alpha$ 所成的角和 $m, n$ 与 $\\beta$ 所成的角均相等.\n\n故正确;\n\n故答案为: (2)(3)\n",
+            "index": 31,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分) 有三张卡片, 分别写有 1 和 2,1 和 3,2 和 3. 甲, 乙, 丙三人各 取走一张卡片, 甲看了乙的卡片后说: “我与乙的卡片上相同的数字不是 2 ”, 乙看了丙的卡片后说: “我与丙的卡片上相同的数字不是 1\", 丙说: “我的卡 片上的数字之和不是 $5^{\\prime \\prime}$, 则甲的卡片上的数字是\n",
+            "answer": "1 和 3\n",
+            "analysis": "解：根据丙的说法知, 丙的卡片上写着 1 和 2 , 或 1 和 3 ;\n\n(1) 若丙的卡片上写着 1 和 2 , 根据乙的说法知, 乙的卡片上写着 2 和 3;\n\n$\\therefore$ 根据甲的说法知, 甲的卡片上写着 1 和 3 ;\n\n(2) 若丙的卡片上写着 1 和 3, 根据乙的说法知, 乙的卡片上写着 2 和 3;\n\n又甲说， “我与乙的卡片上相同的数字不是 2 \";\n\n$\\therefore$ 甲的卡片上写的数字不是 1 和 2 , 这与已知矛盾;\n\n$\\therefore$ 甲的卡片上的数字是 1 和 3 .\n\n故答案为: 1 和 3 .\n",
+            "index": 32,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "question": "16. (5 分) 若直线 $y=k x+b$ 是曲线 $y=\\ln x+2$ 的切线, 也是曲线 $y=\\ln (x+1 ）$ 的切 线, 则 $b=$\n",
+            "answer": "$1-\\ln 2$\n",
+            "analysis": "解：设 $y=k x+b$ 与 $y=\\ln x+2$ 和 $y=\\ln (x+1)$ 的切点分别为 $\\left(x_{1}, k x_{1}+b\\right)$ 、 $\\left(\\mathrm{x}_{2}, \\mathrm{kx} \\mathrm{x}_{2}+\\mathrm{b}\\right)$;\n\n由导数的几何意义可得 $k=\\frac{1}{x_{1}}=\\frac{1}{x_{2}+1}$, 得 $x_{1}=x_{2}+1$\n\n再由切点也在各自的曲线上, 可得 $\\left\\{\\begin{array}{l}k x_{1}+b=\\ln x_{1}+2 \\\\ k x_{2}+b=\\ln \\left(x_{2}+1\\right)\\end{array}\\right.$\n\n联立上述式子解得 $\\left\\{\\begin{array}{l}k=2 \\\\ x_{1}=\\frac{1}{2} \\\\ x_{2}=-\\frac{1}{2}\\end{array}\\right.$;\n\n故答案为:$1-\\ln 2$.\n",
+            "index": 33,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "14. (5 分) 函数 $y=\\sin x-\\sqrt{3} \\cos x$ 的图象可由函数 $y=\\sin x+\\sqrt{3} \\cos x$ 的图象至少 向右平移 个单位长度得到.\n",
+            "answer": "$\\frac{2 \\pi}{3}$.\n",
+            "analysis": "解: $\\because y=f(x)=\\sin x+\\sqrt{3} \\cos x=2 \\sin \\left(x+\\frac{\\pi}{3}\\right), y=\\sin x-\\sqrt{3} \\cos x=2 \\sin$ $\\left(x-\\frac{\\pi}{3}\\right)$, $\\therefore f(x-\\phi)=2 \\sin \\left(x+\\frac{\\pi}{3}-\\phi\\right) \\quad(\\phi>0)$\n\n今 $2 \\sin \\left(x+\\frac{\\pi}{3}-\\phi\\right)=2 \\sin \\left(x-\\frac{\\pi}{3}\\right)$ ，\n\n则 $\\frac{\\pi}{3}-\\phi=2 k \\pi-\\frac{\\pi}{3} \\quad(k \\in Z)$ ，\n\n即 $\\phi=\\frac{2 \\pi}{3}-2 k \\pi \\quad(k \\in Z)$ ，\n\n当 $\\mathrm{k}=0$ 时，正数 $\\phi_{\\min }=\\frac{2 \\pi}{3}$ ，\n\n故答案为: $\\frac{2 \\pi}{3}$.\n",
+            "index": 34,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "15. (5 分) 已知 $f(x)$ 为偶函数, 当 $x<0$ 时, $f(x)=\\ln (-x)+3 x$, 则曲线 $y=f(x)$ 在点 $(1,-3)$ 处的切线方程是\n",
+            "answer": "$2 x+y+1=0$.\n",
+            "analysis": "解: $f(x)$ 为偶函数, 可得 $f(-x)=f(x)$,\n\n当 $x<0$ 时, $f(x)=\\ln (-x)+3 x$, 即有\n\n$x>0$ 时, $f(x)=\\ln x-3 x, f^{\\prime}(x)=\\frac{1}{x}-3$,\n\n可得 $f(1)=\\ln 1-3=-3, f^{\\prime} \\quad(1)=1-3=-2$,\n\n则曲线 $y=f(x)$ 在点 $(1,-3)$ 处的切线方程为 $y-(-3)=-2(x-1)$,\n\n即为 $2 x+y+1=0$.\n\n故答案为: $2 x+y+1=0$.\n",
+            "index": 35,
+            "score": "5分"
+        },
+        {
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "question": "16. (5 分) 已知直线 I: $m x+y+3 m-\\sqrt{3}=0$ 与圆 $x^{2}+y^{2}=12$ 交于 $A, B$ 两点, 过 $A$, $B$ 分别作 $\\mid$ 的垂线与 $x$ 轴交于 $C, D$ 两点, 若 $|A B|=2 \\sqrt{3}$, 则 $|C D|=$\n",
+            "answer": "4 .\n",
+            "analysis": "解: 由题意, $|A B|=2 \\sqrt{3}, \\therefore$ 圆心到直线的距离 $\\mathrm{d}=3$,\n\n$\\therefore \\frac{|3 m-\\sqrt{3}|}{\\sqrt{m^{2}+1}}=3$,\n\n$\\therefore \\mathrm{m}=-\\frac{\\sqrt{3}}{3}$\n\n$\\therefore$ 直线 I 的倾斜角为 $30^{\\circ}$,\n\n$\\because$ 过 $A, B$ 分别作 $I$ 的垂线与 $x$ 轴交于 $C, D$ 两点,\n\n$\\therefore|\\mathrm{CD}|=\\frac{2 \\sqrt{3}}{\\frac{\\sqrt{3}}{2}}=4$.\n\n故答案为: 4 .\n",
+            "index": 36,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅰ）",
+            "question": "15. (5 分) 已知双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的右顶点为 $A$, 以 $A$ 为 圆心, $b$ 为半径作圆 $A$, 圆 $A$ 与双曲线 $C$ 的一条渐近线交于 $M 、 N$ 两点. 若 $\\angle$ $M A N=60^{\\circ}$, 则 $C$ 的离心率为\n",
+            "answer": "$\\frac{2 \\sqrt{3}}{3}$\n",
+            "analysis": "解: 双曲线 C: $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的右顶点为 A $(a, 0)$,\n\n以 $A$ 为圆心, $b$ 为半径做圆 $A$, 圆 $A$ 与双曲线 $C$ 的一条渐近线交于 $M 、 N$ 两点. 若 $\\angle M A N=60^{\\circ}$, 可得 $A$ 到渐近线 $b x+a y=0$ 的距离为: $b \\cos 30^{\\circ}=\\frac{\\sqrt{3}}{2} b$,\n\n可得: $\\frac{|\\mathrm{ab}|}{\\sqrt{\\mathrm{a}^{2}+\\mathrm{b}^{2}}}=\\frac{\\sqrt{3}}{2} \\mathrm{~b}$, 即 $\\frac{\\mathrm{a}}{\\mathrm{c}}=\\frac{\\sqrt{3}}{2}$, 可得离心率为: $\\mathrm{e}=\\frac{2 \\sqrt{3}}{3}$.\n\n故答案为: $\\frac{2 \\sqrt{3}}{3}$.\n",
+            "index": 37,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分) 一批产品的二等品率为 0.02 , 从这批产品中每次随机取一件, 有放 回地抽取 100 次. $X$ 表示抽到的二等品件数, 则 $D X=$\n",
+            "answer": "1.96\n",
+            "analysis": "解: 由题意可知, 该事件满足独立重复试验, 是一个二项分布模型, 其中, $p=0.02, n=100$,\n\n则 $D X=n p q=n p(1-p)=100 \\times 0.02 \\times 0.98=1.96$.\n\n故答案为: 1.96 .\n",
+            "index": 38,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "question": "14. （5 分）函数 $f(x)=\\sin ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}\\left(x \\in\\left[0, \\frac{\\pi}{2}\\right]\\right)$ 的最大值是\n",
+            "answer": "1\n",
+            "analysis": "解: $f(x)=\\sin ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}=1-\\cos ^{2} x+\\sqrt{3} \\cos x-\\frac{3}{4}$,\n\n令 $\\cos x=t$ 且 $t \\in[0,1]$,\n\n则 $y=-t^{2}+\\sqrt{3} t+\\frac{1}{4}=-\\quad\\left(t-\\frac{\\sqrt{3}}{2}\\right)^{2+1}$,\n\n当 $t=\\frac{\\sqrt{3}}{2}$ 时, $f(t)_{\\text {max }}=1$,\n\n即 $f(x)$ 的最大值为 1 , 故答案为: 1\n",
+            "index": 39,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分) 等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}, a_{3}=3, S_{4}=10$, 则 $\\sum_{k=1}^{n} \\frac{1}{S_{k}}=$\n",
+            "answer": "$\\frac{2 \\mathrm{n}}{\\mathrm{n}+1}$\n",
+            "analysis": "解: 等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}, a_{3}=3, S_{4}=10, S_{4}=2\\left(a_{2}+a_{3}\\right)=10$, 可得 $a_{2}=2$, 数列的首项为 1 , 公差为 1 ,\n\n$\\mathrm{S}_{\\mathrm{n}}=\\frac{\\mathrm{n}(\\mathrm{n}+1)}{2}, \\frac{1}{S_{\\mathrm{n}}}=\\frac{2}{\\mathrm{n}(\\mathrm{n}+1)}=2\\left(\\frac{1}{\\mathrm{n}}-\\frac{1}{\\mathrm{n}+1}\\right)$,\n\n则 $\\sum_{k=1}^{n} \\frac{1}{S_{k}}=2\\left[1-\\frac{1}{2}+\\frac{1}{2}-\\frac{1}{3}+\\frac{1}{3}-\\frac{1}{4}+\\ldots+\\frac{1}{n}-\\frac{1}{n+1}\\right]=2\\left(1-\\frac{1}{n+1}\\right)=\\frac{2 n}{n+1}$.\n\n故答案为: $\\frac{2 \\mathrm{n}}{\\mathrm{n}+1}$.\n",
+            "index": 40,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "question": "16. (5 分) 已知 $F$ 是抛物线 $C: y^{2}=8 x$ 的焦点, $M$ 是 $C$ 上一点, $F M$ 的延长线交 $y$ 轴于点 $N$. 若 $M$ 为 $F N$ 的中点, 则 $|F N|=$\n",
+            "answer": "6\n",
+            "analysis": "解: 抛物线 $C: y^{2}=8 x$ 的焦点 $F(2,0), M$ 是 $C$ 上一点, $F M$ 的延长线\n\n交 $y$ 轴于点 $N$. 若 $M$ 为 $F N$ 的中点,\n\n可知 $M$ 的横坐标为: 1 , 则 $M$ 的纵坐标为: $\\pm 2 \\sqrt{2}$,\n\n$|\\mathrm{FN}|=2|\\mathrm{FM}|=2 \\sqrt{(1-2)^{2}+( \\pm 2 \\sqrt{2}-0)^{2}}=6$. 故答案为: 6 .\n",
+            "index": 41,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "14. (5 分) 设等比数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{1}+a_{2}=-1, a_{1}-a_{3}=-3$, 则 $a_{4}=$\n",
+            "answer": "-8 .\n",
+            "analysis": "解：设等比数列 $\\left\\{a_{n}\\right\\}$ 的公比为 $\\mathrm{q}, \\because a_{1}+a_{2}=-1, a_{1}-a_{3}=-3$,\n\n$\\therefore a_{1}(1+q)=-1, a_{1}\\left(1-q^{2}\\right)=-3$\n\n解得 $a_{1}=1, q=-2$.\n\n则 $a_{4}=(-2)^{3}=-8$.\n\n故答案为: -8 .\n",
+            "index": 42,
+            "score": "5分"
+        },
+        {
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "question": "15. (5 分) 设函数 $f(x)=\\left\\{\\begin{array}{ll}x+1, & x \\leqslant 0 \\\\ 2^{x}, & x>0\\end{array}\\right.$, 则满足 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 的 $x$ 的 取值范围是\n",
+            "answer": "$\\left(-\\frac{1}{4},+\\infty\\right)$.\n",
+            "analysis": "解：若 $x \\leqslant 0$, 则 $x-\\frac{1}{2} \\leqslant-\\frac{1}{2}$,\n\n则 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 等价为 $x+1+x-\\frac{1}{2}+1>1$, 即 $2 x>-\\frac{1}{2}$, 则 $x>-\\frac{1}{4}$, 此时 $-\\frac{1}{4}<x \\leqslant 0$,\n\n当 $x>0$ 时, $f(x)=2^{x}>1, x-\\frac{1}{2}>-\\frac{1}{2}$,\n\n当 $x-\\frac{1}{2}>0$ 即 $x>\\frac{1}{2}$ 时, 满足 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n当 $0 \\geqslant x-\\frac{1}{2}>-\\frac{1}{2}$, 即 $\\frac{1}{2} \\geqslant x>0$ 时, $f\\left(x-\\frac{1}{2}\\right)=x-\\frac{1}{2}+1=x+\\frac{1}{2}>\\frac{1}{2}$,\n\n此时 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n综上 $x>-\\frac{1}{4}$,\n\n故答案为: $\\left(-\\frac{1}{4},+\\infty\\right)$.\n",
+            "index": 43,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "question": "14. (5 分) 记 $S_{n}$ 为数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $S_{n}=2 a_{n}+1$, 则 $S_{6}=$\n",
+            "answer": "-63\n",
+            "analysis": "解: $S_{n}$ 为数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, $S_{n}=2 a_{n}+1$, (1)\n\n当 $n=1$ 时, $a_{1}=2 a_{1}+1$, 解得 $a_{1}=-1$,\n\n当 $n \\geqslant 2$ 时, $S_{n-1}=2 a_{n-1}+1$, (2),\n\n由(1)- (2)可得 $a_{n}=2 a_{n}-2 a_{n-1}$,\n\n$\\therefore a_{n}=2 a_{n-1}$,\n\n$\\therefore\\left\\{a_{n}\\right\\}$ 是以 -1 为首项, 以 2 为公比的等比数列,\n\n$\\therefore S_{6}=\\frac{-1 \\times\\left(1-2^{6}\\right)}{1-2}=-63$,\n\n故答案为: -63\n",
+            "index": 44,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "question": "15. （5 分）从 2 位女生, 4 位男生中选 3 人参加科技比赛, 且至少有 1 位女生 入选，则不同的选法共有 种. (用数字填写答案)\n",
+            "answer": "16\n",
+            "analysis": "解：方法一：直接法, 1 女 2 男, 有 $\\mathrm{C}_{2}{ }^{1} \\mathrm{C}_{4}{ }^{2}=12,2$ 女 1 男, 有 $\\mathrm{C}_{2}{ }^{2} \\mathrm{C}_{4}{ }^{1}=4$ 根据分类计数原理可得, 共有 $12+4=16$ 种,\n\n方法二, 间接法: $\\mathrm{C}_{6}{ }^{3}-\\mathrm{C}_{4}{ }^{3}=20-4=16$ 种,\n\n故答案为: 16\n",
+            "index": 45,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "question": "16. （5 分) 已知函数 $f(x)=2 \\sin x+\\sin 2 x$, 则 $f(x)$ 的最小值是\n",
+            "answer": "$\\frac{3 \\sqrt{3}}{2}$\n",
+            "analysis": "解：由题意可得 $T=2 \\pi$ 是 $f(x)=2 \\sin x+\\sin 2 x$ 的一个周期,\n\n故只需考虑 $f(x)=2 \\sin x+\\sin 2 x$ 在 $[0,2 \\pi)$ 上的值域,\n\n先来求该函数在 $[0,2 \\pi)$ 上的极值点,\n\n求导数可得 $f^{\\prime}(x)=2 \\cos x+2 \\cos 2 x$\n\n$=2 \\cos x+2\\left(2 \\cos ^{2} x-1\\right)=2(2 \\cos x-1)(\\cos x+1)$,\n\n令 $f^{\\prime}(x)=0$ 可解得 $\\cos x=\\frac{1}{2}$ 或 $\\cos x=-1$,\n\n可得此时 $x=\\frac{\\pi}{3} ， \\pi$ 或 $\\frac{5 \\pi}{3}$;\n\n$\\therefore y=2 \\sin x+\\sin 2 x$ 的最小值只能在点 $x=\\frac{\\pi}{3}, \\pi$ 或 $\\frac{5 \\pi}{3}$ 和边界点 $x=0$ 中取到,\n\n计算可得 $f\\left(\\frac{\\pi}{3}\\right)=\\frac{3 \\sqrt{3}}{2}, f(\\pi)=0, f\\left(\\frac{5 \\pi}{3}\\right)=-\\frac{3 \\sqrt{3}}{2}, f(0)=0$,\n\n$\\therefore$ 函数的最小值为 $-\\frac{3 \\sqrt{3}}{2}$,\n\n故答案为: $\\frac{3 \\sqrt{3}}{2}$.\n",
+            "index": 46,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "question": "13. (5 分) 曲线 $y=2 \\ln (x+1)$ 在点 $(0,0)$ 处的切线方程为\n",
+            "answer": "$y=2 x$\n",
+            "analysis": "解: $\\because y=2 \\ln (x+1)$,\n\n$\\therefore y^{\\prime}=\\frac{2}{x+1}$,\n\n当 $x=0$ 时, $y^{\\prime}=2$,\n\n$\\therefore$ 曲线 $y=2 \\ln (x+1)$ 在点 $(0,0)$ 处的切线方程为 $y=2 x$.\n\n故答案为: $y=2 x$.\n",
+            "index": 47,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "question": "15. (5 分）已知 $\\sin \\alpha+\\cos \\beta=1, \\cos \\alpha+\\sin \\beta=0$, 则 $\\sin (\\alpha+\\beta)=$\n",
+            "answer": "$-\\frac{1}{2}$\n",
+            "analysis": "解: $\\sin \\alpha+\\cos \\beta=1$,\n\n两边平方可得: $\\sin ^{2} \\alpha+2 \\sin \\alpha \\cos \\beta+\\cos ^{2} \\beta=1$, (1),\n\n$\\cos \\alpha+\\sin \\beta=0$,\n\n两边平方可得: $\\cos ^{2} \\alpha+2 \\cos \\alpha \\sin \\beta+\\sin ^{2} \\beta=0$, (2),\n\n由(1)+2)得: $2+2(\\sin \\alpha \\cos \\beta+\\cos \\alpha \\sin \\beta)=1$, 即 $2+2 \\sin (\\alpha+\\beta)=1$,\n\n$\\therefore 2 \\sin (\\alpha+\\beta)=-1$\n\n$\\therefore \\sin (\\alpha+\\beta)=-\\frac{1}{2}$.\n\n故答案为: $-\\frac{1}{2}$.\n",
+            "index": 48,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "question": "16. (5 分) 已知圆锥的顶点为 $\\mathrm{S}$, 母线 $\\mathrm{SA}, \\mathrm{SB}$ 所成角的余弦值为 $\\frac{7}{8}, \\mathrm{SA}$ 与圆 锥底面所成角为 $45^{\\circ}$, 若 $\\triangle S A B$ 的面积为 $5 \\sqrt{15}$, 则该圆雉的侧面积为\n",
+            "answer": "$40 \\sqrt{2} \\pi$\n",
+            "analysis": "解 圆雉的顶点为 $\\mathrm{S}$, 母线 $\\mathrm{SA}, \\mathrm{SB}$ 所成角的余弦值为 $\\frac{7}{8}$, 可得 $\\sin \\angle A S B=$ $\\sqrt{1-\\left(\\frac{7}{8}\\right)^{2}}=\\frac{\\sqrt{15}}{8}$\n\n$\\triangle S A B$ 的面积为 $5 \\sqrt{15}$,\n\n可得 $\\frac{1}{2} S A^{2} \\sin \\angle A S B=5 \\sqrt{15}$, 即 $\\frac{1}{2} S A^{2} \\times \\frac{\\sqrt{15}}{8}=5 \\sqrt{15}$, 即 $S A=4 \\sqrt{5}$.\n\n$S A$ 与圆锥底面所成角为 $45^{\\circ}$, 可得圆雉的底面半径为: $\\frac{\\sqrt{2}}{2} \\times 4 \\sqrt{5}=2 \\sqrt{10}$.\n\n则该圆雉的侧面积: $\\frac{1}{2} \\times 4 \\sqrt{10} \\times 4 \\sqrt{5} \\pi=40 \\sqrt{2} \\pi$. 故答案为: $40 \\sqrt{2} \\pi$.\n",
+            "index": 49,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "13. (5 分) 已知向量 $\\vec{a}=(1,2), \\vec{b}=(2,-2), \\vec{c}=(1, \\lambda)$. 若 $\\vec{c} / /(2 \\vec{a}+\\vec{b})$, 则 $\\lambda=$\n",
+            "answer": "$\\frac{1}{2}$.\n",
+            "analysis": "解: $\\because$ 向量 $\\vec{a}=(1,2), \\vec{b}=(2,-2)$,\n\n$\\therefore 2 \\vec{a}+\\vec{b}=(4,2)$,\n\n$\\because \\vec{c}=(1, \\lambda), \\vec{c} / / \\quad(2 \\vec{a}+\\vec{b})$,\n\n$\\therefore \\frac{1}{4}=\\frac{\\lambda}{2}$,\n\n解得 $\\lambda=\\frac{1}{2}$.\n\n故答案为: $\\frac{1}{2}$.\n",
+            "index": 50,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "14. (5 分) 曲线 $y=(a x+1) e^{x}$ 在点 $(0,1)$ 处的切线的斜率为 -2 , 则 $a=$\n",
+            "answer": "-3 .\n",
+            "analysis": "解: 曲线 $y=(a x+1) e^{x}$, 可得 $y^{\\prime}=a e^{x}+(a x+1) e^{x}$,\n\n曲线 $y=(a x+1) e^{x}$ 在点 $(0,1)$ 处的切线的斜率为 -2 ,\n\n可得: $a+1=-2$, 解得 $a=-3$.\n\n故答案为: -3 .\n",
+            "index": 51,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "15. (5 分) 函数 $f(x)=\\cos \\left(3 x+\\frac{\\pi}{6}\\right)$ 在 $[0, \\pi]$ 的零点个数为\n",
+            "answer": "3\n",
+            "analysis": "解: $\\because f(x)=\\cos \\left(3 x+\\frac{\\pi}{6}\\right)=0$,\n\n$\\therefore 3 x+\\frac{\\pi}{6}=\\frac{\\pi}{2}+k \\pi, \\quad k \\in Z$,\n\n$\\therefore \\mathrm{x}=\\frac{\\pi}{9}+\\frac{1}{3} \\mathrm{k} \\pi, \\quad k \\in Z$,\n\n当 $\\mathrm{k}=0$ 时, $x=\\frac{\\pi}{9}$,\n\n当 $k=1$ 时, $x=\\frac{4}{9} \\pi$,\n\n当 $k=2$ 时, $x=\\frac{7}{9} \\pi$,\n\n当 $k=3$ 时, $x=\\frac{10}{9} \\pi$,\n\n$\\because x \\in[0, \\pi]$ $\\therefore x=\\frac{\\pi}{9}$, 或 $x=\\frac{4}{9} \\pi$, 或 $x=\\frac{7}{9} \\pi$,\n\n故零点的个数为 3 ,\n\n故答案为: 3\n",
+            "index": 52,
+            "score": "5分"
+        },
+        {
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "question": "16. (5 分) 已知点 $M(-1,1)$ 和抛物线 $C: y^{2}=4 x$, 过 $C$ 的焦点且斜率为 $k$ 的直线与 $C$ 交于 $A, B$ 两点. 若 $\\angle A M B=90^{\\circ}$, 则 $k=$\n",
+            "answer": "2\n",
+            "analysis": "解: $\\because$ 抛物线 $\\mathrm{C}: \\mathrm{y}^{2}=4 \\mathrm{x}$ 的焦点 $F(1,0)$,\n\n$\\therefore$ 过 $A, B$ 两点的直线方程为 $y=k \\quad(x-1)$,\n\n联立 $\\left\\{\\begin{array}{l}y^{2}=4 x \\\\ y=k(x-1)\\end{array}\\right.$ 可得, $k^{2} x^{2}-2\\left(2+k^{2}\\right) \\quad x+k^{2}=0$,\n\n设 $\\mathrm{A}\\left(\\mathrm{x}_{1}, \\mathrm{y}_{1}\\right), \\mathrm{B}\\left(\\mathrm{x}_{2}, \\mathrm{y}_{2}\\right)$ ，\n\n则 $x_{1}+x_{2}=\\frac{4+2 k^{2}}{k^{2}}, x_{1} x_{2}=1$,\n\n$\\therefore \\mathrm{y}_{1}+\\mathrm{y}_{2}=\\mathrm{k} \\quad\\left(\\mathrm{x}_{1}+\\mathrm{x}_{2}-2\\right)=\\frac{4}{\\mathrm{k}}, \\quad \\mathrm{y}_{1} \\mathrm{y}_{2}=\\mathrm{k}^{2}\\left(\\mathrm{x}_{1}-1\\right) \\quad\\left(\\mathrm{x}_{2}-1\\right)=\\mathrm{k}^{2}\\left[\\mathrm{x}_{1} \\mathrm{x}_{2}-\\left(\\mathrm{x}_{1}+\\mathrm{x}_{2}\\right)+1\\right]=$ $-4$ $\\because M(-1,1)$\n\n$\\therefore \\overrightarrow{M A}=\\left(x_{1}+1, y_{1}-1\\right), \\overrightarrow{M B}=\\left(x_{2}+1, y_{2}-1\\right)$,\n\n$\\because \\angle \\mathrm{AMB}=90^{\\circ}, \\quad \\therefore \\overrightarrow{\\mathrm{MA}} \\cdot \\overrightarrow{\\mathrm{MB}}=0$\n\n$\\therefore\\left(\\mathrm{x}_{1}+1\\right)\\left(\\mathrm{x}_{2}+1\\right)+\\left(\\mathrm{y}_{1}-1\\right)\\left(\\mathrm{y}_{2}-1\\right)=0$\n\n整理可得, $x_{1} x_{2}+\\left(x_{1}+x_{2}\\right)+y_{1} y_{2}-\\left(y_{1}+y_{2}\\right)+2=0$,\n\n$\\therefore 1+2+\\frac{4}{k^{2}}-4-\\frac{4}{k}+2=0$,\n\n即 $k^{2}-4 k+4=0$ ，\n\n$\\therefore \\mathrm{k}=2$.\n\n故答案为: 2\n",
+            "index": 53,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "13. 曲线 $y=3\\left(x^{2}+x\\right) \\mathrm{e}^{x}$ 在点 $(0,0)$ 处的切线方程为\n",
+            "answer": "$3 x-y=0$.\n",
+            "analysis": "【详解】详解: $y^{\\prime}=3(2 x+1) e^{x}+3\\left(x^{2}+x\\right) e^{x}=3\\left(x^{2}+3 x+1\\right) e^{x}$,\n\n所以, $k=\\left.y^{\\prime}\\right|_{x=0}=3$\n\n所以, 曲线 $y=3\\left(x^{2}+x\\right) \\mathrm{e}^{x}$ 在点 $(0,0)$ 处的切线方程为 $y=3 x$, 即 $3 x-y=0$.\n",
+            "index": 54,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "14. 记 $S_{n}$ 为等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{1}=\\frac{1}{3}, a_{4}^{2}=a_{6}$, 则 $S_{5}=$\n",
+            "answer": "$\\frac{121}{3}$.\n",
+            "analysis": "【详解】设等比数列的公比为 $q$, 由已知 $a_{1}=\\frac{1}{3}, a_{4}{ }^{2}=a_{6}$, 所以 $\\left(\\frac{1}{3} q^{3}\\right)^{2}=\\frac{1}{3} q^{5}$, 又 $q \\neq 0$,\n\n所以 $q=3$, 所以 $S_{5}=\\frac{a_{1}\\left(1-q^{5}\\right)}{1-q}=\\frac{\\frac{1}{3}\\left(1-3^{5}\\right)}{1-3}=\\frac{121}{3}$.\n",
+            "index": 55,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "question": "15.甲、乙两队进行篮球决赛，采取七场四胜制（当一队赢得四场胜利时, 该队获胜，决赛 结束). 根据前期比赛成绩, 甲队的主客场安排依次为“主主客客主客主”. 设甲队主场取胜 的概率为 0.6 , 客场取胜的概率为 0.5 , 且各场比赛结果相互独立, 则甲队以 $4: 1$ 获胜的概 率是\n",
+            "answer": "0.216.\n",
+            "analysis": "【详解】前五场中有一场客场输时, 甲队以 $4: 1$ 获胜的概率是 $0.6^{3} \\times 0.5 \\times 0.5 \\times 2=0.108$, 前五场中有一场主场输时, 甲队以 $4: 1$ 获胜的概率是 $0.4 \\times 0.6^{2} \\times 0.5^{2} \\times 3=0.108$, 综上所述，甲队以 $4: 1$ 获胜的概率是 $q \\neq 00.108+0.108=0.216$.\n",
+            "index": 56,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "13. 我国高铁发展迅速, 技术先进. 经统计, 在经停某站的高铁列车中, 有 10 个车次的正点 率为 0.97 , 有 20 个车次的正点率为 0.98 , 有 10 个车次的正点率为 0.99 , 则经停该站高铁列 车所有车次的平均正点率的估计值为\n",
+            "answer": "0. 98.\n",
+            "analysis": "【详解】由】题意得, 经停该高铁站的列车正点数约为 $10 \\times 0.97+20 \\times 0.98+10 \\times 0.99=39.2$, 其中高铁个数为 $10+20+10=40$, 所以该站所有高 铁平均正点率约为 $\\frac{39.2}{40}=0.98$.\n",
+            "index": 57,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "14. 已知 $f(x)$ 是奇函数, 且当 $x<0$ 时, $f(x)=-\\mathrm{e}^{a x}$. 若 $f(\\ln 2)=8$, 则 $a=$\n",
+            "answer": "-3\n",
+            "analysis": "【详解】因为 $f(x)$ 是奇函数, 且当 $x<0$ 时, $f(x)=-e^{-a x}$.\n\n又因为 $\\ln 2 \\in(0,1), f(\\ln 2)=8$,\n\n所以 $-e^{-a \\ln 2}=-8$, 两边取以 $e$ 为底的对数得 $-a \\ln 2=3 \\ln 2$, 所以 $-a=3$, 即 $3 \\pi$.\n",
+            "index": 58,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "question": "15. $\\vee A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$. 若 $b=6, a=2 c, B=\\frac{\\pi}{3}$, 则 $\\bigvee A B C$ 的面 积为\n",
+            "answer": "$6 \\sqrt{3}$\n",
+            "analysis": "【详解】由余弦定理得 $b^{2}=a^{2}+c^{2}-2 a c \\cos B$,\n\n所以 $(2 c)^{2}+c^{2}-2 \\times 2 c \\times c \\times \\frac{1}{2}=6^{2}$,\n\n即 $c^{2}=12$\n\n解得 $c=2 \\sqrt{3}, c=-2 \\sqrt{3}$ (舍去)\n\n所以 $a=2 c=4 \\sqrt{3}$, \n\n$$\nS_{\\triangle A B C}=\\frac{1}{2} a c \\sin B=\\frac{1}{2} \\times 4 \\sqrt{3} \\times 2 \\sqrt{3} \\times \\frac{\\sqrt{3}}{2}=6 \\sqrt{3} \\text {. }\n$$\n",
+            "index": 59,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "13. 已知 $\\boldsymbol{a}, \\boldsymbol{b}$ 为单位向量, 且 $\\boldsymbol{a} \\cdot \\boldsymbol{b}=0$, 若 $\\boldsymbol{c}=2 \\boldsymbol{a}-\\sqrt{5} \\boldsymbol{b}$, 则 $\\cos \\langle\\vec{a}, \\vec{c}\\rangle=$\n",
+            "answer": "$\\frac{2}{3}$.\n",
+            "analysis": "【详解】因为 $\\vec{c}=2 \\vec{a}-\\sqrt{5} \\vec{b}, \\vec{a} \\cdot \\vec{b}=0$ ， 所以 $\\vec{a} \\cdot \\vec{c}=2 \\vec{a}^{2}-\\sqrt{5} \\vec{a} \\cdot \\vec{b}=2$ ，\n\n$|\\vec{c}|^{2}=4|\\vec{a}|^{2}-4 \\sqrt{5} \\vec{a} \\cdot \\vec{b}+5|\\vec{b}|^{2}=9$, 所以 $|\\vec{c}|=3$\n\n所以 $\\cos \\langle\\vec{a}, \\vec{c}\\rangle=\\frac{\\vec{a} \\cdot \\vec{c}}{|\\vec{a}| \\cdot|\\vec{c}|}=\\frac{2}{1 \\times 3}=\\frac{2}{3}$.\n",
+            "index": 60,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "14. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, $a_{1} \\neq 0, a_{2}=3 a_{1}$, 则 $\\frac{S_{10}}{S_{5}}=$\n",
+            "answer": "4.\n",
+            "analysis": "【详解】因 $a_{2}=3 a_{1}$, 所以 $a_{1}+d=3 a_{1}$, 即 $2 a_{1}=d$,\n\n所以 $\\frac{S_{10}}{S_{5}}=\\frac{10 a_{1}+\\frac{10 \\times 9}{2} d}{5 a_{1}+\\frac{5 \\times 4}{2} d}=\\frac{100 a_{1}}{25 a_{1}}=4$.\n",
+            "index": 61,
+            "score": "5分"
+        },
+        {
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "question": "15. 设 $F_{1}, F_{2}$ 为椭圆 $C: \\frac{x^{2}}{36}+\\frac{y^{2}}{20}=1$ 的两个焦点, $M$ 为 $C$ 上一点且在第一象限. 若 $\\triangle M F_{1} F_{2}$ 为等腰三角形, 则 $M$ 的坐标为\n",
+            "answer": "$(3, \\sqrt{15})$\n",
+            "analysis": "【详解 】由已知可得 $a^{2}=36, b^{2}=36, \\therefore c^{2}=a^{2}-b^{2}=16, \\therefore c=4$,\n\n$\\therefore\\left|M F_{1}\\right|=\\left|F_{1} F_{2}\\right|=2 c=8$.\n\n$\\because\\left|M F_{1}\\right|+\\left|M F_{2}\\right|=2 a=12,\\left|M F_{2}\\right|=4$.\n\n设点 $M$ 的坐标为 $\\left(x_{0}, y_{0}\\right)\\left(x_{0}>0, y_{0}>0\\right)$, 则 $S_{\\triangle M F_{1} F_{2}}=\\frac{1}{2} \\cdot\\left|F_{1} F_{2}\\right| \\cdot y_{0}=4 y_{0}$,\n\n又 $S_{\\triangle M F_{1} F_{2}}=\\frac{1}{2} \\times 4 \\times \\sqrt{8^{2}-2^{2}}=4 \\sqrt{15}, \\therefore 4 y_{0}=4 \\sqrt{15}$, 解得 $y_{0}=\\sqrt{15}$,\n\n$\\therefore \\frac{x_{0}^{2}}{36}+\\frac{(\\sqrt{15})^{2}}{20}=1$, 解得 $x_{0}=3$ ( $x_{0}=-3$ 舍去)，\n\n$\\backslash M$ 的坐标为 $(3, \\sqrt{15})$.\n",
+            "index": 62,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "14. $\\left(x^{2}+\\frac{2}{x}\\right)^{6}$ 的展开式中常数项是 (用数字作答).\n",
+            "answer": "240\n",
+            "analysis": "【详解】 $\\because\\left(x^{2}+\\frac{2}{x}\\right)^{6}$\n\n其二项式展开通项:\n\n$T_{r+1}=C_{6}^{r} \\cdot\\left(x^{2}\\right)^{6-r} \\cdot\\left(\\frac{2}{x}\\right)^{r}$\n\n$=C_{6}^{r} \\cdot x^{12-2 r}(2)^{r} \\cdot x^{-r}$\n\n$=C_{6}^{r}(2)^{r} \\cdot x^{12-3 r}$\n\n当 $12-3 r=0$, 解得 $r=4$\n\n$\\therefore\\left(x^{2}+\\frac{2}{x}\\right)^{6}$ 的展开式中常数项是: $C_{6}^{4} \\cdot 2^{4}=C_{6}^{2} \\cdot 16=15 \\times 16=240$.\n\n故答案为: 240 .\n",
+            "index": 63,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "question": "16. 关于函数 $f(x)=\\sin x+\\frac{1}{\\sin x}$ 有如下四个命题:\n\n(1) $f(x)$ 的图像关于 $y$ 轴对称.\n\n(2) $f(x)$ 的图像关于原点对称.\n\n(3) $f(x)$ 的图像关于直线 $x=\\frac{\\pi}{2}$ 对称.\n\n(4) $f(x)$ 的最小值为 2 .\n\n其中所有真命题的序号是\n",
+            "answer": "(2)}\n",
+            "analysis": "【详解】对于命题(1), $f\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2}+2=\\frac{5}{2}, f\\left(-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}-2=-\\frac{5}{2}$, 则 $f\\left(-\\frac{\\pi}{6}\\right) \\neq f\\left(\\frac{\\pi}{6}\\right)$, 所以, 函数 $f(x)$ 的图象不关于 $y$ 轴对称，命题(1)错误;\n\n对于命题(2), 函数 $f(x)$ 的定义域为 $\\{x \\mid x \\neq k \\pi, k \\in Z\\}$, 定义域关于原点对称, $f(-x)=\\sin (-x)+\\frac{1}{\\sin (-x)}=-\\sin x-\\frac{1}{\\sin x}=-\\left(\\sin x+\\frac{1}{\\sin x}\\right)=-f(x)$,\n\n所以, 函数 $f(x)$ 的图象关于原点对称，命题(2)正确;\n\n对于命题(3), $\\because f\\left(\\frac{\\pi}{2}-x\\right)=\\sin \\left(\\frac{\\pi}{2}-x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}-x\\right)}=\\cos x+\\frac{1}{\\cos x}$,\n\n$f\\left(\\frac{\\pi}{2}+x\\right)=\\sin \\left(\\frac{\\pi}{2}+x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}+x\\right)}=\\cos x+\\frac{1}{\\cos x}, \\quad$ 则 $f\\left(\\frac{\\pi}{2}-x\\right)=f\\left(\\frac{\\pi}{2}+x\\right)$,\n\n所以, 函数 $f(x)$ 的图象关于直线 $x=\\frac{\\pi}{2}$ 对称, 命题(3)正确;\n\n对于命题(4), 当 $-\\pi<x<0$ 时, $\\sin x<0$, 则 $f(x)=\\sin x+\\frac{1}{\\sin x}<0<2$,\n\n命题(4)错误.\n\n故答案为: (2)(3).\n",
+            "index": 64,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "14. 设 $a, b$ 为单位向量, 且 $|\\boldsymbol{a}+\\boldsymbol{b}|=1$, 则 $|a-b|=$\n",
+            "answer": "$\\sqrt{3}$\n",
+            "analysis": "【详解】因为 $\\vec{a}, \\vec{b}$ 为单位向量, 所以 $|\\vec{a}|=|b|=1$\n\n所以 $|\\vec{a}+\\vec{b}|=\\sqrt{(\\vec{a}+\\vec{b})^{2}}=\\sqrt{|\\vec{a}|^{2}+2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^{2}}=\\sqrt{2+2 \\vec{a} \\cdot \\vec{b}}=1$\n\n解得: $2 \\vec{a} \\cdot \\vec{b}=-1$\n\n所以 $|\\vec{a}-\\vec{b}|=\\sqrt{(\\vec{a}-\\vec{b})^{2}}=\\sqrt{|\\vec{a}|^{2}-2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^{2}}=\\sqrt{3}$\n\n故答案为: $\\sqrt{3}$\n",
+            "index": 65,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "question": "15. 已知 $F$ 为双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$\n\n的右焦点, $A$ 为 $C$ 的右顶点, $B$ 为 $C$ 上的点, 且 $B F$ 垂直于 $x$ 轴. 若 $A B$ 的斜率为 3 , 则 $C$ 的离心率为\n",
+            "answer": "2\n",
+            "analysis": "【详解】依题可得, $\\frac{|B F|}{|A F|}=3$, 而 $|B F|=\\frac{b^{2}}{a},|A F|=c-a$, 即 $\\frac{\\frac{b^{2}}{a}}{c-a}=3$, 变形得 $c^{2}-a^{2}=3 a c-3 a^{2}$ , 化简可得, $e^{2}-3 e+2=0$, 解得 $e=2$ 或 $e=1$ (舍去).\n\n故答案为: 2 .\n",
+            "index": 66,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "13. 已知单位向量 $a, b$ 的夹角为 $45^{\\circ}, k a-b$ 与 $a$ 垂直, 则 $k=$\n",
+            "answer": "$\\frac{\\sqrt{2}}{2}$\n",
+            "analysis": "【详解】由题意可得: $\\vec{a} \\cdot \\vec{b}=1 \\times 1 \\times \\cos 45^{\\circ}=\\frac{\\sqrt{2}}{2}$,\n\n由向量垂直的充分必要条件可得: $(k \\vec{a}-\\vec{b}) \\cdot \\vec{a}=0$,\n\n即: $k \\times \\vec{a}^{2}-\\vec{a} \\cdot \\vec{b}=k-\\frac{\\sqrt{2}}{2}=0$, 解得: $k=\\frac{\\sqrt{2}}{2}$.\n\n故答案为: $\\frac{\\sqrt{2}}{2}$.\n",
+            "index": 67,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "14.4 名同学到 3 个小区参加垃圾分类宣传活动, 每名同学只去 1 个小区, 每个小区至少安排 1 名同学, 则不同 的安排方法共有 种.\n",
+            "answer": "36}\n",
+            "analysis": "【详解】 $\\because 4$ 名同学到 3 个小区参加垃圾分类宣传活动, 每名同学只去 1 个小区, 每个小区至少安排 1 名同学\n\n$\\therefore$ 先取2名同学看作一组, 选法有: $C_{4}^{2}=6$\n\n现在可看成是 3 组同学分配到 3 个小区, 分法有: $A_{3}^{3}=6$\n\n根据分步乘法原理, 可得不同的安排方法 $6 \\times 6=36$ 种\n\n故答案为: 36 .\n",
+            "index": 68,
+            "score": "5分"
+        },
+        {
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "question": "15. 设复数 $z_{1}, z_{2}$ 满足 $\\left|z_{1}\\right|=\\left|z_{2}\\right|=2, z_{1}+z_{2}=\\sqrt{3}+\\mathrm{i}$, 则 $\\left|z_{1}-z_{2}\\right|=$\n",
+            "answer": "$2 \\sqrt{3}$\n",
+            "analysis": "【详解】 $\\because\\left|z_{1}\\right|=\\left|z_{2}\\right|=2$, 可设 $z_{1}=2 \\cos \\theta+2 \\sin \\theta \\cdot i, z_{2}=2 \\cos \\alpha+2 \\sin \\alpha \\cdot i$,\n\n$\\therefore z_{1}+z_{2}=2(\\cos \\theta+\\cos \\alpha)+2(\\sin \\theta+\\sin \\alpha) \\cdot i=\\sqrt{3}+i$,\n\n$\\therefore\\left\\{\\begin{array}{l}2(\\cos \\theta+\\cos \\alpha)=\\sqrt{3} \\\\ 2(\\sin \\theta+\\sin \\alpha)=1\\end{array}\\right.$, 两式平方作和得: $4(2+2 \\cos \\theta \\cos \\alpha+2 \\sin \\theta \\sin \\alpha)=4$,\n\n化简得: $\\cos \\theta \\cos \\alpha+\\sin \\theta \\sin \\alpha=-\\frac{1}{2}$\n\n$$\n\\begin{aligned}\n& \\therefore\\left|z_{1}-z_{2}\\right|=|2(\\cos \\theta-\\cos \\alpha)+2(\\sin \\theta-\\sin \\alpha) \\cdot i| \\\\\n& =\\sqrt{4(\\cos \\theta-\\cos \\alpha)^{2}+4(\\sin \\theta-\\sin \\alpha)^{2}}=\\sqrt{8-8(\\cos \\theta \\cos \\alpha+\\sin \\theta \\sin \\alpha)}=\\sqrt{8+4}=2 \\sqrt{3} .\n\\end{aligned}\n$$\n\n故答案为: $2 \\sqrt{3}$.\n",
+            "index": 69,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "13. 曲线 $y=\\frac{2 x-1}{x+2}$ 在点 $(-1,-3)$ 处的切线方程为\n",
+            "answer": "$5 x-y+2=0$\n",
+            "analysis": "【详解】由题, 当 $x=-1$ 时, $y=-3$, 故点在曲线上.\n\n求导得: $y^{\\prime}=\\frac{2(x+2)-(2 x-1)}{(x+2)^{2}}=\\frac{5}{(x+2)^{2}}$, 所以 $\\left.y^{\\prime}\\right|_{x=-1}=5$.\n\n故切线方程为 $5 x-y+2=0$.\n\n故答案为: $5 x-y+2=0$.\n",
+            "index": 70,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "14. 已知向量 $\\vec{a}=(3,1), \\vec{b}=(1,0), \\vec{c}=\\vec{a}+k \\vec{b}$. 若 $\\vec{a} \\perp \\vec{c}$, 则 $k=$\n",
+            "answer": "$-\\frac{10}{3}$.\n",
+            "analysis": "【详解】 $\\because \\vec{a}=(3,1), \\vec{b}=(1,0), \\therefore \\vec{c}=\\vec{a}+k \\vec{b}=(3+k, 1)$ ，\n\n$\\because \\vec{a} \\perp \\vec{c}, \\therefore \\vec{a} \\diamond \\vec{c}=3(3+k)+1 \\times 1=0$, 解得 $k=-\\frac{10}{3}$,\n\n故答案为: $-\\frac{10}{3}$.\n",
+            "index": 71,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "question": "15. 已知 $F_{1}, F_{2}$ 为椭圆 $C: \\frac{x^{2}}{16}+\\frac{y^{2}}{4}=1$ 的两个焦点, $P, Q$ 为 $C$ 上关于坐标原点对称的两点, 且 $|P Q|=\\left|F_{1} F_{2}\\right|$, 则四边形 $P F_{1} Q F_{2}$ 的面积为\n",
+            "answer": "8\n",
+            "analysis": "【详解】因为 $P, Q$ 为 $C$ 上关于坐标原点对称的两点,\n\n且 $|P Q|=\\left|F_{1} F_{2}\\right|$, 所以四边形 $P F_{1} Q F_{2}$ 为矩形,\n\n设 $\\left|P F_{1}\\right|=m,\\left|P F_{2}\\right|=n$, 则 $m+n=8, m^{2}+n^{2}=48$,\n\n所以 $64=(m+n)^{2}=m^{2}+2 m n+n^{2}=48+2 m n$,\n\n$m n=8$ ， 即四边形 $P F_{1} Q F_{2}$ 面积等于 8 .\n\n故答案为: 8 .\n",
+            "index": 72,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "13. 已知双曲线 $C: \\frac{x^{2}}{m}-y^{2}=1(m>0)$ 的一条渐近线为 $\\sqrt{3} x+m y=0$, 则 $C$ 的焦距\n\n为\n",
+            "answer": "4\n",
+            "analysis": "解析:\n\n易知双曲线渐近线方程为 $y= \\pm \\frac{b}{a} x$, 由题意得 $a^{2}=m, b^{2}=1$, 且一条渐近线方程为 $y=-\\frac{\\sqrt{3}}{m} x$, 则有 $m=0$ (舍去), $m=3$, 故焦距为 $2 c=4$.\n",
+            "index": 73,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "14.已知向量 $\\vec{a}=(1,3), \\vec{b}=(3,4)$, 若 $(\\vec{a}-\\lambda \\vec{b}) \\perp \\vec{b}$, 则 $\\lambda=$\n",
+            "answer": "$\\frac{3}{5}$\n",
+            "analysis": "解析:\n\n由题意得 $(\\vec{a}-\\lambda \\vec{b}) \\cdot \\vec{b}=0$ ， 即 $15-25 \\lambda=0$ ， 解得 $\\lambda=\\frac{3}{5}$.\n",
+            "index": 74,
+            "score": "5分"
+        },
+        {
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "question": "15. 记 $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 面积为 $\\sqrt{3}, B=60^{\\circ}$, $a^{2}+c^{2}=3 a c$, 则 $b=$\n",
+            "answer": "$2 \\sqrt{2}$\n",
+            "analysis": "解析:\n\n$S_{\\triangle A B C}=\\frac{1}{2} a c \\sin B=\\frac{\\sqrt{3}}{4} a c=\\sqrt{3}$, 所以 $a c=4$\n\n由余弦定理, $b^{2}=a^{2}+c^{2}-a c=3 a c-a c=2 a c=8$, 所以 $b=2 \\sqrt{2}$.\n",
+            "index": 75,
+            "score": "5分"
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "13. 从甲、乙等 5 名同学中随机选 3 名参加社区服务工作, 则甲、乙都人选的概率为\n",
+            "answer": "$\\frac{3}{10} \\# \\# 0.3$\n",
+            "analysis": "【详解】从 5 名同学中随机选 3 名的方法数为 $\\mathrm{C}_{5}^{3}=10$\n\n甲、乙都人选的方法数为 $\\mathrm{C}_{3}^{1}=3$ ，所以甲、乙都人选的概率 $P=\\frac{3}{10}$ 故答案为: $\\frac{3}{10}$\n",
+            "index": 76,
+            "score": "5分"
+        },
+        {
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "question": "15. 记函数 $f(x)=\\cos (\\omega x+\\varphi)(\\omega>0,0<\\varphi<\\pi)$ 的最小正周期为 $T$, 若 $f(T)=\\frac{\\sqrt{3}}{2}$, $x=\\frac{\\pi}{9}$ 为 $f(x)$ 的零点, 则 $\\omega$ 的最小值为\n",
+            "answer": "3\n",
+            "analysis": "【详解】解：因为 $f(x)=\\cos (\\omega x+\\varphi),(\\omega>0,0<\\varphi<\\pi)$\n\n所以最小正周期 $T=\\frac{2 \\pi}{\\omega}$, 因为 $f(T)=\\cos \\left(\\omega \\cdot \\frac{2 \\pi}{\\omega}+\\varphi\\right)=\\cos (2 \\pi+\\varphi)=\\cos \\varphi=\\frac{\\sqrt{3}}{2}$,\n\n又 $0<\\varphi<\\pi$, 所以 $\\varphi=\\frac{\\pi}{6}$, 即 $f(x)=\\cos \\left(\\omega x+\\frac{\\pi}{6}\\right)$,\n\n又 $x=\\frac{\\pi}{9}$ 为 $f(x)$ 的零点, 所以 $\\frac{\\pi}{9} \\omega+\\frac{\\pi}{6}=\\frac{\\pi}{2}+k \\pi, k \\in Z$, 解得 $\\omega=3+9 k, k \\in Z$,\n\n因为 $\\omega>0$, 所以当 $k=0$ 时 $\\omega_{\\text {min }}=3$;\n\n故答案为: 3\n",
+            "index": 77,
+            "score": "5分"
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "13. 设向量 $\\vec{a}, \\vec{b}$ 的夹角的余弦值为 $\\frac{1}{3}$, 且 $|\\vec{a}|=1,|b|=3$, 则 $(2 \\vec{a}+\\vec{b}) \\cdot \\vec{b}=$\n",
+            "answer": "11\n",
+            "analysis": "【详解】解: 设 $\\vec{a}$ 与 $\\vec{b}$ 的夹角为 $\\theta$, 因为 $\\vec{a}$ 与 $\\vec{b}$ 的夹角的余弦值为 $\\frac{1}{3}$, 即 $\\cos \\theta=\\frac{1}{3}$,\n\n又 $|\\vec{a}|=1,|b|=3$, 所以 $\\vec{a} \\cdot \\vec{b}=|\\vec{a}| \\cdot|\\vec{b}| \\cos \\theta=1 \\times 3 \\times \\frac{1}{3}=1$,\n\n所以 $(2 \\vec{a}+\\vec{b}) \\cdot \\vec{b}=2 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}=2 \\vec{a} \\cdot \\vec{b}+|\\vec{b}|^{2}=2 \\times 1+3^{2}=11$.\n\n故答案为: 11 .\n",
+            "index": 78,
+            "score": "5分"
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "14. 若双曲线 $y^{2}-\\frac{x^{2}}{m^{2}}=1(m>0)$ 的渐近线与圆 $x^{2}+y^{2}-4 y+3=0$ 相切, 则\n\n$m=$\n",
+            "answer": "$\\frac{\\sqrt{3}}{3}$\n",
+            "analysis": "【详解】解: 双曲线 $y^{2}-\\frac{x^{2}}{m^{2}}=1(m>0)$ 的渐近线为 $y= \\pm \\frac{x}{m}$, 即 $x \\pm m y=0$,\n\n不妨取 $x+m y=0$, 圆 $x^{2}+y^{2}-4 y+3=0$, 即 $x^{2}+(y-2)^{2}=1$, 所以圆心为 $(0,2)$, 半 径 $r=1$, 依题意圆心 $(0,2)$ 到渐近线 $x+m y=0$ 的距离 $d=\\frac{|2 m|}{\\sqrt{1+m^{2}}}=1$,\n\n解得 $m=\\frac{\\sqrt{3}}{3}$ 或 $m=-\\frac{\\sqrt{3}}{3}$ (舍去).\n\n故答案为: $\\frac{\\sqrt{3}}{3}$.\n",
+            "index": 79,
+            "score": "5分"
+        },
+        {
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "question": "15. 从正方体的 8 个顶点中任选 4 个, 则这 4 个点在同一个平面的概率为\n",
+            "answer": "$\\frac{6}{35}$.\n",
+            "analysis": "【详解】从正方体的 8 个顶点中任取 4 个, 有 $n=\\mathrm{C}_{8}^{4}=70$ 个结果, 这 4 个点在同一个平面 的有 $m=6+6=12$ 个, 故所求概率 $P=\\frac{m}{n}=\\frac{12}{70}=\\frac{6}{35}$.\n\n故答案为: $\\frac{6}{35}$.\n",
+            "index": 80,
+            "score": "5分"
+        }
+    ]
+}
