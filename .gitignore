@@ -3,6 +3,7 @@
 *.json
 *.txt
 __pycache__/
+README.md
 
 
 2010-2018全国卷全科题目
