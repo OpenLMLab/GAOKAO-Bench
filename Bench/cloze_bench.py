@@ -4,21 +4,21 @@ import json
 import time
 
 if __name__ == "__main__":
-    with open("填空题prompt.json", "r") as f:
+    with open("FBQ_prompt.json") as f:
         data = json.load(f)
         f.close()
 
     for i in range(len(data['examples'])):
-
+        directory = ""
 
         api_key_filename = ""
         api_key_list = get_api_key(api_key_filename, start_num=0, end_num=1)
-        model_name = 'text-davinci-003'
+        
+        model_name = 'moss'
         temperature = 0.3
-        directory = ""
+        
         keyword = data['examples'][i]['keyword']
         question_type = data['examples'][i]['type']
-
         zero_shot_prompt_text = data['examples'][i]['prefix_prompt']
         print(keyword)
         print(question_type)
@@ -30,10 +30,10 @@ if __name__ == "__main__":
             directory, 
             keyword, 
             zero_shot_prompt_text,
-            question_type
+            question_type, 
+            parallel_num=5
         )
 
-        print('api get!')
         export_union_json(
             directory, 
             model_name, 

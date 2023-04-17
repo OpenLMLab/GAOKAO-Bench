@@ -1,10 +1,12 @@
-# 选择题测试
+
 import os
 import json
 import openai
 import time
 import re
 from random import choice
+import requests
+from tqdm import  tqdm
 
 
 def get_api_key(filename,start_num,end_num):
@@ -23,8 +25,7 @@ def choice_test(**kwargs):
     api_key_list = kwargs['api_key_list']
     start_num = kwargs['start_num']
     end_num = kwargs['end_num']
-    print(start_num)
-    print(end_num)
+    
     model_name = kwargs['model_name']
     data = kwargs['data']
     keyword = kwargs['keyword']
@@ -37,7 +38,7 @@ def choice_test(**kwargs):
    
     model_answer_dict = []
 
-    for i in range(start_num, end_num):
+    for i in tqdm(range(start_num, end_num)):
 
         if model_name == "gpt-3.5-turbo":
             zero_shot_prompt_message = {'role': 'system', 'content': zero_shot_prompt_text}
@@ -56,7 +57,7 @@ def choice_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
                 
@@ -77,25 +78,68 @@ def choice_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
                 
             time.sleep(1)
+
+        elif model_name == 'moss':
+            class MossAPI:
+                def __init__(self, api_key):
+                    self.api_key = api_key
+                    self.api_url = "http://175.24.207.250/api/inference"
+                    self.headers = {
+                        "apikey": self.api_key
+                    }
+
+                def send_request(self, request, context=None):
+                    data = {
+                        "request": request
+                    }
+
+                    if context:
+                        data["context"] = context
+
+                    response = requests.post(self.api_url, headers=self.headers, json=data)
+                    return response.json()
+            
+            api_key = choice(api_key_list)
+            moss_api = MossAPI(api_key)
+
+            question = data['example'][i]['question'].strip() + '\n'
+
+            request_text = zero_shot_prompt_text + question
+            while True:
+                try:
+                    response = moss_api.send_request(request_text)
+                    if 'response' in response.keys():
+                        response = response['response']
+                        break
+                    if 'code' in response.keys():
+                        print(response['code'])
+                        print(response['message'])
+                        response = response['message']
+                        break
+                except: 
+                    time.sleep(4)
+
 
         if model_name == "gpt-3.5-turbo":
             model_output = output['choices'][0]['message']['content']
 
         elif model_name == 'text-davinci-003':
             model_output = output['choices'][0]['text']
+        
+        elif model_name == 'moss': 
+            model_output = response
 
         if question_type == 'single_choice':
             model_answer = []
             temp = re.findall(r'[A-D]', model_output[::-1])
             if len(temp) != 0:
                 model_answer.append(temp[0])
-                
-
+        
         elif question_type == 'multi_question_choice':
             model_answer = []
             temp = re.findall(r"【答案】\s*[:：]*\s*[A-Z]", model_output)
@@ -105,8 +149,9 @@ def choice_test(**kwargs):
                     model_answer.append(re.findall(r'[A-Z]', t)[0])
             else:
                 temp = re.findall(r"[A-Z]", model_output)
-                for k in range(min(len(temp), len(data['example'][i]['answer']))):
-                    model_answer.append(temp[k])
+                if len(temp) > 0:
+                    for k in range(min(len(temp), len(data['example'][i]['answer']))):
+                        model_answer.append(temp[k])
                 
         elif question_type == "multi_choice":
             model_answer = []
@@ -129,13 +174,15 @@ def choice_test(**kwargs):
         elif question_type == 'five_out_of_seven':
             model_answer = []
             temp = re.findall(r'[A-G]', model_output)
-            for i in range(min(5, len(temp))):
-                model_answer.append(temp[i])
+            if len(temp) > 0:
+                for k in range(min(5, len(temp))):
+                    model_answer.append(temp[k])
             
         dict = {
             'index': i, 
             'year': data['example'][i]['year'], 
             'category': data['example'][i]['category'],
+            'score': data['example'][i]['score'],
             'question': question, 
             'standard_answer': data['example'][i]['answer'],
             'analysis': data['example'][i]['analysis'],
@@ -144,21 +191,18 @@ def choice_test(**kwargs):
         }
         model_answer_dict.append(dict)
 
-    file_name = model_name+"_分散json文件_"+keyword+f"_第{start_num}题-第{end_num-1}题.json"
+    file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
         output = {'example' : model_answer_dict}
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
-
-
 def cloze_test(**kwargs):
     api_key_list = kwargs['api_key_list']
     start_num = kwargs['start_num']
     end_num = kwargs['end_num']
-    print(start_num)
-    print(end_num)
+    
     model_name = kwargs['model_name']
     data = kwargs['data']
     keyword = kwargs['keyword']
@@ -173,7 +217,7 @@ def cloze_test(**kwargs):
     model_answer_dict = []
 
 
-    for i in range(start_num, end_num):
+    for i in tqdm(range(start_num, end_num)):
 
         if model_name == 'gpt-3.5-turbo':
 
@@ -197,7 +241,7 @@ def cloze_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
 
         elif model_name == 'text-davinci-003':
@@ -216,17 +260,62 @@ def cloze_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
                 
             time.sleep(1)
+        
+        elif model_name == 'moss':
+            class MossAPI:
+                def __init__(self, api_key):
+                    self.api_key = api_key
+                    self.api_url = "http://175.24.207.250/api/inference"
+                    self.headers = {
+                        "apikey": self.api_key
+                    }
+
+                def send_request(self, request, context=None):
+                    data = {
+                        "request": request
+                    }
+
+                    if context:
+                        data["context"] = context
+
+                    response = requests.post(self.api_url, headers=self.headers, json=data)
+                    return response.json()
+            
+            api_key = choice(api_key_list)
+            moss_api = MossAPI(api_key)
+
+            question = data['example'][i]['question'].strip() + '\n'
+
+            request_text = zero_shot_prompt_text + question
+            while True:
+                try:
+                    response = moss_api.send_request(request_text)
+                    if 'response' in response.keys():
+                        response = response['response']
+                        break
+                    if 'code' in response.keys():
+                        print(response['code'])
+                        print(response['message'])
+                        response = response['message']
+                        break
+                except: 
+                    time.sleep(4)
+            
+
 
         if model_name == "gpt-3.5-turbo":
             model_output = output['choices'][0]['message']['content']
 
         elif model_name == 'text-davinci-003':
             model_output = output['choices'][0]['text']
+        
+        elif model_name == 'moss':
+            model_output = response
 
             
         time.sleep(5)
@@ -243,7 +332,7 @@ def cloze_test(**kwargs):
         }
         model_answer_dict.append(dict)
 
-    file_name = model_name+"_分散json文件_"+keyword+f"_第{start_num}题-第{end_num-1}题.json"
+    file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
         output = {'example' : model_answer_dict}
@@ -256,8 +345,7 @@ def subjective_test(**kwargs):
     start_num = kwargs["start_num"]
     end_num = kwargs["end_num"]
 
-    print(start_num)
-    print(end_num)
+
 
     model_name = kwargs["model_name"]
     data = kwargs["data"]
@@ -272,7 +360,7 @@ def subjective_test(**kwargs):
     standard_answer = []
     model_answer_dict = []
 
-    for i in range(start_num, end_num):
+    for i in tqdm(range(start_num, end_num)):
         standard_answer.append(data['example'][i]['answer'])
 
         if 'passage' in data['example'][i].keys():
@@ -309,7 +397,7 @@ def subjective_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
         
         elif model_name == 'text-davinci-003':
@@ -326,7 +414,7 @@ def subjective_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
                 
@@ -351,7 +439,7 @@ def subjective_test(**kwargs):
         }
         model_answer_dict.append(dict)
 
-    file_name = model_name+"_分散json文件_"+keyword+f"_第{start_num}题-第{end_num-1}题.json"
+    file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
         output = {'example' : model_answer_dict}
@@ -373,7 +461,7 @@ def correction_test(**kwargs):
     save_directory = kwargs['save_directory']
     model_answer_dict = []
 
-    for i in range(start_num, end_num):
+    for i in tqdm(range(start_num, end_num)):
         openai.api_key = choice(api_key_list)
         standard_answer = []
         standard_answer.append(data['example'][i]['answer'])
@@ -393,7 +481,7 @@ def correction_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception:', e)
                     openai.api_key = choice(api_key_list)
         
         elif model_name == 'text-davinci-003':
@@ -410,7 +498,7 @@ def correction_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
                 
@@ -423,7 +511,6 @@ def correction_test(**kwargs):
             model_output_1 = output['choices'][0]['text']
             
         time.sleep(5)
-
         
         start_idx = model_output_1.find('【答案】')
         end_idx = model_output_1.find('<eoa>')
@@ -453,7 +540,7 @@ def correction_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception', e)
                     openai.api_key = choice(api_key_list)
 
         elif model_name == 'text-davinci-003':
@@ -470,7 +557,7 @@ def correction_test(**kwargs):
                     )
                     break
                 except Exception as e:
-                    print('发生异常：', e)
+                    print('Exception', e)
                     openai.api_key = choice(api_key_list)
                     time.sleep(1)
             
@@ -509,7 +596,7 @@ def correction_test(**kwargs):
         }
         model_answer_dict.append(dict)
         
-    file_name = model_name+"_分散json文件_"+keyword+f"_第{start_num}题-第{end_num-1}题.json"
+    file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
         output = {'example' : model_answer_dict}
@@ -517,17 +604,16 @@ def correction_test(**kwargs):
         f.close()
 
 
-def export_union_json(directory, model_name, keyword,zero_shot_prompt_text ,question_type):
+def export_union_json(directory, model_name, keyword, zero_shot_prompt_text, question_type):
     output = []
     save_directory = os.path.join(directory, f'{model_name}_{keyword}')
     for root, dirs, files in os.walk(save_directory):
         for file in files:
             if file.endswith(".json") and keyword in file:
-            # 如果文件名中包含关键字并且是JSON文件
+            
                 filepath = os.path.join(root, file)
-                print("开始整合json文件...")
-                print("打开文件：",filepath)
-                # 打开JSON文件并加载数据
+                print("Start to merge json files")
+                
                 with open(filepath, "r") as f:
                     data = json.load(f)
                     output.extend(data['example'])
@@ -539,7 +625,7 @@ def export_union_json(directory, model_name, keyword,zero_shot_prompt_text ,ques
 
 
 
-def export_distribute_json(api_key_list, model_name, temperature, directory, keyword, zero_shot_prompt_text, question_type):
+def export_distribute_json(api_key_list, model_name, temperature, directory, keyword, zero_shot_prompt_text, question_type, parallel_num=5):
     for root, _, files in os.walk(directory):
         for file in files:
             if file == f'{keyword}.json':
@@ -548,18 +634,19 @@ def export_distribute_json(api_key_list, model_name, temperature, directory, key
                     data = json.load(f)
     
     example_num = len(data['example'])
+        
+
     kwargs_list = []
 
     from joblib import Parallel, delayed
     import multiprocessing
 
-    num_cores = multiprocessing.cpu_count()
-    batch_size = example_num // num_cores + 1
+    batch_size = example_num // parallel_num + 1
 
     save_directory = os.path.join(directory, f'{model_name}_{keyword}')
     os.system(f'mkdir {save_directory}')
-
-    for idx in range(num_cores):
+        
+    for idx in range(parallel_num):
         start_num = idx * batch_size
         end_num = min(start_num+batch_size, example_num)
         if start_num >= example_num:
@@ -579,13 +666,13 @@ def export_distribute_json(api_key_list, model_name, temperature, directory, key
         kwargs_list.append(kwargs)
     
     if question_type == "single_choice"  or question_type == "five_out_of_seven" or question_type == 'multi_question_choice' or question_type == "multi_choice":
-        Parallel(n_jobs=num_cores)(delayed(choice_test)(**kwargs) for kwargs in kwargs_list)
+        Parallel(n_jobs=parallel_num)(delayed(choice_test)(**kwargs) for kwargs in kwargs_list)
     if question_type == "subjective":
-        Parallel(n_jobs=num_cores)(delayed(subjective_test)(**kwargs) for kwargs in kwargs_list)
+        Parallel(n_jobs=parallel_num)(delayed(subjective_test)(**kwargs) for kwargs in kwargs_list)
     if question_type == 'correction':
-        Parallel(n_jobs=num_cores)(delayed(correction_test)(**kwargs) for kwargs in kwargs_list)
+        Parallel(n_jobs=parallel_num)(delayed(correction_test)(**kwargs) for kwargs in kwargs_list)
     if question_type == "cloze":
-        Parallel(n_jobs=num_cores)(delayed(cloze_test)(**kwargs) for kwargs in kwargs_list)
+        Parallel(n_jobs=parallel_num)(delayed(cloze_test)(**kwargs) for kwargs in kwargs_list)
     
         
 
