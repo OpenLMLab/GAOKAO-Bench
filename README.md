@@ -92,7 +92,7 @@ The framework of the evaluation is as follows:
 
 You can run the [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) to generate answers by using OpenAI API Keys. The evaluation framework supports `gpt-3.5-turbo` for Multiple-choice questions, Fill-in-the-blank questions and Open-ended questions; `text-davinci-003` for  Multiple-choice questions(except 2010-2022 Chinese Modern Lit.) and Fill-in-the-blank questions since some questions may exceed the model context length.
 
-You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/score_evaluation.py) to evaluate the answers of Multiple-choice questions.
+You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/score_evaluation.py) to evaluate the answers of Multiple-choice questions.
 
 ## Quick Start
 
