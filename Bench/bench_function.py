@@ -1,25 +1,37 @@
 
 import os
 import json
-import openai
 import time
 import re
 from random import choice
 import requests
+from typing import List, Union, Dict
+from joblib import Parallel, delayed
+
 from tqdm import  tqdm
+import openai
 
+def get_api_key(filename: str, start_num: int, end_num: int) -> List[str]:
+    """
+    Retrieves API keys from a file.
 
-def get_api_key(filename,start_num,end_num):
-    file = open(filename, 'r')
-    lines = file.readlines()
+    :param filename: Name of the file containing API keys
+    :param start_num: Starting line number for reading the file
+    :param end_num: Ending line number for reading the file
+    :return: List of API keys
+    """
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+    
     pattern = re.compile(r'sk-[\s\S]*?(?=\s*\n)')
     api_key_list = []
-    for i in range(start_num,end_num):
+    
+    for i in range(start_num, end_num):
         api_key = pattern.findall(lines[i])
         if len(api_key) != 0:
             api_key_list.append(api_key[0])
+    
     return api_key_list
-
 
 def choice_test(**kwargs):
     api_key_list = kwargs['api_key_list']
@@ -216,7 +228,6 @@ def cloze_test(**kwargs):
     standard_answer = []
     model_answer_dict = []
 
-
     for i in tqdm(range(start_num, end_num)):
 
         if model_name == 'gpt-3.5-turbo':
@@ -306,8 +317,6 @@ def cloze_test(**kwargs):
                 except: 
                     time.sleep(4)
             
-
-
         if model_name == "gpt-3.5-turbo":
             model_output = output['choices'][0]['message']['content']
 
@@ -316,7 +325,6 @@ def cloze_test(**kwargs):
         
         elif model_name == 'moss':
             model_output = response
-
             
         time.sleep(5)
 
@@ -339,13 +347,10 @@ def cloze_test(**kwargs):
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
-
 def subjective_test(**kwargs):
     api_key_list = kwargs["api_key_list"]
     start_num = kwargs["start_num"]
     end_num = kwargs["end_num"]
-
-
 
     model_name = kwargs["model_name"]
     data = kwargs["data"]
@@ -445,7 +450,6 @@ def subjective_test(**kwargs):
         output = {'example' : model_answer_dict}
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
-
 
 def correction_test(**kwargs):
     api_key_list = kwargs["api_key_list"]
@@ -603,29 +607,59 @@ def correction_test(**kwargs):
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
+def export_union_json(directory: str, model_name: str, keyword: str, zero_shot_prompt_text: str, question_type: str) -> None:
+    """
+    Merges JSON files containing processed examples in a directory into a single JSON file.
 
-def export_union_json(directory, model_name, keyword, zero_shot_prompt_text, question_type):
+    :param directory: Directory containing the JSON files
+    :param model_name: Name of the model used to process the examples
+    :param keyword: Keyword used to identify the JSON files
+    :param zero_shot_prompt_text: Prompt text for zero-shot learning
+    :param question_type: Type of questions in the JSON files (e.g. single_choice, five_out_of_seven, etc.)
+    """
     output = []
     save_directory = os.path.join(directory, f'{model_name}_{keyword}')
-    for root, dirs, files in os.walk(save_directory):
+    
+    # Iterate through the JSON files with the specified keyword in the directory
+    for root, _, files in os.walk(save_directory):
         for file in files:
             if file.endswith(".json") and keyword in file:
-            
                 filepath = os.path.join(root, file)
                 print("Start to merge json files")
                 
+                # Load and merge the data from the JSON files
                 with open(filepath, "r") as f:
                     data = json.load(f)
                     output.extend(data['example'])
-                f.close()
-
+    
+    # Save the merged data into a single JSON file
     merge_file = os.path.join(directory, f'{model_name}_{keyword}.json')
     with open(merge_file, 'w') as f:
         json.dump(sorted(output, key=lambda x: x['index']), f, ensure_ascii=False, indent=4)
 
+def export_distribute_json(
+        api_key_list: List[str], 
+        model_name: str, 
+        temperature: float, 
+        directory: str, 
+        keyword: str, 
+        zero_shot_prompt_text: str, 
+        question_type: str, 
+        parallel_num: int = 5
+    ) -> None:
+    """
+    Distributes the task of processing examples in a JSON file across multiple processes.
 
-
-def export_distribute_json(api_key_list, model_name, temperature, directory, keyword, zero_shot_prompt_text, question_type, parallel_num=5):
+    :param api_key_list: List of API keys to use for parallel processing
+    :param model_name: Name of the model to use
+    :param temperature: Temperature value for model sampling
+    :param directory: Directory containing the JSON file
+    :param keyword: Keyword used to identify the JSON file
+    :param zero_shot_prompt_text: Prompt text for zero-shot learning
+    :param question_type: Type of questions in the JSON file (e.g. single_choice, five_out_of_seven, etc.)
+    :param parallel_num: Number of parallel processes to use (default: 5)
+    """
+    # Find the JSON file with the specified keyword
     for root, _, files in os.walk(directory):
         for file in files:
             if file == f'{keyword}.json':
@@ -635,20 +669,15 @@ def export_distribute_json(api_key_list, model_name, temperature, directory, key
     
     example_num = len(data['example'])
         
-
+    # Prepare the list of keyword arguments for parallel processing
     kwargs_list = []
-
-    from joblib import Parallel, delayed
-    import multiprocessing
-
     batch_size = example_num // parallel_num + 1
-
     save_directory = os.path.join(directory, f'{model_name}_{keyword}')
     os.system(f'mkdir {save_directory}')
         
     for idx in range(parallel_num):
         start_num = idx * batch_size
-        end_num = min(start_num+batch_size, example_num)
+        end_num = min(start_num + batch_size, example_num)
         if start_num >= example_num:
             break
         kwargs = {
@@ -662,19 +691,15 @@ def export_distribute_json(api_key_list, model_name, temperature, directory, key
             'temperature': temperature, 
             'question_type': question_type, 
             'save_directory': save_directory
-                    }
+        }
         kwargs_list.append(kwargs)
     
-    if question_type == "single_choice"  or question_type == "five_out_of_seven" or question_type == 'multi_question_choice' or question_type == "multi_choice":
+    # Run parallel processing based on the question type
+    if question_type in ["single_choice", "five_out_of_seven", "multi_question_choice", "multi_choice"]:
         Parallel(n_jobs=parallel_num)(delayed(choice_test)(**kwargs) for kwargs in kwargs_list)
-    if question_type == "subjective":
+    elif question_type == "subjective":
         Parallel(n_jobs=parallel_num)(delayed(subjective_test)(**kwargs) for kwargs in kwargs_list)
-    if question_type == 'correction':
+    elif question_type == 'correction':
         Parallel(n_jobs=parallel_num)(delayed(correction_test)(**kwargs) for kwargs in kwargs_list)
-    if question_type == "cloze":
+    elif question_type == "cloze":
         Parallel(n_jobs=parallel_num)(delayed(cloze_test)(**kwargs) for kwargs in kwargs_list)
-    
-        
-
-
-

@@ -8,10 +8,12 @@ def count_score(total_score, correct_score, item):
         if item["model_answer"][j] == item["standard_answer"][j]:
             correct_score += item['score']
     return total_score, correct_score
+
 def check_length_equal(item):
     if len(item["model_answer"]) != len(item["standard_answer"]):
         print("model_answer and standard_answer length is not equal, filename:"+filename+"\tindex:"+str(item["index"]))
         item["model_answer"]=["Z"]*len(item["standard_answer"])
+
 if __name__ == "__main__":
     
     English_total_score = 0
