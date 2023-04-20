@@ -34,6 +34,7 @@ def get_api_key(filename: str, start_num: int, end_num: int) -> List[str]:
     return api_key_list
 
 def choice_test(**kwargs):
+    model_api = kwargs['model_api']
     api_key_list = kwargs['api_key_list']
     start_num = kwargs['start_num']
     end_num = kwargs['end_num']
@@ -52,100 +53,12 @@ def choice_test(**kwargs):
 
     for i in tqdm(range(start_num, end_num)):
 
-        if model_name == "gpt-3.5-turbo":
-            zero_shot_prompt_message = {'role': 'system', 'content': zero_shot_prompt_text}
-            messages = [zero_shot_prompt_message]
-            question = data['example'][i]['question'].strip() + '\n'
-            message = {"role":"user", "content":question}
-            messages.append(message)
-
-            output = {}
-            while True:
-                try:
-                    output = openai.ChatCompletion.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-                
-            time.sleep(1)
-
-        elif model_name == 'text-davinci-003':
-            question = data['example'][i]['question'].strip() + '\n'
-            prompt = zero_shot_prompt_text + question
-            output = {}
-
-            while True:
-                try:
-                    output = openai.Completion.create(
-                        model=model_name,
-                        prompt=prompt,
-                        temperature=temperature,
-                        max_tokens = 1024
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-                
-            time.sleep(1)
-
-        elif model_name == 'moss':
-            class MossAPI:
-                def __init__(self, api_key):
-                    self.api_key = api_key
-                    self.api_url = "http://175.24.207.250/api/inference"
-                    self.headers = {
-                        "apikey": self.api_key
-                    }
-
-                def send_request(self, request, context=None):
-                    data = {
-                        "request": request
-                    }
-
-                    if context:
-                        data["context"] = context
-
-                    response = requests.post(self.api_url, headers=self.headers, json=data)
-                    return response.json()
-            
-            api_key = choice(api_key_list)
-            moss_api = MossAPI(api_key)
-
-            question = data['example'][i]['question'].strip() + '\n'
-
-            request_text = zero_shot_prompt_text + question
-            while True:
-                try:
-                    response = moss_api.send_request(request_text)
-                    if 'response' in response.keys():
-                        response = response['response']
-                        break
-                    if 'code' in response.keys():
-                        print(response['code'])
-                        print(response['message'])
-                        response = response['message']
-                        break
-                except: 
-                    time.sleep(4)
+        # TODO: model_api input
+        question = None
+        model_output = model_api()
 
 
-        if model_name == "gpt-3.5-turbo":
-            model_output = output['choices'][0]['message']['content']
-
-        elif model_name == 'text-davinci-003':
-            model_output = output['choices'][0]['text']
-        
-        elif model_name == 'moss': 
-            model_output = response
-
+        # TODO: which content of temp we expect
         if question_type == 'single_choice':
             model_answer = []
             temp = re.findall(r'[A-D]', model_output[::-1])

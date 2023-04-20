@@ -24,8 +24,11 @@ for i in range(len(data['examples'])):
     zero_shot_prompt_text = data['examples'][i]['prefix_prompt']
     print(keyword)
     print(question_type)
+    #TODO:
+    model_api=None
 
     export_distribute_json(
+        model_api, 
         api_key_list, 
         model_name, 
         temperature, 
