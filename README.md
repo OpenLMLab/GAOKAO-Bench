@@ -73,6 +73,9 @@ The format of the model output is as follows:
 
 We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
 
+
+![](./img/score_rate_objective.png)
+![](./img/score_rate_subjective.png)
 ![](./img/score_of_previous_year.png)
 
 ## Evaluation
