@@ -9,7 +9,8 @@ from typing import List, Union, Dict
 from joblib import Parallel, delayed
 
 from tqdm import  tqdm
-import openai
+
+
 
 def get_api_key(filename: str, start_num: int, end_num: int) -> List[str]:
     """
@@ -33,84 +34,98 @@ def get_api_key(filename: str, start_num: int, end_num: int) -> List[str]:
     
     return api_key_list
 
+
+def extract_choice_answer(model_output, question_type, answer_lenth=None):
+    """
+    Extract choice answer from model output
+
+    Format of model_output that is expected:
+    'single_choice': choice answer should be the last Capital Letter of the model_output, e.g.: "...【答案】 A <eoa>"
+    'multi_question_choice': "...【答案】A ... 【答案】C ..." or write the choice answers at the beginning of the model_output, e.g. "A C D E F...."
+    'multi_choice': "...【答案】 ABD " or write the choice answers at the end of the model_output, e.g. "... ACD"
+    'five_out_of_seven': choice answers should be the first five Capital Letters of the model_output, e.g. "A C D F B ...."
+    """
+    if question_type == 'single_choice':
+        model_answer = []
+        temp = re.findall(r'[A-D]', model_output[::-1])
+        if len(temp) != 0:
+            model_answer.append(temp[0])
+
+    elif question_type == 'multi_question_choice':
+        model_answer = []
+        temp = re.findall(r"【答案】\s*[:：]*\s*[A-Z]", model_output)
+            
+        if len(temp) == answer_lenth:
+            for t in temp:
+                model_answer.append(re.findall(r'[A-Z]', t)[0])
+        else:
+            temp = re.findall(r"[A-Z]", model_output)
+            if len(temp) > 0:
+                for k in range(min(len(temp), answer_lenth)):
+                    model_answer.append(temp[k])
+
+    elif question_type == 'multi_choice':
+        model_answer = []
+        answer = ''
+        content = re.sub(r'\s+', '', model_output)
+        answer_index = content.find('【答案】')
+        if answer_index > 0:
+            temp = content[answer_index:]
+            if len(re.findall(r'[A-D]', temp)) > 0:
+                for t in re.findall(r'[A-D]', temp):
+                    answer += t
+        else:
+            temp = content[-10:]
+            if len(re.findall(r'[A-D]', temp)) > 0:
+                for t in re.findall(r'[A-D]', temp):
+                    answer += t
+        if len(answer) != 0:
+            model_answer.append(answer)
+    
+    elif question_type == 'five_out_of_seven':
+        model_answer = []
+        temp = re.findall(r'[A-G]', model_output)
+        if len(temp) > 0:
+            for k in range(min(5, len(temp))):
+                model_answer.append(temp[k])
+
+    return model_answer
+
 def choice_test(**kwargs):
     model_api = kwargs['model_api']
-    api_key_list = kwargs['api_key_list']
+    model_name = kwargs['model_name']
     start_num = kwargs['start_num']
     end_num = kwargs['end_num']
-    
-    model_name = kwargs['model_name']
-    data = kwargs['data']
+    data = kwargs['data']['example']
     keyword = kwargs['keyword']
-    zero_shot_prompt_text = kwargs['zero_shot_prompt_text']
-    temperature = kwargs['temperature']
+    prompt = kwargs['prompt']
     question_type = kwargs['question_type']
     save_directory = kwargs['save_directory']
-    
-    openai.api_key = choice(api_key_list)
    
     model_answer_dict = []
-
     for i in tqdm(range(start_num, end_num)):
 
-        # TODO: model_api input
-        question = None
-        model_output = model_api()
+        index = data[i]['index']
+        question = data[i]['question'].strip() + '\n'
+        year = data[i]['year']
+        category = data[i]['year']
+        score = data[i]['score']
+        standard_answer = data[i]['answer']
+        answer_lenth = len(standard_answer)
+        analysis = data[i]['analysis']
 
-
+        model_output = model_api(prompt, question)
+        model_answer = extract_choice_answer(model_output, question_type, answer_lenth)
         # TODO: which content of temp we expect
-        if question_type == 'single_choice':
-            model_answer = []
-            temp = re.findall(r'[A-D]', model_output[::-1])
-            if len(temp) != 0:
-                model_answer.append(temp[0])
-        
-        elif question_type == 'multi_question_choice':
-            model_answer = []
-            temp = re.findall(r"【答案】\s*[:：]*\s*[A-Z]", model_output)
-            
-            if len(temp) == len(data['example'][i]['answer']):
-                for t in temp:
-                    model_answer.append(re.findall(r'[A-Z]', t)[0])
-            else:
-                temp = re.findall(r"[A-Z]", model_output)
-                if len(temp) > 0:
-                    for k in range(min(len(temp), len(data['example'][i]['answer']))):
-                        model_answer.append(temp[k])
-                
-        elif question_type == "multi_choice":
-            model_answer = []
-            answer = ""
-            content = re.sub(r'\s+', '', model_output)
-            answer_index = content.find('【答案】')
-            if answer_index > 0:
-                temp = content[answer_index:]
-                if len(re.findall(r'[A-D]', temp)) > 0:
-                    for t in re.findall(r'[A-D]', temp):
-                        answer += t
-            else:
-                temp = content[-10:]
-                if len(re.findall(r'[A-D]', temp)) > 0:
-                    for t in re.findall(r'[A-D]', temp):
-                        answer += t
-            if len(answer) != 0:
-                model_answer.append(answer)
 
-        elif question_type == 'five_out_of_seven':
-            model_answer = []
-            temp = re.findall(r'[A-G]', model_output)
-            if len(temp) > 0:
-                for k in range(min(5, len(temp))):
-                    model_answer.append(temp[k])
-            
         dict = {
-            'index': i, 
-            'year': data['example'][i]['year'], 
-            'category': data['example'][i]['category'],
-            'score': data['example'][i]['score'],
+            'index': index, 
+            'year': year, 
+            'category': category,
+            'score': score,
             'question': question, 
-            'standard_answer': data['example'][i]['answer'],
-            'analysis': data['example'][i]['analysis'],
+            'standard_answer': standard_answer,
+            'analysis': analysis,
             'model_answer': model_answer,
             'model_output': model_output
         }
@@ -119,240 +134,45 @@ def choice_test(**kwargs):
     file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
-        output = {'example' : model_answer_dict}
-        json.dump(output, f, ensure_ascii=False, indent=4)
-        f.close()
-
-def cloze_test(**kwargs):
-    api_key_list = kwargs['api_key_list']
-    start_num = kwargs['start_num']
-    end_num = kwargs['end_num']
-    
-    model_name = kwargs['model_name']
-    data = kwargs['data']
-    keyword = kwargs['keyword']
-    zero_shot_prompt_text = kwargs['zero_shot_prompt_text']
-    temperature = kwargs['temperature']
-    question_type = kwargs['question_type']
-    save_directory = kwargs['save_directory']
-    
-    openai.api_key = choice(api_key_list)
-    
-    standard_answer = []
-    model_answer_dict = []
-
-    for i in tqdm(range(start_num, end_num)):
-
-        if model_name == 'gpt-3.5-turbo':
-
-            zero_shot_prompt_message = {'role': 'system', 'content': zero_shot_prompt_text}
-            standard_answer.append(data['example'][i]['answer'])
-            messages = [zero_shot_prompt_message]
-
-            question = data['example'][i]['question'].strip() + '\n'
-
-            message = {"role":"user", "content":question}
-
-            messages.append(message)
-
-            output = {}
-            while True:
-                try:
-                    output = openai.ChatCompletion.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-
-        elif model_name == 'text-davinci-003':
-
-            question = data['example'][i]['question'].strip() + '\n'
-            prompt = zero_shot_prompt_text + question
-            output = {}
-
-            while True:
-                try:
-                    output = openai.Completion.create(
-                        model=model_name,
-                        prompt=prompt,
-                        temperature=temperature,
-                        max_tokens = 1024
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-                
-            time.sleep(1)
-        
-        elif model_name == 'moss':
-            class MossAPI:
-                def __init__(self, api_key):
-                    self.api_key = api_key
-                    self.api_url = "http://175.24.207.250/api/inference"
-                    self.headers = {
-                        "apikey": self.api_key
-                    }
-
-                def send_request(self, request, context=None):
-                    data = {
-                        "request": request
-                    }
-
-                    if context:
-                        data["context"] = context
-
-                    response = requests.post(self.api_url, headers=self.headers, json=data)
-                    return response.json()
-            
-            api_key = choice(api_key_list)
-            moss_api = MossAPI(api_key)
-
-            question = data['example'][i]['question'].strip() + '\n'
-
-            request_text = zero_shot_prompt_text + question
-            while True:
-                try:
-                    response = moss_api.send_request(request_text)
-                    if 'response' in response.keys():
-                        response = response['response']
-                        break
-                    if 'code' in response.keys():
-                        print(response['code'])
-                        print(response['message'])
-                        response = response['message']
-                        break
-                except: 
-                    time.sleep(4)
-            
-        if model_name == "gpt-3.5-turbo":
-            model_output = output['choices'][0]['message']['content']
-
-        elif model_name == 'text-davinci-003':
-            model_output = output['choices'][0]['text']
-        
-        elif model_name == 'moss':
-            model_output = response
-            
-        time.sleep(5)
-
-        dict = {
-            'index': i, 
-            'year': data['example'][i]['year'], 
-            'category': data['example'][i]['category'],
-            'score': data['example'][i]['score'],
-            'question': question, 
-            'standard_answer': data['example'][i]['answer'],
-            'analysis': data['example'][i]['analysis'],
-            'model_output': model_output
-        }
-        model_answer_dict.append(dict)
-
-    file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
-    file_path = os.path.join(save_directory, file_name)
-    with open(file_path, 'w') as f:
-        output = {'example' : model_answer_dict}
+        output = {
+            'keyword': keyword, 
+            'example' : model_answer_dict
+            }
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
 def subjective_test(**kwargs):
-    api_key_list = kwargs["api_key_list"]
-    start_num = kwargs["start_num"]
-    end_num = kwargs["end_num"]
-
-    model_name = kwargs["model_name"]
-    data = kwargs["data"]
-    keyword = kwargs["keyword"]
-    zero_shot_prompt_text = kwargs["zero_shot_prompt_text"]
-    temperature = kwargs["temperature"]
-    question_type = kwargs["question_type"]
+    model_api = kwargs['model_api']
+    model_name = kwargs['model_name']
+    start_num = kwargs['start_num']
+    end_num = kwargs['end_num']
+    data = kwargs['data']['example']
+    keyword = kwargs['keyword']
+    prompt = kwargs['prompt']
+    question_type = kwargs['question_type']
     save_directory = kwargs['save_directory']
-
-    openai.api_key = choice(api_key_list)
-    
-    standard_answer = []
+   
     model_answer_dict = []
-
     for i in tqdm(range(start_num, end_num)):
-        standard_answer.append(data['example'][i]['answer'])
 
-        if 'passage' in data['example'][i].keys():
-            if isinstance(data['example'][i]['passage'], list):
-                passage = ""
-                for p in data['example'][i]['passage']:
-                    passage = passage + p.strip() + '\n'
-            else:
-                passage = data['example'][i]['passage'].strip() + '\n'
-        else:
-            passage = ""
+        index = data[i]['index']
+        question = data[i]['question'].strip() + '\n'
+        year = data[i]['year']
+        category = data[i]['year']
+        score = data[i]['score']
+        standard_answer = data[i]['answer']
+        analysis = data[i]['analysis']
 
-        if isinstance(data['example'][i]['question'], list):
-            question = ''
-            for q in data['example'][i]['question']:
-                question = question + q.strip() +'\n'
-        else:
-            question = data['example'][i]['question'].strip() + '\n'
+        model_output = model_api(prompt, question)
 
-
-        if model_name == 'gpt-3.5-turbo':
-            zero_shot_prompt_message = {'role': 'system', 'content': zero_shot_prompt_text}
-            messages = [zero_shot_prompt_message]
-            message = {"role":"user", "content":passage + question}
-
-            messages.append(message)
-            output = {}
-            while True:
-                try:
-                    output = openai.ChatCompletion.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-        
-        elif model_name == 'text-davinci-003':
-            prompt = zero_shot_prompt_text + passage + question
-            output = {}
-
-            while True:
-                try:
-                    output = openai.Completion.create(
-                        model=model_name,
-                        prompt=prompt,
-                        temperature=temperature,
-                        max_tokens = 1024
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-                
-            time.sleep(1)
-
-        if model_name == "gpt-3.5-turbo":
-            model_output = output['choices'][0]['message']['content']
-
-        elif model_name == 'text-davinci-003':
-            model_output = output['choices'][0]['text']
-
-        time.sleep(5)
         dict = {
-            'index': i, 
-            'year': data['example'][i]['year'], 
-            'category': data['example'][i]['category'],
-            'score': data['example'][i]['score'],
-            'question': passage + question, 
-            'standard_answer': data['example'][i]['answer'],
-            'analysis': data['example'][i]['analysis'],
+            'index': index, 
+            'year': year, 
+            'category': category,
+            'score': score,
+            'question': question, 
+            'standard_answer': standard_answer,
+            'analysis': analysis,
             'model_output': model_output
         }
         model_answer_dict.append(dict)
@@ -360,79 +180,66 @@ def subjective_test(**kwargs):
     file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
-        output = {'example' : model_answer_dict}
+        output = {
+            'keyword': keyword, 
+            'example' : model_answer_dict
+            }
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
-def correction_test(**kwargs):
-    api_key_list = kwargs["api_key_list"]
-    start_num = kwargs["start_num"]
-    end_num = kwargs["end_num"]
+def extract_correction_answer(model_output):
+    """
+    Extract correction answer from model_output
 
-    model_name = kwargs["model_name"]
-    data = kwargs["data"]
-    keyword = kwargs["keyword"]
-    zero_shot_prompt_text = kwargs["zero_shot_prompt_text"]
-    temperature = kwargs["temperature"]
-    question_type = kwargs["question_type"]
+    Format of model_output that is expected:
+    "【答案】把is改成are， 删去they ... <eoa>" or "【答案】把is改成are， 删去they ... "
+    """
+    model_answer = []
+        
+    start_idx = model_output.find('【答案】')
+    end_idx = model_output.find('<eoa>')
+
+    if start_idx >= 0:
+        if end_idx >= 0:
+            answer = model_output[start_idx:end_idx]
+        else:
+            answer = model_output[start_idx:]
+    else:
+        answer = ""
+    if len(answer) != 0:
+        model_answer.append(answer)
+
+    return model_answer
+
+
+
+def correction_test(**kwargs):
+    model_api = kwargs['model_api']
+    model_name = kwargs['model_name']
+    start_num = kwargs['start_num']
+    end_num = kwargs['end_num']
+    data = kwargs['data']['example']
+    keyword = kwargs['keyword']
+    prompt = kwargs['prompt']
     save_directory = kwargs['save_directory']
+   
     model_answer_dict = []
 
     for i in tqdm(range(start_num, end_num)):
-        openai.api_key = choice(api_key_list)
-        standard_answer = []
-        standard_answer.append(data['example'][i]['answer'])
+        index = data[i]['index']
+        question = data[i]['question'].strip() + '\n'
+        year = data[i]['year']
+        category = data[i]['year']
+        score = data[i]['score']
+        standard_answer = data[i]['answer']
+        analysis = data[i]['analysis']
 
-        if model_name == 'gpt-3.5-turbo':
-            zero_shot_prompt_message = {"role": "system", "content": zero_shot_prompt_text[0]}
-            messages = [zero_shot_prompt_message]
-            message = {"role":"user", "content":data['example'][i]['question'].strip()}
-            messages.append(message)
-            output = {}
-            while True:
-                try:
-                    output = openai.ChatCompletion.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                    break
-                except Exception as e:
-                    print('Exception:', e)
-                    openai.api_key = choice(api_key_list)
-        
-        elif model_name == 'text-davinci-003':
-            prompt = zero_shot_prompt_text[0] + data['example'][i]['question'].strip()
-            output = {}
-
-            while True:
-                try:
-                    output = openai.Completion.create(
-                        model=model_name,
-                        prompt=prompt,
-                        temperature=temperature,
-                        max_tokens = 1024
-                    )
-                    break
-                except Exception as e:
-                    print('Exception', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-                
-            time.sleep(1)
-
-        if model_name == "gpt-3.5-turbo":
-            model_output_1 = output['choices'][0]['message']['content']
-
-        elif model_name == 'text-davinci-003':
-            model_output_1 = output['choices'][0]['text']
-            
-        time.sleep(5)
+        model_output_1 = model_api(prompt[0], question)
         
         start_idx = model_output_1.find('【答案】')
         end_idx = model_output_1.find('<eoa>')
 
-        article_1 = data['example'][i]['question'].split('不计分。')[1]
+        article_1 = question.split('不计分。')[1]
                 
         if start_idx >= 0:
             if end_idx >= 0:
@@ -441,86 +248,35 @@ def correction_test(**kwargs):
                 article_2 = model_output_1[start_idx+4:].strip()
         else:
             article_2 = ""
+
+        model_output_2 = model_api(prompt[1], "Article 1:" +article_1+"\nArticle 2:"+article_2)
         
-        if model_name == 'gpt-3.5-turbo':
-            zero_shot_prompt_message = {"role": "system", "content": zero_shot_prompt_text[1]}
-            messages = [zero_shot_prompt_message]
-            message = {"role":"user", "content":"Article 1:" +article_1+"\nArticle 2:"+article_2}
-            messages.append(message)
-            output = {}
-            while True:
-                try:
-                    output = openai.ChatCompletion.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                    break
-                except Exception as e:
-                    print('Exception', e)
-                    openai.api_key = choice(api_key_list)
-
-        elif model_name == 'text-davinci-003':
-            prompt = zero_shot_prompt_text[1] + "Article 1:" +article_1+"\nArticle 2:"+article_2
-            output = {}
-
-            while True:
-                try:
-                    output = openai.Completion.create(
-                        model=model_name,
-                        prompt=prompt,
-                        temperature=temperature,
-                        max_tokens = 1024
-                    )
-                    break
-                except Exception as e:
-                    print('Exception', e)
-                    openai.api_key = choice(api_key_list)
-                    time.sleep(1)
-            
-        if model_name == "gpt-3.5-turbo":
-            model_output_2 = output['choices'][0]['message']['content']
-
-        elif model_name == 'text-davinci-003':
-            model_output_2 = output['choices'][0]['text']
-        time.sleep(5)
-
-        model_answer = []
-        
-        start_idx = model_output_2.find('【答案】')
-        end_idx = model_output_2.find('<eoa>')
-
-        if start_idx >= 0:
-            if end_idx >= 0:
-                answer = model_output_2[start_idx:end_idx]
-            else:
-                answer = model_output_2[start_idx:]
-        else:
-            answer = ""
-        if len(answer) != 0:
-            model_answer.append(answer)
+        model_answer = extract_correction_answer(model_output_2)
         
         dict = {
-            'index': i, 
-            'year': data['example'][i]['year'], 
-            'category': data['example'][i]['category'],
-            'score': data['example'][i]['score'],
-            'question': data['example'][i]['question'], 
-            'standard_answer': data['example'][i]['answer'],
-            'analysis': data['example'][i]['analysis'],
-            'model_answer': model_answer, 
-            'model_output': model_output_2, 
+            'index': index, 
+            'year': year, 
+            'category': category,
+            'score': score,
+            'question': question, 
+            'standard_answer': standard_answer,
+            'analysis': analysis,
+            'model_answer': model_answer,
+            'model_output': model_output_2
         }
         model_answer_dict.append(dict)
-        
+
     file_name = model_name+"_seperate_"+keyword+f"_{start_num}-{end_num-1}.json"
     file_path = os.path.join(save_directory, file_name)
     with open(file_path, 'w') as f:
-        output = {'example' : model_answer_dict}
+        output = {
+            'keyword': keyword, 
+            'example' : model_answer_dict
+            }
         json.dump(output, f, ensure_ascii=False, indent=4)
         f.close()
 
-def export_union_json(directory: str, model_name: str, keyword: str, zero_shot_prompt_text: str, question_type: str) -> None:
+def export_union_json(directory: str, model_name: str, keyword: str, zero_shot_prompt_text: str or list[str], question_type: str) -> None:
     """
     Merges JSON files containing processed examples in a directory into a single JSON file.
 
@@ -530,47 +286,53 @@ def export_union_json(directory: str, model_name: str, keyword: str, zero_shot_p
     :param zero_shot_prompt_text: Prompt text for zero-shot learning
     :param question_type: Type of questions in the JSON files (e.g. single_choice, five_out_of_seven, etc.)
     """
-    output = []
+    
     save_directory = os.path.join(directory, f'{model_name}_{keyword}')
-    
-    # Iterate through the JSON files with the specified keyword in the directory
-    for root, _, files in os.walk(save_directory):
+    if os.path.exists(save_directory):
+        output = {
+                        'keyword': keyword, 
+                        'model_name': model_name,
+                        'prompt': zero_shot_prompt_text, 
+                        'example': []
+                    }
+        
+        # Iterate through the JSON files with the specified keyword in the directory
+        
+        print("Start to merge json files")
+        files = [file for file in os.listdir(save_directory) if file.endswith('.json') and keyword in file]
         for file in files:
-            if file.endswith(".json") and keyword in file:
-                filepath = os.path.join(root, file)
-                print("Start to merge json files")
-                
-                # Load and merge the data from the JSON files
-                with open(filepath, "r") as f:
-                    data = json.load(f)
-                    output.extend(data['example'])
-    
-    # Save the merged data into a single JSON file
-    merge_file = os.path.join(directory, f'{model_name}_{keyword}.json')
-    with open(merge_file, 'w') as f:
-        json.dump(sorted(output, key=lambda x: x['index']), f, ensure_ascii=False, indent=4)
+            file_path = os.path.join(save_directory, file)
+
+            # Load and merge the data from the JSON files
+            with open(file_path, "r") as f:
+                data = json.load(f)
+                output['example'] += (data['example'])
+        
+        # Save the merged data into a single JSON file
+        merge_file = os.path.join(directory, f'{model_name}_{keyword}.json')
+        output['example'] = sorted(output['example'], key=lambda x: x['index'])
+        with open(merge_file, 'w') as f:
+            json.dump(output, f, ensure_ascii=False, indent=4)
 
 def export_distribute_json(
-        api_key_list: List[str], 
+        model_api,
         model_name: str, 
-        temperature: float, 
         directory: str, 
         keyword: str, 
-        zero_shot_prompt_text: str, 
+        zero_shot_prompt_text: str or List[str], 
         question_type: str, 
         parallel_num: int = 5
     ) -> None:
     """
     Distributes the task of processing examples in a JSON file across multiple processes.
 
-    :param api_key_list: List of API keys to use for parallel processing
     :param model_name: Name of the model to use
-    :param temperature: Temperature value for model sampling
     :param directory: Directory containing the JSON file
     :param keyword: Keyword used to identify the JSON file
     :param zero_shot_prompt_text: Prompt text for zero-shot learning
     :param question_type: Type of questions in the JSON file (e.g. single_choice, five_out_of_seven, etc.)
     :param parallel_num: Number of parallel processes to use (default: 5)
+    
     """
     # Find the JSON file with the specified keyword
     for root, _, files in os.walk(directory):
@@ -593,15 +355,15 @@ def export_distribute_json(
         end_num = min(start_num + batch_size, example_num)
         if start_num >= example_num:
             break
+
         kwargs = {
-            'api_key_list': api_key_list,
+            'model_api': model_api,
             'start_num': start_num, 
             'end_num': end_num, 
             'model_name': model_name, 
             'data': data, 
             'keyword': keyword, 
-            'zero_shot_prompt_text': zero_shot_prompt_text, 
-            'temperature': temperature, 
+            'prompt': zero_shot_prompt_text, 
             'question_type': question_type, 
             'save_directory': save_directory
         }
@@ -610,9 +372,8 @@ def export_distribute_json(
     # Run parallel processing based on the question type
     if question_type in ["single_choice", "five_out_of_seven", "multi_question_choice", "multi_choice"]:
         Parallel(n_jobs=parallel_num)(delayed(choice_test)(**kwargs) for kwargs in kwargs_list)
-    elif question_type == "subjective":
+    elif question_type in ["subjective", "cloze"]:
         Parallel(n_jobs=parallel_num)(delayed(subjective_test)(**kwargs) for kwargs in kwargs_list)
     elif question_type == 'correction':
         Parallel(n_jobs=parallel_num)(delayed(correction_test)(**kwargs) for kwargs in kwargs_list)
-    elif question_type == "cloze":
-        Parallel(n_jobs=parallel_num)(delayed(cloze_test)(**kwargs) for kwargs in kwargs_list)
+    

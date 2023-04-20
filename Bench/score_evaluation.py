@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
         for key in check_length:
             if key in filename:
-                data = json.load(open(os.path.join(model_output_dir, filename)))
+                data = json.load(open(os.path.join(model_output_dir, filename)))['example']
                 assert len(data) == check_length[key], "model_output number is not correct, filename:"+filename
 
 
@@ -71,28 +71,28 @@ if __name__ == "__main__":
         if not filename.endswith(".json"):
             continue
         if "English" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 English_total_score, English_correct_score = count_score(English_total_score, English_correct_score, i)
 
         elif "Math_I_" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Math_1_total_score, Math_1_correct_score = count_score(Math_1_total_score, Math_1_correct_score, i)
         elif "Math_II" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Math_2_total_score, Math_2_correct_score = count_score(Math_2_total_score, Math_2_correct_score, i)
         elif "Chinese" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Chinese_total_score, Chinese_correct_score = count_score(Chinese_total_score, Chinese_correct_score, i)
         elif "Physics" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Physics_total_score += len(i["standard_answer"])*i['score']
@@ -108,27 +108,27 @@ if __name__ == "__main__":
                                         break
                                 Physics_correct_score += 0 if is_error else 3
         elif "Chemistry" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Chemistry_total_score, Chemistry_correct_score = count_score(Chemistry_total_score, Chemistry_correct_score, i)
         elif "Biology" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Biology_total_score, Biology_correct_score = count_score(Biology_total_score, Biology_correct_score, i)
         elif "History" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 History_total_score, History_correct_score = count_score(History_total_score, History_correct_score, i)
         elif "Geography" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Geography_total_score, Geography_correct_score = count_score(Geography_total_score, Geography_correct_score, i)
         elif "Political" in filename:
-            data = json.load(open(os.path.join(model_output_dir, filename)))
+            data = json.load(open(os.path.join(model_output_dir, filename)))['example']
             for i in data:
                 check_length_equal(i)
                 Politics_total_score, Politics_correct_score = count_score(Politics_total_score, Politics_correct_score, i)

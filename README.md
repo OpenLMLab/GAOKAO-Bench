@@ -4,7 +4,7 @@ GAOKAO-bench is an evaluation framework that utilizes Chinese high school entran
 
 ## Introduction
 
-In the past six months, OpenAI has released GPT-3.5-turbo and GPT-4, which have demonstrated remarkable performance in language understanding, logical reasoning, and rich language generation capabilities. However, behind these powerful models, traditional model evaluation frameworks struggle to accurately assess the exceptional abilities of large language models. Therefore, we aim to establish a standardized and comprehensive evaluation framework to accurately assess the performance of large models in all aspects. In China, the National College Entrance Examination (known as Gaokao) is one of the most authoritative and comprehensive standardized exams, widely recognized for its rigor. We have collected questions from the National College Entrance Examinations from 2010 to 2022, includes 1781 objective questions and 1030 subjective questions to construct the data part of Gaokao-bench.
+In the past six months, OpenAI has released GPT-3.5-turbo and GPT-4, which have demonstrated remarkable performance in language understanding, logical reasoning, and rich language generation capabilities. However, behind these powerful models, traditional model evaluation frameworks struggle to accurately assess the exceptional abilities of large language models. Therefore, we aim to establish a stan0dardized and comprehensive evaluation framework to accurately assess the performance of large models in all aspects. In China, the National College Entrance Examination (known as Gaokao) is one of the most authoritative and comprehensive standardized exams, widely recognized for its rigor. We have collected questions from the National College Entrance Examinations from 2010 to 2022, includes 1781 objective questions and 1030 subjective questions to construct the data part of Gaokao-bench.
 
 ## Data Statistics
 
@@ -79,18 +79,20 @@ We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
 
 The framework of the evaluation is as follows:
 
-| File Name           | Function                                         |
-| ------------------- | ------------------------------------------------ |
-| choice_bench.py     | Generate answers for Multiple-choice questions   |
-| cloze_bench.py      | Generate answers for Fill-in-the-blank questions |
-| subjective_bench.py | Generate answers for Open-ended questions        |
-| bench_function.py   | Contains Functions related to evaluation         |
-| MCQ_prompt.json     | Prompts for Multiple-choice questions            |
-| FBQ_prompt.json     | Prompts for Fill-in-the-blank questions          |
-| OEQ_prompt.json     | Prompts for Open-ended questions                 |
-| score_evaluation.py | Evaluates Multiple-choice questions              |
+| File Name                  | Function                                                     |
+| -------------------------- | ------------------------------------------------------------ |
+| /Bench/choice_bench.py     | Generate answers for Multiple-choice questions               |
+| /Bench/cloze_bench.py      | Generate answers for Fill-in-the-blank questions             |
+| /Bench/subjective_bench.py | Generate answers for Open-ended questions                    |
+| /Bench/bench_function.py   | Contains Functions related to evaluation                     |
+| /Bench/MCQ_prompt.json     | Prompts for Multiple-choice questions                        |
+| /Bench/FBQ_prompt.json     | Prompts for Fill-in-the-blank questions                      |
+| /Bench/OEQ_prompt.json     | Prompts for Open-ended questions                             |
+| /Bench/score_evaluation.py | Evaluates Multiple-choice questions                          |
+| /models/Moss.py            | Define MossAPI class to invoke Moss Model                    |
+| /models/Openai.py          | Define OpenaiAPI class to invoke get-3.5-turbo and text-davinci-003 |
 
-You can run the [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) to generate answers by using OpenAI API Keys. The evaluation framework supports `gpt-3.5-turbo` for Multiple-choice questions, Fill-in-the-blank questions and Open-ended questions; `text-davinci-003` for  Multiple-choice questions(except 2010-2022 Chinese Modern Lit.) and Fill-in-the-blank questions since some questions may exceed the model context length.
+You can run the [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) to generate answers by calling api of different models. We have defined MossAPI and OpenaiAPI in [/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models) and users can define different model api class.
 
 You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/score_evaluation.py) to evaluate the answers of Multiple-choice questions.
 
@@ -129,27 +131,95 @@ You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/
 
 #### Your model
 
-1. Use your model to generate corresponding model output files for the files in the Multiple-choice_Questions directory. The format is as shown in "Model output" above. The file name is `"model_name_question_name.json"`, and it is placed in the `GAOKAO-Bench/data` directory. like this
+1. Define your model api class in  `GAOKAO-Bench/models` directory. We define MossAPI class as an example. You can read the [Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) for more information.
+
+   ```python
+   class MossAPI:
+       def __init__(self, api_key_list: list[str]):
+         """
+         initiate model_api using api_key_list and other parameters(if needed)
+         """
+           self.api_key_list = api_key_list
+           self.api_url = ""
+           
+       def send_request(self, api_key: str, request:str, context=None):
+         """
+         send request to model and receive response from model
+         """
+           self.headers = {
+               "apikey": api_key
+           }
+           data = {
+                   "request": request
+           }
+           if context:
+               data["context"] = context
+           response = requests.post(self.api_url, headers=self.headers, json=data)
+           return response.json()
+   
+       def forward(self, request_text:str):
+           """
+           input a request_text and return the model output 
+           """
+           while True:
+               try:
+                   api_key = choice(self.api_key_list)
+                   response = self.send_request(api_key, request_text)
+                   if 'response' in response.keys():
+                       response = response['response']
+                       break
+   
+                   if 'code' in response.keys():
+                       print(response['code'])
+                       print(response['message'])
+                       response = response['message']
+                       break
+   
+               except Exception as e:
+                   print('Exception:', e)
+                   time.sleep(4)
+    
+           return response
+   
+       def __call__(self, prompt, question):
+       """
+       call the model_api to get the output of the model given a prompt and a question 
+       """
+           return self.forward(request_text=prompt+question)
+   ```
+
+   
+
+2. Import the model_api class and instantiate the model_api class in  [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py).  Execute the following command to generate the answer of the model.
 
    ```
-   data/
-   ├── gpt-3.5-turbo_2010-2022_English_Fill_in_Blanks.json
-   ├── gpt-3.5-turbo_2010-2022_Chinese_Lang_and_Usage_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Physics_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Political_Science_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Math_I_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Biology_MCQs.json
-   ├── gpt-3.5-turbo_2010-2013_English_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Geography_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Chemistry_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Math_II_MCQs.json
-   ├── gpt-3.5-turbo_2012-2022_English_Cloze_Test.json
-   ├── gpt-3.5-turbo_2010-2022_History_MCQs.json
-   ├── gpt-3.5-turbo_2010-2022_Chinese_Modern_Lit.json
-   └── gpt-3.5-turbo_2010-2022_English_Reading_Comp.json
+   cd Bench
+   python choice_bench.py
    ```
 
-2. Execute the third step above
+   
+
+3. Use your model to generate corresponding model output files for the files in the Multiple-choice_Questions directory. The format is as shown in "Model output" above. The file name is `"model_name_question_name.json"`, and it is placed in the `GAOKAO-Bench/data` directory. like this
+
+```
+data/
+├── moss_2010-2022_English_Fill_in_Blanks.json
+├── moss_2010-2022_Chinese_Lang_and_Usage_MCQs.json
+├── moss_2010-2022_Physics_MCQs.json
+├── moss_2010-2022_Political_Science_MCQs.json
+├── moss_2010-2022_Math_I_MCQs.json
+├── moss_2010-2022_Biology_MCQs.json
+├── moss_2010-2013_English_MCQs.json
+├── moss_2010-2022_Geography_MCQs.json
+├── moss_2010-2022_Chemistry_MCQs.json
+├── moss_2010-2022_Math_II_MCQs.json
+├── moss_2012-2022_English_Cloze_Test.json
+├── moss_2010-2022_History_MCQs.json
+├── moss_2010-2022_Chinese_Modern_Lit.json
+└── moss_2010-2022_English_Reading_Comp.json
+```
+
+4. Execute the third step above
 
 ## Requirement
 
