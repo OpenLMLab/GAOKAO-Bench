@@ -247,3 +247,10 @@ Here we would like to thank the teachers of Cao Yang No. 2 High School, who are 
 
 And we would like to thank shiqiao meng, yanjun zheng, jun zhan and qixiang wang for their assistance in GAOKAO-Bench
 
+
+
+## Future Plan
+
+* Evaluate GAOKAO-bench on GPT4
+* Evaluate GAOKAO-bench on ChatGLM 130B
+* Evaluate GAOKAO-bench on MOSS 100B
