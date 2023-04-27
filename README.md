@@ -73,8 +73,10 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 
 我们统计了gpt-3.5-turbo历年的高考得分：
 
-![](/Users/lichunyang/forth_year_2/GaoKao_Bench/GAOKAO-Bench/img/score_rate_objective.png)
-![](/Users/lichunyang/forth_year_2/GaoKao_Bench/GAOKAO-Bench/img/score_rate_subjective.png)
+![](./img/score_rate_objective.png)
+
+![](./img/score_rate_subjective.png)
+
 ![](./img/score_of_previous_year.png)
 
 ## 评测
@@ -96,9 +98,9 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 
 ------
 
-你可以通过调用不同模型的API运行[choice_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) 以生成答案。我们已经建立了MossAPI和OpenaiAPI在[/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models)文件夹下。你也可以定义自己需要使用的模型API。
+你可以通过调用不同模型的API运行[choice_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) 以生成答案。我们在[/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models)文件夹下已经建立了MossAPI和OpenaiAPI。你也可以自定义其他模型API。
 
-最后，你可以运行 [choice_test.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_test.py) 来评测选择题的答案。
+最后，你可以运行 [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/score_evaluation.py)来得到模型的客观题得分。
 
 ## 简单示例
 
@@ -135,7 +137,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 
 #### 其他模型
 
-1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下. We define MossAPI class as an example. You can read the [Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) for more information.
+1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下，我们定义了MossAPI[Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) 作为示例。 
 
    ```python
    class MossAPI:
