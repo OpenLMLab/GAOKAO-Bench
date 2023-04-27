@@ -1,130 +1,131 @@
 # GAOKAO-bench
 
-GAOKAO-bench is an evaluation framework that utilizes Chinese high school entrance examination (GAOKAO) questions as a dataset to evaluate the language understanding and logical reasoning abilities of large language models.
+GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)
 
-## Introduction
+## 介绍
 
-In the past six months, OpenAI has released GPT-3.5-turbo and GPT-4, which have demonstrated remarkable performance in language understanding, logical reasoning, and rich language generation capabilities. However, behind these powerful models, traditional model evaluation frameworks struggle to accurately assess the exceptional abilities of large language models. Therefore, we aim to establish a stan0dardized and comprehensive evaluation framework to accurately assess the performance of large models in all aspects. In China, the National College Entrance Examination (known as Gaokao) is one of the most authoritative and comprehensive standardized exams, widely recognized for its rigor. We have collected questions from the National College Entrance Examinations from 2010 to 2022, includes 1781 objective questions and 1030 subjective questions to construct the data part of Gaokao-bench.
+在过去半年的时间里，openai发布了gpt-3.5-turbo和gpt-4。其展现出的语言理解能力、逻辑推理能力和丰富的语言生成能力令人惊叹。在其强大能力的背后，我们可以看到在大语言模型的背景下传统的模型评测框架难以对这些能力非凡的大模型做出准确的评测。因此我们希望能够建立一个标准化、综合性的评测框架来对大模型进行全方位、准确的评估。在中国，高考是标准化水平最高、综合性最强并且认可度最广的考试之一，我们希望借用高考的题目来评估大模型的能力。因此，我们收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题，构建起GAOKAO-bench的数据部分。
 
-## Data Statistics
+## 数据集
 
-| Question type                 | Number of Questions | percentage |
-| ----------------------------- | ------------------- | ---------- |
-| Multiple-choice_questions     | 1781                | 63.36%     |
-| Fill-in-the-blank_questions   | 218                 | 7.76%      |
-| Open-ended_Questions          | 812                 | 28.89%     |
-| **Total Number of Questions** | **2811**            | **100%**   |
+| 题目类型     | 题目数量 | 数量占比 |
+| ------------ | -------- | -------- |
+| 选择题       | 1781     | 63.36%   |
+| 填空题       | 218      | 7.76%    |
+| 解答题       | 812      | 28.89%   |
+| **题目总数** | **2811** | **100%** |
 
-#### JSON format specification
+#### json格式说明
 
-| Field            | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| keywords         | Question Title                                               |
-| example          | List of questions, including specific information of each question |
-| example/year     | Year of the question in the college entrance examination     |
-| example/category | Category of the college entrance examination paper where the question is located |
-| example/question | Question stem                                                |
-| example/answer   | Answer to the question                                       |
-| example/analysis | Analysis of the question                                     |
-| example/index    | Index of the question                                        |
-| example/score    | Score of the question                                        |
+| 字段             | 说明                       |
+| ---------------- | -------------------------- |
+| keywords         | 题目年份，科目等信息       |
+| example          | 题目列表，包含题目具体信息 |
+| example/year     | 题目所在高考卷年份         |
+| example/category | 题目所在高考卷类型         |
+| example/question | 题目题干                   |
+| example/answer   | 题目答案                   |
+| example/analysis | 题目解析                   |
+| example/index    | 题目序号                   |
+| example/score    | 题目分值                   |
 
-The data format is as follows:
-
-```json
-{
-  "year": "2010",
-  "category": "（新课标）",
-  "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
-  "answer": [
-    "C"
-  ],
-  "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
-  "index": 0,
-  "score": 4
-}
-```
-
-## Model Output
-
-The format of the model output is as follows:
+数据格式如下所示：
 
 ```json
-{
-  "index": 0,
-  "year": "2010",
-  "category": "（新课标）",
-  "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
-  "standard_answer": [
-    "C"
-  ],
-  "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
-  "model_answer": [
-    "C"
-  ],
-  "model_output": "【解析】\n西周时期实行的分封制度是指周王朝把自己的领土划分成诸侯国，由周王封授给亲戚、功臣等人，以维护王权，加强中央集权。这些封国的名称多以地理特征、山川、河流、国都等命名，如鲁、卫、楚、秦等。因此，本题考查的是哪个省、自治区的简称源自西周封国国名，根据选项，可以排除D选项，因为广东、广西的简称并非源自西周封国国名。再根据中国地理位置和历史文化背景，可以得出答案。\n【答案】C <eoa>",
-  "score": 4
-}
+        {
+            "year": "2010",
+            "category": "（新课标）",
+            "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
+            "answer": [
+                "C"
+            ],
+            "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
+            "index": 0,
+            "score": 4
+        }
 ```
 
-***We strongly recommend that the max tokens of the model used is greater than or equal to 4096, otherwise there will be a problem of model output truncation**
+## 模型输出
 
-## Our Result
+模型输出的格式如下所示：
 
-We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
+```json
+    {
+        "index": 0,
+        "year": "2010",
+        "category": "（新课标）",
+        "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
+        "standard_answer": [
+            "C"
+        ],
+        "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
+        "model_answer": [
+            "C"
+        ],
+        "model_output": "【解析】\n西周时期实行的分封制度是指周王朝把自己的领土划分成诸侯国，由周王封授给亲戚、功臣等人，以维护王权，加强中央集权。这些封国的名称多以地理特征、山川、河流、国都等命名，如鲁、卫、楚、秦等。因此，本题考查的是哪个省、自治区的简称源自西周封国国名，根据选项，可以排除D选项，因为广东、广西的简称并非源自西周封国国名。再根据中国地理位置和历史文化背景，可以得出答案。\n【答案】C <eoa>",
+    		"score":4
+    }
+```
 
+***我们强烈建议模型的max tokens不少于4096，否则部分题目的模型输出会出现输出截断的问题。**
 
-![](./img/score_rate_objective.png)
-![](./img/score_rate_subjective.png)
+## 测试结果
+
+我们统计了gpt-3.5-turbo历年的高考得分：
+
+![](/Users/lichunyang/forth_year_2/GaoKao_Bench/GAOKAO-Bench/img/score_rate_objective.png)
+![](/Users/lichunyang/forth_year_2/GaoKao_Bench/GAOKAO-Bench/img/score_rate_subjective.png)
 ![](./img/score_of_previous_year.png)
 
-## Evaluation
+## 评测
 
-The framework of the evaluation is as follows:
+评测框架由如下部分组成：
 
-| File Name                  | Function                                                     |
-| -------------------------- | ------------------------------------------------------------ |
-| /Bench/choice_bench.py     | Generate answers for Multiple-choice questions               |
-| /Bench/cloze_bench.py      | Generate answers for Fill-in-the-blank questions             |
-| /Bench/subjective_bench.py | Generate answers for Open-ended questions                    |
-| /Bench/bench_function.py   | Contains Functions related to evaluation                     |
-| /Bench/MCQ_prompt.json     | Prompts for Multiple-choice questions                        |
-| /Bench/FBQ_prompt.json     | Prompts for Fill-in-the-blank questions                      |
-| /Bench/OEQ_prompt.json     | Prompts for Open-ended questions                             |
-| /Bench/score_evaluation.py | Evaluates Multiple-choice questions                          |
-| /models/Moss.py            | Define MossAPI class to invoke Moss Model                    |
-| /models/Openai.py          | Define OpenaiAPI class to invoke get-3.5-turbo and text-davinci-003 |
+| 文件名                     | 函数           |
+| -------------------------- | -------------- |
+| /Bench/choice_bench.py     | 生成选择题答案 |
+| /Bench/cloze_bench.py      | 生成填空题     |
+| /Bench/subjective_bench.py | 生成解答题答案 |
+| /Bench/bench_function.py   | 测试相关函数   |
+| /Bench/MCQ_prompt.json     | 选择题prompt   |
+| /Bench/FBQ_prompt.json     | 填空题prompt   |
+| /Bench/OEQ_prompt.json     | 解答题prompt   |
+| /Bench/score_evaluation.py | 客观题能力测评 |
+| /models/Moss.py            | 调用Moss接口   |
+| /models/Openai.py          | 调用Openai接口 |
 
-You can run the [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) to generate answers by calling api of different models. We have defined MossAPI and OpenaiAPI in [/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models) and users can define different model api class.
+------
 
-You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/score_evaluation.py) to evaluate the answers of Multiple-choice questions.
+你可以通过调用不同模型的API运行[choice_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) 以生成答案。我们已经建立了MossAPI和OpenaiAPI在[/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models)文件夹下。你也可以定义自己需要使用的模型API。
 
-## Quick Start
+最后，你可以运行 [choice_test.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_test.py) 来评测选择题的答案。
+
+## 简单示例
 
 #### Openai API
 
-1. Put your api_key in a text file in the following format
+1. 把你的API_KEY放置在txt文件中，格式如下
 
    ```
    your_openai_account|your_openai_password|your_api_key
    ```
 
-   Place it in the `GAOKAO-Bench/data` directory
+   放置在 `GAOKAO-Bench/data` 目录下
 
-2. Execute the following command to generate the answer of the model
+2. 获取模型输出
 
    ```
    cd Bench
    python choice_bench.py
    ```
 
-3. Execute the following command to score the model
+3. 给模型打分
 
    ```
    python score_evaluation.py
    ```
 
-   Then you can get the score like
+   你可以得到对应的分数
 
    ```
    GAOKAO_A_total_score:  364
@@ -132,9 +133,9 @@ You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/
    COMPOSITE_score:  593
    ```
 
-#### Your model
+#### 其他模型
 
-1. Define your model api class in  `GAOKAO-Bench/models` directory. We define MossAPI class as an example. You can read the [Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) for more information.
+1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下. We define MossAPI class as an example. You can read the [Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) for more information.
 
    ```python
    class MossAPI:
@@ -193,7 +194,7 @@ You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/
 
    
 
-2. Import the model_api class and instantiate the model_api class in  [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py).  Execute the following command to generate the answer of the model.
+2. 在 [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)中导入你的模型API类并实例化。执行下述指令生成模型的答案
 
    ```
    cd Bench
@@ -202,7 +203,7 @@ You can run the [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/
 
    
 
-3. Use your model to generate corresponding model output files for the files in the Multiple-choice_Questions directory. The format is as shown in "Model output" above. The file name is `"model_name_question_name.json"`, and it is placed in the `GAOKAO-Bench/data` directory. like this
+3. 使用你的模型生成 `Multiple-choice_Questions` 目录下题目的答案。模型输出的格式如上文所述，文件名命名为 `"model_name_question_name.json"`，并把它放置在 `GAOKAO-Bench/data` 目录下，如下所示
 
 ```
 data/
@@ -222,38 +223,27 @@ data/
 └── moss_2010-2022_English_Reading_Comp.json
 ```
 
-4. Execute the third step above
+4. 执行上述第三步
 
-## Requirement
+## 依赖
 
 ```
 joblib==1.1.0
 openai==0.27.2
 ```
 
-## Citation
-
-if you find this benchmark useful for your research, please consider citing.
+## 引用
 
 ```
 @software{GAOKAO-bench2023,
   title = {{GAOKAO-Bench}}
-  author = {Xiaotian Zhang, Chunyang Li, Zhenyu Ying, Yi Zong, Liang He, Xipeng Qiu},
+  author = {Xiaotian Zhang, Chunyang Li, Yi Zong, Zhenyu Ying, Liang He, Xipeng Qiu},
   url = {https://github.com/OpenLMLab/GAOKAO-Bench},
   year = {2023}
 }
 ```
 
-## Acknowledge
+## 致谢
 
-Here we would like to thank the teachers of Cao Yang No. 2 High School, who are responsible for scoring GAOKAO-Bench subjective questions. 
+我们非常感谢上海市曹杨第二中学的老师们，他们负责了GAOKAO-Bench主观题部分的评分。
 
-And we would like to thank shiqiao meng, yanjun zheng, jun zhan and qixiang wang for their assistance in GAOKAO-Bench
-
-
-
-## Future Plan
-
-* Evaluate GAOKAO-bench on GPT4
-* Evaluate GAOKAO-bench on ChatGLM 130B
-* Evaluate GAOKAO-bench on MOSS 100B
