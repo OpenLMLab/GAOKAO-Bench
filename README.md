@@ -237,11 +237,10 @@ openai==0.27.2
 ## 引用
 
 ```
-@software{GAOKAO-bench2023,
-  title = {{GAOKAO-Bench}}
-  author = {Xiaotian Zhang, Chunyang Li, Yi Zong, Zhenyu Ying, Liang He, Xipeng Qiu},
-  url = {https://github.com/OpenLMLab/GAOKAO-Bench},
-  year = {2023}
+@inproceedings{Zhang2023EvaluatingTP,
+  title={Evaluating the Performance of Large Language Models on GAOKAO Benchmark},
+  author={Xiaotian Zhang and Chunyang Li and Yi Zong and Zhengyu Ying and Liang He and Xipeng Qiu},
+  year={2023}
 }
 ```
 
