@@ -1,7 +1,7 @@
 # GAOKAO-bench
 
 GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)
-[paper](https://arxiv.org/abs/2305.12474)
+[[paper]](https://arxiv.org/abs/2305.12474)
 
 ## 介绍
 
