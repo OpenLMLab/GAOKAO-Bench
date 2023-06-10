@@ -88,7 +88,8 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 | GAOKAO_Fill-in-the-blank_Questions (高考填空题)     |               |            |           |            |             |              |                   |             |
 | GAOKAO_Open-ended_Questions (高考主观题)            |               |            |           |            |             |              |                   |             |
 
-![](./img/GAOKAO-BENCH-Objective—Questions.png)
+![](./img/GAOKAO-BENCH-Objective-Questions.png)
+
 
 ## 评测
 
