@@ -79,12 +79,19 @@ We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
 
 We also tested how well the open-source model scored on multiple-choice questions.
 
-|                                                     | gpt-3.5-turbo | Chatglm_6b | Vicuna_7b | Firefly_2b | Belle_7b_m2 | Baize_v2_13b | Moss_moon_003_sft | Firefly_1b4 |
-| --------------------------------------------------- | ------------- | ---------- | --------- | ---------- | ----------- | ------------ | ----------------- | ----------- |
-| GAOKAO_A_Objective_total_score (高考理科选择题总分) | 364           | 158        | 136       | 136        | 118         | 115          | 124               | 100         |
-| GAOKAO_B_Objective_total_score (高考文科选择题总分) | 398           | 231        | 150       | 145        | 141         | 137          | 128               | 117         |
-| GAOKAO_Fill-in-the-blank_Questions (高考填空题)     |               |            |           |            |             |              |                   |             |
-| GAOKAO_Open-ended_Questions (高考主观题)            |               |            |           |            |             |              |                   |             |
+|                       | GAOKAO_A_Objective_total_score (高考理科选择题总分) | GAOKAO_B_Objective_total_score (高考文科选择题总分) | GAOKAO_Fill-in-the-blank_Questions (高考填空题) | GAOKAO_Open-ended_Questions (高考主观题) |
+| --------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
+| **gpt-3.5-turbo**     | 364                                                 | 398                                                 |                                                 |                                          |
+| **Chatglm_6b**        | 158                                                 | 231                                                 |                                                 |                                          |
+| **Vicuna_7b**         | 136                                                 | 150                                                 |                                                 |                                          |
+| **Vicuna_13b**        | 116                                                 | 156                                                 |                                                 |                                          |
+| **Firefly_2b6**       | 136                                                 | 145                                                 |                                                 |                                          |
+| **Belle_7b_m2**       | 118                                                 | 141                                                 |                                                 |                                          |
+| **Baize_v2_13b**      | 115                                                 | 137                                                 |                                                 |                                          |
+| **Moss_moon_003_sft** | 124                                                 | 128                                                 |                                                 |                                          |
+| **Firefly_1b4**       | 100                                                 | 117                                                 |                                                 |                                          |
+
+
 
 ![](./img/GAOKAO-BENCH-Objective-Questions.png)
 
