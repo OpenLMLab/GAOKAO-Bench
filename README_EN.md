@@ -77,6 +77,18 @@ We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
 ![](./img/score_rate_subjective.png)
 ![](./img/score_of_previous_year.png)
 
+We also tested how well the open-source model scored on multiple-choice questions.
+
+|                                                     | gpt-3.5-turbo | Chatglm_6b | Vicuna_7b | Firefly_2b | Belle_7b_m2 | Baize_v2_13b | Moss_moon_003_sft | Firefly_1b4 |
+| --------------------------------------------------- | ------------- | ---------- | --------- | ---------- | ----------- | ------------ | ----------------- | ----------- |
+| GAOKAO_A_Objective_total_score (高考理科选择题总分) | 364           | 158        | 136       | 136        | 118         | 115          | 124               | 100         |
+| GAOKAO_B_Objective_total_score (高考文科选择题总分) | 398           | 231        | 150       | 145        | 141         | 137          | 128               | 117         |
+| GAOKAO_Fill-in-the-blank_Questions (高考填空题)     |               |            |           |            |             |              |                   |             |
+| GAOKAO_Open-ended_Questions (高考主观题)            |               |            |           |            |             |              |                   |             |
+
+![](./img/GAOKAO-BENCH-Objective-Questions.png)
+
+
 ## Evaluation
 
 The framework of the evaluation is as follows:
