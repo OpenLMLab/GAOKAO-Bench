@@ -1,19 +1,19 @@
 # GAOKAO-bench
 
-GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)
+GAOKAO-bench是一个以中国高考题目为数据集，旨在提供和人类对齐的，直观，高效地测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)
 [[paper]](https://arxiv.org/abs/2305.12474)
 
 ## 介绍
 
-在过去半年的时间里，openai发布了gpt-3.5-turbo和gpt-4。其展现出的语言理解能力、逻辑推理能力和丰富的语言生成能力令人惊叹。在其强大能力的背后，我们可以看到在大语言模型的背景下传统的模型评测框架难以对这些能力非凡的大模型做出准确的评测。因此我们希望能够建立一个标准化、综合性的评测框架来对大模型进行全方位、准确的评估。在中国，高考是标准化水平最高、综合性最强并且认可度最广的考试之一，我们希望借用高考的题目来评估大模型的能力。因此，我们收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题，构建起GAOKAO-bench的数据部分。
+OpenAI发布了gpt-3.5-turbo和gpt-4对NLP研究领域是一个巨大的冲击，大模型展现出的语言理解能力、逻辑推理能力和丰富的语言生成能力令人惊叹。在其强大能力的背后，我们发现传统的模型评测框架难以对这些大模型做出准确有效的评测和性能衡量。因此我们希望能够建立一个标准化、综合性的评测框架来对大模型进行有效、准确的评估。在中国，高考是标准化水平最高、综合性最强并且认可度最广的考试之一，我们以此建立起了评测体系，使用在高考试题上的表现来评估大模型的能力。我们收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题，构建起GAOKAO-bench的主要评测数据。同时评测分为两部分，自动化评测的客观题部分和依赖于专家打分的主观题部分，这两部分结果构成了最终的分数，您可以通过构建示例中的脚本快速对一个已部署的大模型进行评测，或者向我们提交您需要评测的模型的主观题预测结果，进行我们人工评分的流水线操作。
 
 ## 数据集
 
-| 题目类型     | 题目数量 | 数量占比 |
-| ------------ | -------- | -------- |
-| 选择题       | 1781     | 63.36%   |
-| 填空题       | 218      | 7.76%    |
-| 解答题       | 812      | 28.89%   |
+| 题目类型           | 题目数量       | 数量占比       |
+| ------------------ | -------------- | -------------- |
+| 选择题             | 1781           | 63.36%         |
+| 填空题             | 218            | 7.76%          |
+| 解答题             | 812            | 28.89%         |
 | **题目总数** | **2811** | **100%** |
 
 #### json格式说明
@@ -83,8 +83,9 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 ![](./img/score_of_previous_year.png)
 
 我们还测试了开源模型在选择题上的得分情况。
-|                       | GAOKAO_A_Objective_total_score (高考理科选择题总分) | GAOKAO_B_Objective_total_score (高考文科选择题总分) | GAOKAO_Fill-in-the-blank_Questions (高考填空题) | GAOKAO_Open-ended_Questions (高考主观题) |
-| --------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
+
+|                             | GAOKAO_A_Objective_total_score (高考理科选择题总分) | GAOKAO_B_Objective_total_score (高考文科选择题总分) | GAOKAO_Fill-in-the-blank_Questions (高考填空题) | GAOKAO_Open-ended_Questions (高考主观题) |
+| --------------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
 | **gpt-3.5-turbo**     | 364                                                 | 398                                                 |                                                 |                                          |
 | **Chatglm_6b**        | 158                                                 | 231                                                 |                                                 |                                          |
 | **Vicuna_7b**         | 136                                                 | 150                                                 |                                                 |                                          |
@@ -95,9 +96,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 | **Moss_moon_003_sft** | 124                                                 | 128                                                 |                                                 |                                          |
 | **Firefly_1b4**       | 100                                                 | 117                                                 |                                                 |                                          |
 
-
 ![](./img/GAOKAO-BENCH-Objective-Questions.png)
-
 
 ## 评测
 
@@ -116,7 +115,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 | /models/Moss.py            | 调用Moss接口   |
 | /models/Openai.py          | 调用Openai接口 |
 
-------
+---
 
 你可以通过调用不同模型的API运行[choice_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) 以生成答案。我们在[/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models)文件夹下已经建立了MossAPI和OpenaiAPI。你也可以自定义其他模型API。
 
@@ -133,14 +132,12 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
    ```
 
    放置在 `GAOKAO-Bench/data` 目录下
-
 2. 获取模型输出
 
    ```
    cd Bench
    python choice_bench.py
    ```
-
 3. 给模型打分
 
    ```
@@ -157,7 +154,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 
 #### 其他模型
 
-1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下，我们定义了MossAPI[Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) 作为示例。 
+1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下，我们定义了MossAPI[Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) 作为示例。
 
    ```python
    class MossAPI:
@@ -167,7 +164,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
          """
            self.api_key_list = api_key_list
            self.api_url = ""
-           
+
        def send_request(self, api_key: str, request:str, context=None):
          """
          send request to model and receive response from model
@@ -182,7 +179,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
                data["context"] = context
            response = requests.post(self.api_url, headers=self.headers, json=data)
            return response.json()
-   
+
        def forward(self, request_text:str):
            """
            input a request_text and return the model output 
@@ -194,37 +191,31 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
                    if 'response' in response.keys():
                        response = response['response']
                        break
-   
+
                    if 'code' in response.keys():
                        print(response['code'])
                        print(response['message'])
                        response = response['message']
                        break
-   
+
                except Exception as e:
                    print('Exception:', e)
                    time.sleep(4)
-    
+
            return response
-   
+
        def __call__(self, prompt, question):
        """
        call the model_api to get the output of the model given a prompt and a question 
        """
            return self.forward(request_text=prompt+question)
    ```
-
-   
-
 2. 在 [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)中导入你的模型API类并实例化。执行下述指令生成模型的答案
 
    ```
    cd Bench
    python choice_bench.py
    ```
-
-   
-
 3. 使用你的模型生成 `Multiple-choice_Questions` 目录下题目的答案。模型输出的格式如上文所述，文件名命名为 `"model_name_question_name.json"`，并把它放置在 `GAOKAO-Bench/data` 目录下，如下所示
 
 ```
@@ -267,4 +258,3 @@ openai==0.27.2
 ## 致谢
 
 我们非常感谢上海市曹杨第二中学的老师们，他们负责了GAOKAO-Bench主观题部分的评分。
-
