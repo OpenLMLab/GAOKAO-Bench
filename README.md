@@ -73,6 +73,7 @@ GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言�
 ## 测试结果
 
 我们统计了gpt-3.5-turbo历年的高考得分，其中GAOGAO-A代表理科科目，GAOKAO-B代表文科科目：
+***注：gpt-3.5-turbo为2023.4.10版本，以下所有gpt-3.5-turbo结果均为此版本***
 
 ![](./img/score_rate_objective.png)
 
