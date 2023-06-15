@@ -73,6 +73,8 @@ The format of the model output is as follows:
 
 We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
 
+**Note: gpt-3.5-turbo is version 2023.4.10, and all gpt-3.5-turbo results below are for this version**
+
 ![](./img/score_rate_objective.png)
 ![](./img/score_rate_subjective.png)
 ![](./img/score_of_previous_year.png)
