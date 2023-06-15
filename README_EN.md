@@ -71,7 +71,7 @@ The format of the model output is as follows:
 
 ## Our Result
 
-We have counted the Gaokao scores of gpt-3.5-turbo in previous years:
+We have counted the Gaokao scores of gpt-3.5-turbo in previous years. Among them, GAOGAO-A represents science subjects, and GAOKAO-B represents liberal arts subjects:
 
 **Note: gpt-3.5-turbo is version 2023.4.10, and all gpt-3.5-turbo results below are for this version**
 
