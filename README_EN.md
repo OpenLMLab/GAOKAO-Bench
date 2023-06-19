@@ -79,7 +79,14 @@ We have counted the Gaokao scores of gpt-3.5-turbo in previous years. Among them
 ![](./img/score_rate_subjective.png)
 ![](./img/score_of_previous_year.png)
 
-We also tested how well the open-source model scored on multiple-choice questions.
+We also tested how well the open-source model scored on multiple-choice questions. The Objective_total_score refers to $\sum {the\ scoring\ rate\ of\ multiple-choice\ questions\ for\ a\ certain\ subject}\times{the\ total\ score\ of\ the\ certain\ subject}$
+
+The science subjects of the college entrance examination(GAOKAO_A) include Chinese, English, science mathematics, physics, chemistry, and biology; 
+
+The liberal arts subjects of the college entrance examination(GAOKAO_B) include Chinese, English, liberal arts mathematics, politics, history and geography. 
+
+The total score of GAOKAO_A_Objective_total_score and GAOKAO_B_Objective_total_score are both 750 points.
+
 
 |                       | GAOKAO_A_Objective_total_score (高考理科选择题总分) | GAOKAO_B_Objective_total_score (高考文科选择题总分) | GAOKAO_Fill-in-the-blank_Questions (高考填空题) | GAOKAO_Open-ended_Questions (高考主观题) |
 | --------------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------- | ---------------------------------------- |
