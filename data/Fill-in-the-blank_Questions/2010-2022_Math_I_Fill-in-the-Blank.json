@@ -581,7 +581,7 @@
             "year": "2020",
             "category": "（全国卷Ⅲ）",
             "question": "16. 关于函数 $f(x)=\\sin x+\\frac{1}{\\sin x}$ 有如下四个命题:\n\n(1) $f(x)$ 的图像关于 $y$ 轴对称.\n\n(2) $f(x)$ 的图像关于原点对称.\n\n(3) $f(x)$ 的图像关于直线 $x=\\frac{\\pi}{2}$ 对称.\n\n(4) $f(x)$ 的最小值为 2 .\n\n其中所有真命题的序号是\n",
-            "answer": "(2)}\n",
+            "answer": "(2)(3)\n",
             "analysis": "【详解】对于命题(1), $f\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2}+2=\\frac{5}{2}, f\\left(-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}-2=-\\frac{5}{2}$, 则 $f\\left(-\\frac{\\pi}{6}\\right) \\neq f\\left(\\frac{\\pi}{6}\\right)$, 所以, 函数 $f(x)$ 的图象不关于 $y$ 轴对称，命题(1)错误;\n\n对于命题(2), 函数 $f(x)$ 的定义域为 $\\{x \\mid x \\neq k \\pi, k \\in Z\\}$, 定义域关于原点对称, $f(-x)=\\sin (-x)+\\frac{1}{\\sin (-x)}=-\\sin x-\\frac{1}{\\sin x}=-\\left(\\sin x+\\frac{1}{\\sin x}\\right)=-f(x)$,\n\n所以, 函数 $f(x)$ 的图象关于原点对称，命题(2)正确;\n\n对于命题(3), $\\because f\\left(\\frac{\\pi}{2}-x\\right)=\\sin \\left(\\frac{\\pi}{2}-x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}-x\\right)}=\\cos x+\\frac{1}{\\cos x}$,\n\n$f\\left(\\frac{\\pi}{2}+x\\right)=\\sin \\left(\\frac{\\pi}{2}+x\\right)+\\frac{1}{\\sin \\left(\\frac{\\pi}{2}+x\\right)}=\\cos x+\\frac{1}{\\cos x}, \\quad$ 则 $f\\left(\\frac{\\pi}{2}-x\\right)=f\\left(\\frac{\\pi}{2}+x\\right)$,\n\n所以, 函数 $f(x)$ 的图象关于直线 $x=\\frac{\\pi}{2}$ 对称, 命题(3)正确;\n\n对于命题(4), 当 $-\\pi<x<0$ 时, $\\sin x<0$, 则 $f(x)=\\sin x+\\frac{1}{\\sin x}<0<2$,\n\n命题(4)错误.\n\n故答案为: (2)(3).\n",
             "index": 64,
             "score": 5
