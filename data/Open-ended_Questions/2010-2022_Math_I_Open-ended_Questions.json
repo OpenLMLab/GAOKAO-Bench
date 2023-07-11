@@ -283,7 +283,7 @@
         {
             "year": "2014",
             "category": "（新课标ⅱ）",
-            "question": "23. 在直角坐标系 $x O y$ 中, 以坐标原点为极点, $x$ 轴正半轴为极轴建立极坐标系 , 半圆 $C$ 的极坐标方程为 $\\rho=2 \\cos \\theta, \\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$\n\n(I) 求 C 的参数方程;\n\n(II ) 设点 $D$ 在半圆 $C$ 上, 半圆 $C$ 在 $D$ 处的切线与直线 $I: y=\\sqrt{3} x+2$ 垂直, 根据 （1）中你得到的参数方程, 求直线 $C D$ 的倾斜角及 $D$ 的坐标. 六、解答题（共 1 小题, 满分 0 分）\n",
+            "question": "23. 在直角坐标系 $x O y$ 中, 以坐标原点为极点, $x$ 轴正半轴为极轴建立极坐标系 , 半圆 $C$ 的极坐标方程为 $\\rho=2 \\cos \\theta, \\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$\n\n(I) 求 C 的参数方程;\n\n(II ) 设点 $D$ 在半圆 $C$ 上, 半圆 $C$ 在 $D$ 处的切线与直线 $I: y=\\sqrt{3} x+2$ 垂直, 根据 （1）中你得到的参数方程, 求直线 $C D$ 的倾斜角及 $D$ 的坐标. \n",
             "answer": "解 (1) 由半圆 $C$ 的极坐标方程为 $\\rho=2 \\cos \\theta, \\theta \\in\\left[0, \\frac{\\pi}{2}\\right]$, 即 $\\rho^{2}=2 \\rho \\cos \\theta$ , 可得 $C$ 的普通方程为 $(x-1)^{2}+y^{2}=1(0 \\leqslant y \\leqslant 1)$.\n\n可得 $C$ 的参数方程为 $\\left\\{\\begin{array}{l}x=1+\\cos t \\\\ y=\\sin t\\end{array}(t\\right.$ 为参数, $0 \\leqslant t \\leqslant \\pi)$. (2) 设 $D(1+\\cos t, \\sin t)$, 由 (1) 知 $C$ 是以 $C(1,0)$ 为圆心, 1 为半径的 上半圆，\n\n$\\because$ 直线 $C D$ 的斜率与直线 $\\mathrm{l}$ 的斜率相等, $\\therefore \\operatorname{tant}=\\sqrt{3}, \\mathrm{t}=\\frac{\\pi}{3}$.\n\n故 $D$ 的直角坐标为 $\\left(1+\\cos \\frac{\\pi}{3}, \\sin \\frac{\\pi}{3}\\right)$, 即 $\\left(\\frac{3}{2}, \\frac{\\sqrt{3}}{2}\\right)$.\n",
             "analysis": "（1）利用 $\\left\\{\\begin{array}{c}\\rho^{2}=x^{2}+y^{2} \\\\ x=\\rho \\cos \\theta\\end{array}\\right.$ 即可得出直角坐标方程, 利用 $\\cos ^{2} t+\\sin ^{2} t=1$ 进 而得出参数方程.\n\n(2) 利用半圆 $C$ 在 $D$ 处的切线与直线 $\\mid: y=\\sqrt{3} x+2$ 垂直, 则直线 $C D$ 的斜率与直 线 I 的斜率相等, 即可得出直线 $C D$ 的倾斜角及 $D$ 的坐标.\n",
             "index": 31,
