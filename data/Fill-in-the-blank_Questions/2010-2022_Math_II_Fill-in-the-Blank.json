@@ -555,7 +555,7 @@
             "category": "（新课标ⅰ）",
             "question": "15. 函数 $f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x$ 的最小值为\n",
             "answer": "-4 .\n",
-            "analysis": "【\n\n详\n\n解\n\n】\n\n$f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x=-\\cos 2 x-3 \\cos x=-2 \\cos ^{2} x-3 \\cos x+1$\n\n$=-2\\left(\\cos x+\\frac{3}{4}\\right)^{2}+\\frac{17}{8}$\n\n$\\because-1 \\leq \\cos x \\leq 1, \\therefore$ 当 $\\cos x=1$ 时, $f_{\\text {min }}(x)=-4$,\n\n故函数 $f(x)$ 的最小值为 -4 .\n",
+            "analysis": "【详解】\n\n$f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x=-\\cos 2 x-3 \\cos x=-2 \\cos ^{2} x-3 \\cos x+1$\n\n$=-2\\left(\\cos x+\\frac{3}{4}\\right)^{2}+\\frac{17}{8}$\n\n$\\because-1 \\leq \\cos x \\leq 1, \\therefore$ 当 $\\cos x=1$ 时, $f_{\\text {min }}(x)=-4$,\n\n故函数 $f(x)$ 的最小值为 -4 .\n",
             "index": 61,
             "score": 5
         },
