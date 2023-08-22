@@ -15,7 +15,7 @@
         {
             "year": "2010",
             "category": "（新课标）",
-            "question": "2. (5 分) 已知复数 $z=\\frac{\\sqrt{3}+i}{(1-\\sqrt{3} i)^{2}}, \\bar{z}$ 是 $z$ 的共轭复数, 则 $z=\cdot\bar{z}=(\\quad)$\nA. $\\frac{1}{4}$\nB. $\\frac{1}{2}$\nC. 1\nD. 2\n",
+            "question": "2. (5 分) 已知复数 $z=\\frac{\\sqrt{3}+i}{(1-\\sqrt{3} i)^{2}}, \\bar{z}$ 是 $z$ 的共轭复数, 则 $z\\cdot\bar{z}=(\\quad)$\nA. $\\frac{1}{4}$\nB. $\\frac{1}{2}$\nC. 1\nD. 2\n",
             "answer": [
                 "A"
             ],
