@@ -248,7 +248,7 @@
             "year": "2016",
             "category": "（新课标ⅲ）",
             "question": "15. 由波源 $S$ 形成的简谐横波在均匀介质中向左、右传播。波源振动的频率为 $20 \\mathrm{~Hz}$, 波速为 $16 \\mathrm{~m} / \\mathrm{s}$ 。已知介质中 $P 、 Q$ 两质点位于波源 $S$ 的两侧, 且 $P$ 、 $Q$ 和 $S$ 的平衡位置在一条直线上, $P 、 Q$ 的平衡位置到 $S$ 的平衡位置之间的 距离分别为 $15.8 \\mathrm{~m} 、 14.6 \\mathrm{~m} 。 \\mathrm{P} 、 \\mathrm{Q}$ 开始震动后, 下列判断正确的是（ $(\\quad)$\nA. $P 、 Q$ 两质点运动的方向始终相同\nB. $P 、 Q$ 两质点运动的方向始终相反\nC. 当 $S$ 恰好通过平衡位置时, $P 、 Q$ 两点也正好通过平衡位置\nD. 当 $S$ 恰好通过平衡位置向上运动时, $P$ 在波峰\nE. 当 $S$ 恰好通过平衡位置向下运动时, $Q$ 在波峰\n",
-            "answer": "BD\n",
+            "answer": "BDE\n",
             "analysis": "【解答】解：波源振动的频率为 $20 \\mathrm{~Hz}$, 波速为 $16 \\mathrm{~m} / \\mathrm{s}$, 由波长公式 $\\lambda=\\frac{\\mathrm{v}}{\\mathrm{f}}$ 有: $\\lambda=\\frac{16}{20}=0.8 \\mathrm{~m}$\n\n$A B 、 P 、 Q$ 两质点距离波源的距离之差为: $\\triangle x=15.8-14.6=1.2 \\mathrm{~m}=3 \\times \\frac{\\lambda}{2}$, 为 半个波长的奇数倍, 所以 $P 、 Q$ 两质点振动步调相反, $P 、 Q$ 两质点运动的方 向始终相反，选项 $\\mathrm{A}$ 错误, B 正确。\n\nC、 $S P=15.8 m=\\left(19+\\frac{3}{4}\\right) \\lambda, S Q=14.6 m=\\left(18+\\frac{1}{4}\\right) \\lambda$, 所以当 $S$ 恰好通过平衡 位置时, $P 、 Q$ 两点一个在波峰，一个在波谷, 选项 $\\mathrm{C}$ 错误。\n\n$D$ 、由 $S P=15.8 m=\\left(19+\\frac{3}{4}\\right) \\lambda$ 可知, 当 $S$ 恰好通过平衡位置向上运动时, $P$ 在 波峰, 选项 D 正确。\n\n$E 、 S Q=14.6 m=\\left(18+\\frac{1}{4}\\right) \\lambda$, 当 $S$ 恰好通过平衡位置向下运动时, $Q$ 在波峰, 选项 $\\mathrm{E}$ 正确。\n\n故选: BDE。\n",
             "index": 27,
             "score": 5
