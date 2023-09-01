@@ -42,7 +42,7 @@
             "category": "（新课标）",
             "question": "17. 在光电效应实验中, 某金属的截止频率相应的波长为 $\\lambda_{0}$, 该金属的逸出功为 。若用波长为 $\\lambda\\left(\\lambda<\\lambda_{0}\\right)$ 的单色光做该实验, 则其遏止电压为 。已知 电子的电荷量、真空中的光速和普朗克常量分别为 $e 、 c$ 和 $h$ 。\n",
             "answer": "$h \\frac{c}{\\lambda_{0}}, \\frac{h c}{e{\\lambda}}-\\frac{h c}{e{\\lambda_{0}}}$ 。\n",
-            "analysis": "解：金属的逸出功 $W_{0}=\\mathrm{h} \\gamma_{0}=h_{\\frac{c}{}}^{\\lambda_{0}}$ 。\n\n根据光电效应方程知 $E_{k m}=h \\frac{c}{\\lambda}-h \\frac{c}{\\lambda_{0}}$, 又 $E_{k m}=e U$, 则遏止电压 $U=\\frac{h c}{e^{\\lambda}}-\\frac{h c}{e^{\\lambda}}$\n",
+            "analysis": "解：金属的逸出功 $W_{0}=\\mathrm{h} \\gamma_{0}=h\\frac{c}{\\lambda_{0}}$ 。\n\n根据光电效应方程知 $E_{k m}=h \\frac{c}{\\lambda}-h \\frac{c}{\\lambda_{0}}$, 又 $E_{k m}=e U$, 则遏止电压 $U=\\frac{h c}{e{\\lambda}}-\\frac{h c}{e{\\lambda}}$\n",
             "index": 4,
             "score": 6
         },
