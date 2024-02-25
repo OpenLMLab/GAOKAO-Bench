@@ -90,9 +90,9 @@ An example of objective questions is shown below, the English is added by the au
 
 We test various models using a zero-shot setting, employing a rule-based answer extraction method for objective questions and manual grading for subjective questions, ultimately obtaining Gaokao scores for models such as GPT-4 and GPT-3.5.
 
-<img src="/Users/yizong/Desktop/GAOKAO-Bench/Graphs/histogram.png" alt="histogram" style="zoom:25%;" />
+<img src="./Graphs/histogram.png" alt="histogram" style="zoom:25%;" />
 
-<img src="/Users/yizong/Desktop/GAOKAO-Bench/Graphs/radar_obj_sub.png" alt="radar_obj_sub" style="zoom:40%;" />
+<img src="./Graphs/radar_obj_sub.png" alt="radar_obj_sub" style="zoom:40%;" />
 
 
 
