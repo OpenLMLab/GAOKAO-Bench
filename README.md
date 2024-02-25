@@ -1,239 +1,165 @@
-# GAOKAO-bench
+# GAOKAO-Bench
 
-GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)
-[[paper]](https://arxiv.org/abs/2305.12474)
+GAOKAO-Bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。[[Read In English]](./README_EN.md)[[paper]](https://arxiv.org/abs/2305.12474)
+
+## 更新
+
+[[GAOKAO-MM]]()：基于中国高考题的多模态数据集，测评多模态模型的感知、理解、知识、推理能力。
+
+[[GAOKAO-Bench-2023]](https://github.com/OpenLMLab/GAOKAO-Bench-2023):将中国2023年高考选择题作为数据集 ，对GAOKAO-Bench的补充。
 
 ## 介绍
 
-在过去半年的时间里，openai发布了gpt-3.5-turbo和gpt-4。其展现出的语言理解能力、逻辑推理能力和丰富的语言生成能力令人惊叹。在其强大能力的背后，我们可以看到在大语言模型的背景下传统的模型评测框架难以对这些能力非凡的大模型做出准确的评测。因此我们希望能够建立一个标准化、综合性的评测框架来对大模型进行全方位、准确的评估。在中国，高考是标准化水平最高、综合性最强并且认可度最广的考试之一，我们希望借用高考的题目来评估大模型的能力。因此，我们收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题，构建起GAOKAO-bench的数据部分。
+我们希望能够建立一个标准化、综合性的评测框架来对大模型进行全方位、准确的评估。在中国，高考是标准化水平最高、综合性最强并且认可度最广的考试之一，我们希望借用高考的题目来评估大模型的能力。因此，我们收集了2010-2022年全国高考卷的题目，其中包括1781道客观题和1030道主观题，构建起GAOKAO-Bench的数据部分。
 
 ## 数据集
 
 | 题目类型     | 题目数量 | 数量占比 |
 | ------------ | -------- | -------- |
-| 选择题       | 1781     | 63.36%   |
-| 填空题       | 218      | 7.76%    |
-| 解答题       | 812      | 28.89%   |
+| 客观题       | 1781     | 63.36%   |
+| 主观题       | 1030     | 36.64%   |
 | **题目总数** | **2811** | **100%** |
 
-#### json格式说明
+数据示例如下所示：
 
-| 字段             | 说明                       |
-| ---------------- | -------------------------- |
-| keywords         | 题目年份，科目等信息       |
-| example          | 题目列表，包含题目具体信息 |
-| example/year     | 题目所在高考卷年份         |
-| example/category | 题目所在高考卷类型         |
-| example/question | 题目题干                   |
-| example/answer   | 题目答案                   |
-| example/analysis | 题目解析                   |
-| example/index    | 题目序号                   |
-| example/score    | 题目分值                   |
+- **Year**
 
-数据格式如下所示：
+> 2022
 
-```json
-        {
-            "year": "2010",
-            "category": "（新课标）",
-            "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
-            "answer": [
-                "C"
-            ],
-            "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
-            "index": 0,
-            "score": 4
-        }
-```
+- **Category**
 
-## 模型输出
+> 全国甲卷
+>
 
-模型输出的格式如下所示：
+- **Score**
 
-```json
-    {
-        "index": 0,
-        "year": "2010",
-        "category": "（新课标）",
-        "question": "1．（ 4分）西周分封制在中国历史上影响深远。下列省、自治区中，其简称源\n自西周封国国名的是（ 　　） \nA．河南、河北  B．湖南、湖北  C．山东、山西  D．广东、广西\n",
-        "standard_answer": [
-            "C"
-        ],
-        "analysis": "西周分封的诸侯国主要有鲁齐燕卫宋晋 。A项河南的简称是豫 ，河北的\n简称是冀； B项湖南的简称是湘，湖北的简称是鄂； D项广东的简称是粤，\n广西的简称是桂。其简称都不是源自西周封国国名， 故排除 ABD三项。  \nC项山东的简称是鲁 ，山西的简称是晋 ，其简称都是源自西周封国国名 。故C项\n正确。  \n故选： C。\n",
-        "model_answer": [
-            "C"
-        ],
-        "model_output": "【解析】\n西周时期实行的分封制度是指周王朝把自己的领土划分成诸侯国，由周王封授给亲戚、功臣等人，以维护王权，加强中央集权。这些封国的名称多以地理特征、山川、河流、国都等命名，如鲁、卫、楚、秦等。因此，本题考查的是哪个省、自治区的简称源自西周封国国名，根据选项，可以排除D选项，因为广东、广西的简称并非源自西周封国国名。再根据中国地理位置和历史文化背景，可以得出答案。\n【答案】C <eoa>",
-    		"score":4
-    }
-```
+> 5
 
-***我们强烈建议模型的max tokens不少于4096，否则部分题目的模型输出会出现输出截断的问题。**
+- **Question**
+
+> 若 $z=-1+\sqrt{3} \mathrm{i}$, 则 $\frac{z}{z \bar{z}-1}=()$
+>
+> A. $-1+\sqrt{3} \mathrm{i}$	
+>
+> B. $-1-\sqrt{3} i$	
+>
+> C. $-\frac{1}{3}+\frac{\sqrt{3}}{3} \mathrm{i}$
+>
+> D. $-\frac{1}{3}-\frac{\sqrt{3}}{3} i$
+>
+
+- **Analysis**
+
+> 【详解】
+>
+> $\bar{z}=-1-\sqrt{3} i, z \bar{z}=(-1+\sqrt{3} i)(-1-\sqrt{3} i)=1+3=4$.
+>
+> $\frac{z}{z \bar{z}-1}=\frac{-1+\sqrt{3} \mathrm{i}}{3}=-\frac{1}{3}+\frac{\sqrt{3}}{3} \mathrm{i}$
+>
+> 故选: C
+>
+
+* **Standard Answer**
+
+> C
 
 ## 测试结果
 
-我们统计了gpt-3.5-turbo历年的高考得分：
+### 总分
 
-![](./img/score_rate_objective.png)
+我们采用zero-shot的方式测试各项模型，对客观题采用基于规则的答案抽取方式，对主观题采取人工评阅的方式，最终获得了GPT-4、GPT-3.5等模型的高考得分。
 
-![](./img/score_rate_subjective.png)
+<img src="./Graphs/histogram.png" alt="histogram" style="zoom:25%;" />
 
-![](./img/score_of_previous_year.png)
+<img src="./Graphs/radar_obj_sub.png" alt="radar_obj_sub" style="zoom:40%;" />
 
-## 评测
 
-评测框架由如下部分组成：
 
-| 文件名                     | 函数           |
-| -------------------------- | -------------- |
-| /Bench/choice_bench.py     | 生成选择题答案 |
-| /Bench/cloze_bench.py      | 生成填空题     |
-| /Bench/subjective_bench.py | 生成解答题答案 |
-| /Bench/bench_function.py   | 测试相关函数   |
-| /Bench/MCQ_prompt.json     | 选择题prompt   |
-| /Bench/FBQ_prompt.json     | 填空题prompt   |
-| /Bench/OEQ_prompt.json     | 解答题prompt   |
-| /Bench/score_evaluation.py | 客观题能力测评 |
-| /models/Moss.py            | 调用Moss接口   |
-| /models/Openai.py          | 调用Openai接口 |
+### 客观题得分率
 
-------
+| **Models**               | **Overall** | **Chinese** | **Eng.**  | **Sci. Math** | **Hum. Math** | **Phys.** | **Chem.** | **Biol.** | **Poli.** | **Hist.** | **Geog.** |
+| ------------------------ | ----------- | ----------- | --------- | ------------- | ------------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| **GPT-4-0314**           | **72.2%**   | **53.9%**   | 93.1%     | 53.7%         | 63.3%         | **55.5%** | 44.4%     | 80.7%     | 75.9%     | 75.6%     | 80.0%     |
+| **GPT-4-0613**           | 71.6%       | 52.1%       | **93.2%** | **54.5%**     | **64.0%**     | 50.8%     | 43.6%     | **83.0%** | 72.5%     | 74.2%     | **81.1%** |
+| **Gemini-Pro**           | 57.9%       | 46.7%       | 69.9%     | 40.7%         | 47.7%         | 32.0%     | 40.3%     | 70.7%     | 64.7%     | 64.5%     | 68.4%     |
+| **ERNIE-Bot-0615**       | 56.6%       | 46.7%       | 31.0%     | 38.3%         | 49.1%         | 35.9%     | **66.1%** | 79.3%     | **86.9%** | **79.1%** | 68.4%     |
+| **GPT-3.5-turbo-0301**   | 53.2%       | 34.7%       | 76.6%     | 38.8%         | 47.8%         | 41.1%     | 38.7%     | 56.9%     | 45.3%     | 53.9%     | 54.0%     |
+| **ERNIE-Bot-turbo-0725** | 45.6%       | 35.3%       | 26.6%     | 34.1%         | 36.2%         | 32.0%     | 51.6%     | 64.0%     | 72.2%     | 63.4%     | 44.2%     |
+| **Baichuan2-13b-Chat**   | 43.9%       | 26.9%       | 34.7%     | 23.8%         | 31.7%         | 25.0%     | 40.3%     | 53.3%     | 75.3%     | 59.9%     | 61.1%     |
+| **ChatGLM2-6b**          | 42.7%       | 31.1%       | 30.6%     | 29.0%         | 35.8%         | 24.2%     | 46.0%     | 71.3%     | 55.0%     | 59.2%     | 41.1%     |
+| **Baichuan2-7b-Chat**    | 40.5%       | 31.7%       | 33.0%     | 26.6%         | 28.4%         | 18.0%     | 26.6%     | 48.0%     | 69.7%     | 57.8%     | 49.5%     |
+| **ChatGLM-6b**           | 30.8%       | 18.6%       | 17.0%     | 25.2%         | 25.7%         | 12.5%     | 30.6%     | 24.7%     | 54.1%     | 59.9%     | 25.3%     |
+| **Baichuan2-7b-Base**    | 27.2%       | 16.2%       | 21.2%     | 24.8%         | 24.8%         | 0.0%      | 23.4%     | 24.0%     | 55.3%     | 32.1%     | 24.2%     |
+| **LLaMA-7b**             | 21.1%       | 16.2%       | 20.5%     | 24.3%         | 26.1%         | 0.0%      | 22.6%     | 22.7%     | 22.2%     | 19.2%     | 24.2%     |
+| **Vicuna-7b**            | 21.0%       | 12.0%       | 19.6%     | 23.8%         | 23.4%         | 7.0%      | 27.4%     | 20.0%     | 20.9%     | 23.0%     | 23.2%     |
 
-你可以通过调用不同模型的API运行[choice_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/choice_bench.py)/[cloze_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/cloze_bench.py)/[subjective_bench.py](https://github.com/piglaker/GAOKAO-Bench/blob/main/Bench/subjective_bench.py) 以生成答案。我们在[/models](https://github.com/OpenLMLab/GAOKAO-Bench/tree/object/models)文件夹下已经建立了MossAPI和OpenaiAPI。你也可以自定义其他模型API。
+### 主观题得分率
 
-最后，你可以运行 [score_evaluation.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/score_evaluation.py)来得到模型的客观题得分。
+| **Models**               | **Overall** | **Chinese** | **Eng.**  | **Sci. Math** | **Hum. Math** | **Phys.** | **Chem.** | **Biol.** | **Poli.** | **Hist.** | **Geog.** |
+| ------------------------ | ----------- | ----------- | --------- | ------------- | ------------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| **GPT-4-0314**           | **51.9%**   | 51.5%       | **88.3%** | 24.1%         | **27.9%**     | **56.7%** | **35.0%** | **85.6%** | 50.0%     | **63.1%** | 70.0%     |
+| **GPT-4-0613**           | 50.8%       | 50.3%       | 87.6%     | **24.6%**     | 27.5%         | 47.1%     | 28.5%     | **85.6%** | 49.9%     | 59.9%     | 71.5%     |
+| **ERNIE-Bot-0615**       | 48.4%       | **57.1%**   | 45.0%     | 17.0%         | 25.6%         | 33.5%     | 30.8%     | 84.9%     | **53.0%** | 60.0%     | **72.7%** |
+| **ERNIE-Bot-turbo-0725** | 39.2%       | 42.5%       | 28.8%     | 14.6%         | 15.6%         | 23.2%     | 25.0%     | 85.1%     | 45.3%     | 47.0%     | 61.8%     |
+| **GPT-3.5-turbo-0301**   | 35.8%       | 33.9%       | 75.4%     | 15.2%         | 15.9%         | 16.9%     | 21.4%     | 36.3%     | 42.3%     | 58.4%     | 62.1%     |
 
 ## 简单示例
 
 #### Openai API
 
-1. 把你的API_KEY放置在txt文件中，格式如下
+1. 获取GPT-4模型输出
 
    ```
-   your_openai_account|your_openai_password|your_api_key
+   cd ./Bench
+   
+   ## Get the Output of Objective Questions
+   python objective_bench.py --openai_api_key="your openai api key"
+   
+   ## Get the Output of Subjective Questions
+   python subjective_bench.py --openai_api_key="your openai api key"
    ```
 
-   放置在 `GAOKAO-Bench/data` 目录下
+2. 计算GPT-4模型客观题得分率
 
-2. 获取模型输出
+   * 将GPT-4模型输出的JSON文件存放在`./Results/gpt_4_obj`文件夹下。
 
+   * 执行以下指令，获得其客观题的得分率，结果存放在`./Results/gpt_4_obj/result/correction_score.json`文件下。
+   
    ```
-   cd Bench
-   python choice_bench.py
-   ```
-
-3. 给模型打分
-
-   ```
-   python score_evaluation.py
+   python OBJ_score_evaluation.py --obj_output_dir=../Results/gpt_4_obj
    ```
 
-   你可以得到对应的分数
+3. 计算GPT-4模型主观题得分率
+
+   由于人工批改的高昂成本，我们提供了LLM-as-a-Judge脚本，利用GPT-4-turbo为模型的主观题打分。
+
+   * 将GPT-4模型输出的JSON文件存放在`./Results/gpt_4_sub`文件夹下。
+
+   * 执行以下指令，获得GPT-4对主观题的评分，结果存放在`./Results/gpt_4_sub/gpt-4-1106-preview_correction_wo_marking_criterion`文件下。
 
    ```
-   GAOKAO_A_total_score:  364
-   GAOKAO_B_total_score:  398
-   COMPOSITE_score:  593
+   python subjective_grade.py --openai_api_key="your openai api key"
    ```
+
+   * 执行以下指令，获得其主观题的得分率，结果存放在`./Results/gpt_4_sub/gpt-4-1106-preview_correction_wo_marking_criterion/result/model_score.json`文件下。
+
+     ```
+     python SUB_score_evaluation.py --sub_output_dir=../Results/gpt_4_sub/gpt-4-1106-preview_correction_wo_marking_criterion --mode=model
+     ```
+
+4. 计算GPT-4模型高考总分
+
+   执行以下指令，获得GPT-4转换后的高考总分，结果保存在`./Results/merge_score.json`下。
+
+   ```
+   python merge_OBJ_SUB_score.py
+   ```
+
+   
 
 #### 其他模型
 
-1. 封装你的模型API并放置在  `GAOKAO-Bench/models` 目录下，我们定义了MossAPI[Moss.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/object/models/moss.py) 作为示例。 
-
-   ```python
-   class MossAPI:
-       def __init__(self, api_key_list: list[str]):
-         """
-         initiate model_api using api_key_list and other parameters(if needed)
-         """
-           self.api_key_list = api_key_list
-           self.api_url = ""
-           
-       def send_request(self, api_key: str, request:str, context=None):
-         """
-         send request to model and receive response from model
-         """
-           self.headers = {
-               "apikey": api_key
-           }
-           data = {
-                   "request": request
-           }
-           if context:
-               data["context"] = context
-           response = requests.post(self.api_url, headers=self.headers, json=data)
-           return response.json()
-   
-       def forward(self, request_text:str):
-           """
-           input a request_text and return the model output 
-           """
-           while True:
-               try:
-                   api_key = choice(self.api_key_list)
-                   response = self.send_request(api_key, request_text)
-                   if 'response' in response.keys():
-                       response = response['response']
-                       break
-   
-                   if 'code' in response.keys():
-                       print(response['code'])
-                       print(response['message'])
-                       response = response['message']
-                       break
-   
-               except Exception as e:
-                   print('Exception:', e)
-                   time.sleep(4)
-    
-           return response
-   
-       def __call__(self, prompt, question):
-       """
-       call the model_api to get the output of the model given a prompt and a question 
-       """
-           return self.forward(request_text=prompt+question)
-   ```
-
-   
-
-2. 在 [choice_bench.py](https://github.com/OpenLMLab/GAOKAO-Bench/blob/main/Bench/choice_bench.py)中导入你的模型API类并实例化。执行下述指令生成模型的答案
-
-   ```
-   cd Bench
-   python choice_bench.py
-   ```
-
-   
-
-3. 使用你的模型生成 `Multiple-choice_Questions` 目录下题目的答案。模型输出的格式如上文所述，文件名命名为 `"model_name_question_name.json"`，并把它放置在 `GAOKAO-Bench/data` 目录下，如下所示
-
-```
-data/
-├── moss_2010-2022_English_Fill_in_Blanks.json
-├── moss_2010-2022_Chinese_Lang_and_Usage_MCQs.json
-├── moss_2010-2022_Physics_MCQs.json
-├── moss_2010-2022_Political_Science_MCQs.json
-├── moss_2010-2022_Math_I_MCQs.json
-├── moss_2010-2022_Biology_MCQs.json
-├── moss_2010-2013_English_MCQs.json
-├── moss_2010-2022_Geography_MCQs.json
-├── moss_2010-2022_Chemistry_MCQs.json
-├── moss_2010-2022_Math_II_MCQs.json
-├── moss_2012-2022_English_Cloze_Test.json
-├── moss_2010-2022_History_MCQs.json
-├── moss_2010-2022_Chinese_Modern_Lit.json
-└── moss_2010-2022_English_Reading_Comp.json
-```
-
-4. 执行上述第三步
-
-## 依赖
-
-```
-joblib==1.1.0
-openai==0.27.2
-```
+封装你的模型API并放置在  `./Models` 目录下，封装方式可参考`./Models/openai_gpt4.py`。
 
 ## 引用
 

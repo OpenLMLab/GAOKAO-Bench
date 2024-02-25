@@ -1,0 +1,57 @@
+{
+    "model_name": "gpt-4-0314",
+    "English": {
+        "Objective_score": 97.755,
+        "Subjective_score": 34.245,
+        "total_score": 132.0
+    },
+    "Science-Math": {
+        "Objective_score": 32.22,
+        "Subjective_score": 24.39,
+        "total_score": 56.61
+    },
+    "Liberal-Arts-Math": {
+        "Objective_score": 37.98,
+        "Subjective_score": 30.15,
+        "total_score": 68.13
+    },
+    "Chinese": {
+        "Objective_score": 24.255,
+        "Subjective_score": 74.445,
+        "total_score": 98.7
+    },
+    "Physics": {
+        "Objective_score": 24.42,
+        "Subjective_score": 33.528,
+        "total_score": 57.948
+    },
+    "Chemistry": {
+        "Objective_score": 22.2,
+        "Subjective_score": 26.55,
+        "total_score": 48.75
+    },
+    "Biology": {
+        "Objective_score": 21.789,
+        "Subjective_score": 50.337,
+        "total_score": 72.126
+    },
+    "History": {
+        "Objective_score": 37.8,
+        "Subjective_score": 44.2,
+        "total_score": 82.0
+    },
+    "Geography": {
+        "Objective_score": 32.0,
+        "Subjective_score": 50.76,
+        "total_score": 82.76
+    },
+    "Politics": {
+        "Objective_score": 37.95,
+        "Subjective_score": 46.8,
+        "total_score": 84.75
+    },
+    "sub_correction_type": "model",
+    "sub_teacher_model_name": "gpt-4-1106-preview",
+    "Liberal-Arts_Total_score": 548.3,
+    "Science_Total_score": 466.1
+}

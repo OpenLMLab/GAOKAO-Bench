@@ -1,0 +1,165 @@
+{
+    "model_name": "gpt-4-0314",
+    "total_score": 9702.0,
+    "correct_score": 7000.0,
+    "question_num": 2944.0,
+    "scoring_rate": 0.722,
+    "subject": {
+        "English": {
+            "total_score": 2205.0,
+            "correct_score": 2052.0,
+            "scoring_rate": 0.931,
+            "question_num": 1305.0,
+            "type": {
+                "2010-2013_English_MCQs": {
+                    "total_score": 105.0,
+                    "correct_score": 98.0,
+                    "question_num": 105.0,
+                    "scoring_rate": 0.933
+                },
+                "2010-2022_English_Fill_in_Blanks": {
+                    "total_score": 900.0,
+                    "correct_score": 858.0,
+                    "question_num": 600.0,
+                    "scoring_rate": 0.953
+                },
+                "2012-2022_English_Cloze_Test": {
+                    "total_score": 260.0,
+                    "correct_score": 208.0,
+                    "question_num": 130.0,
+                    "scoring_rate": 0.8
+                },
+                "2010-2022_English_Reading_Comp": {
+                    "total_score": 940.0,
+                    "correct_score": 888.0,
+                    "question_num": 470.0,
+                    "scoring_rate": 0.945
+                }
+            }
+        },
+        "Math": {
+            "total_score": 2160.0,
+            "correct_score": 1265.0,
+            "scoring_rate": 0.586,
+            "question_num": 432.0,
+            "type": {
+                "2010-2022_Math_I_MCQs": {
+                    "total_score": 1070.0,
+                    "correct_score": 575.0,
+                    "question_num": 214.0,
+                    "scoring_rate": 0.537
+                },
+                "2010-2022_Math_II_MCQs": {
+                    "total_score": 1090.0,
+                    "correct_score": 690.0,
+                    "question_num": 218.0,
+                    "scoring_rate": 0.633
+                }
+            }
+        },
+        "Chinese": {
+            "total_score": 501.0,
+            "correct_score": 270.0,
+            "scoring_rate": 0.539,
+            "question_num": 167.0,
+            "type": {
+                "2010-2022_Chinese_Modern_Lit": {
+                    "total_score": 261.0,
+                    "correct_score": 159.0,
+                    "question_num": 87.0,
+                    "scoring_rate": 0.609
+                },
+                "2010-2022_Chinese_Lang_and_Usage_MCQs": {
+                    "total_score": 240.0,
+                    "correct_score": 111.0,
+                    "question_num": 80.0,
+                    "scoring_rate": 0.463
+                }
+            }
+        },
+        "Physics": {
+            "total_score": 384.0,
+            "correct_score": 213.0,
+            "scoring_rate": 0.555,
+            "question_num": 64.0,
+            "type": {
+                "2010-2022_Physics_MCQs": {
+                    "total_score": 384.0,
+                    "correct_score": 213.0,
+                    "question_num": 64.0,
+                    "scoring_rate": 0.555
+                }
+            }
+        },
+        "Chemistry": {
+            "total_score": 744.0,
+            "correct_score": 330.0,
+            "scoring_rate": 0.444,
+            "question_num": 124.0,
+            "type": {
+                "2010-2022_Chemistry_MCQs": {
+                    "total_score": 744.0,
+                    "correct_score": 330.0,
+                    "question_num": 124.0,
+                    "scoring_rate": 0.444
+                }
+            }
+        },
+        "Biology": {
+            "total_score": 900.0,
+            "correct_score": 726.0,
+            "scoring_rate": 0.807,
+            "question_num": 150.0,
+            "type": {
+                "2010-2022_Biology_MCQs": {
+                    "total_score": 900.0,
+                    "correct_score": 726.0,
+                    "question_num": 150.0,
+                    "scoring_rate": 0.807
+                }
+            }
+        },
+        "History": {
+            "total_score": 1148.0,
+            "correct_score": 868.0,
+            "scoring_rate": 0.756,
+            "question_num": 287.0,
+            "type": {
+                "2010-2022_History_MCQs": {
+                    "total_score": 1148.0,
+                    "correct_score": 868.0,
+                    "question_num": 287.0,
+                    "scoring_rate": 0.756
+                }
+            }
+        },
+        "Geography": {
+            "total_score": 380.0,
+            "correct_score": 304.0,
+            "scoring_rate": 0.8,
+            "question_num": 95.0,
+            "type": {
+                "2010-2022_Geography_MCQs": {
+                    "total_score": 380.0,
+                    "correct_score": 304.0,
+                    "question_num": 95.0,
+                    "scoring_rate": 0.8
+                }
+            }
+        },
+        "Politics": {
+            "total_score": 1280.0,
+            "correct_score": 972.0,
+            "scoring_rate": 0.759,
+            "question_num": 320.0,
+            "type": {
+                "2010-2022_Political_Science_MCQs": {
+                    "total_score": 1280.0,
+                    "correct_score": 972.0,
+                    "question_num": 320.0,
+                    "scoring_rate": 0.759
+                }
+            }
+        }
+    }
+}

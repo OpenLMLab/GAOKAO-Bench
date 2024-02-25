@@ -1,0 +1,867 @@
+{
+    "keyword": "2010-2022_Math_II_Fill-in-the-Blank",
+    "model_name": "gpt-4-0314",
+    "prompt": "请解答下面的数学填空题\n仔细阅读题目，解答其中的问题，请你一步步思考并将思考过程写在【解析】和<eoe>之间。请把你的答案写在【答案】和<eoa>之间。\n完整的题目回答格式如下：\n【解析】 ...<eoe>\n【答案】...<eoa>\n请你严格按照上述格式作答。\n题目如下:",
+    "example": [
+        {
+            "index": 0,
+            "year": "2010",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "13. (5 分) 圆心在原点上与直线 $x+y-2=0$ 相切的圆的方程为\n",
+            "standard_answer": "$x^{2}+y^{2}=2$\n",
+            "analysis": "解: 圆心到直线的距离: $r=\\frac{2}{\\sqrt{2}}=\\sqrt{2}$, 所求圆的方程为 $x^{2}+y^{2}=2$.\n\n故答案为: $x^{2}+y^{2}=2$\n",
+            "model_output": "【解析】\n首先，我们知道直线 $x+y-2=0$ 的斜率为 -1，因此其法线的斜率为 1。由于圆心在原点，所以法线的方程为 $y=x$。我们还知道，直线 $x+y-2=0$ 与 $y=x$ 在点 $(1,1)$ 处相交。因此，圆的半径为原点到点 $(1,1)$ 的距离，即 $\\sqrt{(1-0)^2+(1-0)^2}=\\sqrt{2}$。所以，圆的方程为 $x^2+y^2=2$。<eoe>\n【答案】$x^2+y^2=2$<eoa>"
+        },
+        {
+            "index": 1,
+            "year": "2010",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "14. (5 分）设函数 $\\mathrm{y}=\\mathrm{f}(\\mathrm{x})$ 为区间 $(0,1]$ 上的图象是连续不断的一条曲线, 且恒有 $0 \\leqslant f(x) \\leqslant 1$, 可以用随机模拟方法计算由曲线 $y=f(x)$ 及直线 $x=0$, $x=1, y=0$ 所围成部分的面积 $S$, 先产生两组（每组 $N$ 个），区间（0, 1]上的 均匀随机数 $x_{1}, x_{2}, \\ldots, x_{n}$ 和 $y_{1}, y_{2}, \\ldots, y_{n}$, 由此得到 $N$ 个点 $(x, y)(i-1$ , 2..., $N \\mathrm{~ . ~ 再 数 出 其 中 满 足 ~} y_{1} \\leqslant f(x) \\quad(i=1,2 \\ldots, N)$ 的点数 $N_{1}$, 那么由 随机模拟方法可得 $\\mathrm{S}$ 的近似值为\n",
+            "standard_answer": "$\\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$\n",
+            "analysis": "解: $\\because \\int_{0}{ }^{1} f(x) d x$ 的几何意义是函数 $f(x)$ (其中 $0 \\leqslant f(x) \\leqslant 1$ ) 的图象与 $x$ 轴、直线 $x=0$ 和直线 $x=1$ 所围成图形的面积,\n\n$\\therefore$ 根据几何概型易知 $\\int_{0}^{1} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx} \\approx \\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$.\n\n故答案为: $\\frac{\\mathrm{N}_{1}}{\\mathrm{~N}}$.\n",
+            "model_output": "【解析】根据题目，我们知道这是一个蒙特卡洛模拟的问题。蒙特卡洛模拟是一种使用随机数（或更一般的随机样本）解决问题的方法。在这个问题中，我们在单位正方形内生成N个随机点，然后计算这些点中有多少点位于曲线y=f(x)下方。这个比例就是曲线下方区域的面积与单位正方形面积的比例。因此，我们可以通过这个比例来估计曲线下方区域的面积。具体来说，我们可以计算满足$y_i \\leq f(x_i)$的点的数量$N_1$，然后用$N_1/N$来估计面积S。因为单位正方形的面积是1，所以这个比例就是曲线下方区域的面积。<eoe>\n【答案】$S=N_1/N$<eoa>"
+        },
+        {
+            "index": 2,
+            "year": "2010",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "15. （5 分) 一个几何体的正视图为一个三角形, 则这个几何体可能是下列几何 体中的 (填入所有可能的几何体前的编号) (1)三棱锥(2)四棱雉(3)三棱 柱(4)四棱柱(5)圆雉66圆柱.\n",
+            "standard_answer": "(1)(2)(3)(5)\n",
+            "analysis": "解: 一个几何体的正视图为一个三角形, 显然(1)(2)(5)正确; (3)是三棱柱 放倒时也正确;\n\n(4)(6)不论怎样放置正视图都不会是三角形;\n\n故答案为: (1)(2)(3)(5)\n",
+            "model_output": "【解析】正视图是从正面看到的图形。如果一个几何体的正视图是一个三角形，那么这个几何体的正面一定是一个三角形。三棱锥的正视图是一个三角形，因为它的三个面都是三角形。四棱锥的正视图也可能是一个三角形，因为它的一个面是三角形。三棱柱的正视图也是一个三角形，因为它的一个面是三角形。四棱柱、圆锥和圆柱的正视图都不可能是三角形，因为它们的面都不是三角形。<eoe>\n【答案】1, 2, 3<eoa>"
+        },
+        {
+            "index": 3,
+            "year": "2010",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "16. (5 分) 在 $\\triangle A B C$ 中, $D$ 为 $B C$ 边上一点, $B C=3 B D, A D=\\sqrt{2}, \\angle A D B=135^{\\circ}$. 若 $A C=\\sqrt{2} A B$, 则 $B D=$\n",
+            "standard_answer": "$2+\\sqrt{5}$\n",
+            "analysis": "用余弦定理求得\n\n$A B^{2}=B^{2}+A D^{2}-2 A D \\cdot B D \\cos 135^{\\circ}$\n\n$A C^{2}=C D^{2}+A D^{2}-2 A D \\cdot C D \\cos 45^{\\circ}$\n\n即 $A B^{2}=B D^{2}+2+2 B D$ (1) $A C^{2}=C D^{2}+2-2 C D$\n\n又 $B C=3 B D$\n\n所以 $C D=2 B D$\n\n所以 由（2）得 $A C^{2}=4 B D^{2}+2-4 B D$ （3）\n\n因为 $A C=\\sqrt{2} A B$\n\n所以 由 (3) 得 $2 A B^{2}=4 B D^{2}+2-4 B D \\quad(4)$\n\n$(4)-2(1)$\n\n$B D^{2}-4 B D-1=0$\n\n求得 $\\mathrm{BD}=2+\\sqrt{5}$\n\n故答案为: $2+\\sqrt{5}$\n",
+            "model_output": "【解析】\n由于$\\angle ADB=135^{\\circ}$，我们可以知道$\\triangle ADB$是一个45-45-90的特殊三角形，因此我们有$AD=BD$。题目中给出$AD=\\sqrt{2}$，所以$BD=\\sqrt{2}$。<eoe>\n【答案】$\\sqrt{2}$<eoa>"
+        },
+        {
+            "index": 4,
+            "year": "2011",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "13. (5 分) 已知 $a$ 与 $b$ 为两个垂直的单位向量, $k$ 为实数, 若向量 $\\vec{a}+\\vec{b}$ 与向量 $k$ $\\vec{a}-\\vec{b}$ 垂直，则 $k=$\n",
+            "standard_answer": "1\n",
+            "analysis": "解： $\\because \\vec{a} \\perp \\vec{b}$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=0$\n\n$\\because \\vec{a}+\\vec{b}$ 与 $k \\vec{a}-\\vec{b}$ 垂直\n\n$\\therefore(\\vec{a}+\\vec{b}) \\cdot(k \\vec{a}-\\vec{b})=0$\n\n即 $k \\vec{a}^{2}+k \\vec{a} \\cdot b-\\vec{a} \\cdot \\vec{b}-\\vec{b}^{2}=0$\n\n$\\therefore \\mathrm{k}=1$\n\n故答案为: 1\n",
+            "model_output": "【解析】\n两个向量垂直，它们的点积为0。所以，我们有\n$(\\vec{a}+\\vec{b}) \\cdot (k\\vec{a}-\\vec{b}) = 0$。\n将向量的点积展开，我们得到\n$k\\vec{a} \\cdot \\vec{a} + \\vec{b} \\cdot \\vec{a} - k\\vec{a} \\cdot \\vec{b} - \\vec{b} \\cdot \\vec{b} = 0$。\n由于 $\\vec{a}$ 和 $\\vec{b}$ 是单位向量，所以 $\\vec{a} \\cdot \\vec{a} = 1$，$\\vec{b} \\cdot \\vec{b} = 1$。又因为 $\\vec{a}$ 和 $\\vec{b}$ 是垂直的，所以 $\\vec{a} \\cdot \\vec{b} = 0$。\n将这些代入上述等式，我们得到\n$k - 1 = 0$。\n解这个等式，我们得到 $k = 1$。\n<eoe>\n【答案】1<eoa>"
+        },
+        {
+            "index": 5,
+            "year": "2011",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "15. (5 分) $\\triangle A B C$ 中, $\\angle B=120^{\\circ}, A C=7, A B=5$, 则 $\\triangle A B C$ 的面积为\n",
+            "standard_answer": "$\\frac{15 \\sqrt{3}}{4}$\n",
+            "analysis": "解: 由余弦定理可知 $\\cos B=\\frac{25+B C^{2}-49}{2 * B C * 5}=-\\frac{1}{2}$, 求得 $B C=-8$ 或 3 (舍负)\n\n$\\therefore \\triangle A B C$ 的面积为 $\\frac{1}{2} \\cdot A B \\cdot B C \\cdot \\sin B=\\frac{1}{2} \\times 5 \\times 3 \\times \\frac{\\sqrt{3}}{2}=\\frac{15 \\sqrt{3}}{4}$ 故答案为: $\\frac{15 \\sqrt{3}}{4}$\n",
+            "model_output": "【解析】根据三角形的面积公式，当知道两边和夹角时，面积S可以表示为：S=1/2*ab*sinC。在这个问题中，我们知道AC=7，AB=5，和夹角B=120度。所以我们可以将这些值代入公式得到面积。<eoe>\n【答案】S=1/2*7*5*sin120=17.5*sqrt(3)<eoa>"
+        },
+        {
+            "index": 6,
+            "year": "2011",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "16. (5 分) 已知两个圆雉有公共底面, 且两个圆雉的顶点和底面的圆周都在同 一个球面上, 若圆雉底面面积是这个球面面积的 $\\frac{3}{16}$, 则这两个圆雉中, 体积 较小者的高与体积较大者的高的比值为\n",
+            "standard_answer": "$\\frac{1}{3}$\n",
+            "analysis": "解: 不妨设球的半径为: 4; 球的表面积为: $64 \\pi$, 圆雉的底面积为: $12 \\pi$ , 圆锥的底面半径为: $2 \\sqrt{3}$;\n\n由几何体的特征知球心到圆雉底面的距离, 求的半径以及圆雉底面的半径三者可\n\n以构成一个直角三角形\n\n由此可以求得球心到圆雉底面的距离是 $\\sqrt{4^{2}-(2 \\sqrt{3})^{2}}=2$,\n\n所以圆雉体积较小者的高为: 4- $2=2$, 同理可得圆雉体积较大者的高为: $4+2=6$; 所以这两个圆雉中, 体积较小者的高与体积较大者的高的比值为: $\\frac{1}{3}$.\n\n故答案为: $\\frac{1}{3}$\n",
+            "model_output": "【解析】\n已知圆锥底面半径为r，高为h，体积为V，球面半径为R，有以下关系：\n1. 圆锥底面面积是球面面积的3/16，即πr² = 3/16 * 4πR²，解得r = R/2。\n2. 圆锥的体积公式为V = 1/3 * πr²h，代入r = R/2，得V = 1/12 * πR²h。\n3. 根据题意，两个圆锥的顶点和底面的圆周都在同一个球面上，所以圆锥的高h应该等于球面半径R。\n4. 由于两个圆锥共享一个底面，所以他们的高之比就是他们体积之比，即h1/h2 = V1/V2。\n5. 由于两个圆锥的底面半径相同，所以他们的体积之比就是他们高之比，即V1/V2 = h1/h2。\n综上，两个圆锥中，体积较小者的高与体积较大者的高的比值为1。<eoe>\n【答案】1<eoa>"
+        },
+        {
+            "index": 7,
+            "year": "2012",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "13. (5 分) 曲线 $y=x(3 \\ln x+1)$ 在点 $(1,1)$ 处的切线方程为__.\n",
+            "standard_answer": "$y=4 x-3$\n",
+            "analysis": "解：求导函数, 可得 $y^{\\prime}=3 \\ln x+4$,\n\n当 $x=1$ 时, $y^{\\prime}=4$,\n\n$\\therefore$ 曲线 $y=x(3 \\ln x+1)$ 在点 $(1,1)$ 处的切线方程为 $y-1=4(x-1)$, 即 $y=4 x-3$ 故答案为: $y=4 x-3$.\n",
+            "model_output": "【解析】首先，我们需要找到曲线 $y=x(3 \\ln x+1)$ 的导数。使用乘法法则和链式法则，我们有：\n$y' = (3 \\ln x + 1) + x(3/x) = 3 \\ln x + 4$。\n然后，我们将点 $(1,1)$ 代入导数方程，得到切线的斜率：\n$m = 3 \\ln 1 + 4 = 4$。\n最后，我们使用点斜式方程 $y - y_1 = m(x - x_1)$，其中 $(x_1, y_1)$ 是切线上的点，$m$ 是切线的斜率，得到切线方程：\n$y - 1 = 4(x - 1)$。\n整理得到切线方程为 $y = 4x - 3$。<eoe>\n【答案】$y = 4x - 3$<eoa>"
+        },
+        {
+            "index": 8,
+            "year": "2012",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "14. (5 分) 等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$, 若 $S_{3}+3 S_{2}=0$, 则公比 $q=$\n",
+            "standard_answer": "-2\n",
+            "analysis": "解：由题意可得, $q \\neq 1$\n\n$\\because \\mathrm{S}_{3}+3 \\mathrm{~S}_{2}=0$\n\n$\\therefore \\frac{a_{1}\\left(1-q^{3}\\right)}{1-q}+\\frac{3 a_{1}\\left(1-q^{2}\\right)}{1-q}=0$\n\n$\\therefore q^{3}+3 q^{2}-4=0$\n\n$\\therefore(q-1)(q+2)^{2}=0$\n\n$\\because q \\neq 1$\n\n$\\therefore q=-2$\n\n故答案为: -2\n",
+            "model_output": "【解析】等比数列的前n项和公式为：$S_n = a_1 * (1 - q^n) / (1 - q)$，其中$a_1$是首项，$q$是公比。根据题目，我们有$S_3 + 3S_2 = 0$，代入公式，我们得到$a_1 * (1 - q^3) / (1 - q) + 3 * a_1 * (1 - q^2) / (1 - q) = 0$。这个等式可以简化为$(1 - q^3) + 3 * (1 - q^2) = 0$，即$q^3 - 3q^2 + 2 = 0$。这是一个关于q的三次方程，解这个方程，我们可以得到q的值。<eoe>\n【答案】解方程$q^3 - 3q^2 + 2 = 0$，得到$q=1$或$q=2$<eoa>"
+        },
+        {
+            "index": 9,
+            "year": "2012",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "15. (5 分) 已知向量 $\\vec{a}, \\vec{b}$ 夹角为 $45^{\\circ}$, 且 $|\\vec{a}|=1,|2 \\vec{a}-\\vec{b}|=\\sqrt{10}$, 则 $|\\vec{b}|=$.\n",
+            "standard_answer": "$3 \\sqrt{2}$\n",
+            "analysis": "解: $\\because<\\overrightarrow{\\mathrm{a}}, \\overrightarrow{\\mathrm{b}}>=45^{\\circ},|\\overrightarrow{\\mathrm{a}}|=1$\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=|\\vec{a}||\\vec{b}| \\cos 45^{\\circ}=\\frac{\\sqrt{2}}{2}|\\vec{b}|$\n\n$\\therefore|2 \\vec{a}-\\vec{b}|=\\sqrt{(2 \\vec{a}-\\vec{b})^{2}}=\\sqrt{4 \\vec{a}^{2}-4 \\vec{a} \\cdot \\vec{b}+\\vec{b}^{2}}=\\sqrt{4-2 \\sqrt{2}|\\vec{b}|+|\\vec{b}|^{2}}=\\sqrt{10}$\n\n解得 $|\\vec{b}|=3 \\sqrt{2}$\n\n故答案为: $3 \\sqrt{2}$\n",
+            "model_output": "【解析】\n首先，由于向量$\\vec{a}, \\vec{b}$夹角为 $45^{\\circ}$，我们可以得到$\\vec{a} \\cdot \\vec{b} = |\\vec{a}| |\\vec{b}| \\cos 45^{\\circ} = \\frac{|\\vec{b}|}{\\sqrt{2}}$。\n然后，由于$|2 \\vec{a}-\\vec{b}|=\\sqrt{10}$，我们可以得到$(2 \\vec{a}-\\vec{b}) \\cdot (2 \\vec{a}-\\vec{b}) = 10$。\n将$(2 \\vec{a}-\\vec{b}) \\cdot (2 \\vec{a}-\\vec{b})$展开，得到$4 \\vec{a} \\cdot \\vec{a} - 4 \\vec{a} \\cdot \\vec{b} + \\vec{b} \\cdot \\vec{b} = 10$。\n由于$|\\vec{a}|=1$，所以$\\vec{a} \\cdot \\vec{a} = |\\vec{a}|^2 = 1$，将这个结果代入上面的等式，得到$4 - 4 \\frac{|\\vec{b}|}{\\sqrt{2}} + |\\vec{b}|^2 = 10$。\n解这个二次方程，得到$|\\vec{b}|^2 - 4 \\sqrt{2} |\\vec{b}| + 6 = 0$。\n这是一个关于$|\\vec{b}|$的二次方程，解这个方程，得到$|\\vec{b}| = 2 \\sqrt{2} \\pm \\sqrt{2}$。\n由于$|\\vec{b}|$表示向量的长度，所以$|\\vec{b}|$必须是非负的，所以$|\\vec{b}| = 2 \\sqrt{2} + \\sqrt{2} = 3 \\sqrt{2}$。\n<eoe>\n【答案】$3 \\sqrt{2}$<eoa>"
+        },
+        {
+            "index": 10,
+            "year": "2012",
+            "category": "（新课标）",
+            "score": 5,
+            "question": "16. (5 分) 设函数 $f(x)=\\frac{(x+1)^{2}+\\sin x}{x^{2}+1}$ 的最大值为 $M$, 最小值为 $m$, 则 $M+m=$\n",
+            "standard_answer": "2\n",
+            "analysis": "解: 函数可化为 $f(x)=\\frac{(x+1)^{2}+\\sin x}{x^{2}+1}=1+\\frac{2 x+\\sin x}{x^{2}+1}$,\n\n令 $g(x)=\\frac{2 x+\\sin x}{x^{2}+1}$, 则 $g(x)=\\frac{2 x+\\sin x}{x^{2}+1}$ 为奇函数,\n\n$\\therefore \\mathrm{g}(\\mathrm{x})=\\frac{2 x+\\sin x}{x^{2}+1}$ 的最大值与最小值的和为 0 .\n\n$\\therefore$ 函数 $f(x)=\\frac{(x+1)^{2}+\\sin x}{x^{2}+1}$ 的最大值与最小值的和为 $1+1+0=2$. 即 $M+m=2$.\n\n故答案为: 2 .\n",
+            "model_output": "【解析】\n首先，我们需要找到函数的最大值和最小值。由于函数中含有正弦函数，我们知道正弦函数的最大值是1，最小值是-1。而函数的其他部分，$(x+1)^{2}$ 和 $x^{2}+1$，都是大于等于0的，所以整个函数的值总是大于等于0。\n\n当$x=-1$时，函数值$f(-1)=\\frac{(-1+1)^{2}+\\sin(-1)}{(-1)^{2}+1}=0$，这是函数的最小值。\n\n当$\\sin x=1$时，函数值$f(x)=\\frac{(x+1)^{2}+1}{x^{2}+1}$，这是一个二次函数，其最大值在$x=-\\frac{1}{2}$处取得，此时$f(-\\frac{1}{2})=\\frac{(\\frac{1}{2}+1)^{2}+1}{(\\frac{1}{2})^{2}+1}=\\frac{9}{5}$，这是函数的最大值。\n\n所以，$M+m=\\frac{9}{5}+0=\\frac{9}{5}$。\n<eoe>\n【答案】$\\frac{9}{5}$<eoa>"
+        },
+        {
+            "index": 11,
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. (5 分) 已知两个单位向量 $\\vec{a}, \\vec{b}$ 的夹角为 $60^{\\circ}, \\vec{c}=t \\vec{a}+(1-t) \\vec{b}$. 若 $\\vec{b} \\bullet \\vec{c}=0$, 则 $t=$\n",
+            "standard_answer": "2\n",
+            "analysis": "解: $\\because \\vec{c}=t \\vec{a}+(1-t) \\vec{b}, \\vec{c} \\cdot \\vec{b}=0, \\quad \\therefore \\vec{c} \\cdot \\vec{b}=t \\vec{a} \\cdot \\vec{b}+(1-t) \\vec{b}^{2}=0$,\n\n$\\therefore \\mathrm{t} \\cos 60^{\\circ}+1-t=0, \\therefore 1-\\frac{1}{2} t=0$, 解得 $t=2$.\n\n故答案为: 2 .\n",
+            "model_output": "【解析】\n首先，我们知道向量的点积的定义是$\\vec{a} \\bullet \\vec{b}=|\\vec{a}||\\vec{b}|\\cos \\theta$，其中$\\theta$是向量$\\vec{a}$和$\\vec{b}$之间的夹角。因为$\\vec{a}$和$\\vec{b}$都是单位向量，所以$|\\vec{a}|=|\\vec{b}|=1$。\n根据题目，我们知道$\\vec{b} \\bullet \\vec{c}=0$，所以我们可以将$\\vec{c}$代入这个等式，得到$\\vec{b} \\bullet (t \\vec{a}+(1-t) \\vec{b})=0$。\n将点积的运算法则应用到这个等式，我们得到$t(\\vec{b} \\bullet \\vec{a})+(1-t)(\\vec{b} \\bullet \\vec{b})=0$。\n因为$\\vec{b}$是单位向量，所以$\\vec{b} \\bullet \\vec{b}=1$。同时，我们知道$\\vec{b} \\bullet \\vec{a}=\\cos 60^{\\circ}=\\frac{1}{2}$。\n将这些值代入等式，我们得到$t(\\frac{1}{2})+(1-t)(1)=0$，解这个等ation，我们可以得到$t$的值。\n<eoe>\n【答案】$t=-1$<eoa>"
+        },
+        {
+            "index": 12,
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. (5 分) 已知 $H$ 是球 $O$ 的直径 $A B$ 上一点, $A H: H B=1: 2, A B \\perp$ 平面 $\\alpha, H$ 为垂足, $\\alpha$ 截球 $O$ 所得截面的面积为 $\\pi$, 则球 $O$ 的表面积为\n",
+            "standard_answer": "$\\frac{9 \\pi}{2}$.\n",
+            "analysis": "解：设球的半径为 $R, \\because A H: H B=1: 2, \\therefore$ 平面 $\\alpha$ 与球心的距离为 $\\frac{1}{3} R$,\n\n$\\because \\alpha$ 截球 $O$ 所得截面的面积为 $\\pi$,\n\n$\\therefore d=\\frac{1}{3} R$ 时, $r=1$,\n\n故由 $R^{2}=r^{2}+d^{2}$ 得 $R^{2}=1^{2}+\\left(\\frac{1}{3} R\\right)^{2}, \\therefore R^{2}=\\frac{9}{8}$\n\n$\\therefore$ 球的表面积 $S=4 \\pi R^{2}=\\frac{9 \\pi}{2}$.\n\n故答案为: $\\frac{9 \\pi}{2}$.\n",
+            "model_output": "【解析】\n已知，截面的面积为π，那么截面的半径r满足πr²=π，解得r=1。\n又因为AH:HB=1:2，所以AH=1/3AB，HB=2/3AB。\n由于H为垂足，所以AH是直径AB与截面的垂直距离，即AH=r=1，所以AB=3。\n球的半径R=AB/2=1.5。\n球的表面积S=4πR²=4π(1.5)²。<eoe>\n【答案】9π<eoa>"
+        },
+        {
+            "index": 13,
+            "year": "2013",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "16. (5 分) 设当 $x=\\theta$ 时, 函数 $f(x)=\\sin x-2 \\cos x$ 取得最大值, 则 $\\cos \\theta=$\n",
+            "standard_answer": "$-\\frac{2 \\sqrt{5}}{5}$\n",
+            "analysis": "解: $f(x)=\\sin x-2 \\cos x=\\sqrt{5}\\left(\\frac{\\sqrt{5}}{5} \\sin x-\\frac{2 \\sqrt{5}}{5} \\cos x\\right)=\\sqrt{5} \\sin (x-\\alpha)$ (其 中 $\\left.\\cos \\alpha=\\frac{\\sqrt{5}}{5}, \\sin \\alpha=\\frac{2 \\sqrt{5}}{5}\\right)$,\n\n$\\because x=\\theta$ 时, 函数 $f(x)$ 取得最大值,\n\n$\\therefore \\sin (\\theta-\\alpha)=1$, 即 $\\sin \\theta-2 \\cos \\theta=\\sqrt{5}$,\n\n又 $\\sin ^{2} \\theta+\\cos ^{2} \\theta=1$,\n\n联立得 $(2 \\cos \\theta+\\sqrt{5})^{2}+\\cos ^{2} \\theta=1$, 解得 $\\cos \\theta=-\\frac{2 \\sqrt{5}}{5}$.\n\n故答案为: $-\\frac{2 \\sqrt{5}}{5}$\n",
+            "model_output": "【解析】\n首先，我们需要找到函数$f(x)$的最大值。函数$f(x)=\\sin x-2 \\cos x$可以写成$f(x)=\\sqrt{5}\\sin(x+\\arcsin\\frac{2}{\\sqrt{5}})$，这是一个正弦函数，其最大值为$\\sqrt{5}$，对应的$x$值为$\\frac{\\pi}{2}-\\arcsin\\frac{2}{\\sqrt{5}}$。所以，我们有$\\theta=\\frac{\\pi}{2}-\\arcsin\\frac{2}{\\sqrt{5}}$。然后，我们需要找到$\\cos \\theta$的值。根据三角函数的性质，我们有$\\cos \\theta=\\cos(\\frac{\\pi}{2}-\\arcsin\\frac{2}{\\sqrt{5}})=\\sin(\\arcsin\\frac{2}{\\sqrt{5}})=\\frac{2}{\\sqrt{5}}$。\n<eoe>\n【答案】$\\frac{2}{\\sqrt{5}}$<eoa>"
+        },
+        {
+            "index": 14,
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "score": 4,
+            "question": "13. (4 分) 从 $1,2,3,4,5$ 中任意取出两个不同的数, 其和为 5 的概率是\n",
+            "standard_answer": "0.2\n",
+            "analysis": "解：从 $1,2,3,4,5$ 中任意取出两个不同的数共有 $C_{5}^{2}=10$ 种情况, 和为 5 的有 $(1,4)(2,3)$ 两种情况，\n\n故所求的概率为: $\\frac{2}{10}=0.2$\n\n故答案为: 0.2\n",
+            "model_output": "【解析】\n从1,2,3,4,5中任意取出两个不同的数，总共有C(5,2)=10种取法。\n其中和为5的取法有(1,4),(2,3),(3,2),(4,1)四种。\n所以，其和为5的概率是4/10=0.4。<eoe>\n【答案】0.4<eoa>"
+        },
+        {
+            "index": 15,
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "score": 4,
+            "question": "14. (4 分) 已知正方形 $A B C D$ 的边长为 $2, E$ 为 $C D$ 的中点, 则 $\\overrightarrow{\\mathrm{AE}} \\cdot \\overrightarrow{\\mathrm{BD}}=$\n",
+            "standard_answer": "2\n",
+            "analysis": "解: $\\because$ 已知正方形 $\\mathrm{ABCD}$ 的边长为 $2, E$ 为 $C D$ 的中点, 则 $\\overrightarrow{\\mathrm{AB}} \\cdot \\overrightarrow{\\mathrm{AD}}=0$, 故 $\\overrightarrow{\\mathrm{AE}} \\cdot \\overrightarrow{\\mathrm{BD}}=(\\overrightarrow{\\mathrm{AD}}+\\overrightarrow{\\mathrm{DE}}) \\cdot(\\overrightarrow{\\mathrm{BA}}+\\overrightarrow{\\mathrm{AD}})=\\left(\\overrightarrow{\\mathrm{AD}}+\\frac{1}{2} \\overrightarrow{\\mathrm{AB}}\\right) \\cdot(\\overrightarrow{\\mathrm{AD}}-\\overrightarrow{\\mathrm{AB}})=\\overrightarrow{\\mathrm{AD}}^{2}-\\overrightarrow{\\mathrm{AD}} \\cdot \\overrightarrow{\\mathrm{AB}}+$ $\\frac{1}{2} \\overrightarrow{\\mathrm{AB}} \\cdot \\overrightarrow{\\mathrm{AD}}^{-}-\\frac{1}{2} \\overrightarrow{\\mathrm{AB}}^{2}=4+0-0-\\frac{1}{2} \\times 4=2$,\n\n故答案为: 2 .\n",
+            "model_output": "【解析】\n首先，我们知道向量的点乘公式为$\\overrightarrow{A} \\cdot \\overrightarrow{B} = |\\overrightarrow{A}| |\\overrightarrow{B}| \\cos{\\theta}$，其中$\\theta$是向量$\\overrightarrow{A}$和向量$\\overrightarrow{B}$之间的夹角。\n\n在本题中，$\\overrightarrow{AE}$和$\\overrightarrow{BD}$是正方形对角线的一半，所以它们的模都是$\\sqrt{2}$，并且它们的夹角是90度。\n\n因此，$\\overrightarrow{AE} \\cdot \\overrightarrow{BD} = |\\overrightarrow{AE}| |\\overrightarrow{BD}| \\cos{90^\\circ} = \\sqrt{2} \\cdot \\sqrt{2} \\cdot 0 = 0$。\n<eoe>\n【答案】0<eoa>"
+        },
+        {
+            "index": 16,
+            "year": "2013",
+            "category": "（新课标ⅱ）",
+            "score": 4,
+            "question": "16. (4 分) 函数 $y=\\cos (2 x+\\phi) \\quad(-\\pi \\leqslant \\phi<\\pi)$ 的图象向右平移 $\\frac{\\pi}{2}$ 个单位后, 与函数 $y=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)$ 的图象重合, 则 $\\phi=$\n",
+            "standard_answer": "$\\frac{5 \\pi}{6}$\n",
+            "analysis": "解: 函数 $y=\\cos (2 x+\\phi) \\quad(-\\pi \\leqslant \\phi<\\pi)$ 的图象向右平移 $\\frac{\\pi}{2}$ 个单位后, 得平移后的图象的函数解析式为 $y=\\cos \\left[2\\left(x-\\frac{\\pi}{2}\\right)+\\phi\\right]=\\cos (2 x+\\phi-\\pi)$, 而函数 $y=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)=\\cos \\left(2 x+\\frac{\\pi}{3}-\\frac{\\pi}{2}\\right)$,\n\n由函数 $y=\\cos (2 x+\\phi) \\quad(-\\pi \\leqslant \\phi<\\pi)$ 的图象向右平移 $\\frac{\\pi}{2}$ 个单位后, 与函数 $y=\\sin$ $\\left(2 x+\\frac{\\pi}{3}\\right)$ 的图象重合, 得 $2 x+\\phi-\\pi=2 x+\\frac{\\pi}{3}-\\frac{\\pi}{2}$, 解得: $\\phi=\\frac{5 \\pi}{6}$.\n\n符合 $-\\pi \\leqslant \\phi<\\pi$.\n\n故答案为: $\\frac{5 \\pi}{6}$.\n",
+            "model_output": "【解析】\n首先，我们知道函数$y=\\cos x$向右平移$\\frac{\\pi}{2}$个单位后，就变为了$y=\\sin x$。所以，函数$y=\\cos (2 x+\\phi)$向右平移$\\frac{\\pi}{2}$个单位后，就变为了$y=\\sin (2 x+\\phi)$。\n\n然后，题目给出了$y=\\sin (2 x+\\phi)$与$y=\\sin \\left(2 x+\\frac{\\pi}{3}\\right)$的图象重合，所以我们可以得出$2 x+\\phi=2 x+\\frac{\\pi}{3}$。\n\n解这个等式，我们可以得到$\\phi=\\frac{\\pi}{3}$。\n\n<eoe>\n【答案】$\\frac{\\pi}{3}$<eoa>"
+        },
+        {
+            "index": 17,
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. (5 分) 将 2 本不同的数学书和 1 本语文书在书架上随机排成一行, 则 2 本 数学书相邻的概率为\n",
+            "standard_answer": "$\\frac{2}{3}$\n",
+            "analysis": "解: 2 本不同的数学书和 1 本语文书在书架上随机排成一行, 所有的基 本事件有共有 $\\mathrm{A}_{3}^{3}=6$ 种结果，\n\n其中 2 本数学书相邻的有 (数学 1 , 数学 2 , 语文), (数学 2 , 数学 1 , 语文) , (语文, 数学 1 , 数学 2), (语文, 数学 2 , 数学 1) 共 4 个, 故本数学 书相邻的概率 $\\mathrm{P}=\\frac{4}{6}=\\frac{2}{3}$.\n\n故答案为: $\\frac{2}{3}$.\n",
+            "model_output": "【解析】\n首先，我们有3本不同的书，所以总的排列方式有3!=6种。\n然后，我们考虑数学书相邻的情况。我们可以把两本数学书看作一个整体，那么这个整体和语文书一共有2! = 2种排列方式。而这个整体内部，两本数学书又有2! = 2种排列方式。所以，数学书相邻的排列方式有2*2=4种。\n所以，2本数学书相邻的概率为数学书相邻的排列方式数除以总的排列方式数，即4/6=2/3。<eoe>\n【答案】2/3<eoa>"
+        },
+        {
+            "index": 18,
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14.（5 分）甲、乙、丙三位同学被问到是否去过 A，B，C三个城市时,\n\n甲说：我去过的城市比乙多，但没去过 $B$ 城市;\n\n乙说：我没去过C 城市;\n\n丙说：我们三人去过同一城市;\n\n由此可判断乙去过的城市为\n",
+            "standard_answer": "$A$\n",
+            "analysis": "解：由乙说：我没去过 $C$ 城市, 则乙可能去过 $A$ 城市或 $B$ 城市, 但甲说: 我去过的城市比乙多, 但没去过 $B$ 城市, 则乙只能是去过 $A, B$ 中的任 一个\n\n再由丙说：我们三人去过同一城市,\n\n则由此可判断乙去过的城市为 $A$.\n\n故答案为: $A$.\n",
+            "model_output": "【解析】\n根据题目，我们可以得到以下信息：\n1. 甲去过的城市比乙多，但甲没有去过B城市，所以甲可能去过的城市是A和C。\n2. 乙没有去过C城市，所以乙可能去过的城市是A和B。\n3. 丙说他们三个人都去过同一个城市，那么这个城市只能是A，因为只有A城市是甲乙丙三人都可能去过的城市。\n\n所以，乙去过的城市是A。<eoe>\n【答案】A<eoa>"
+        },
+        {
+            "index": 19,
+            "year": "2014",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. (5 分) 设函数 $f(x)=\\left\\{\\begin{array}{ll}e^{x-1}, & x<1 \\\\ \\frac{1}{3}, & x \\geqslant 1\\end{array}\\right.$, 则使得 $f(x) \\leqslant 2$ 成立的 $x$ 的取值 范围是\n",
+            "standard_answer": "$x \\leqslant 8$\n",
+            "analysis": "解: $x<1$ 时, $e^{x-1} \\leqslant 2$,\n\n$\\therefore x \\leqslant \\ln 2+1$\n\n$\\therefore x<1$;\n\n$x \\geqslant 1$ 时,$\\quad x^{\\frac{1}{3}} \\leqslant 2$,\n\n$\\therefore x \\leqslant 8$,\n\n$\\therefore 1 \\leqslant x \\leqslant 8$,\n\n综上，使得 $f(x) \\leqslant 2$ 成立的 $x$ 的取值范围是 $x \\leqslant 8$.\n\n故答案为: $x \\leqslant 8$.\n",
+            "model_output": "【解析】\n首先，我们需要分析函数的两个部分：$e^{x-1}$ 和 $\\frac{1}{3}$。\n\n对于 $e^{x-1}$，我们需要找到满足 $e^{x-1} \\leqslant 2$ 的 $x$ 的取值范围。解这个不等式，我们得到 $x-1 \\leqslant \\ln2$，所以 $x \\leqslant 1 + \\ln2$。\n\n对于 $\\frac{1}{3}$，我们知道它是一个常数，而且它小于2，所以对于所有 $x \\geqslant 1$，$\\frac{1}{3} \\leqslant 2$ 总是成立的。\n\n因此，使得 $f(x) \\leqslant 2$ 成立的 $x$ 的取值范围是 $x \\leqslant 1 + \\ln2$ 和 $x \\geqslant 1$ 的并集，也就是所有的实数。\n<eoe>\n【答案】$(-\\infty, +\\infty)$<eoa>"
+        },
+        {
+            "index": 20,
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "13. (5 分) 甲、乙两名运动员各自等可能地从红、白、蓝 3 种颜色的运动服中 选择 1 种, 则他们选择相同颜色运动服的概率为\n",
+            "standard_answer": "$\\frac{1}{3}$\n",
+            "analysis": "解: 所有的选法共有 $3 \\times 3=9$ 种, 而他们选择相同颜色运动服的选法共 有 3 种,\n\n故他们选择相同颜色运动服的概率为 $\\frac{3}{9}=\\frac{1}{3}$,\n\n故答案为: $\\frac{1}{3}$.\n",
+            "model_output": "【解析】\n甲、乙两名运动员各自从红、白、蓝3种颜色的运动服中选择1种，所以每个人有3种选择，两人的选择总共有3*3=9种可能。\n他们选择相同颜色运动服的情况有3种，即都选择红色，都选择白色，都选择蓝色。\n所以他们选择相同颜色运动服的概率为3/9=1/3.<eoe>\n【答案】1/3<eoa>"
+        },
+        {
+            "index": 21,
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "14. （5 分) 函数 $f(x)=\\sin (x+\\phi)-2 \\sin \\phi \\cos x$ 的最大值为\n",
+            "standard_answer": "1\n",
+            "analysis": "解：函数 $\\mathrm{f}(\\mathrm{x})=\\sin (x+\\phi)-2 \\sin \\phi \\cos x$\n\n$=\\sin x \\cos \\phi+\\sin \\phi \\cos x-2 \\sin \\phi \\cos x$\n\n$=\\sin x \\cos \\phi-\\sin \\phi \\cos x$\n\n$=\\sin (x-\\phi) \\leqslant 1$\n\n所以函数的最大值为 1 .\n\n故答案为: 1 .\n",
+            "model_output": "【解析】\n首先我们需要知道，函数的最大值出现在导数为0的点，所以我们需要求函数的导数。\n$f'(x) = \\cos(x + \\phi) + 2\\sin\\phi\\sin x$\n设$f'(x) = 0$，解得$x = -\\phi \\pm \\frac{\\pi}{2}$。\n将$x = -\\phi + \\frac{\\pi}{2}$和$x = -\\phi - \\frac{\\pi}{2}$分别代入$f(x)$，得到$f(-\\phi + \\frac{\\pi}{2}) = \\sin\\frac{\\pi}{2} - 2\\sin\\phi\\cos(-\\phi + \\frac{\\pi}{2}) = 1 + 2\\sin\\phi\\sin\\phi = 1 + 2\\sin^2\\phi$和$f(-\\phi - \\frac{\\pi}{2}) = \\sin(-\\frac{\\pi}{2}) - 2\\sin\\phi\\cos(-\\phi - \\frac{\\pi}{2}) = -1 - 2\\sin\\phi\\sin\\phi = -1 - 2\\sin^2\\phi$。\n因为$-1 \\leq \\sin\\phi \\leq 1$，所以$-2 \\leq 2\\sin^2\\phi \\leq 2$，所以$-3 \\leq -1 - 2\\sin^2\\phi \\leq 1$，$-1 \\leq 1 + 2\\sin^2\\phi \\leq 3$。\n所以函数的最大值为3。<eoe>\n【答案】3<eoa>"
+        },
+        {
+            "index": 22,
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "15. (5 分) 偶函数 $y=f(x)$ 的图象关于直线 $x=2$ 对称, $f(3)=3$, 则 $f(-1)=$\n",
+            "standard_answer": "3\n",
+            "analysis": "解: 法 1: 因为偶函数 $y=f(x)$ 的图象关于直线 $\\mathrm{x}=2$ 对称,\n\n所以 $f(2+x)=f(2-x)=f(x-2)$,\n\n即 $f(x+4)=f(x) ，$\n\n则 $f(-1)=f(-1+4)=f(3)=3$,\n\n法 2: 因为函数 $\\mathrm{y}=\\mathrm{f}(\\mathrm{x})$ 的图象关于直线 $\\mathrm{x}=2$ 对称,\n\n所以 $f(1)=f(3)=3$,\n\n因为 $f(x)$ 是偶函数,\n\n所以 $f(-1)=f(1)=3$,\n\n故答案为: 3 .\n",
+            "model_output": "【解析】偶函数的定义是：如果对于函数f(x)，满足f(-x)=f(x)，那么这个函数就是偶函数。但是本题中的函数f(x)并不是关于y轴对称，而是关于直线x=2对称，所以我们不能直接使用偶函数的性质。我们需要找到一个新的对称轴，使得新的函数g(x)是一个关于y轴对称的偶函数。我们可以通过将x轴上的每一个点向左平移2个单位，使得原来关于直线x=2对称的函数f(x)变为关于y轴对称的函数g(x)。即g(x)=f(x+2)。那么g(x)就是一个偶函数，满足g(-x)=g(x)。题目中给出f(3)=3，即g(1)=3。因为g(x)是偶函数，所以g(-1)=g(1)=3。而g(-1)=f(-1+2)=f(1)，所以f(1)=3。<eoe>\n【答案】3<eoa>"
+        },
+        {
+            "index": 23,
+            "year": "2014",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "16. (5 分) 数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{n+1}=\\frac{1}{1-a_{n}}, a_{8}=2$, 则 $a_{1}=$\n",
+            "standard_answer": "$\\frac{1}{2}$\n",
+            "analysis": "解: 由题意得, $a_{n+1}=\\frac{1}{1-a_{n}}, a_{8}=2$,\n\n令 $n=7$ 代入上式得, $a_{8}=\\frac{1}{1-a_{7}}$, 解得 $a_{7}=\\frac{1}{2}$;\n\n令 $n=6$ 代入得, $a_{7}=\\frac{1}{1-a_{6}}$, 解得 $a_{6}=-1$;\n\n令 $n=5$ 代入得, $a_{6}=\\frac{1}{1-a_{5}}$, 解得 $a_{5}=2$;\n\n..\n\n根据以上结果发现, 求得结果按 $2, \\frac{1}{2},-1$ 循环,\n\n$\\because 8 \\div 3=2 \\ldots 2$, 故 $a_{1}=\\frac{1}{2}$ 故答案为: $\\frac{1}{2}$.\n",
+            "model_output": "【解析】\n题目给出了数列的递推关系式$a_{n+1}=\\frac{1}{1-a_{n}}$，并且给出了$a_{8}=2$，要求我们求$a_{1}$的值。由于我们知道$a_{8}$的值，我们可以通过递推关系式反向求解$a_{7},a_{6},a_{5},a_{4},a_{3},a_{2},a_{1}$的值。\n\n首先，我们将$a_{8}=2$带入递推关系式，得到$a_{7}=\\frac{1}{1-2}=-1$。\n\n然后，我们将$a_{7}=-1$带入递推关系式，得到$a_{6}=\\frac{1}{1-(-1)}=\\frac{1}{2}$。\n\n接着，我们将$a_{6}=\\frac{1}{2}$带入递推关系式，得到$a_{5}=\\frac{1}{1-\\frac{1}{2}}=2$。\n\n然后，我们将$a_{5}=2$带入递推关系式，得到$a_{4}=\\frac{1}{1-2}=-1$。\n\n接着，我们将$a_{4}=-1$带入递推关系式，得到$a_{3}=\\frac{1}{1-(-1)}=\\frac{1}{2}$。\n\n然后，我们将$a_{3}=\\frac{1}{2}$带入递推关系式，得到$a_{2}=\\frac{1}{1-\\frac{1}{2}}=2$。\n\n最后，我们将$a_{2}=2$带入递推关系式，得到$a_{1}=\\frac{1}{1-2}=-1$。\n\n所以，$a_{1}=-1$。<eoe>\n【答案】-1<eoa>"
+        },
+        {
+            "index": 24,
+            "year": "2015",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. (5 分) 在数列 $\\left\\{a_{n}\\right\\}$ 中, $a_{1}=2, a_{n+1}=2 a_{n}, S_{n}$ 为 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, 若 $S_{n}=126$, 则 $n=$\n",
+            "standard_answer": "6\n",
+            "analysis": "解: $\\because a_{n+1}=2 a_{n}$,\n\n$\\therefore \\frac{a_{n+1}}{a_{n}}=2$\n\n$\\because a_{1}=2$\n\n$\\therefore$ 数列 $\\left\\{a_{n}\\right\\}$ 是 $a_{1}=2$ 为首项, 以 2 为公比的等比数列,\n\n$\\therefore S_{n}=\\frac{a_{1}\\left(1-q^{n}\\right)}{1-q}=\\frac{2\\left(1-2^{n}\\right)}{1-2}=2^{n+1}-2=126$,\n\n$\\therefore 2^{n+1}=128$\n\n$\\therefore \\mathrm{n}+1=7$\n\n$\\therefore n=6$.\n\n故答案为: 6\n",
+            "model_output": "【解析】\n首先，我们可以看出这是一个等比数列，首项为2，公比为2。\n等比数列的前n项和公式为：$S_n = a_1 * (1 - r^n) / (1 - r)$，其中$a_1$是首项，$r$是公比，$n$是项数。\n将题目中的数据代入公式，我们得到：$126 = 2 * (1 - 2^n) / (1 - 2)$，化简后得到：$126 = 2^{n+1} - 2$。\n解这个方程，我们得到：$2^{n+1} = 128$，所以$n+1 = 7$，因此$n = 7 - 1 = 6$。\n<eoe>\n【答案】6<eoa>"
+        },
+        {
+            "index": 25,
+            "year": "2015",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14. （5 分）已知函数 $f(x)=a x^{3}+x+1$ 的图象在点（1，f(1））处的切线过点（ 2, 7）, 则 $a=$\n",
+            "standard_answer": "1\n",
+            "analysis": "解: 函数 $f(x)=a x^{3}+x+1$ 的导数为: $f^{\\prime}(x)=3 a x^{2}+1, f^{\\prime}(1)=3 a+1$, 而 $f(1)=a+2$\n\n切线方程为: $y-a-2=(3 a+1)(x-1)$, 因为切线方程经过 $(2,7)$,\n\n所以 7- $a-2=(3 a+1)(2-1)$,\n\n解得 $a=1$.\n\n故答案为: 1 .\n",
+            "model_output": "【解析】\n首先，我们可以求出函数f(x)在x=1处的导数，即切线的斜率。函数f(x)的导数为f'(x)=3ax^2+1。将x=1代入，得到f'(1)=3a+1。\n其次，我们知道切线过点（1，f(1））和点（ 2, 7），所以我们可以根据两点之间的斜率公式，求出切线的斜率。斜率m=(y2-y1)/(x2-x1)=(7-f(1))/(2-1)=(7-(a+1+1))/(2-1)=7-a-2。\n最后，我们将f'(1)和m相等，解出a的值。即3a+1=7-a-2，解这个方程得到a的值。\n<eoe>\n【答案】\na=1<eoa>"
+        },
+        {
+            "index": 26,
+            "year": "2015",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "16. （5 分）已知 $F$ 是双曲线 $C: x^{2}-\\frac{y^{2}}{8}=1$ 的右焦点, $P$ 是 $C$ 的左支上一点, $A($ $0,6 \\sqrt{6})$. 当 $\\triangle A P F$ 周长最小时, 该三角形的面积为\n",
+            "standard_answer": "$12 \\sqrt{6}$\n",
+            "analysis": "解：由题意, 设 $\\mathrm{F}^{\\prime}$ 是左焦点, 则 $\\triangle A P F$ 周长 $=|\\mathrm{AF}|+|\\mathrm{AP}|+|\\mathrm{PF}|=|\\mathrm{AF}|+|\\mathrm{AP}|+\\left|\\mathrm{PF}^{\\prime}\\right|+2$\n\n$\\geqslant|A F|+\\left|A F^{\\prime}\\right|+2\\left(A, P, F^{\\prime}\\right.$ 三点共线时, 取等号），\n\n直线 $A F^{\\prime}$ 的方程为 $\\frac{x}{-3}+\\frac{y}{6 \\sqrt{6}}=1$ 与 $x^{2}-\\frac{y^{2}}{8}=1$ 联立可得 $y^{2}+6 \\sqrt{6} y-96=0$,\n\n$\\therefore P$ 的纵坐标为 $2 \\sqrt{6}$,\n\n$\\therefore \\triangle \\mathrm{APF}$ 周长最小时, 该三角形的面积为 $\\frac{1}{2} \\times 6 \\times 6 \\sqrt{6}-\\frac{1}{2} \\times 6 \\times 2 \\sqrt{6}=12 \\sqrt{6}$.\n\n故答案为: $12 \\sqrt{6}$.\n",
+            "model_output": "【解析】\n首先，我们需要找出双曲线的焦点。双曲线的一般形式为$x^2/a^2-y^2/b^2=1$，其中焦点的坐标为$(\\pm\\sqrt{a^2+b^2},0)$。在这个问题中，我们有$a^2=1$和$b^2=8$，所以焦点的坐标为$(\\pm\\sqrt{9},0)=(\\pm3,0)$。因此，右焦点F的坐标为$(3,0)$。\n\n接下来，我们需要找出点P的坐标。因为P在双曲线的左支上，所以它的x坐标应该是负的。双曲线的参数形式为$(a\\cosh t, b\\sinh t)$，其中$t$是参数。因为我们需要找出左支上的点，所以我们应该取$t$为负值。另外，我们知道三角形的周长最小时，P应该在AF的延长线上，所以我们可以设P的坐标为$(-3\\cosh t, 2\\sqrt{2}\\sinh t)$。\n\n然后，我们需要找出三角形的周长。根据三角形的性质，我们知道三角形的周长等于其三边之和。因此，我们需要找出AP，PF和AF的长度。根据两点间的距离公式，我们有$AP=\\sqrt{(-3\\cosh t)^2+(2\\sqrt{2}\\sinh t-6\\sqrt{6})^2}$，$PF=\\sqrt{(-3\\cosh t-3)^2+(2\\sqrt{2}\\sinh t)^2}$，$AF=\\sqrt{(3)^2+(6\\sqrt{6})^2}$。将这三个长度相加，我们得到三角形的周长。\n\n最后，我们需要找出使得三角形周长最小的$t$值。这可以通过求导数并令其等于0来实现。然后，我们可以将这个$t$值代入三角形的面积公式$S=\\frac{1}{2}bh$，其中$b$是底，$h$是高，得到三角形的面积。\n\n通过上述步骤，我们可以得到三角形的面积。<eoe>\n\n【答案】\n首先，我们需要求出使得三角形周长最小的$t$值。这可以通过求导数并令其等于0来实现。然后，我们可以将这个$t$值代入三角形的面积公式$S=\\frac{1}{2}bh$，其中$b$是底，$h$是高，得到三角形的面积。然而，这个问题涉及到的数学知识较为复杂，需要使用到微积分和三角函数等知识，因此无法直接给出具体的答案。<eoa>"
+        },
+        {
+            "index": 27,
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "score": 3,
+            "question": "13. (3 分) 已知函数 $f(x)=a x^{3}-2 x$ 的图象过点 $(-1,4)$ 则 $a=$\n",
+            "standard_answer": "-2\n",
+            "analysis": "解： 根据条件得: $4=-\\mathrm{a}+2$;\n\n$\\therefore a=-2$.\n\n故答案为: -2 .\n",
+            "model_output": "【解析】根据题目，函数$f(x)=a x^{3}-2 x$的图象过点 $(-1,4)$，所以当$x=-1$时，$f(x)=4$。将$x=-1$代入函数$f(x)$，我们可以得到$-a-2=4$，解这个方程我们可以得到$a$的值。<eoe>\n【答案】$a=-3$<eoa>"
+        },
+        {
+            "index": 28,
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "score": 3,
+            "question": "15. (3 分) 已知双曲线过点 $(4, \\sqrt{3})$ 且渐近线方程为 $y= \\pm \\frac{1}{2} x$, 则该双曲线的 标准方程是\n",
+            "standard_answer": "$\\frac{1}{4} x^{2}-y^{2}=1$\n",
+            "analysis": "解：设双曲线方程为 $y^{2}-\\frac{1}{4} x^{2}=\\lambda$,\n\n代入点 $(4, \\sqrt{3})$, 可得 $3-\\frac{1}{4} \\times 16=\\lambda$,\n\n$\\therefore \\lambda=-1$\n\n$\\therefore$ 双曲线的标准方程是 $\\frac{1}{4} x^{2}-y^{2}=1$.\n\n故答案为: $\\frac{1}{4} x^{2}-y^{2}=1$.\n",
+            "model_output": "【解析】\n双曲线的渐近线方程为 $y=\\pm \\frac{b}{a}x$，所以我们知道 $\\frac{b}{a} = \\frac{1}{2}$。\n双曲线的标准方程为 $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$，将点 $(4, \\sqrt{3})$ 代入得到 $\\frac{16}{a^2} - \\frac{3}{b^2} = 1$。\n由于我们已经知道 $\\frac{b}{a} = \\frac{1}{2}$，所以我们可以将 $b$ 表示为 $b = \\frac{a}{2}$，然后将这个表达式代入到 $\\frac{16}{a^2} - \\frac{3}{b^2} = 1$ 中，得到 $\\frac{16}{a^2} - \\frac{12}{a^2} = 1$，解这个方程得到 $a^2 = 4$，所以 $a = 2$。\n然后我们可以用 $b = \\frac{a}{2}$ 得到 $b = 1$。\n所以双曲线的标准方程是 $\\frac{x^2}{4} - y^2 = 1$。\n<eoe>\n【答案】$\\frac{x^2}{4} - y^2 = 1$<eoa>"
+        },
+        {
+            "index": 29,
+            "year": "2015",
+            "category": "（新课标ⅱ）",
+            "score": 3,
+            "question": "16. （3 分）已知曲线 $y=x+\\ln x$ 在点 $\\left(1,1 ）\\right.$ 处的切线与曲线 $y=a x^{2}+(a+2) x+1$ 相切，则 $a=$\n",
+            "standard_answer": "8\n",
+            "analysis": "解: $y=x+\\ln x$ 的导数为 $y^{\\prime}=1+\\frac{1}{x}$,\n\n曲线 $y=x+\\ln x$ 在 $x=1$ 处的切线斜率为 $k=2$,\n\n则曲线 $y=x+\\ln x$ 在 $x=1$ 处的切线方程为 $y-1=2 x-2$, 即 $y=2 x-1$.\n\n由于切线与曲线 $y=a x^{2}+(a+2) x+1$ 相切,\n\n故 $y=a x^{2}+(a+2) x+1$ 可联立 $y=2 x-1$,\n\n得 $a x^{2}+a x+2=0$,\n\n又 $a \\neq 0$, 两线相切有一切点,\n\n所以有 $\\triangle=\\mathrm{a}^{2}-8 a=0$,\n\n解得 $a=8$.\n\n故答案为: 8 .\n",
+            "model_output": "【解析】\n首先，我们需要找到曲线 $y=x+\\ln x$ 在点 $\\left(1,1 ）\\right.$ 处的切线的斜率。这可以通过对 $y=x+\\ln x$ 求导得到。求导后我们得到 $y'=1+\\frac{1}{x}$。将 $x=1$ 代入，我们得到 $y'=2$，所以曲线 $y=x+\\ln x$ 在点 $\\left(1,1 ）\\right.$ 处的切线的斜率为2。\n\n然后，我们知道切线的方程可以写为 $y-y_1=m(x-x_1)$，其中 $(x_1,y_1)$ 是切点，$m$ 是切线的斜率。所以，曲线 $y=x+\\ln x$ 在点 $\\left(1,1 ）\\right.$ 处的切线的方程为 $y-1=2(x-1)$，简化后得到 $y=2x-1$。\n\n接下来，我们需要找到曲线 $y=a x^{2}+(a+2) x+1$ 与切线 $y=2x-1$ 的交点。我们可以通过将两个方程相等来找到交点。即 $a x^{2}+(a+2) x+1=2x-1$。因为切线与曲线只有一个交点，所以这个方程只有一个解。这意味着这个二次方程的判别式必须等于0。即 $(a+2)^2-4a=0$。\n\n解这个方程，我们得到 $a^2+4a+4-4a=0$，简化后得到 $a^2+4=0$。解这个方程，我们得到 $a=\\pm\\sqrt{-4}$。但是 $a$ 是实数，所以 $a$ 不能是复数。因此，原方程无解，即 $a$ 无法满足题目的条件。<eoe>\n【答案】无解<eoa>"
+        },
+        {
+            "index": 30,
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. (5 分) 设向量 $\\vec{a}=(x, x+1), \\vec{b}=(1,2)$, 且 $\\vec{a} \\perp \\vec{b}$, 则 $x=$\n",
+            "standard_answer": "$-\\frac{2}{3}$\n",
+            "analysis": "解: $\\because \\overrightarrow{\\mathrm{a}} \\perp \\overrightarrow{\\mathrm{b}}$;\n\n$\\therefore \\vec{a} \\cdot \\vec{b}=0$\n\n即 $x+2(x+1)=0$;\n\n$\\therefore x=-\\frac{2}{3}$.\n\n故答案为: $-\\frac{2}{3}$.\n",
+            "model_output": "【解析】\n向量 $\\vec{a}$ 与向量 $\\vec{b}$ 垂直，根据向量的垂直性质，我们知道它们的点积为0。即有 $\\vec{a} \\cdot \\vec{b} = 0$。\n将向量 $\\vec{a}$ 和向量 $\\vec{b}$ 的坐标代入上述公式，我们得到 $x*1 + (x+1)*2 = 0$。\n解这个方程，我们可以得到 $x$ 的值。\n<eoe>\n【答案】\n解方程 $x*1 + (x+1)*2 = 0$，得到 $x=-2$。\n<eoa>"
+        },
+        {
+            "index": 31,
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14. （5 分）已知 $\\theta$ 是第四象限角, 且 $\\sin \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{3}{5}$, 则 $\\tan \\left(\\theta-\\frac{\\pi}{4}\\right)=$\n",
+            "standard_answer": "$-\\frac{4}{3}$\n",
+            "analysis": "解: $\\because \\theta$ 是第四象限角,\n\n$\\therefore-\\frac{\\pi}{2}+2 k \\pi<\\theta<2 k \\pi$, 则 $-\\frac{\\pi}{4}+2 k \\pi<\\theta+\\frac{\\pi}{4}<\\frac{\\pi}{4}+2 k \\pi, k \\in Z$,\n\n又 $\\sin \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{3}{5}$,\n\n$\\therefore \\cos \\left(\\theta+\\frac{\\pi}{4}\\right)=\\sqrt{1-\\sin ^{2}\\left(\\theta+\\frac{\\pi}{4}\\right)}=\\sqrt{1-\\left(\\frac{3}{5}\\right)^{2}}=\\frac{4}{5}$.\n\n$\\therefore \\cos \\left(\\frac{\\pi}{4}-\\theta\\right)=\\sin \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{3}{5}, \\sin \\left(\\frac{\\pi}{4}-\\theta\\right)=\\cos \\left(\\theta+\\frac{\\pi}{4}\\right)=\\frac{4}{5}$.\n\n则 $\\tan \\left(\\theta-\\frac{\\pi}{4}\\right)=-\\tan \\left(\\frac{\\pi}{4}-\\theta\\right)=-\\frac{\\sin \\left(\\frac{\\pi}{4}-\\theta\\right)}{\\cos \\left(\\frac{\\pi}{4}-\\theta\\right)}=-\\frac{\\frac{4}{5}}{\\frac{3}{5}}=-\\frac{4}{3}$.\n\n故答案为: $-\\frac{4}{3}$.\n",
+            "model_output": "【解析】\n首先，我们知道在第四象限，正弦函数的值是负的，因此 $\\sin \\left(\\theta+\\frac{\\pi}{4}\\right)=-\\frac{3}{5}$。\n我们可以利用正弦和余弦的和差公式来解决这个问题。首先，我们需要找到 $\\cos \\left(\\theta+\\frac{\\pi}{4}\\right)$ 的值。由于 $\\sin^2 \\theta + \\cos^2 \\theta = 1$，我们可以得到 $\\cos \\left(\\theta+\\frac{\\pi}{4}\\right)=\\sqrt{1-\\left(-\\frac{3}{5}\\right)^2}=\\frac{4}{5}$。\n然后，我们可以利用正弦和余弦的和差公式来找到 $\\tan \\left(\\theta-\\frac{\\pi}{4}\\right)$ 的值。公式为 $\\tan(a-b)=\\frac{\\tan a-\\tan b}{1+\\tan a\\tan b}$。\n在这个情况下，$a=\\theta$，$b=\\frac{\\pi}{4}$，$\\tan a=\\frac{\\sin a}{\\cos a}=-\\frac{3}{5}/\\frac{4}{5}=-\\frac{3}{4}$，$\\tan b=1$。\n代入公式，我们得到 $\\tan \\left(\\theta-\\frac{\\pi}{4}\\right)=\\frac{-\\frac{3}{4}-1}{1+(-\\frac{3}{4}\\times 1)}=\\frac{-\\frac{7}{4}}{\\frac{1}{4}}=-7$。\n<eoe>\n【答案】-7<eoa>"
+        },
+        {
+            "index": 32,
+            "year": "2016",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. （5 分）设直线 $y=x+2 a$ 与圆 $C: x^{2}+y^{2}-2 a y-2=0$ 相交于 $A, B$ 两点, 若 $|A B|=2$ $\\sqrt{3}$, 则圆 $C$ 的面积为\n",
+            "standard_answer": "$4 \\pi$\n",
+            "analysis": "解: 圆 $C: x^{2}+y^{2}-2 a y-2=0$ 的圆心坐标为 $(0, a)$, 半径为 $\\sqrt{a^{2}+2}$,\n\n$\\because$ 直线 $y=x+2 a$ 与圆 $C: x^{2}+y^{2}-2 a y-2=0$ 相交于 $A, B$ 两点, 且 $|A B|=2 \\sqrt{3}$,\n\n$\\therefore$ 圆心 $(0, a)$ 到直线 $\\mathrm{y}=\\mathrm{x}+2 \\mathrm{a}$ 的距离 $\\mathrm{d}=\\frac{|\\mathrm{a}|}{\\sqrt{2}}$,\n\n即 $\\frac{a^{2}}{2}+3=a^{2}+2$,\n\n解得: $a^{2}=2$,\n\n故圆的半径 $r=2$.\n\n故圆的面积 $S=4 \\pi$,\n\n故答案为: $4 \\pi$\n",
+            "model_output": "【解析】\n首先，我们可以将圆的方程转化为标准形式，即 $(x-a)^2+(y-a)^2=a^2+2$。\n然后，我们知道直线与圆相交于两点，所以直线与圆的距离等于圆的半径。\n设直线与圆的交点为$(x_1, y_1)$和$(x_2, y_2)$，则由于直线的斜率为1，我们有$y_1=x_1+2a, y_2=x_2+2a$。\n由题目给出的$|AB|=2\\sqrt{3}$，我们可以得到$(x_1-x_2)^2+(y_1-y_2)^2=12$。\n将$y_1, y_2$的表达式代入，得到$(x_1-x_2)^2+[(x_1+2a)-(x_2+2a)]^2=12$，化简得到$(x_1-x_2)^2=6$，即$x_1-x_2=\\pm\\sqrt{6}$。\n又因为$x_1, x_2$是直线$y=x+2a$与圆$(x-a)^2+(y-a)^2=a^2+2$的交点，所以$x_1, x_2$满足这两个方程，解得$x_1, x_2=a\\pm\\sqrt{6}$。\n将$x_1, x_2$代入直线方程，得到$y_1, y_2=a\\pm\\sqrt{6}+2a$，即$y_1, y_2=3a\\pm\\sqrt{6}$。\n由于$y_1, y_2$是圆上的点，所以它们满足圆的方程，代入得到$(a\\pm\\sqrt{6}-a)^2+(3a\\pm\\sqrt{6}-a)^2=a^2+2$，化简得到$a^2+6=2$，解得$a=\\pm2$。\n因此，圆的半径$r=\\sqrt{a^2+2}=\\sqrt{6}$，所以圆的面积为$\\pi r^2=\\pi \\times 6=6\\pi$。\n<eoe>\n【答案】$6\\pi$<eoa>"
+        },
+        {
+            "index": 33,
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "13. （5 分) 已知向量 $\\vec{a}=(m, 4), \\vec{b}=(3,-2)$, 且 $\\vec{a} / / \\vec{b}$, 则 $m=$\n",
+            "standard_answer": "-6\n",
+            "analysis": "解: 向量 $\\vec{a}=(m, 4), \\vec{b}=(3,-2)$, 且 $\\vec{a} / / \\vec{b}$,\n\n可得 $12=-2 m$, 解得 $m=-6$.\n\n故答案为: -6 .\n",
+            "model_output": "【解析】向量$\\vec{a}$与向量$\\vec{b}$平行，那么他们的方向相同，即他们的斜率相同。向量的斜率可以通过向量的两个分量计算得到，即$y/x$。所以，我们有$m/4 = 3/-2$。<eoe>\n【答案】$m=-6$<eoa>"
+        },
+        {
+            "index": 34,
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "15. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 若 $\\cos A=\\frac{4}{5}, \\cos C=\\frac{5}{13}$ , $a=1$, 则 $b=$\n",
+            "standard_answer": "$\\frac{21}{13}$\n",
+            "analysis": "解: 由 $\\cos A=\\frac{4}{5}, \\cos C=\\frac{5}{13}$, 可得\n\n$\\sin A=\\sqrt{1-\\cos ^{2} \\mathrm{~A}}=\\sqrt{1-\\frac{16}{25}}=\\frac{3}{5}$,\n\n$\\sin \\mathrm{C}=\\sqrt{1-\\cos ^{2} \\mathrm{C}}=\\sqrt{1-\\frac{25}{169}}=\\frac{12}{13}$,\n\n$\\sin B=\\sin (A+C)=\\sin A \\cos C+\\cos A \\sin C=\\frac{3}{5} \\times \\frac{5}{13}+\\frac{4}{5} \\times \\frac{12}{13}=\\frac{63}{65}$,\n\n由正弦定理可得 $b=\\frac{a \\sin B}{\\sin A}$\n\n$=\\frac{1 \\times \\frac{63}{65}}{\\frac{3}{5}}=\\frac{21}{13}$.\n\n故答案为: $\\frac{21}{13}$.\n",
+            "model_output": "【解析】\n根据三角形的余弦定理，我们有\n$$\n\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}\n$$\n和\n$$\n\\cos C = \\frac{a^2 + b^2 - c^2}{2ab}\n$$\n将已知的值代入这两个公式，我们得到\n$$\n\\frac{4}{5} = \\frac{b^2 + c^2 - 1}{2bc}\n$$\n和\n$$\n\\frac{5}{13} = \\frac{1 + b^2 - c^2}{2b}\n$$\n我们可以将这两个方程联立起来解出 $b$ 和 $c$ 的值。首先，我们将第二个方程改写为\n$$\nc^2 = 1 + b^2 - \\frac{5}{13} \\cdot 2b\n$$\n然后将这个表达式代入第一个方程，我们得到\n$$\n\\frac{4}{5} = \\frac{b^2 + 1 + b^2 - \\frac{5}{13} \\cdot 2b - 1}{2b \\sqrt{1 + b^2 - \\frac{5}{13} \\cdot 2b}}\n$$\n简化这个方程，我们得到\n$$\n\\frac{4}{5} = \\frac{2b^2 - \\frac{5}{13} \\cdot 2b}{2b \\sqrt{1 + b^2 - \\frac{5}{13} \\cdot 2b}}\n$$\n这是一个关于 $b$ 的一元二次方程，我们可以通过求解这个方程得到 $b$ 的值。<eoe>\n【答案】\n对不起，我犯了一个错误。这个问题实际上不能通过这种方式解决，因为我们没有足够的信息来确定 $b$ 和 $c$ 的值。我们需要更多的信息，比如知道 $\\triangle ABC$ 是直角三角形，或者知道 $b$ 和 $c$ 的比例关系。在没有这些额外信息的情况下，我们不能确定 $b$ 的值。<eoa>"
+        },
+        {
+            "index": 35,
+            "year": "2016",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "16. (5 分) 有三张卡片, 分别写有 1 和 2,1 和 3,2 和 3 . 甲, 乙, 丙三人各 取走一张卡片, 甲看了乙的卡片后说: “我与乙的卡片上相同的数字不是 2\", 乙看了丙的卡片后说： “我与丙的卡片上相同的数字不是 1”, 丙说： “我的卡 片上的数字之和不是 $5^{\\prime \\prime}$, 则甲的卡片上的数字是\n",
+            "standard_answer": "1 和 3\n",
+            "analysis": "解：根据丙的说法知, 丙的卡片上写着 1 和 2 , 或 1 和 3 ;\n\n（1）若丙的卡片上写着 1 和 2 , 根据乙的说法知, 乙的卡片上写着 2 和 3; $\\therefore$ 根据甲的说法知, 甲的卡片上写着 1 和 3;\n\n（2）若丙的卡片上写着 1 和 3 , 根据乙的说法知, 乙的卡片上写着 2 和 3;\n\n又甲说，“我与乙的卡片上相同的数字不是 2\";\n\n$\\therefore$ 甲的卡片上写的数字不是 1 和 2 , 这与已知矛盾;\n\n$\\therefore$ 甲的卡片上的数字是 1 和 3 .\n\n故答案为: 1 和 3 .\n",
+            "model_output": "【解析】\n根据题意，我们可以推断出以下信息：\n1. 甲看了乙的卡片后说：“我与乙的卡片上相同的数字不是 2”，这说明甲和乙的卡片上的相同数字只能是1，所以甲的卡片只能是1和2或者1和3。\n2. 乙看了丙的卡片后说：“我与丙的卡片上相同的数字不是 1”，这说明乙和丙的卡片上的相同数字只能是2或3，所以乙的卡片只能是1和2或者2和3。\n3. 丙说：“我的卡片上的数字之和不是5”，这说明丙的卡片只能是1和2或者1和3。\n\n根据以上信息，我们可以得出以下结论：\n1. 甲的卡片不能是1和2，因为如果甲的卡片是1和2，那么乙的卡片只能是2和3，但这与乙和丙的卡片上的相同数字只能是2或3的信息矛盾。\n2. 所以甲的卡片只能是1和3，那么乙的卡片只能是1和2，丙的卡片只能是2和3。\n\n所以，甲的卡片上的数字是1和3。<eoe>\n【答案】1和3<eoa>"
+        },
+        {
+            "index": 36,
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "14. (5 分) 函数 $y=\\sin x-\\sqrt{3} \\cos x$ 的图象可由函数 $y=2 \\sin x$ 的图象至少向右平 移 个单位长度得到.\n",
+            "standard_answer": "$\\frac{\\pi}{3}$.\n",
+            "analysis": "解: $\\because y=\\sin x-\\sqrt{3} \\cos x=2 \\sin \\left(x-\\frac{\\pi}{3}\\right)$,\n\n令 $f(x)=2 \\sin x$,\n\n则 $f(x-\\phi)=2$ in $(x-\\phi) \\quad(\\phi>0)$,\n\n依题意可得 $2 \\sin (x-\\phi)=2 \\sin \\left(x-\\frac{\\pi}{3}\\right)$,\n\n故 $-\\phi=2 k \\pi-\\frac{\\pi}{3} \\quad(k \\in Z)$,\n\n即 $\\phi=-2 k \\pi+\\frac{\\pi}{3} \\quad(k \\in Z)$,\n\n当 $k=0$ 时, 正数 $\\Phi_{\\min }=\\frac{\\pi}{3}$,\n\n故答案为: $\\frac{\\pi}{3}$.\n",
+            "model_output": "【解析】\n首先，我们知道函数$y=\\sin x-\\sqrt{3} \\cos x$可以转化为$y=2\\sin(x-\\frac{\\pi}{3})$，这是因为$\\sin(x-\\frac{\\pi}{3})=\\sin x \\cos \\frac{\\pi}{3} - \\cos x \\sin \\frac{\\pi}{3} = \\sin x \\cdot \\frac{1}{2} - \\cos x \\cdot \\sqrt{3}{2} = \\sin x - \\sqrt{3} \\cos x$。\n然后，函数$y=2\\sin(x-\\frac{\\pi}{3})$可以理解为函数$y=2\\sin x$向右平移$\\frac{\\pi}{3}$个单位长度得到的。\n所以，函数$y=\\sin x-\\sqrt{3} \\cos x$ 的图象可由函数 $y=2 \\sin x$ 的图象至少向右平移$\\frac{\\pi}{3}$个单位长度得到。<eoe>\n【答案】$\\frac{\\pi}{3}$<eoa>"
+        },
+        {
+            "index": 37,
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "15. (5 分) 已知直线 I: $x-\\sqrt{3} y+6=0$ 与圆 $x^{2}+y^{2}=12$ 交于 $A$, $B$ 两点, 过 $A, B$ 分别作 $\\mid$ 的垂线与 $\\mathrm{x}$ 轴交于 $C, D$ 两点. 则 $|C D|=$\n",
+            "standard_answer": "4 .\n",
+            "analysis": "解: 由题意, 圆心到直线的距离 $\\mathrm{d}=\\frac{6}{\\sqrt{1+3}}=3$,\n\n$\\therefore|A B|=2 \\sqrt{12-9}=2 \\sqrt{3}$\n\n$\\because$ 直线 $\\mid: x-\\sqrt{3} y+6=0$\n\n$\\therefore$ 直线 I 的倾斜角为 $30^{\\circ}$,\n\n$\\because$ 过 $A, B$ 分别作 $I$ 的垂线与 $x$ 轴交于 $C, D$ 两点,\n\n$\\therefore|\\mathrm{CD}|=\\frac{2 \\sqrt{3}}{\\frac{\\sqrt{3}}{2}}=4$.\n\n故答案为: 4 .\n",
+            "model_output": "【解析】\n首先，我们需要找到直线I和圆$x^{2}+y^{2}=12$的交点A和B。这可以通过将直线I的方程$x-\\sqrt{3}y+6=0$中的$x$代入圆的方程中得到。这样我们得到的新方程是$(\\sqrt{3}y-6)^2+y^2=12$，解这个方程我们可以得到y的值，然后再代入直线I的方程中得到对应的x的值，这样我们就得到了交点A和B的坐标。\n\n然后，我们知道，过A，B分别作垂线与x轴交于C，D两点，那么C，D的y坐标都是0，x坐标就是A，B的x坐标。所以，|CD|就是A，B的x坐标的差的绝对值。\n\n下面我们开始具体计算。<eoe>\n\n首先，我们解方程$(\\sqrt{3}y-6)^2+y^2=12$，得到$4y^2-24y+36=12$，即$4y^2-24y+24=0$，解这个二次方程，得到$y=3\\pm\\sqrt{3}$。\n\n然后，我们将$y=3\\pm\\sqrt{3}$代入直线I的方程$x-\\sqrt{3}y+6=0$，得到$x=6\\pm2\\sqrt{3}$。\n\n所以，交点A，B的坐标是$(6+2\\sqrt{3},3+\\sqrt{3}),(6-2\\sqrt{3},3-\\sqrt{3})$。\n\n然后，我们计算|CD|，即$|(6+2\\sqrt{3})-(6-2\\sqrt{3})|=4\\sqrt{3}$。\n\n【答案】4\\sqrt{3}<eoa>"
+        },
+        {
+            "index": 38,
+            "year": "2016",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "16. (5 分) 已知 $f(x)$ 为偶函数, 当 $x \\leqslant 0$ 时, $f(x)=e^{-x-1}-x$, 则曲线 $y=f$ $(x)$ 在点 $(1,2)$ 处的切线方程是\n",
+            "standard_answer": "$y=2 x$.\n",
+            "analysis": "解: 已知 $f(x)$ 为偶函数, 当 $x \\leqslant 0$ 时, $f(x)=e^{-x-1}-x$,\n\n设 $x>0$, 则 $-x<0$,\n\n$\\therefore f(x)=f(-x)=e^{x-1}+x$\n\n则 $f^{\\prime}(x)=e^{x-1}+1$, $f^{\\prime}(1)=e^{0}+1=2$\n\n$\\therefore$ 曲线 $y=f(x)$ 在点 $(1,2)$ 处的切线方程是 $y-2=2(x-1)$.\n\n即 $y=2 x$.\n\n故答案为: $y=2 x$.\n",
+            "model_output": "【解析】\n首先，由于$f(x)$为偶函数，所以当$x>0$时，有$f(x)=f(-x)=e^{x-1}+x$。\n然后，求函数$f(x)$在$x=1$处的导数，即求$f'(1)$。\n由链式法则，我们有$f'(x)=e^{x-1}+1$，所以$f'(1)=e^{1-1}+1=2$。\n所以，曲线$y=f(x)$在点$(1,2)$处的切线的斜率为2。\n根据点斜式，曲线$y=f(x)$在点$(1,2)$处的切线方程为$y-2=2(x-1)$，化简得$y=2x$。\n<eoe>\n【答案】$y=2x$<eoa>"
+        },
+        {
+            "index": 39,
+            "year": "2017",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. (5 分) 已知向量 $\\vec{a}=(-1,2), \\vec{b}=(m, 1)$, 若向量 $\\vec{a}+\\vec{b}$ 与 $\\vec{a}$ 垂直, 则 $m=$\n",
+            "standard_answer": "7\n",
+            "analysis": "解: $\\because$ 向量 $\\vec{a}=(-1,2), \\vec{b}=(m, 1)$,\n\n$\\therefore \\vec{a}+\\vec{b}=(-1+m, 3)$, $\\because$ 向量 $\\vec{a}+\\vec{b}$ 与 $\\vec{a}$ 垂直,\n\n$\\therefore(\\vec{a}+\\vec{b}) \\cdot \\vec{a}=(-1+m) \\times(-1)+3 \\times 2=0$,\n\n解得 $m=7$.\n\n故答案为: 7 .\n",
+            "model_output": "【解析】\n向量$\\vec{a}+\\vec{b}$与向量$\\vec{a}$垂直，那么他们的内积为0。\n即$(-1+ m) \\cdot -1 + (2+1) \\cdot 2 = 0$\n解这个方程可以得到m的值。<eoe>\n【答案】3<eoa>"
+        },
+        {
+            "index": 40,
+            "year": "2017",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14. (5 分) 曲线 $y=x^{2}+\\frac{1}{x}$ 在点 $(1,2)$ 处的切线方程为\n",
+            "standard_answer": "$x-y+1=0$\n",
+            "analysis": "解: 曲线 $y=x^{2}+\\frac{1}{x}$, 可得 $y^{\\prime}=2 x-\\frac{1}{x^{2}}$,\n\n切线的斜率为: $k=2-1=1$.\n\n切线方程为: $y-2=x-1$, 即: $x-y+1=0$.\n\n故答案为: $x-y+1=0$.\n",
+            "model_output": "【解析】首先，我们需要找到曲线 $y=x^{2}+\\frac{1}{x}$ 在点 $(1,2)$ 处的切线的斜率。这可以通过求曲线在该点处的导数得到。函数 $y=x^{2}+\\frac{1}{x}$ 的导数为 $y'=2x-\\frac{1}{x^{2}}$。将 $x=1$ 代入，得到切线的斜率为 $2-1=1$。\n\n然后，我们知道点斜式方程为 $y-y_{1}=m(x-x_{1})$，其中 $(x_{1}, y_{1})$ 是曲线上的一点，$m$ 是切线的斜率。将 $(x_{1}, y_{1})=(1,2)$ 和 $m=1$ 代入，得到切线方程为 $y-2=1(x-1)$，简化后得到 $y=x+1$。<eoe>\n\n【答案】$y=x+1$<eoa>"
+        },
+        {
+            "index": 41,
+            "year": "2017",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. (5 分）已知 $\\alpha \\in\\left(0, \\frac{\\pi}{2}\\right), \\tan \\alpha=2$, 则 $\\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=$\n",
+            "standard_answer": "$\\frac{3 \\sqrt{10}}{10}$\n",
+            "analysis": "解: $\\because \\alpha \\in\\left(0, \\frac{\\pi}{2}\\right), \\tan \\alpha=2$,\n\n$\\therefore \\sin \\alpha=2 \\cos \\alpha$, $\\because \\sin ^{2} \\alpha+\\cos ^{2} \\alpha=1$\n\n解得 $\\sin \\alpha=\\frac{2 \\sqrt{5}}{5}, \\cos \\alpha=\\frac{\\sqrt{5}}{5}$,\n\n$\\therefore \\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=\\cos \\alpha \\cos \\frac{\\pi}{4}+\\sin \\alpha \\sin \\frac{\\pi}{4}=\\frac{\\sqrt{5}}{5} \\times \\frac{\\sqrt{2}}{2}+\\frac{2 \\sqrt{5}}{5} \\times \\frac{\\sqrt{2}}{2}=\\frac{3 \\sqrt{10}}{10}$,\n\n故答案为: $\\frac{3 \\sqrt{10}}{10}$\n",
+            "model_output": "【解析】\n首先我们知道$\\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=\\cos \\alpha \\cos \\frac{\\pi}{4}+\\sin \\alpha \\sin \\frac{\\pi}{4}$。\n然后我们知道$\\tan \\alpha=2$，所以$\\sin \\alpha = \\frac{2}{\\sqrt{5}}$，$\\cos \\alpha = \\frac{1}{\\sqrt{5}}$。\n所以$\\cos \\left(\\alpha-\\frac{\\pi}{4}\\right)=\\cos \\alpha \\cos \\frac{\\pi}{4}+\\sin \\alpha \\sin \\frac{\\pi}{4}=\\frac{1}{\\sqrt{5}} \\cdot \\frac{1}{\\sqrt{2}} + \\frac{2}{\\sqrt{5}} \\cdot \\frac{1}{\\sqrt{2}}=\\frac{1}{\\sqrt{10}}+\\frac{2}{\\sqrt{10}}=\\frac{3}{\\sqrt{10}}$。\n最后我们需要将结果进行有理化，即$\\frac{3}{\\sqrt{10}}=\\frac{3\\sqrt{10}}{10}$。<eoe>\n【答案】$\\frac{3\\sqrt{10}}{10}$<eoa>"
+        },
+        {
+            "index": 42,
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "13. ( 5 分) 函数 $f(x)=2 \\cos x+\\sin x$ 的最大值为\n",
+            "standard_answer": "$\\sqrt{5}$\n",
+            "analysis": "解：函数 $\\mathrm{f}(\\mathrm{x})=2 \\cos x+\\sin x=\\sqrt{5}\\left(\\frac{2 \\sqrt{5}}{5} \\cos x+\\frac{\\sqrt{5}}{5} \\sin x\\right)=\\sqrt{5} \\sin (x+\\theta)$, 其中 $\\tan \\theta=2$,\n\n可知函数的最大值为: $\\sqrt{5}$.\n\n故答案为: $\\sqrt{5}$.\n",
+            "model_output": "【解析】\n函数 $f(x)=2 \\cos x+\\sin x$ 可以转化为 $f(x)=\\sqrt{5}\\cos(x-\\arctan \\frac{1}{2})$ 的形式，这是一个余弦函数，其最大值为振幅的绝对值，即 $\\sqrt{5}$。\n<eoe>\n【答案】$\\sqrt{5}$<eoa>"
+        },
+        {
+            "index": 43,
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "14. （5 分）已知函数 $f(x)$ 是定义在 $R$ 上的奇函数, 当 $x \\in(-\\infty, 0)$ 时, $f($ x) $=2 x^{3}+x^{2}$, 则 $f(2)=$\n",
+            "standard_answer": "12\n",
+            "analysis": "解: $\\because$ 当 $x \\in(-\\infty, 0)$ 时, $f(x)=2 x^{3}+x^{2}$,\n\n$\\therefore f(-2)=-12$,\n\n又 $\\because$ 函数 $f(x)$ 是定义在 $R$ 上的奇函数,\n\n$\\therefore f(2)=12$,\n\n故答案为: 12\n",
+            "model_output": "【解析】奇函数的性质是：对于任何在函数定义域内的x，都有f(-x)=-f(x)。由题意知，当x<0时，f(x)=2x^3+x^2。那么当x>0时，f(x)=-f(-x)。所以，f(2)=-f(-2)=-[2*(-2)^3+(-2)^2]=-[-16+4]=-(-12)=12。<eoe>\n【答案】12<eoa>"
+        },
+        {
+            "index": 44,
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "15. （5 分）长方体的长、宽、高分别为 $3,2 ， 1$, 其顶点都在球 $\\mathrm{O}$ 的球面上, 则球 $\\mathrm{O}$ 的表面积为\n",
+            "standard_answer": "$14 \\pi$\n",
+            "analysis": "解：长方体的长、宽、高分别为 $3,2,1$, 其顶点都在球 $\\mathrm{O}$ 的球面上, 可知长方体的对角线的长就是球的直径,\n\n所以球的半径为: $\\frac{1}{2} \\sqrt{3^{2}+2^{2}+1^{2}}=\\frac{\\sqrt{14}}{2}$.\n\n则球 $O$ 的表面积为: $4 \\times\\left(\\frac{\\sqrt{14}}{2}\\right)^{2} \\pi=14 \\pi$.\n\n故答案为: $14 \\pi$.\n",
+            "model_output": "【解析】\n长方体的对角线是球的直径，根据勾股定理，对角线的长度为sqrt(3^2+2^2+1^2)=sqrt(14)。因此，球的半径为sqrt(14)/2。\n球的表面积公式为4πr^2，将r=sqrt(14)/2代入，得到球的表面积为4π*(sqrt(14)/2)^2=14π。<eoe>\n【答案】14π<eoa>"
+        },
+        {
+            "index": 45,
+            "year": "2017",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "16. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 若 $2 b \\cos B=a \\cos C+\\cos A$ , 则 $B=$\n",
+            "standard_answer": "$\\frac{\\pi}{3}$\n",
+            "analysis": "解: $\\because 2 \\mathrm{~b} \\cos \\mathrm{B}=\\mathrm{a} \\cos \\mathrm{C}+\\cos \\mathrm{A}$, 由正弦定理可得,\n\n$2 \\cos B \\sin B=\\sin A \\cos C+\\sin C \\cos A=\\sin (A+C)=\\sin B$,\n\n$\\because \\sin \\mathrm{B} \\neq 0$,\n\n$\\therefore \\cos B=\\frac{1}{2}$,\n\n$\\because 0<\\mathrm{B}<\\pi$\n\n$\\therefore B=\\frac{\\pi}{3}$\n\n故答案为: $\\frac{\\pi}{3}$\n",
+            "model_output": "【解析】\n首先，我们知道在三角形中，对边和对角的关系可以通过余弦定理来表示，即$c^2 = a^2 + b^2 - 2ab\\cos C$，$b^2 = a^2 + c^2 - 2ac\\cos B$，$a^2 = b^2 + c^2 - 2bc\\cos A$。\n然后，我们将题目中的条件$2 b \\cos B=a \\cos C+\\cos A$两边同时除以$2b$，得到$\\cos B = \\frac{a \\cos C}{2b} + \\frac{\\cos A}{2}$。\n接着，我们将余弦定理中的$\\cos C$和$\\cos A$代入上述等式，得到$\\cos B = \\frac{a (a^2 + b^2 - c^2)}{4ab} + \\frac{b^2 + c^2 - a^2}{4bc}$。\n化简得到$\\cos B = \\frac{a^3 + a b^2 - a c^2 + b^3 + c^3 - a^2 c}{4abc}$。\n最后，我们知道$\\cos B = \\frac{a^2 + c^2 - b^2}{2ac}$，所以我们可以将上述等式的右边与$\\cos B$相等，解出$b$的值，即为题目所求。\n<eoe>\n【答案】\n$B = \\arccos\\left(\\frac{a^3 + a b^2 - a c^2 + b^3 + c^3 - a^2 c}{4abc}\\right)$\n<eoa>"
+        },
+        {
+            "index": 46,
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "13. (5 分) 已知向量 $\\vec{a}=(-2,3), \\vec{b}=(3, m)$, 且 $\\vec{a} \\perp \\vec{b}$, 则 $m=$\n",
+            "standard_answer": "2 .\n",
+            "analysis": "解: $\\because$ 向量 $\\vec{a}=(-2,3), \\vec{b}=(3, m)$, 且 $\\vec{a} \\perp \\vec{b}$, $\\therefore \\vec{a} \\cdot \\vec{b}=-6+3 m=0$\n\n解得 $m=2$.\n\n故答案为: 2 .\n",
+            "model_output": "【解析】\n已知向量$\\vec{a}$和向量$\\vec{b}$垂直，根据向量的垂直性质，两向量的点积为0，即$\\vec{a}·\\vec{b}=0$。所以，我们有$-2*3+3*m=0$，解这个方程就可以得到$m$的值。<eoe>\n【答案】2<eoa>"
+        },
+        {
+            "index": 47,
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "14. (5 分) 双曲线 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{9}=1(a>0)$ 的一条渐近线方程为 $y=\\frac{3}{5} x$, 则 $a=$\n",
+            "standard_answer": "5 .\n",
+            "analysis": "解: 双曲线 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{9}=1(a>0)$ 的一条渐近线方程为 $y=\\frac{3}{5} x$, 可得 $\\frac{3}{a}=\\frac{3}{5}$, 解得 $a=5$.\n\n故答案为: 5 .\n",
+            "model_output": "【解析】双曲线的渐近线方程为 $y=\\pm\\frac{b}{a}x$，其中$a$和$b$分别是双曲线的半轴长。由题目给出的渐近线方程 $y=\\frac{3}{5} x$，我们可以看出$b=3$，$a=5$。所以，$a=5$。<eoe>\n【答案】5<eoa>"
+        },
+        {
+            "index": 48,
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "15. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 已知 $C=60^{\\circ}, b=\\sqrt{6}$, $c=3$, 则 $A=$\n",
+            "standard_answer": "$75^{\\circ}$.\n",
+            "analysis": "解：根据正弦定理可得 $\\frac{b}{\\sin B}=\\frac{c}{\\sin \\mathrm{C}}, C=60^{\\circ}, b=\\sqrt{6}, c=3$, $\\therefore \\sin B=\\frac{\\sqrt{6} \\times \\frac{\\sqrt{3}}{2}}{3}=\\frac{\\sqrt{2}}{2}$,\n\n$\\because \\mathrm{b}<\\mathrm{c}$\n\n$\\therefore \\mathrm{B}=45^{\\circ}$\n\n$\\therefore \\mathrm{A}=180^{\\circ}-\\mathrm{B}-\\mathrm{C}=180^{\\circ}-45^{\\circ}-60^{\\circ}=75^{\\circ}$,\n\n故答案为: $75^{\\circ}$.\n",
+            "model_output": "【解析】\n根据三角形的正弦定理，我们有 $\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}$。\n已知 $C=60^{\\circ}, b=\\sqrt{6}$, $c=3$，所以 $\\sin C = \\sin 60^{\\circ} = \\frac{\\sqrt{3}}{2}$。\n我们可以将已知的值代入正弦定理，得到 $\\frac{a}{\\sin A} = \\frac{\\sqrt{6}}{\\sin B} = \\frac{3}{\\frac{\\sqrt{3}}{2}}$。\n因为 $\\triangle A B C$ 的内角之和为 $180^{\\circ}$，所以 $A = 180^{\\circ} - B - C$。\n我们已经知道 $C = 60^{\\circ}$，所以 $A = 180^{\\circ} - B - 60^{\\circ} = 120^{\\circ} - B$。\n因为 $A$ 和 $B$ 都是锐角，所以 $A = 120^{\\circ} - B$ 必须小于 $90^{\\circ}$，所以 $B > 30^{\\circ}$。\n根据正弦定理，我们有 $\\frac{\\sqrt{6}}{\\sin B} = \\frac{3}{\\frac{\\sqrt{3}}{2}}$，解这个方程我们得到 $\\sin B = \\frac{2\\sqrt{6}}{3\\sqrt{3}} = \\frac{2\\sqrt{2}}{3}$。\n因为 $B > 30^{\\circ}$，所以 $B = \\arcsin\\left(\\frac{2\\sqrt{2}}{3}\\right)$。\n最后，我们得到 $A = 120^{\\circ} - B = 120^{\\circ} - \\arcsin\\left(\\frac{2\\sqrt{2}}{3}\\right)$。\n<eoe>\n【答案】$A = 120^{\\circ} - \\arcsin\\left(\\frac{2\\sqrt{2}}{3}\\right)$<eoa>"
+        },
+        {
+            "index": 49,
+            "year": "2017",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "16. (5 分) 设函数 $f(x)=\\left\\{\\begin{array}{ll}x+1, & x \\leqslant 0 \\\\ 2^{x}, & x>0\\end{array}\\right.$, 则满足 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 的 $x$ 的 取值范围是\n",
+            "standard_answer": "$\\left(-\\frac{1}{4},+\\infty\\right)$.\n",
+            "analysis": "解: 若 $x \\leqslant 0$, 则 $x-\\frac{1}{2} \\leqslant-\\frac{1}{2}$,\n\n则 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 等价为 $x+1+x-\\frac{1}{2}+1>1$, 即 $2 x>-\\frac{1}{2}$, 则 $x>-\\frac{1}{4}$, 此时 $-\\frac{1}{4}<x \\leqslant 0$,\n\n当 $x>0$ 时, $f(x)=2^{x}>1, x-\\frac{1}{2}>-\\frac{1}{2}$,\n\n当 $x-\\frac{1}{2}>0$ 即 $x>\\frac{1}{2}$ 时, 满足 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n当 $0 \\geqslant x-\\frac{1}{2}>-\\frac{1}{2}$, 即 $\\frac{1}{2} \\geqslant x>0$ 时, $f\\left(x-\\frac{1}{2}\\right)=x-\\frac{1}{2}+1=x+\\frac{1}{2}>\\frac{1}{2}$,\n\n此时 $f(x)+f\\left(x-\\frac{1}{2}\\right)>1$ 恒成立,\n\n综上 $x>-\\frac{1}{4}$,\n\n故答案为: $\\left(-\\frac{1}{4},+\\infty\\right)$.\n",
+            "model_output": "【解析】\n首先，我们需要考虑两种情况，即x≤0和x>0。\n\n对于x≤0，我们有f(x)=x+1和f(x-1/2)=x+1/2，所以f(x)+f(x-1/2)=2x+3/2>1，解得x>−1/4。\n\n对于x>0，我们有f(x)=2^x和f(x-1/2)=2^(x-1/2)，所以f(x)+f(x-1/2)=2^x+2^(x-1/2)>1，解得x>0。\n\n因此，满足f(x)+f(x-1/2)>1的x的取值范围是x>−1/4。<eoe>\n【答案】x>−1/4<eoa>"
+        },
+        {
+            "index": 50,
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. （5 分) 已知函数 $f(x)=\\log _{2}\\left(x^{2}+a\\right)$, 若 $f(3)=1$, 则 $a=$\n",
+            "standard_answer": "-7\n",
+            "analysis": "解: 函数 $\\mathrm{f}(\\mathrm{x})=\\log _{2}\\left(\\mathrm{x}^{2}+\\mathrm{a}\\right)$, 若 $\\mathrm{f}(3)=1$,\n\n可得: $\\log _{2}(9+a)=1$, 可得 $a=-7$.\n\n故答案为: -7 .\n",
+            "model_output": "【解析】根据题目已知，我们可以将$f(3)=1$代入函数$f(x)=\\log _{2}\\left(x^{2}+a\\right)$中，得到$\\log _{2}\\left(3^{2}+a\\right)=1$。这个等式可以转化为$2^1=3^2+a$，然后解出$a$的值。<eoe>\n【答案】-5<eoa>"
+        },
+        {
+            "index": 51,
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. (5 分）直线 $y=x+1$ 与圆 $x^{2}+y^{2}+2 y-3=0$ 交于 $A, B$ 两点, 则 $|A B|=$\n",
+            "standard_answer": "$2 \\sqrt{2}$\n",
+            "analysis": "解：圆 $x^{2}+y^{2}+2 y-3=0$ 的圆心 $(0,-1)$, 半径为: 2 ,\n\n圆心到直线的距离为: $\\frac{|0+1+1|}{\\sqrt{2}}=\\sqrt{2}$,\n\n所以 $|A B|=2 \\sqrt{2^{2}-(\\sqrt{2})^{2}}=2 \\sqrt{2}$.\n\n故答案为: $2 \\sqrt{2}$.\n",
+            "model_output": "【解析】首先，我们需要找到直线和圆的交点，然后计算这两个交点的距离。\n\n1. 将直线的方程 $y=x+1$ 代入圆的方程 $x^{2}+y^{2}+2 y-3=0$，得到 $x^{2}+(x+1)^{2}+2(x+1)-3=0$，化简得到 $2x^{2}+4x=0$，解得 $x=0$ 或 $x=-2$。\n\n2. 将 $x=0$ 和 $x=-2$ 分别代入直线方程 $y=x+1$，得到对应的 $y$ 值，即得到交点 $A(0,1)$ 和 $B(-2,-1)$。\n\n3. 最后，我们计算两点之间的距离，使用距离公式 $d=\\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$，即 $d=\\sqrt{(-2-0)^{2}+(-1-1)^{2}}=\\sqrt{4+4}=\\sqrt{8}$。\n\n所以，$|AB|=\\sqrt{8}$。<eoe>\n【答案】$\\sqrt{8}$<eoa>"
+        },
+        {
+            "index": 52,
+            "year": "2018",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "16. (5 分) $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$. 已知 $b \\sin C+c \\sin B=4 a \\sin B \\sin C, b^{2}+c^{2}-a^{2}=8$, 则 $\\triangle A B C$ 的面积为\n",
+            "standard_answer": "$\\frac{2 \\sqrt{3}}{3}$\n",
+            "analysis": "解: $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$.\n\n$b \\sin C+c \\sin B=4 a \\sin B \\sin C$,\n\n利用正弦定理可得 $\\sin B \\sin C+\\sin C \\sin B=4 \\sin A \\sin B \\sin C$,\n\n由于 $0<B<\\pi, 0<C<\\pi$ ，\n\n所以 $\\sin B \\sin C \\neq 0$,\n\n所以 $\\sin A=\\frac{1}{2}$,\n\n则 $A=\\frac{\\pi}{6}$ 或 $\\frac{5 \\pi}{6}$\n\n由于 $b^{2}+c^{2}-a^{2}=8$,\n\n则: $\\cos \\mathrm{a}=\\frac{b^{2}+c^{2}-a^{2}}{2 b c}$,\n\n(1)当 $A=\\frac{\\pi}{6}$ 时, $\\frac{\\sqrt{3}}{2}=\\frac{8}{2 b c}$,\n\n解得 $\\mathrm{bc}=\\frac{8 \\sqrt{3}}{3}$,\n\n所以 $S_{\\triangle A B C}=\\frac{1}{2} b \\operatorname{csin} A=\\frac{2 \\sqrt{3}}{3}$.\n\n(2)当 $\\mathrm{A}=\\frac{5 \\pi}{6}$ 时, $-\\frac{\\sqrt{3}}{2}=\\frac{8}{2 \\mathrm{bc}}$,\n\n解得 $b c=-\\frac{8 \\sqrt{3}}{3}$ (不合题意), 舍去.\n\n故: $S_{\\triangle A B C}=\\frac{2 \\sqrt{3}}{3}$.\n\n故答案为: $\\frac{2 \\sqrt{3}}{3}$.\n",
+            "model_output": "【解析】根据题目给出的条件，我们首先可以利用正弦定理，将$b\\sin C+c\\sin B=4a\\sin B\\sin C$转化为$b^2\\sin A+c^2\\sin A=4a^2\\sin B\\sin C$，然后利用余弦定理，将$b^2+c^2-a^2=8$转化为$2bc\\cos A=8$。接下来，我们可以将两个等式联立起来，得到$2bc\\sin A=4a^2\\sin B\\sin C$，进一步化简，得到$S=\\frac{1}{2}bc\\sin A=2a^2\\sin B\\sin C$。由此，我们可以得到三角形ABC的面积为$2a^2\\sin B\\sin C$。<eoe>\n【答案】$2a^2\\sin B\\sin C$<eoa>"
+        },
+        {
+            "index": 53,
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "13. (5 分) 曲线 $y=2 \\ln x$ 在点 $(1,0)$ 处的切线方程为\n",
+            "standard_answer": "$y=2 x-2$\n",
+            "analysis": "解: $\\because y=2 \\ln x$,\n\n$\\therefore y^{\\prime}=\\frac{2}{x}$,\n\n当 $x=1$ 时,$y^{\\prime}=2$\n\n$\\therefore$ 曲线 $y=2 \\ln x$ 在点 $(1,0)$ 处的切线方程为 $y=2 x-2$.\n\n故答案为: $y=2 x-2$.\n",
+            "model_output": "【解析】首先，我们需要求出曲线 $y=2 \\ln x$ 在点 $(1,0)$ 处的导数，即切线的斜率。对于函数 $y=2 \\ln x$，其导数为 $y' = 2/x$。将点 $(1,0)$ 的坐标代入，得到斜率为 $2/1=2$。然后，我们使用点斜式方程 $y-y_1=m(x-x_1)$ 来求解切线方程，其中 $(x_1,y_1)$ 是切点的坐标，$m$ 是斜率。将点 $(1,0)$ 和斜率 $2$ 代入，得到切线方程为 $y-0=2(x-1)$，简化后得到 $y=2x-2$。<eoe>\n【答案】$y=2x-2$<eoa>"
+        },
+        {
+            "index": 54,
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "15. (5 分) 已知 $\\tan \\left(\\alpha-\\frac{5 \\pi}{4}\\right)=\\frac{1}{5}$, 则 $\\tan \\alpha=$\n",
+            "standard_answer": "$\\frac{3}{2}$\n",
+            "analysis": "解: $\\because \\tan \\left(\\alpha-\\frac{5 \\pi}{4}\\right)=\\frac{1}{5}$,\n\n$\\therefore \\tan \\left(\\alpha-\\frac{\\pi}{4}\\right)=\\frac{1}{5}$\n\n则 $\\tan \\alpha=\\tan \\left(\\alpha-\\frac{\\pi}{4}+\\frac{\\pi}{4}\\right)=\\frac{\\tan \\left(\\alpha-\\frac{\\pi}{4}\\right)+\\tan \\frac{\\pi}{4}}{1-\\tan \\left(\\alpha-\\frac{\\pi}{4}\\right) \\tan \\frac{\\pi}{4}}=\\frac{\\frac{1}{5}+1}{1-\\frac{1}{5} \\times 1}=\\frac{1+5}{5-1}=\\frac{6}{4}=\\frac{3}{2}$,\n\n故答案为: $\\frac{3}{2}$.\n",
+            "model_output": "【解析】\n已知 $\\tan \\left(\\alpha-\\frac{5 \\pi}{4}\\right)=\\frac{1}{5}$，我们可以利用正切的加减公式将其转化为 $\\tan \\alpha$ 的形式。\n\n正切的加减公式为：$\\tan(a-b)=\\frac{\\tan a-\\tan b}{1+\\tan a \\tan b}$。\n\n将已知条件代入公式，得到：\n$\\frac{1}{5}=\\frac{\\tan \\alpha-\\tan \\left(-\\frac{\\pi}{4}\\right)}{1+\\tan \\alpha \\tan \\left(-\\frac{\\pi}{4}\\right)}$。\n\n因为 $\\tan \\left(-\\frac{\\pi}{4}\\right)=-1$，所以上式可以化简为：\n$\\frac{1}{5}=\\frac{\\tan \\alpha+1}{1-\\tan \\alpha}$。\n\n解这个方程，我们可以得到 $\\tan \\alpha$ 的值。\n\n将上式两边乘以 $(1-\\tan \\alpha)$，得到：\n$\\frac{1}{5} \\times (1-\\tan \\alpha) = \\tan \\alpha + 1$。\n\n化简得到：\n$\\frac{1}{5} - \\frac{\\tan \\alpha}{5} = \\tan \\alpha + 1$。\n\n将方程中的 $\\tan \\alpha$ 放在一边，得到：\n$\\frac{6}{5} \\tan \\alpha = \\frac{1}{5} - 1$。\n\n最后，解出 $\\tan \\alpha$ 的值为：\n$\\tan \\alpha = \\frac{\\frac{1}{5} - 1}{\\frac{6}{5}}$。<eoe>\n\n【答案】$\\tan \\alpha = -\\frac{4}{6} = -\\frac{2}{3}$<eoa>"
+        },
+        {
+            "index": 55,
+            "year": "2018",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "16. (5 分) 已知圆雉的顶点为 $S$, 母线 $S A, S B$ 互相垂直, $S A$ 与圆雉底面所成 角为 $30^{\\circ}$. 若 $\\triangle S A B$ 的面积为 8 , 则该圆雉的体积为\n",
+            "standard_answer": "$8 \\pi$\n",
+            "analysis": "解: 圆雉的顶点为 $S$, 母线 $S A, S B$ 互相垂直, $\\triangle S A B$ 的面积为 8 , 可得 $: \\frac{1}{2} S^{2}=8$, 解得 $\\mathrm{SA}=4$,\n\n$\\mathrm{SA}$ 与圆锥底面所成角为 $30^{\\circ}$. 可得圆锥的底面半径为: $2 \\sqrt{3}$, 圆雉的高为: 2 , 则该圆锥的体积为: $V=\\frac{1}{3} \\times \\pi \\times(2 \\sqrt{3})^{2} \\times 2=8 \\pi$.\n\n故答案为: $8 \\pi$.\n",
+            "model_output": "【解析】\n首先，我们知道圆雉的体积公式为V=πr²h/3，其中r是底面半径，h是高。\n题目给出了三角形SAB的面积为8，且SA和SB互相垂直，SA与圆雉底面所成角为30度，那么我们可以根据这些信息求出SA和SB的长度，然后进一步求出r和h。\n\n首先，我们知道三角形的面积公式为S=1/2*底*高，那么根据题目给出的三角形SAB的面积为8，我们可以得出SA*SB/2=8，即SA*SB=16。\n\n然后，我们知道SA与圆雉底面所成角为30度，那么根据三角函数的知识，我们知道SA=2r，SB=√3*r，将这两个等式代入SA*SB=16，我们可以得到2r*√3*r=16，解这个方程，我们可以得到r=2/√3，h=2*2/√3=4/√3。\n\n最后，将r和h代入圆雉的体积公式V=πr²h/3，我们可以得到V=π*(2/√3)²*(4/√3)/3=16π/3√3。\n\n所以，该圆雉的体积为16π/3√3。<eoe>\n【答案】16π/3√3<eoa>"
+        },
+        {
+            "index": 56,
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "13. (5 分) 已知向量 $\\vec{a}=(1,2), \\vec{b}=(2,-2), \\vec{c}=(1, \\lambda)$. 若 $\\vec{c} / /(2 \\vec{a}+\\vec{b})$, 则 $\\lambda=$\n",
+            "standard_answer": "$\\frac{1}{2}$.\n",
+            "analysis": "解: $\\because$ 向量 $\\vec{a}=(1,2), \\vec{b}=(2,-2)$,\n\n$\\therefore 2 \\overrightarrow{\\mathrm{a}}+\\overrightarrow{\\mathrm{b}}=(4,2)$\n\n$\\because \\vec{c}=(1, \\lambda), \\quad \\vec{c} / / \\quad(2 \\vec{a}+\\vec{b})$\n\n$\\therefore \\frac{1}{4}=\\frac{\\lambda}{2}$\n\n解得 $\\lambda=\\frac{1}{2}$.\n\n故答案为: $\\frac{1}{2}$.\n",
+            "model_output": "【解析】\n向量 $\\vec{c}$ 平行于向量 $2\\vec{a}+\\vec{b}$，那么它们的坐标成比例。\n首先，我们计算向量 $2\\vec{a}+\\vec{b}$ 的坐标：\n$2\\vec{a}+\\vec{b} = 2*(1,2) + (2,-2) = (2*1+2, 2*2-2) = (4,2)$\n然后，我们设向量 $\\vec{c}$ 与向量 $2\\vec{a}+\\vec{b}$ 的坐标成比例，即有：\n$(1, \\lambda) = k * (4,2)$\n由此我们可以得到两个方程：\n$1 = 4k$\n$\\lambda = 2k$\n解这两个方程，我们可以得到 $k = 1/4$，代入第二个方程，得到 $\\lambda = 2*1/4 = 1/2$<eoe>\n【答案】$\\lambda = 1/2$<eoa>"
+        },
+        {
+            "index": 57,
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "14. (5 分) 某公司有大量客户, 且不同年龄段客户对其服务的评价有较大差异. 为 了解客户的评价, 该公司准备进行抽样调查, 可供选择的抽样方法有简单随 机抽样、分层抽样和系统抽样, 则最合适的抽样方法是\n",
+            "standard_answer": "分层抽样.\n",
+            "analysis": "解: 某公司有大量客户, 且不同年龄段客户对其服务的评价有较大差异, 为了解客户的评价, 该公司准备进行抽样调查,\n\n可供选择的抽样方法有简单随机抽样、分层抽样和系统抽样,\n\n则最合适的抽样方法是分层抽样.\n\n故答案为: 分层抽样.\n",
+            "model_output": "【解析】在这个问题中，公司的客户有大量并且不同年龄段的客户对其服务的评价有较大差异。这意味着客户群体是异质的，即他们的反馈可能会因年龄段的不同而有所不同。因此，最好的抽样方法应该能够反映这种差异性。在简单随机抽样、分层抽样和系统抽样中，分层抽样是最能满足这一需求的。因为在分层抽样中，总体被划分为不同的子群体或层，然后从每一层中随机抽取样本。这样可以确保每个年龄段都有代表性的样本被抽取，从而更准确地反映出不同年龄段客户对公司服务的评价。<eoe>\n【答案】分层抽样<eoa>"
+        },
+        {
+            "index": 58,
+            "year": "2018",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "16. (5 分) 已知函数 $f(x)=\\ln \\left(\\sqrt{1+x^{2}}-x\\right)+1, f(a)=4$, 则 $f(-a)=$\n",
+            "standard_answer": "-2 .\n",
+            "analysis": "解：函数 $g(x)=\\ln \\left(\\sqrt{1+x^{2}}-x\\right)$\n\n满足 $g(-x)=\\ln \\left(\\sqrt{1+x^{2}}+x\\right)=\\ln \\frac{1}{\\sqrt{1+x^{2}}-x}=-\\ln \\left(\\sqrt{1+x^{2}}-x\\right)=-g(x)$, 所以 $g(x)$ 是奇函数.\n\n函数 $f(x)=\\ln \\left(\\sqrt{1+x^{2}}-x\\right)+1, f(a)=4$,\n\n可得 $f(a)=4=\\ln \\left(\\sqrt{1+a^{2}}-a\\right)+1$, 可得 $\\ln \\left(\\sqrt{1+a^{2}}-a\\right)=3$,\n\n则 $f(-a)=-\\ln \\left(\\sqrt{1+a^{2}}-a\\right)+1=-3+1=-2$. 故答案为: -2 .\n",
+            "model_output": "【解析】\n首先，我们需要找出f(x)的对称性质。观察函数$f(x)=\\ln \\left(\\sqrt{1+x^{2}}-x\\right)+1$，我们可以发现，如果我们将x替换为-x，函数的值不会改变。也就是说，函数$f(x)$是关于y轴对称的，即$f(x) = f(-x)$。\n因此，根据这个对称性质，我们可以得出$f(a) = f(-a)$。\n因为已知$f(a) = 4$，所以$f(-a) = 4$。\n<eoe>\n【答案】4<eoa>"
+        },
+        {
+            "index": 59,
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13. 曲线 $y=3\\left(x^{2}+x\\right) \\mathrm{e}^{x}$ 在点 $(0,0)$ 处的切线方程为\n",
+            "standard_answer": "$3 x-y=0$.\n",
+            "analysis": "【详解】详解: $y^{\\prime}=3(2 x+1) e^{x}+3\\left(x^{2}+x\\right) e^{x}=3\\left(x^{2}+3 x+1\\right) e^{x}$,\n\n所以, $k=\\left.y^{\\prime}\\right|_{x=0}=3$\n\n所以, 曲线 $y=3\\left(x^{2}+x\\right) \\mathrm{e}^{x}$ 在点 $(0,0)$ 处的切线方程为 $y=3 x$, 即 $3 x-y=0$.\n",
+            "model_output": "【解析】\n首先，我们需要找到曲线在点 $(0,0)$ 处的斜率，也就是求导数在 $x=0$ 的值。\n曲线的导数为 $y'=3\\left(2x+1\\right) \\mathrm{e}^{x}+3\\left(x^{2}+x\\right) \\mathrm{e}^{x}$。\n将 $x=0$ 代入，得到 $y'(0)=3$。\n然后，我们可以用点斜式方程 $y-y_1=m(x-x_1)$ 来找到切线的方程，其中 $(x_1,y_1)$ 是切点，$m$ 是斜率。\n将 $(0,0)$ 和 $m=3$ 代入，得到切线方程为 $y=3x$。<eoe>\n【答案】$y=3x$<eoa>"
+        },
+        {
+            "index": 60,
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14. 记 $S_{n}$ 为等比数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{1}=1, S_{3}=\\frac{3}{4}$, 则 $S_{4}=$\n",
+            "standard_answer": "$\\frac{5}{8}$.\n",
+            "analysis": "【详解】详解: 设等比数列的公比为 $q$, 由已知 $S_{3}=a_{1}+a_{1} q+a_{1} q^{2}=1+q+q^{2}=\\frac{3}{4}$, 即 $q^{2}+q+\\frac{1}{4}=0$\n\n解得 $q=-\\frac{1}{2}$,\n\n所以 $S_{4}=\\frac{a_{1}\\left(1-q^{4}\\right)}{1-q}=\\frac{1-\\left(-\\frac{1}{2}\\right)^{4}}{1-\\left(-\\frac{1}{2}\\right)}=\\frac{5}{8}$.\n",
+            "model_output": "【解析】等比数列的前n项和公式为$S_n = a_1 \\frac{1-q^n}{1-q}$，其中$a_1$是首项，$q$是公比。题目给出$a_1=1$，$S_3=\\frac{3}{4}$，我们可以将这些值代入公式求出公比$q$。得到$\\frac{3}{4} = \\frac{1-q^3}{1-q}$，解这个方程我们可以得到$q$的值。然后我们再将$a_1$和$q$代入$S_n$的公式，求出$S_4$的值。<eoe>\n【答案】$S_4=\\frac{1}{2}$<eoa>"
+        },
+        {
+            "index": 61,
+            "year": "2019",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. 函数 $f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x$ 的最小值为\n",
+            "standard_answer": "-4 .\n",
+            "analysis": "【\n\n详\n\n解\n\n】\n\n$f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x=-\\cos 2 x-3 \\cos x=-2 \\cos ^{2} x-3 \\cos x+1$\n\n$=-2\\left(\\cos x+\\frac{3}{4}\\right)^{2}+\\frac{17}{8}$\n\n$\\because-1 \\leq \\cos x \\leq 1, \\therefore$ 当 $\\cos x=1$ 时, $f_{\\text {min }}(x)=-4$,\n\n故函数 $f(x)$ 的最小值为 -4 .\n",
+            "model_output": "【解析】\n首先我们需要知道，正弦函数和余弦函数的值都在-1到1之间。因此，函数$f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)$的值也在-1到1之间，函数$-3 \\cos x$的值在-3到3之间。\n因此，函数$f(x)=\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)-3 \\cos x$的值在-4到4之间。\n然后，我们需要找到这个函数的最小值。这个函数的最小值发生在$\\sin \\left(2 x+\\frac{3 \\pi}{2}\\right)$取-1，$-3 \\cos x$取3的时候，即函数的最小值为-1-3=-4。\n<eoe>\n【答案】-4<eoa>"
+        },
+        {
+            "index": 62,
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "14.我国高铁发展迅速, 技术先进. 经统计, 在经停某站的高铁列车中, 有 10 个车次的正点 率为 0.97 , 有 20 个车次的正点率为 0.98 , 有 10 个车次的正点率为 0.99 , 则经停该站高铁列 车所有车次的平均正点率的估计值为\n",
+            "standard_answer": "0. 98.\n",
+            "analysis": "【详解】由题意得, 经停该高铁站的列车正点数约为 $10 \\times 0.97+20 \\times 0.98+10 \\times 0.99=39.2$, 其中高铁个数为 $10+20+10=40$, 所以该站所有高 铁平均正点率约为 $\\frac{39.2}{40}=0.98$.\n",
+            "model_output": "【解析】首先，我们需要理解题目中的\"平均正点率\"的计算方法。这里的\"平均正点率\"应该是所有车次的正点率的加权平均值，权重就是每个正点率对应的车次数。所以，我们可以先计算每个正点率和对应车次数的乘积，然后将这些乘积相加，最后除以总的车次数，就可以得到平均正点率的估计值。\n具体计算如下：\n10个车次的正点率为0.97，所以这部分的总正点率为10*0.97=9.7；\n20个车次的正点率为0.98，所以这部分的总正点率为20*0.98=19.6；\n10个车次的正点率为0.99，所以这部分的总正点率为10*0.99=9.9；\n然后将这三部分的总正点率相加，得到总的正点率为9.7+19.6+9.9=39.2；\n最后，将总的正点率除以总的车次数（10+20+10=40），得到平均正点率的估计值为39.2/40。<eoe>\n【答案】0.98<eoa>"
+        },
+        {
+            "index": 63,
+            "year": "2019",
+            "category": "（新课标ⅱ）",
+            "score": 5,
+            "question": "15. $\\bigvee A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$. 已知 $b \\sin A+a \\cos B=0$, 则 $B=$\n",
+            "standard_answer": "$\\frac{3 \\pi}{4}$\n",
+            "analysis": "【详解】由正弦定理, 得 $\\sin B \\sin A+\\sin A \\cos B=0 \\therefore A \\in(0, \\pi), B \\in(0, \\pi), \\therefore \\sin A \\neq 0$, 得 $\\sin B+\\cos B=0$, 即 $\\tan B=-1, \\therefore B=\\frac{3 \\pi}{4}$. 故选 D.\n",
+            "model_output": "【解析】\n已知 $b \\sin A+a \\cos B=0$，我们可以将其改写为 $\\cos B=-\\frac{b \\sin A}{a}$。\n\n根据正弦定理，我们知道 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}$，所以 $\\sin B=\\frac{b \\sin A}{a}$。\n\n因此，我们可以得出 $\\cos B=-\\sin B=-\\frac{b \\sin A}{a}$。\n\n由于 $\\sin^2 B + \\cos^2 B = 1$，我们可以得出 $\\cos B = \\sqrt{1-\\sin^2 B}$。\n\n因此，我们可以得出 $B=\\arccos(-\\sin B)$ 或 $B=\\arccos(\\sin B)$。\n\n然而，由于 $B$ 是三角形的一个内角，所以 $B$ 必须在 $0$ 到 $\\pi$ 的范围内。因此，我们可以得出 $B=\\arccos(-\\sin B)$。<eoe>\n\n【答案】$B=\\arccos(-\\sin B)$<eoa>"
+        },
+        {
+            "index": 64,
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "13.已知向量 $\\vec{a}=(2,2), \\vec{b}=(-8,6)$, 则 $\\cos \\langle\\vec{a}, \\vec{b}\\rangle=$\n",
+            "standard_answer": "$-\\frac{\\sqrt{2}}{10}$\n",
+            "analysis": "【详解】详解: $\\cos \\langle\\vec{a}, \\vec{b}\\rangle=\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| \\cdot|\\vec{b}|}=\\frac{2 \\times(-8)+2 \\times 6}{\\sqrt{2^{2}+2^{2}} \\times \\sqrt{(-8)^{2}+6^{2}}}=-\\frac{\\sqrt{2}}{10}$.\n",
+            "model_output": "【解析】\n向量$\\vec{a}$与向量$\\vec{b}$的夹角的余弦值可以通过公式$\\cos \\langle\\vec{a}, \\vec{b}\\rangle=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}$计算得出。\n其中，$\\vec{a}\\cdot\\vec{b}$是向量$\\vec{a}$与向量$\\vec{b}$的点积，$|\\vec{a}|$和$|\\vec{b}|$分别是向量$\\vec{a}$和向量$\\vec{b}$的模。\n首先，计算向量$\\vec{a}$与向量$\\vec{b}$的点积，$\\vec{a}\\cdot\\vec{b}=2*(-8)+2*6=-16+12=-4$。\n然后，计算向量$\\vec{a}$和向量$\\vec{b}$的模，$|\\vec{a}|=\\sqrt{2^2+2^2}=\\sqrt{8}=2\\sqrt{2}$，$|\\vec{b}|=\\sqrt{(-8)^2+6^2}=\\sqrt{100}=10$。\n最后，代入公式，$\\cos \\langle\\vec{a}, \\vec{b}\\rangle=\\frac{-4}{2\\sqrt{2}*10}=\\frac{-1}{5\\sqrt{2}}$。\n为了得到简单的结果，我们可以将$\\frac{-1}{5\\sqrt{2}}$乘以$\\frac{\\sqrt{2}}{\\sqrt{2}}$，得到$\\frac{-\\sqrt{2}}{10}$。\n<eoe>\n【答案】$\\frac{-\\sqrt{2}}{10}$<eoa>"
+        },
+        {
+            "index": 65,
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "14. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, 若 $a_{3}=5, a_{7}=13$, 则 $S_{10}=$\n",
+            "standard_answer": "100\n",
+            "analysis": "【详解】详解: $\\left\\{\\begin{array}{l}a_{3}=a_{1}+2 d=5 \\\\ a_{7}=a_{1}+6 d=13\\end{array}\\right.$,得 $\\left\\{\\begin{array}{l}a_{1}=1 \\\\ d=2\\end{array}\\right.$, $\\therefore S_{10}=10 a_{1}+\\frac{10 \\times 9}{2} d=10 \\times 1+\\frac{10 \\times 9}{2} \\times 2=100$.\n",
+            "model_output": "【解析】\n首先，我们知道等差数列的通项公式是$a_n=a_1+(n-1)d$，其中$a_1$是首项，$d$是公差，$n$是项数。\n由题意，我们有$a_3=a_1+2d=5$和$a_7=a_1+6d=13$。\n我们可以将这两个方程联立起来求解，得到$a_1$和$d$的值。\n然后，我们知道等差数列的前n项和的公式是$S_n=\\frac{n}{2}(a_1+a_n)$，其中$a_n$是第n项。\n所以，我们可以将求得的$a_1$和$d$代入公式，求出$S_{10}$的值。<eoe>\n【答案】\n首先，我们解这个方程组：\n$a_1+2d=5$\n$a_1+6d=13$\n相减得到：$4d=8$，解得$d=2$。\n将$d=2$代入第一个方程得到：$a_1+2*2=5$，解得$a_1=1$。\n然后，我们求$a_{10}$，代入$a_n=a_1+(n-1)d$得到$a_{10}=1+(10-1)*2=19$。\n最后，我们求$S_{10}$，代入$S_n=\\frac{n}{2}(a_1+a_n)$得到$S_{10}=\\frac{10}{2}(1+19)=100$。<eoa>"
+        },
+        {
+            "index": 66,
+            "year": "2019",
+            "category": "（新课标ⅲ）",
+            "score": 5,
+            "question": "15. 设 $F_{1}, F_{2}$ 为椭圆 $C: \\frac{x^{2}}{36}+\\frac{y^{2}}{20}=1$ 的两个焦点, $M$ 为 $C$ 上一点且在第一象限. 若 $\\triangle M F_{1} F_{2}$ 为等腰三角形, 则 $M$ 的坐标为\n",
+            "standard_answer": "$(3, \\sqrt{15})$\n",
+            "analysis": "【详 解 】由已知 可 得 $a^{2}=36, b^{2}=36, \\therefore c^{2}=a^{2}-b^{2}=16, \\therefore c=4$ ，\n\n$\\therefore\\left|M F_{1}\\right|=\\left|F_{1} F_{2}\\right|=2 c=8$.\n\n$\\because\\left|M F_{1}\\right|+\\left|M F_{2}\\right|=2 a=12,\\left|M F_{2}\\right|=4$\n\n设点 $M$ 的坐标为 $\\left(x_{0}, y_{0}\\right)\\left(x_{0}>0, y_{0}>0\\right)$, 则 $S_{\\triangle M F_{1} F_{2}}=\\frac{1}{2} \\cdot\\left|F_{1} F_{2}\\right| \\cdot y_{0}=4 y_{0}$,\n\n又 $S_{\\triangle M F_{1} F_{2}}=\\frac{1}{2} \\times 4 \\times \\sqrt{8^{2}-2^{2}}=4 \\sqrt{15}, \\therefore 4 y_{0}=4 \\sqrt{15}$, 解得 $y_{0}=\\sqrt{15}$,\n\n$\\therefore \\frac{x_{0}^{2}}{36}+\\frac{(\\sqrt{15})^{2}}{20}=1$, 解得 $x_{0}=3 \\quad$ ( $x_{0}=-3$ 舍去),\n\n$\\backslash M$ 的坐标为 $(3, \\sqrt{15})$.\n",
+            "model_output": "【解析】\n首先我们需要知道椭圆的焦点的求法，对于椭圆 $\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1$，如果 $a>b$，那么焦点在x轴上，坐标为 $(\\pm\\sqrt{a^{2}-b^{2}},0)$；如果 $a<b$，那么焦点在y轴上，坐标为 $(0,\\pm\\sqrt{b^{2}-a^{2}})$。\n\n对于本题，我们可以看出 $a^{2}=36, b^{2}=20$，所以 $a>b$，焦点在x轴上，坐标为 $(\\pm\\sqrt{36-20},0)=(\\pm4\\sqrt{1},0)=(\\pm4,0)$，即 $F_{1}(-4,0), F_{2}(4,0)$。\n\n因为 $\\triangle M F_{1} F_{2}$ 为等腰三角形，所以 $MF_{1}=MF_{2}$，即点 $M$ 到 $F_{1}, F_{2}$ 的距离相等。设 $M(x,y)$，则有 $\\sqrt{(x+4)^{2}+y^{2}}=\\sqrt{(x-4)^{2}+y^{2}}$，解这个方程可以得到 $x=0$。\n\n又因为 $M$ 在椭圆上，所以 $M$ 应满足椭圆的方程，将 $x=0$ 代入椭圆的方程 $\\frac{x^{2}}{36}+\\frac{y^{2}}{20}=1$，得到 $\\frac{y^{2}}{20}=1$，解这个方程可以得到 $y=\\pm\\sqrt{20}=\\pm2\\sqrt{5}$。\n\n因为 $M$ 在第一象限，所以 $y>0$，所以 $M$ 的坐标为 $(0,2\\sqrt{5})$。\n<eoe>\n【答案】$(0,2\\sqrt{5})$<eoa>"
+        },
+        {
+            "index": 67,
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "score": 5,
+            "question": "14. 设双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的一条渐近线为 $y=\\sqrt{2} x$, 则 $C$ 的离心率为\n",
+            "standard_answer": "$\\sqrt{3}$\n",
+            "analysis": "【详解】由双曲线方程 $\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1$ 可得其焦点在 $x$ 轴上，\n\n因为其一条渐近线为 $y=\\sqrt{2} x$,\n\n所以 $\\frac{b}{a}=\\sqrt{2}, e=\\frac{c}{a}=\\sqrt{1+\\frac{b^{2}}{a^{2}}}=\\sqrt{3}$.\n\n故答案为: $\\sqrt{3}$\n",
+            "model_output": "【解析】双曲线的渐近线方程为 $y=\\pm\\frac{b}{a}x$，由题意知，$\\frac{b}{a}=\\sqrt{2}$。\n双曲线的离心率 $e=\\sqrt{1+\\left(\\frac{b}{a}\\right)^{2}}$，代入$\\frac{b}{a}=\\sqrt{2}$，求得离心率 $e$。<eoe>\n【答案】$\\sqrt{3}$<eoa>"
+        },
+        {
+            "index": 68,
+            "year": "2020",
+            "category": "（全国卷Ⅲ）",
+            "score": 5,
+            "question": "15. 设函数 $f(x)=\\frac{\\mathrm{e}^{x}}{x+a}$. 若 $f^{\\prime}(1)=\\frac{e}{4}$, 则 $a=$\n",
+            "standard_answer": "1\n",
+            "analysis": "【详解】由函数的解析式可得: $f^{\\prime}(x)=\\frac{e^{x}(x+a)-e^{x}}{(x+a)^{2}}=\\frac{e^{x}(x+a-1)}{(x+a)^{2}}$,\n\n则: $f^{\\prime}(1)=\\frac{e^{1} \\times(1+a-1)}{(1+a)^{2}}=\\frac{a e}{(a+1)^{2}}$, 据此可得: $\\frac{a e}{(a+1)^{2}}=\\frac{e}{4}$,\n\n整理可得: $a^{2}-2 a+1=0$, 解得： $a=1$.\n\n故答案为: 1 .\n",
+            "model_output": "【解析】\n首先，我们需要找到函数f(x)的导数。根据商的导数公式，我们有：\n\n$f^{\\prime}(x) = \\frac{(x+a)f'(x) - f(x)}{(x+a)^2}$\n\n将f(x)代入上述公式，我们得到：\n\n$f^{\\prime}(x) = \\frac{(x+a)\\frac{e^x}{x+a} - \\frac{e^x}{x+a}}{(x+a)^2}$\n\n化简上述公式，我们得到：\n\n$f^{\\prime}(x) = \\frac{e^x}{(x+a)^2}$\n\n题目给出 $f^{\\prime}(1)=\\frac{e}{4}$，我们可以将x=1代入上述公式，得到：\n\n$\\frac{e}{(1+a)^2} = \\frac{e}{4}$\n\n解这个方程，我们可以找到a的值。<eoe>\n\n【答案】\n解上述方程，我们得到 $a = 1$ 或 $a = -3$。但是，由于函数 $f(x)=\\frac{\\mathrm{e}^{x}}{x+a}$ 在 $a = -x$ 处无定义，所以 $a$ 不能等于 $-1$。因此，$a = 1$。<eoa>"
+        },
+        {
+            "index": 69,
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "score": 5,
+            "question": "14. 设向量 $\\boldsymbol{a}=(1,-1), \\boldsymbol{b}=(m+1,2 m-4)$, 若 ${ }^{\\prime} a \\perp b^{\\prime}$, 则 $m=$\n",
+            "standard_answer": "5\n",
+            "analysis": "【详解】由 ${ }^{\\prime} a \\perp b$\n\n又因为 $\\vec{a}=(1,-1), \\vec{b}=(m+1,2 m-4)$,\n\n所以 $\\vec{a} \\cdot \\vec{b}=1 \\cdot(m+1)+(-1) \\cdot(2 m-4)=0$ ，\n\n即 $m=5$ ，\n\n故答案为: 5 .\n",
+            "model_output": "【解析】\n两个向量垂直，即它们的点积为0。所以有：\na·b = 0\n即：\n(1,-1)·(m+1,2m-4) = 0\n即：\n1*(m+1) + (-1)*(2m-4) = 0\n解这个方程，我们就可以得到m的值。<eoe>\n【答案】\nm=1<eoa>"
+        },
+        {
+            "index": 70,
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "score": 5,
+            "question": "15. 曲线 $y=\\ln x+x+1$ 的一条切线的斜率为 2 , 则该切线的方程为\n",
+            "standard_answer": "$y=2 x$\n",
+            "analysis": "【详解】设切线的切点坐标为 $\\left(x_{0}, y_{0}\\right), y=\\ln x+x+1, y^{\\prime}=\\frac{1}{x}+1$,\n\n$\\left.y^{\\prime}\\right|_{x=x_{0}}=\\frac{1}{x_{0}}+1=2, x_{0}=1, y_{0}=2$, 所以切点坐标为 $(1,2)$,\n\n所求的切线方程为 $y-2=2(x-1)$, 即 $y=2 x$.\n\n故答案为: $y=2 x$.\n",
+            "model_output": "【解析】\n首先，我们知道曲线 $y=\\ln x+x+1$ 的导数为 $y'=\\frac{1}{x}+1$。\n由于切线的斜率为2，所以我们可以将2代入导数的表达式中，解出对应的x值，即 $\\frac{1}{x}+1=2$，解得 $x=1$。\n然后，将 $x=1$ 代入原函数 $y=\\ln x+x+1$ 中，得到切点的y坐标为 $y=\\ln 1+1+1=2$，所以切点为(1,2)。\n最后，根据点斜式方程 $y-y_1=m(x-x_1)$，我们可以得到切线的方程为 $y-2=2(x-1)$，化简得 $y=2x$。\n<eoe>\n【答案】$y=2x$<eoa>"
+        },
+        {
+            "index": 71,
+            "year": "2020",
+            "category": "（新课标Ⅰ）",
+            "score": 5,
+            "question": "16. 数列 $\\left\\{a_{n}\\right\\}$ 满足 $a_{n+2}+(-1)^{n} a_{n}=3 n-1$, 前 16 项和为 540 , 则 $a_{1}=$\n",
+            "standard_answer": "7\n",
+            "analysis": "【详解】 $a_{n+2}+(-1)^{n} a_{n}=3 n-1$,\n\n当 $n$ 为奇数时, $a_{n+2}=a_{n}+3 n-1$; 当 $n$ 为偶数时, $a_{n+2}+a_{n}=3 n-1$.\n\n设数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和为 $S_{n}$,\n\n$S_{16}=a_{1}+a_{2}+a_{3}+a_{4}+\\cdots+a_{16}$\n\n$=a_{1}+a_{3}+a_{5} \\cdots+a_{15}+\\left(a_{2}+a_{4}\\right)+\\cdots\\left(a_{14}+a_{16}\\right)$\n\n$=a_{1}+\\left(a_{1}+2\\right)+\\left(a_{1}+10\\right)+\\left(a_{1}+24\\right)+\\left(a_{1}+44\\right)+\\left(a_{1}+70\\right)$\n\n$+\\left(a_{1}+102\\right)+\\left(a_{1}+140\\right)+(5+17+29+41)$ $=8 a_{1}+392+92=8 a_{1}+484=540$,\n\n$\\therefore a_{1}=7$.\n\n故答案为: 7 .\n",
+            "model_output": "【解析】\n首先，我们可以将给定的递推关系式重写为两个独立的递推关系式，即$a_{n+2}=3n-1+(-1)^na_n$，当n为偶数时，有$a_{n+2}=3n-1+a_n$；当n为奇数时，有$a_{n+2}=3n-1-a_n$。\n\n对于偶数项，我们有\n$a_{2}=3*0-1+a_{0}$,\n$a_{4}=3*2-1+a_{2}=3*2-1+(3*0-1+a_{0})=3*2+3*0-2+a_{0}$,\n$a_{6}=3*4-1+a_{4}=3*4-1+(3*2+3*0-2+a_{0})=3*4+3*2+3*0-3+a_{0}$,\n...\n以此类推，我们可以得到偶数项的通项公式为$a_{2n}=3(0+2+4+...+n)-n+a_{0}$，即$a_{2n}=3n^2-n+a_{0}$。\n\n对于奇数项，我们有\n$a_{3}=3*1-1-a_{1}$,\n$a_{5}=3*3-1-a_{3}=3*3-1-(3*1-1-a_{1})=3*3+3*1-2-a_{1}$,\n$a_{7}=3*5-1-a_{5}=3*5-1-(3*3+3*1-2-a_{1})=3*5+3*3+3*1-3-a_{1}$,\n...\n以此类推，我们可以得到奇数项的通项公式为$a_{2n+1}=3(1+3+5+...+n)-n-a_{1}$，即$a_{2n+1}=3n^2+n-a_{1}$。\n\n题目给出前16项和为540，即$a_{0}+a_{1}+a_{2}+...+a_{15}=540$，将通项公式代入，我们得到\n$a_{0}+a_{1}+3(0^2-0+1^2+1+2^2-2+3^2+3+4^2-4+5^2+5+6^2-6+7^2+7)-8a_{1}=540$，\n整理得到$a_{1}=\\frac{540-a_{0}-3(0+1+4+9+16+25+36+49)-3(1+2+3+4+5+6+7)}{8}$。\n\n题目没有给出$a_{0}$的值，我们可以假设$a_{0}=0$，这样$a_{1}$的值就是唯一确定的。将$a_{0}=0$代入上式，我们可以求得$a_{1}$的值。\n<eoe>\n【答案】\n将$a_{0}=0$代入$a_{1}=\\frac{540-a_{0}-3(0+1+4+9+16+25+36+49)-3(1+2+3+4+5+6+7)}{8}$，我们得到$a_{1}=\\frac{540-3(140)-3(28)}{8}=\\frac{540-420-84}{8}=\\frac{36}{8}=4.5$<eoa>"
+        },
+        {
+            "index": 72,
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "score": 5,
+            "question": "13. 若 $\\sin x=-\\frac{2}{3}$, 则 $\\cos 2 x=$\n",
+            "standard_answer": "$\\frac{1}{9}$\n",
+            "analysis": "【详解】 $\\cos 2 x=1-2 \\sin ^{2} x=1-2 \\times\\left(-\\frac{2}{3}\\right)^{2}=1-\\frac{8}{9}=\\frac{1}{9}$.\n\n故答案为: $\\frac{1}{9}$.\n",
+            "model_output": "【解析】根据三角函数的倍角公式，我们知道$\\cos 2x = 1 - 2\\sin^2 x$。题目已经给出$\\sin x=-\\frac{2}{3}$，我们可以将这个值代入到公式中，得到$\\cos 2x = 1 - 2(-\\frac{2}{3})^2$。计算这个表达式，我们就可以得到$\\cos 2x$的值。<eoe>\n【答案】$\\frac{1}{9}$<eoa>"
+        },
+        {
+            "index": 73,
+            "year": "2020",
+            "category": "（新课标Ⅱ）",
+            "score": 5,
+            "question": "14. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $a_{1}=-2, a_{2}+a_{6}=2$, 则 $S_{10}=$\n",
+            "standard_answer": "25\n",
+            "analysis": "【详解】 $\\because\\left\\{a_{n}\\right\\}$ 是等差数列, 且 $a_{1}=-2, a_{2}+a_{6}=2$\n\n设 $\\left\\{a_{n}\\right\\}$ 等差数列的公差 $d$\n\n根据等差数列通项公式: $a_{n}=a_{1}+(n-1) d$\n\n可得 $a_{1}+d+a_{1}+5 d=2$\n\n即: $-2+d+(-2)+5 d=2$ 整理可得: $6 d=6$\n\n解得: $d=1$\n\n$\\because$ 根据等差数列前 $n$ 项和公式: $S_{n}=n a_{1}+\\frac{n(n-1)}{2} d, n \\in N^{*}$\n\n可得: $S_{10}=10(-2)+\\frac{10 \\times(10-1)}{2}=-20+45=25$\n\n$\\therefore S_{10}=25$.\n\n故答案为: 25 .\n",
+            "model_output": "【解析】\n首先，我们知道等差数列的通项公式是$a_n=a_1+(n-1)d$，其中$d$是公差。\n由题目给出的条件$a_2+a_6=2$，我们可以将$a_2$和$a_6$用通项公式表示出来，即$a_1+d+a_1+5d=2$，将$a_1=-2$代入，得到$-2+d-2+5d=2$，解得$d=1$。\n然后，我们知道等差数列的前n项和公式是$S_n=\\frac{n}{2}(a_1+a_n)$，将$n=10$，$a_1=-2$，$a_{10}=-2+9*1$代入，就可以求得$S_{10}$的值。\n<eoe>\n【答案】\n35<eoa>"
+        },
+        {
+            "index": 74,
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "score": 5,
+            "question": "13. 若向量 $\\vec{a}, \\vec{b}$ 满足 $|\\vec{a}|=3,|\\vec{a}-\\vec{b}|=5, \\vec{a} \\cdot \\vec{b}=1$, 则 $|\\vec{b}|=$\n",
+            "standard_answer": "$3 \\sqrt{2}$\n",
+            "analysis": "【详解】 $\\because|\\vec{a}-\\vec{b}|=5$\n\n$\\therefore|\\vec{a}-\\vec{b}|^{2}=\\vec{a}^{2}+\\vec{b}^{2}-2 \\vec{a} \\cdot \\vec{b}=9+|\\vec{b}|^{2}-2=25$\n\n$\\therefore|b|=3 \\sqrt{2}$.\n\n故答案为: $3 \\sqrt{2}$.\n",
+            "model_output": "【解析】\n根据向量的模的性质，我们有\n$|\\vec{a}-\\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 - 2\\vec{a} \\cdot \\vec{b}$，\n将题目中给出的条件代入，得到\n$5^2 = 3^2 + |\\vec{b}|^2 - 2*1$，\n解这个方程，我们可以得到 $|\\vec{b}|$ 的值。<eoe>\n【答案】4<eoa>"
+        },
+        {
+            "index": 75,
+            "year": "2021",
+            "category": "（全国甲卷）",
+            "score": 5,
+            "question": "16. 已知 $F_{1}, F_{2}$ 为椭圆 $C: \\frac{x^{2}}{16}+\\frac{y^{2}}{4}=1$ 的两个焦点, $P, Q$ 为 $C$ 上关于坐标原点对称的两点, 且 $|P Q|=\\left|F_{1} F_{2}\\right|$, 则四边形 $P F_{1} Q F_{2}$ 的面积为\n",
+            "standard_answer": "8\n",
+            "analysis": "【详解】因为 $P, Q$ 为 $C$ 上关于坐标原点对称的两点,\n\n且 $|P Q|=\\left|F_{1} F_{2}\\right|$, 所以四边形 $P F_{1} Q F_{2}$ 为矩形,\n\n设 $\\left|P F_{1}\\right|=m,\\left|P F_{2}\\right|=n$, 则 $m+n=8, m^{2}+n^{2}=48$,\n\n所以 $64=(m+n)^{2}=m^{2}+2 m n+n^{2}=48+2 m n$,\n\n$m n=8$, 即四边形 $P F_{1} Q F_{2}$ 面积等于 8 .\n\n故答案为: 8 .\n",
+            "model_output": "【解析】\n首先，我们知道椭圆的焦点距离公式为$c=\\sqrt{a^2-b^2}$，其中a是椭圆的长半轴，b是短半轴。在这个问题中，a=4，b=2，所以$c=\\sqrt{4^2-2^2}=2\\sqrt{3}$，所以$|F_{1}F_{2}|=2c=4\\sqrt{3}$。\n然后，由于P和Q是关于原点对称的两点，所以$|PQ|=|F_{1}F_{2}|=4\\sqrt{3}$。由于四边形$PF_{1}QF_{2}$的对角线相等，所以它是一个菱形。\n最后，菱形的面积公式为$S=\\frac{d_1d_2}{2}$，其中$d_1$和$d_2$是菱形的两条对角线。在这个问题中，$d_1=d_2=4\\sqrt{3}$，所以$S=\\frac{4\\sqrt{3}\\times4\\sqrt{3}}{2}=24$。<eoe>\n【答案】24<eoa>"
+        },
+        {
+            "index": 76,
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "13.已知向量 $\\vec{a}=(2,5), \\vec{b}=(\\lambda, 4)$, 若 $\\vec{a} / / \\vec{b}$, 则 $\\lambda=$\n",
+            "standard_answer": "$\\frac{8}{5}$\n",
+            "analysis": "解析:\n\n由已知 $\\vec{a} / / \\vec{b}$ 可得 $2 \\times 4=5 \\lambda \\Rightarrow \\lambda=\\frac{8}{5}$.\n",
+            "model_output": "【解析】\n向量$\\vec{a}$与向量$\\vec{b}$平行，意味着它们的方向相同，即它们的分量之比是一个常数。也就是说，$\\vec{a}$的x分量与$\\vec{b}$的x分量之比等于$\\vec{a}$的y分量与$\\vec{b}$的y分量之比。所以，我们可以建立等式：2/λ=5/4。解这个等式，我们可以找到λ的值。<eoe>\n【答案】λ=8/5<eoa>"
+        },
+        {
+            "index": 77,
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "14. 双曲线 $\\frac{x^{2}}{4}-\\frac{y^{2}}{5}=1$ 的右焦点到直线 $x+2 y-8=0$ 的距离为\n",
+            "standard_answer": "$\\sqrt{5}$\n",
+            "analysis": "解析:\n\n$\\frac{x^{2}}{4}-\\frac{y^{2}}{5}=1$ 的右焦点为 $(3,0)$, 到直线 $x+2 y-8=0$ 的距离 $d=\\frac{|3-8|}{\\sqrt{1^{2}+2^{2}}}=\\sqrt{5}$.\n",
+            "model_output": "【解析】首先，我们需要找到双曲线的右焦点的坐标。双曲线的一般方程为$\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1$，其中a和b是双曲线的半轴长，焦点的坐标为$(\\pm c,0)$，其中$c=\\sqrt{a^{2}+b^{2}}$。对于给定的双曲线，我们有$a^{2}=4$，$b^{2}=5$，所以$c=\\sqrt{4+5}=\\sqrt{9}=3$。所以，双曲线的右焦点的坐标为$(3,0)$。\n\n然后，我们需要找到点到直线的距离公式。点$(x_{0},y_{0})$到直线$Ax+By+C=0$的距离为$\\frac{|Ax_{0}+By_{0}+C|}{\\sqrt{A^{2}+B^{2}}}$。对于给定的直线，我们有$A=1$，$B=2$，$C=-8$。\n\n将右焦点的坐标$(3,0)$代入点到直线的距离公式，我们得到$\\frac{|1*3+2*0-8|}{\\sqrt{1^{2}+2^{2}}}=\\frac{|-5|}{\\sqrt{5}}=1$。<eoe>\n\n【答案】1<eoa>"
+        },
+        {
+            "index": 78,
+            "year": "2021",
+            "category": "（新课标ⅰ）",
+            "score": 5,
+            "question": "15. 记 $\\triangle A B C$ 的内角 $A, B, C$ 的对边分别为 $a, b, c$, 面积为 $\\sqrt{3}$,\n\n$B=60^{\\circ}, a^{2}+c^{2}=3 a c$, 则 $b=$\n",
+            "standard_answer": "$2 \\sqrt{2}$\n",
+            "analysis": "解析:\n\n由面积公式 $S=\\frac{1}{2} a c \\sin B=\\sqrt{3}$, 且 $B=60^{\\circ}$, 解得 $a c=4$,\n\n又由余弦定理 $b^{2}=a^{2}+c^{2}-2 a c \\cos B, a^{2}+c^{2}=3 a c$, 且 $b>0$\n\n解得 $b=2 \\sqrt{2}$.\n",
+            "model_output": "【解析】\n由于角B=60度，那么我们可以利用正弦定理，得到$\\frac{a}{\\sin A}=\\frac{b}{\\sin 60^{\\circ}}$，即$b=a\\sin A$。\n又因为$a^{2}+c^{2}=3ac$，这是一个等腰直角三角形的性质，所以我们可以得出角A和角C都是45度。\n所以$b=a\\sin A=a\\sin 45^{\\circ}=\\frac{a}{\\sqrt{2}}$。\n又因为三角形的面积公式为$S=\\frac{1}{2}ab\\sin C=\\frac{1}{2}a\\cdot\\frac{a}{\\sqrt{2}}\\sin 45^{\\circ}=\\frac{a^{2}}{4}$，由题意知面积为$\\sqrt{3}$，所以$\\frac{a^{2}}{4}=\\sqrt{3}$，解得$a=2\\sqrt{2}$。\n代入$b=\\frac{a}{\\sqrt{2}}$，得到$b=2$。\n<eoe>\n【答案】2<eoa>"
+        },
+        {
+            "index": 79,
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "score": 5,
+            "question": "13. 记 $S_{n}$ 为等差数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和. 若 $2 S_{3}=3 S_{2}+6$, 则公差 $d=$\n",
+            "standard_answer": "2\n",
+            "analysis": "【详解】由 $2 S_{3}=3 S_{2}+6$ 可得 $2\\left(a_{1}+a_{2}+a_{3}\\right)=3\\left(a_{1}+a_{2}\\right)+6$, 化简得 $2 a_{3}=a_{1}+a_{2}+6$, 即 $2\\left(a_{1}+2 d\\right)=2 a_{1}+d+6$, 解得 $d=2$.\n\n故答案为: 2 .\n",
+            "model_output": "【解析】\n等差数列的前n项和公式为$S_n = \\frac{n}{2}(a_1 + a_n)$，其中$a_n$为第n项的值，$a_n = a_1 + (n-1)d$，其中d为公差。\n根据题意，我们有$2S_3 = 3S_2 + 6$，代入前n项和公式，我们得到$2 \\cdot \\frac{3}{2}(a_1 + a_3) = 3 \\cdot \\frac{2}{2}(a_1 + a_2) + 6$，简化得到$a_1 + a_3 = a_1 + a_2 + 2$。\n因为$a_3 = a_1 + 2d$，$a_2 = a_1 + d$，所以我们可以将$a_3$和$a_2$代入上述等式，得到$a_1 + a_1 + 2d = a_1 + a_1 + d + 2$，简化得到$d = 2$。\n<eoe>\n【答案】2<eoa>"
+        },
+        {
+            "index": 80,
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "score": 5,
+            "question": "14. 从甲、乙等 5 名同学中随机选 3 名参加社区服务工作, 则甲、乙都人选的概率为\n",
+            "standard_answer": "$\\frac{3}{10} \\# \\# 0.3$\n",
+            "analysis": "【详解】从 5 名同学中随机选 3 名的方法数为 $\\mathrm{C}_{5}^{3}=10$\n\n甲、乙都人选的方法数为 $\\mathrm{C}_{3}^{1}=3$, 所以甲、乙都人选的概率 $P=\\frac{3}{10}$\n\n故答案为: $\\frac{3}{10}$\n",
+            "model_output": "【解析】\n这是一个组合概率问题。首先，我们需要计算出总的选取方式，即从5名同学中选取3名同学的组合数，用组合公式C(n, m) = n! / [m!(n-m)!]，其中n为总数，m为选取的数量，\"!\"表示阶乘。所以总的选取方式为C(5, 3) = 5! / [3!(5-3)!] = 10。\n\n然后，我们需要计算出甲、乙都被选中的选取方式。因为甲、乙两人已经确定，所以我们只需要从剩下的3名同学中选取1名同学，即C(3, 1) = 3。\n\n所以，甲、乙都被选中的概率为选中甲乙的选取方式除以总的选取方式，即3/10。<eoe>\n\n【答案】3/10<eoa>"
+        },
+        {
+            "index": 81,
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "score": 5,
+            "question": "15. 过四点 $(0,0),(4,0),(-1,1),(4,2)$ 中的三点的一个圆的方程为\n",
+            "standard_answer": "$(x-2)^{2}+(y-3)^{2}=13$ 或 $(x-2)^{2}+(y-1)^{2}=5$ 或 $\\left(x-\\frac{4}{3}\\right)^{2}+\\left(y-\\frac{7}{3}\\right)^{2}=\\frac{65}{9}$ 或 $\\left(x-\\frac{8}{5}\\right)^{2}+(y-1)^{2}=\\frac{169}{25}$\n",
+            "analysis": "【详解】 解: 依题意设圆的方程为 $x^{2}+y^{2}+D x+E y+F=0$,\n\n若过 $(0,0),(4,0), \\quad(-1,1)$, 则 $\\left\\{\\begin{array}{l}F=0 \\\\ 16+4 D+F=0 \\\\ 1+1-D+E+F=0\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}F=0 \\\\ D=-4 \\\\ E=-6\\end{array}\\right.$,\n\n所以圆的方程为 $x^{2}+y^{2}-4 x-6 y=0$, 即 $(x-2)^{2}+(y-3)^{2}=13$;\n\n若过 $(0,0),(4,0),(4,2), \\quad$ 则 $\\left\\{\\begin{array}{l}F=0 \\\\ 16+4 D+F=0 \\\\ 16+4+4 D+2 E+F=0\\end{array}\\right.$ ，解得 $\\left\\{\\begin{array}{l}F=0 \\\\ D=-4 \\\\ E=-2\\end{array}\\right.$,\n\n所以圆的方程为 $x^{2}+y^{2}-4 x-2 y=0$, 即 $(x-2)^{2}+(y-1)^{2}=5$;\n\n若过 $(0,0),(4,2), \\quad(-1,1)$, 则 $\\left\\{\\begin{array}{l}F=0 \\\\ 1+1-D+E+F=0 \\\\ 16+4+4 D+2 E+F=0\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}F=0 \\\\ D=-\\frac{8}{3} \\\\ E=-\\frac{14}{3}\\end{array}\\right.$,\n\n所以圆的方程为 $x^{2}+y^{2}-\\frac{8}{3} x-\\frac{14}{3} y=0$, 即 $\\left(x-\\frac{4}{3}\\right)^{2}+\\left(y-\\frac{7}{3}\\right)^{2}=\\frac{65}{9}$;\n\n若过 $(-1,1),(4,0),(4,2)$, 则 $\\left\\{\\begin{array}{l}1+1-D+E+F=0 \\\\ 16+4 D+F=0 \\\\ 16+4+4 D+2 E+F=0\\end{array}\\right.$, 解得 $\\left\\{\\begin{array}{l}F=-\\frac{16}{5} \\\\ D=-\\frac{16}{5} \\text {, } \\\\ E=-2\\end{array}\\right.$\n\n所以圆的方程为 $x^{2}+y^{2}-\\frac{16}{5} x-2 y-\\frac{16}{5}=0$, 即 $\\left(x-\\frac{8}{5}\\right)^{2}+(y-1)^{2}=\\frac{169}{25}$;\n\n故答案为: $(x-2)^{2}+(y-3)^{2}=13$ 或 $(x-2)^{2}+(y-1)^{2}=5$ 或 $\\left(x-\\frac{4}{3}\\right)^{2}+\\left(y-\\frac{7}{3}\\right)^{2}=\\frac{65}{9}$ 或 $\\left(x-\\frac{8}{5}\\right)^{2}+(y-1)^{2}=\\frac{169}{25}$ ；\n",
+            "model_output": "【解析】\n我们可以先选择任意三个点来确定一个圆的方程，然后验证第四个点是否在这个圆上。如果在，那么这四个点共圆。\n\n我们先选择点$(0,0),(4,0),(-1,1)$来确定一个圆。\n\n设过这三点的圆的方程为$(x-a)^2+(y-b)^2=r^2$，其中$(a,b)$为圆心，$r$为半径。\n\n根据圆的定义，过这三点的圆满足以下三个方程：\n$(0-a)^2+(0-b)^2=r^2$\n$(4-a)^2+(0-b)^2=r^2$\n$(-1-a)^2+(1-b)^2=r^2$\n\n将第一个方程代入第二个和第三个方程，我们可以得到两个关于$a$和$b$的方程：\n$a^2+b^2=(a-4)^2+b^2$\n$a^2+b^2=(a+1)^2+(b-1)^2$\n\n解这两个方程，我们可以得到$a=2$，$b=0$。\n\n因此，过这三点的圆的方程为$(x-2)^2+y^2=r^2$。\n\n再将点$(4,2)$代入这个方程，我们得到$(4-2)^2+2^2=r^2$，即$r^2=8$。\n\n所以，过这四点的一个圆的方程为$(x-2)^2+y^2=8$。<eoe>\n\n【答案】$(x-2)^2+y^2=8$<eoa>"
+        },
+        {
+            "index": 82,
+            "year": "2022",
+            "category": "（全国乙卷）",
+            "score": 5,
+            "question": "16. 若 $f(x)=\\ln \\left|a+\\frac{1}{1-x}\\right|+b$ 是奇函数, 则 $a=$\n\n$b=$\n",
+            "standard_answer": "(1). $-\\frac{1}{2} ; \\quad$ (2). $\\ln 2$.\n",
+            "analysis": "【详解】因为函数 $f(x)=\\ln \\left|a+\\frac{1}{1-x}\\right|+b$ 为奇函数, 所以其定义域关于原点对称.\n\n由 $a+\\frac{1}{1-x} \\neq 0$ 可得, $(1-x)(a+1-a x) \\neq 0$, 所以 $x=\\frac{a+1}{a}=-1$, 解得: $a=-\\frac{1}{2}$, 即函 数的定义域为 $(-\\infty,-1) \\cup(-1,1) \\cup(1,+\\infty)$, 再由 $f(0)=0$ 可得, $b=\\ln 2$. 即 $f(x)=\\ln \\left|-\\frac{1}{2}+\\frac{1}{1-x}\\right|+\\ln 2=\\ln \\left|\\frac{1+x}{1-x}\\right|$, 在定义域内满足 $f(-x)=-f(x)$, 符合题意. 故答案为: $-\\frac{1}{2} ; \\ln 2$.\n",
+            "model_output": "【解析】\n奇函数的定义是：对于所有在定义域内的x，都有f(-x)=-f(x)。\n所以我们可以将x替换为-x，然后将得到的等式与原函数进行比较，以找出a和b的值。\n将x替换为-x，我们得到：\nf(-x) = ln |a + 1/(1-(-x))| + b = ln |a + 1/(1+x)| + b\n因为f(x)是奇函数，所以有f(-x)=-f(x)，即：\nln |a + 1/(1+x)| + b = -ln |a + 1/(1-x)| - b\n两边同时取指数，得到：\n|a + 1/(1+x)| * e^b = 1 / (|a + 1/(1-x)| * e^b)\n整理得到：\n|a + 1/(1+x)| / |a + 1/(1-x)| = 1\n这个等式对所有的x都成立，所以我们可以取x=0来简化计算，得到：\n|a + 1| / |a - 1| = 1\n这个等式只有在a=0时成立。所以a=0。\n另一方面，我们可以看到b在等式的两边都被消去了，所以b可以是任何实数。\n<eoe>\n【答案】\na=0\nb=任意实数<eoa>"
+        },
+        {
+            "index": 83,
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "score": 5,
+            "question": "13. 已知向量 $\\vec{a}=(m, 3), \\vec{b}=(1, m+1)$. 若 $\\vec{a} \\perp \\vec{b}$, 则 $m=$\n",
+            "standard_answer": "$-\\frac{3}{4} \\# \\#-0.75$\n",
+            "analysis": "【详解】由题意知: $\\vec{a} \\cdot \\vec{b}=m+3(m+1)=0$, 解得 $m=-\\frac{3}{4}$.\n\n故答案为: $-\\frac{3}{4}$.\n",
+            "model_output": "【解析】\n向量 $\\vec{a}$ 与向量 $\\vec{b}$ 垂直，根据向量的性质，我们知道两个向量垂直，它们的点积为0。即 $\\vec{a} \\cdot \\vec{b}=0$。\n所以，我们有 $(m, 3) \\cdot (1, m+1)=0$，即 $m \\cdot 1 + 3 \\cdot (m+1)=0$。\n解这个方程，我们可以得到 $m$ 的值。<eoe>\n\n【答案】\n解方程 $m + 3m + 3 = 0$，得到 $m = -1$。<eoa>"
+        },
+        {
+            "index": 84,
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "score": 5,
+            "question": "14. 设点 $M$ 在直线 $2 x+y-1=0$ 上, 点 $(3,0)$ 和 $(0,1)$ 均在 $\\odot M$ 上, 则 $\\odot M$ 的方程为\n",
+            "standard_answer": "$(x-1)^{2}+(y+1)^{2}=5$\n",
+            "analysis": "【详解】解: $\\because$ 点 $M$ 在直线 $2 x+y-1=0$ 上,\n\n$\\therefore$ 设点 $M$ 为 $(a, 1-2 a)$, 又因为点 $(3,0)$ 和 $(0,1)$ 均在 $\\odot M$ 上,\n\n$\\therefore$ 点 $M$ 到两点的距离相等且为半径 $R$,\n\n$\\therefore \\sqrt{(a-3)^{2}+(1-2 a)^{2}}=\\sqrt{a^{2}+(-2 a)^{2}}=R$,\n\n$a^{2}-6 a+9+4 a^{2}-4 a+1=5 a^{2}$, 解得 $a=1$,\n\n$\\therefore M(1,-1), \\quad R=\\sqrt{5}$\n\n$\\odot M$ 的方程为 $(x-1)^{2}+(y+1)^{2}=5$.\n\n故答案为: $(x-1)^{2}+(y+1)^{2}=5$\n",
+            "model_output": "【解析】\n首先，我们知道，如果一个点在一个圆上，那么这个点到圆心的距离等于半径。所以，我们可以通过求解点$(3,0)$和$(0,1)$到点$M(x,y)$的距离来找到圆的半径$r$。由于$M$在直线$2x+y-1=0$上，我们可以将$y$表示为$y=1-2x$。\n\n设点$M$的坐标为$(x,1-2x)$，则点$M$到点$(3,0)$的距离为$r=\\sqrt{(x-3)^2+(1-2x)^2}$，点$M$到点$(0,1)$的距离为$r=\\sqrt{x^2+(1-2x-1)^2}$。\n\n由于点$(3,0)$和$(0,1)$都在$\\odot M$上，所以这两个距离应该相等，即有$(x-3)^2+(1-2x)^2=x^2+(1-2x-1)^2$。\n\n解这个方程，我们可以得到$x=1$，代入得$y=-1$，所以点$M$的坐标为$(1,-1)$。\n\n再次计算半径$r$，我们得到$r=\\sqrt{(1-3)^2+(-1)^2}=\\sqrt{5}$。\n\n所以，$\\odot M$的方程为$(x-1)^2+(y+1)^2=5$。\n<eoe>\n【答案】$(x-1)^2+(y+1)^2=5$<eoa>"
+        },
+        {
+            "index": 85,
+            "year": "2022",
+            "category": "（全国甲卷）",
+            "score": 5,
+            "question": "15. 记双曲线 $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的离心率为 $e$, 写出满足条件“直线 $y=2 x$ 与 $C$ 无公 共点”的 $e$ 的一个值\n",
+            "standard_answer": "2 (满足 $1<e \\leq \\sqrt{5}$ 皆可)\n",
+            "analysis": "【详解】解: $C: \\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1(a>0, b>0)$, 所以 $C$ 的渐近线方程为 $y= \\pm \\frac{b}{a} x$, 结合渐近线的特点, 只需 $0<\\frac{b}{a} \\leq 2$, 即 $\\frac{b^{2}}{a^{2}} \\leq 4$,\n\n可满足条件“直线 $y=2 x$ 与 $C$ 无公共点”\n\n所以 $e=\\frac{c}{a}=\\sqrt{1+\\frac{b^{2}}{a^{2}}} \\leq \\sqrt{1+4}=\\sqrt{5}$,\n\n又因为 $e>1$, 所以 $1<e \\leq \\sqrt{5}$,\n\n故答案为: 2 (满足 $1<e \\leq \\sqrt{5}$ 皆可)\n",
+            "model_output": "【解析】首先，我们知道双曲线的离心率 $e$ 的定义是 $e=\\sqrt{1+\\frac{b^{2}}{a^{2}}}$。然后，我们需要找到一个 $e$ 的值，使得直线 $y=2x$ 与双曲线 $C$ 无公共点。为了找到这样的 $e$，我们可以将直线 $y=2x$ 代入双曲线的方程，得到 $\\frac{x^{2}}{a^{2}}-\\frac{4x^{2}}{b^{2}}=1$，整理得到 $\\frac{b^{2}}{a^{2}}=\\frac{3x^{2}}{x^{2}}=3$。然后，我们将 $\\frac{b^{2}}{a^{2}}=3$ 代入离心率 $e$ 的定义，得到 $e=\\sqrt{1+3}=2$。所以，满足条件“直线 $y=2x$ 与双曲线 $C$ 无公共点”的 $e$ 的一个值是 2。<eoe>\n【答案】2<eoa>"
+        }
+    ]
+}
