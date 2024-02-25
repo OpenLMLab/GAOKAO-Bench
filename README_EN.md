@@ -88,7 +88,7 @@ An example of objective questions is shown below, the English is added by the au
 
 ### Converted Total Score
 
-We test various models using a zero-shot setting, employing a rule-based answer extraction method for objective questions and manual grading for subjective questions, ultimately obtaining Gaokao scores for models such as GPT-4 and GPT-3.5.
+We test various models using a zero-shot setting, employing a rule-based answer extraction method for objective questions and manual grading for subjective questions, ultimately obtaining Gaokao scores for models such as GPT-4 and GPT-3.5. The experimental results indicate that GPT-4 ranks first in the overall score of the GAOKAO after conversion, with the total scores for the humanities and sciences being 485 and 447, respectively. At the same time, the scores in the arts for all models are higher than those in the sciences.
 
 <img src="./Graphs/histogram.png" alt="histogram" style="zoom:25%;" />
 
