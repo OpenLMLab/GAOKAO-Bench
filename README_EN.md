@@ -6,7 +6,7 @@ GAOKAO-Bench is an evaluation framework that uses Chinese National College Entra
 
 [[GAOKAO-MM]](https://github.com/OpenMOSS/GAOKAO-MM): A multimodal dataset based on Chinese Gaokao questions evaluates the perception, understanding, knowledge, and reasoning capabilities of multimodal models.
 
-[[GAOKAO-Bench-2023]](https://github.com/OpenLMLab/GAOKAO-Bench-2023): A dataset addition to GAOKAO-Bench which derives from the 2023 Chinese GAOKAO's multiple-choice questions.
+[[GAOKAO-Bench-Updates]](https://github.com/OpenLMLab/GAOKAO-Bench-Updates): A dataset addition to GAOKAO-Bench which derives from Chinese GAOKAO's multiple-choice questions of 2023 and beyond.
 
 ## Introduction
 

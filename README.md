@@ -6,7 +6,7 @@ GAOKAO-Bench是一个以中国高考题目为数据集，测评大模型语言�
 
 [[GAOKAO-MM]](https://github.com/OpenMOSS/GAOKAO-MM)：基于中国高考题的多模态数据集，测评多模态模型的感知、理解、知识、推理能力。
 
-[[GAOKAO-Bench-2023]](https://github.com/OpenLMLab/GAOKAO-Bench-2023):将中国2023年高考选择题作为数据集 ，对GAOKAO-Bench的补充。
+[[GAOKAO-Bench-Updates]](https://github.com/OpenLMLab/GAOKAO-Bench-Updates):将中国2023年及之后的高考选择题作为数据集 ，对GAOKAO-Bench的补充。
 
 ## 介绍
 
